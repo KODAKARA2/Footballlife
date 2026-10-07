@@ -1,0 +1,159 @@
+{
+  "startedAt": "2026-10-07T09:47:06.461Z",
+  "mode": "all",
+  "node": "v24.19.0",
+  "tests": [
+    {
+      "name": "football-data-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 168
+    },
+    {
+      "name": "date-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 518
+    },
+    {
+      "name": "ending-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 168
+    },
+    {
+      "name": "free-time-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 190
+    },
+    {
+      "name": "heroine-roster-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 534,
+      "initialResult": {
+        "name": "heroine-roster-check",
+        "args": [],
+        "passed": false,
+        "exitCode": 1,
+        "durationMs": 129
+      },
+      "verifiedAt": "2026-10-07T09:50:46.431Z",
+      "rerunReason": "Authorized portrait optimization changed RGBA PNG dimensions from 1024x1536 to512x768; test assertions updated."
+    },
+    {
+      "name": "passive-affection-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 128
+    },
+    {
+      "name": "romance-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 124
+    },
+    {
+      "name": "football-choice-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 7575
+    },
+    {
+      "name": "sim",
+      "args": [
+        "200"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 3817
+    },
+    {
+      "name": "growth-balance-check",
+      "args": [
+        "1000",
+        "0.8",
+        "20261007"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 18844
+    },
+    {
+      "name": "football-career-check",
+      "args": [
+        "1000"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 46255
+    },
+    {
+      "name": "minigame-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/minigame"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 22439
+    },
+    {
+      "name": "ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 19312
+    },
+    {
+      "name": "ending-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/ending-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 18424
+    },
+    {
+      "name": "free-time-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/free-time-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 14845
+    },
+    {
+      "name": "heroine-roster-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/heroine-roster-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 20385
+    },
+    {
+      "name": "romance-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/romance-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 6740
+    }
+  ],
+  "finishedAt": "2026-10-07T09:50:06.526Z",
+  "passed": 17,
+  "failed": 0,
+  "verifiedAt": "2026-10-07T09:50:46.431Z"
+}

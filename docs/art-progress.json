@@ -985,12 +985,16 @@
     }
   ],
   "originalTotalBytes": 174248601,
-  "integratedEffectsBaseline": "2809360836a7a9e26d52c5ddcfcbbe22fdac9e61",
+  "integratedEffectsBaseline": "114a138ea86606b963237af7838d1c19adf6b2e3",
   "graphicsValidated": true,
   "remainingGraphics": [],
   "validation": {
     "graphics": "tools/results/graphics/report.json",
     "fallback": "tools/results/graphics/fallback-report.json",
     "regressions": "tools/results/test-report-all.json"
-  }
+  },
+  "coachCutinBehavior": "Asset delivery only; tactical minigame behavior is owned by the parallel minigame task.",
+  "validatedAt": "2026-10-07T10:05:59.021720+00:00",
+  "testsPassed": 19,
+  "testsFailed": 0
 }

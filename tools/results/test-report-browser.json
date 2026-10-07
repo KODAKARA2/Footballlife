@@ -1,0 +1,82 @@
+{
+  "startedAt": "2026-10-07T10:01:04.727Z",
+  "mode": "browser",
+  "node": "v24.19.0",
+  "tests": [
+    {
+      "name": "minigame-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/minigame"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 25635
+    },
+    {
+      "name": "curved-shot-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/curved-shot"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 20407
+    },
+    {
+      "name": "action-feedback-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/action-feedback"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 31501
+    },
+    {
+      "name": "ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 17967
+    },
+    {
+      "name": "ending-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/ending-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 19928
+    },
+    {
+      "name": "free-time-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/free-time-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 15038
+    },
+    {
+      "name": "heroine-roster-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/heroine-roster-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 20471
+    },
+    {
+      "name": "romance-ui-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/romance-ui"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 6697
+    }
+  ],
+  "finishedAt": "2026-10-07T10:03:42.373Z",
+  "passed": 8,
+  "failed": 0
+}

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-07T09:59:21.745Z",
+  "checkedAt": "2026-10-07T10:01:26.464Z",
   "files": 130,
   "images": [
     {
@@ -926,7 +926,7 @@
           "ok": true
         },
         {
-          "src": "images/buddy.png",
+          "src": "images/parents.png",
           "ok": true
         }
       ]
@@ -969,7 +969,7 @@
           "ok": true
         },
         {
-          "src": "images/rival.png",
+          "src": "images/coach_little.png",
           "ok": true
         }
       ]
@@ -1053,6 +1053,10 @@
         {
           "src": "images/hero_elementary_gk.png",
           "ok": true
+        },
+        {
+          "src": "images/parents.png",
+          "ok": true
         }
       ]
     },
@@ -1094,7 +1098,7 @@
           "ok": true
         },
         {
-          "src": "images/buddy.png",
+          "src": "images/coach_little.png",
           "ok": true
         }
       ]
@@ -1134,6 +1138,10 @@
       "images": [
         {
           "src": "images/hero_elementary_gk.png",
+          "ok": true
+        },
+        {
+          "src": "images/coach_little.png",
           "ok": true
         }
       ]

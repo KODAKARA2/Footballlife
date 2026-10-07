@@ -80,5 +80,15 @@
         "wide_face_crop_object_position": "50% 20%"
       }
     }
-  ]
+  ],
+  "verifiedMobileCrop": {
+    "targetAspect": "2:1",
+    "objectFit": "cover",
+    "objectPosition": "50% 35%",
+    "fullBust": {
+      "objectFit": "contain",
+      "objectPosition": "50% 50%"
+    },
+    "note": "Actual pixel crop compared at20/35/45percent;35percent preserves mouths and eyes."
+  }
 }

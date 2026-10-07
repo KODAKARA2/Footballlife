@@ -1,0 +1,17 @@
+
+> football-life@2.0.0 test:browser
+> node tools/run-tests.js browser
+
+PASS minigame-check
+PASS curved-shot-check
+PASS action-feedback-check
+PASS ui-check
+PASS ending-ui-check
+PASS free-time-ui-check
+PASS heroine-roster-ui-check
+PASS romance-ui-check
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

@@ -8,28 +8,32 @@
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 168
+      "durationMs": 168,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "date-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 518
+      "durationMs": 518,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "ending-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 168
+      "durationMs": 168,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "free-time-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 190
+      "durationMs": 190,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "heroine-roster-check",
@@ -45,28 +49,32 @@
         "durationMs": 129
       },
       "verifiedAt": "2026-10-07T09:50:46.431Z",
-      "rerunReason": "Authorized portrait optimization changed RGBA PNG dimensions from 1024x1536 to512x768; test assertions updated."
+      "rerunReason": "Authorized portrait optimization changed RGBA PNG dimensions from 1024x1536 to512x768; test assertions updated.",
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "passive-affection-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 128
+      "durationMs": 128,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "romance-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 124
+      "durationMs": 124,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "football-choice-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 7575
+      "durationMs": 7575,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "sim",
@@ -75,7 +83,8 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 3817
+      "durationMs": 3817,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "growth-balance-check",
@@ -86,7 +95,8 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 18844
+      "durationMs": 18844,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "football-career-check",
@@ -95,7 +105,8 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 46255
+      "durationMs": 46255,
+      "verificationSource": "unchanged pre-merge engine/simulation baseline"
     },
     {
       "name": "minigame-check",
@@ -104,7 +115,31 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 22439
+      "durationMs": 25635,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
+    },
+    {
+      "name": "curved-shot-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/curved-shot"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 20407,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
+    },
+    {
+      "name": "action-feedback-check",
+      "args": [
+        "/workspace/football-life-publish/tools/results/action-feedback"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 31501,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
     },
     {
       "name": "ui-check",
@@ -113,7 +148,9 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 19312
+      "durationMs": 17967,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
     },
     {
       "name": "ending-ui-check",
@@ -122,7 +159,9 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 18424
+      "durationMs": 19928,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
     },
     {
       "name": "free-time-ui-check",
@@ -131,7 +170,9 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 14845
+      "durationMs": 15038,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
     },
     {
       "name": "heroine-roster-ui-check",
@@ -140,7 +181,9 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 20385
+      "durationMs": 20471,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
     },
     {
       "name": "romance-ui-check",
@@ -149,11 +192,40 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 6740
+      "durationMs": 6697,
+      "verifiedAt": "2026-10-07T10:03:42.373Z",
+      "verificationSource": "post-merge browser run"
     }
   ],
   "finishedAt": "2026-10-07T09:50:06.526Z",
-  "passed": 17,
+  "passed": 19,
   "failed": 0,
-  "verifiedAt": "2026-10-07T09:50:46.431Z"
+  "verifiedAt": "2026-10-07T10:04:44.041Z",
+  "verificationMode": "Incremental final verification: unchanged engine/simulation baseline plus all eight browser tests after upstream PR #2 merge",
+  "commit": "10dd06a",
+  "preMergeBaseline": {
+    "commit": "08a0772",
+    "startedAt": "2026-10-07T09:47:06.461Z",
+    "finishedAt": "2026-10-07T09:50:06.526Z",
+    "verifiedAt": "2026-10-07T09:50:46.431Z",
+    "report": "graphics/pre-minigame-test-report-all.json",
+    "inheritedTests": [
+      "football-data-check",
+      "date-check",
+      "ending-check",
+      "free-time-check",
+      "heroine-roster-check",
+      "passive-affection-check",
+      "romance-check",
+      "football-choice-check",
+      "sim",
+      "growth-balance-check",
+      "football-career-check"
+    ]
+  },
+  "browserVerification": {
+    "startedAt": "2026-10-07T10:01:04.727Z",
+    "finishedAt": "2026-10-07T10:03:42.373Z",
+    "commit": "10dd06a"
+  }
 }
