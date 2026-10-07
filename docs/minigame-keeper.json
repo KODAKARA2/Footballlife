@@ -1,0 +1,152 @@
+{
+  "assets": [
+    {
+      "name": "keeper_ready",
+      "generator": "built-in image_gen",
+      "source_generated_path": "/workspace/generated_images/exec-f9f22153-9022-4f70-8891-fc4003c7475d.png",
+      "prompt": "Create one production game sprite, independent transparent full-body goalkeeper character. Match the attached reference character's identity exactly: same adult male protagonist in detailed fine-pixel chibi illustration, tousled voluminous brown hair, brown eyes, warm light skin, confident friendly focused face. Same deep emerald green long-sleeved goalkeeper jersey with lime-green trim, subtle tonal chevron pattern and generic small shield emblem, green shorts, tall emerald socks with lime stripes, dark cleats; no real branding. Pose must face straight FRONT, slight crouch, balanced feet planted apart, full body including both shoes wholly visible with generous transparent margins. BOTH hands raised open near chest/shoulder level in symmetrical ready-to-catch stance, palms facing viewer; two large modern soccer goalkeeper gloves white finger/palm pads with green detailing and black wrist cuffs, anatomically coherent five padded digits each, not baseball mitts. NO held ball, NO ball anywhere, no field, no goal, no scene, no text, no ground shadow. Distinct readable clean silhouette with gloves clearly separated from torso, suitable for a horizontally moving keeper slider game actor. Fine crisp pixel-detail edges matching reference finish, polished high-quality sprite with proportional large head. Output RGBA transparent background only.",
+      "reference": "images/hero_pro_gk.png",
+      "full_resolution": {
+        "path": "assets/minigame-generated/keeper_ready.png",
+        "sha256": "f85ab922f5c615ed049b109d0e91a9ba4d9acceb7713f02756b6c258f99f08e6",
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "bytes": 1848868,
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "alpha_bbox": [
+          41,
+          28,
+          1006,
+          1514
+        ],
+        "alpha_gt127_bbox": [
+          89,
+          40,
+          954,
+          1488
+        ],
+        "transparent_pixels": 970321,
+        "nonzero_alpha_pixels": 602543
+      },
+      "runtime": {
+        "path": "images/minigames/keeper_ready.png",
+        "sha256": "16b2225e3d95932d3e5b7c5ad2d4869b1fe23c15f683dc10547e93dd1d6f8471",
+        "size": [
+          256,
+          320
+        ],
+        "mode": "RGBA",
+        "bytes": 69883,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          43,
+          16,
+          217,
+          304
+        ],
+        "alpha_gt127_bbox": [
+          45,
+          19,
+          214,
+          302
+        ],
+        "transparent_pixels": 57693,
+        "nonzero_alpha_pixels": 24227
+      },
+      "anchors_normalized": {
+        "hands_center": [
+          0.5,
+          0.4
+        ],
+        "glove_contact_center": [
+          0.5,
+          0.4
+        ],
+        "left_hand": [
+          0.2742,
+          0.4
+        ],
+        "right_hand": [
+          0.725,
+          0.4
+        ],
+        "feet_center": [
+          0.5,
+          0.9119
+        ],
+        "left_foot": [
+          0.2664,
+          0.9053
+        ],
+        "right_foot": [
+          0.7562,
+          0.9072
+        ]
+      },
+      "anchor_note": "Contract glove contact center is (0.5, 0.4) on runtime canvas. Other anchors are visual approximations normalized from top-left. No ball baked in.",
+      "qa": "Front-facing open five-digit modern GK gloves, white padding, green trim, transparent background; no held ball. Entire silhouette inside canvas.",
+      "resize": {
+        "method": "LANCZOS uniform scale with transparent padding",
+        "scaled_size": [
+          200,
+          300
+        ],
+        "offset_pixels": [
+          28,
+          11
+        ],
+        "canvas": [
+          256,
+          320
+        ]
+      }
+    },
+    {
+      "name": "keeper_gloves",
+      "generator": "built-in image_gen",
+      "source_generated_path": "/workspace/generated_images/exec-015e27d5-3702-43ae-b974-7bb83e83894e.png",
+      "prompt": "Create a single game item sprite: one matching PAIR of modern soccer goalkeeper gloves only, left and right hands implied inside but no person or skin visible. Both gloves independently floating side by side, symmetric front view with open palms facing viewer, fingers spread naturally ready to catch, thumb of each glove on INNER side towards center gap. Wrists at bottom. Exactly five coherent padded digits per glove including thumb, articulated white latex finger pads and broad white palm cushions, lime-green trim along edges and finger tips, dark charcoal wrist closures with green rectangular fastening accents. Match a polished detailed fine-pixel chibi football game style: crisp dark outlines, carefully shaded white padding with clean separation of fingers, rich green detailing; soccer goalkeeper gloves, never baseball mitts or boxing gloves. No ball, no person, no arms, no text, no logo, no real branding, no shadows, no scene. Keep entire pair visible and centered in square canvas with generous transparent margins, each glove clearly separate with air gap between them. Output transparent RGBA background.",
+      "reference": null,
+      "full_resolution": {
+        "path": "assets/minigame-generated/keeper_gloves.png",
+        "sha256": "5276a501f39ae43df018bc6a408a2b75b1b700b12c7e9a16a9e3dcdf2c508ca1",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "bytes": 1401980,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          19,
+          1253,
+          1254
+        ],
+        "alpha_gt127_bbox": [
+          15,
+          188,
+          1239,
+          1039
+        ],
+        "transparent_pixels": 935367,
+        "nonzero_alpha_pixels": 637149
+      },
+      "anchor_note": "No runtime anchor; prototype only.",
+      "qa": "Front-facing open five-digit modern GK gloves, white padding, green trim, transparent background; no held ball. Entire silhouette inside canvas.",
+      "usage": "Full-resolution prototype only; excluded from runtime."
+    }
+  ]
+}

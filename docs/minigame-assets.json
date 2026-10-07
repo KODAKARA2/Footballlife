@@ -1,0 +1,136 @@
+{
+  "base_commit": "5b89761a184fdddf20c43d4be601f0c3f10f21ef",
+  "scope": "asset-only handoff branch; no JS/CSS integration, main merge, or deployment",
+  "assets": [
+    {
+      "name": "field_goal",
+      "path": "images/minigames/field_goal.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 495305,
+      "sha256": "44060bbfcd3f7f39fe62c339ca8bee20547f5c8af8ad6a8390966decb51c6118",
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "field_topdown",
+      "path": "images/minigames/field_topdown.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 516423,
+      "sha256": "288df406f8663a75e50be134b20f19f3930305cd2d131a2d14fad411ed727172",
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "tactics_background",
+      "path": "images/minigames/tactics_background.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 341485,
+      "sha256": "dc209b61cf0077182475755b7a9df11923b5b62e6d043032d792002e2a2e57cf",
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "player_run",
+      "path": "images/minigames/player_run.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 42391,
+      "sha256": "e0b1fdbb066b448ca914fcfbc33b1d917918c7b6d9d3d587a9be435ac47a07fb",
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "defender_ready",
+      "path": "images/minigames/defender_ready.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 55328,
+      "sha256": "99ba6db45a6d2ef1841213b0a370f8aa47a8edef0d6220e26b8a8f104d5ffed6",
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "player_receive",
+      "path": "images/minigames/player_receive.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 51713,
+      "sha256": "a6def1210df38a62708ff97400717dc985a3de4193127618acaf88c5ef9d07cd",
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "keeper_ready",
+      "path": "images/minigames/keeper_ready.png",
+      "size": [
+        256,
+        320
+      ],
+      "mode": "RGBA",
+      "bytes": 69883,
+      "sha256": "16b2225e3d95932d3e5b7c5ad2d4869b1fe23c15f683dc10547e93dd1d6f8471",
+      "anchor": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "name": "goal_net",
+      "path": "images/minigames/goal_net.png",
+      "size": [
+        512,
+        256
+      ],
+      "mode": "RGBA",
+      "bytes": 84432,
+      "sha256": "53fdb11881ac210d95b3163f1fba6a5bc926dfca27bf6a29d52fdee4527788b0",
+      "anchor": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "runtime_total_bytes": 1656960,
+  "native_vector_ball": "retain existing H.ball; raw raster prototype excluded",
+  "validation": "8 sizes/modes verified; 5 alpha sprites have transparent corners; SHA256 recorded",
+  "provenance": [
+    "minigame-backgrounds.json",
+    "minigame-players.json",
+    "minigame-keeper.json",
+    "minigame-props.json"
+  ],
+  "distribution": "Only 8 runtime PNGs and 6 handoff/provenance documents; generated originals and preview evidence retained locally."
+}
