@@ -37,7 +37,7 @@
       "safe_rendering": {
         "object_fit": "contain",
         "object_position": "50% 50%",
-        "wide_face_crop_object_position": "50% 20%"
+        "wide_face_crop_object_position": "50% 35%"
       }
     },
     {
@@ -77,7 +77,7 @@
       "safe_rendering": {
         "object_fit": "contain",
         "object_position": "50% 50%",
-        "wide_face_crop_object_position": "50% 20%"
+        "wide_face_crop_object_position": "50% 35%"
       }
     }
   ],
