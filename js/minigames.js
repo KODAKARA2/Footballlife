@@ -4,8 +4,40 @@
   var U = window.U, H = U._mini;
   function probability(level) { var M = GD.설정.미니게임 || {}; return [M.최저확률 || .05, .3, .7, M.최고확률 || .95][level]; }
   function grade(error, a, b, c) { return error <= a ? 3 : error <= b ? 2 : error <= c ? 1 : 0; }
+  // Presentation only: anchors stay on the existing rule elements. Failed
+  // downloads retain the original field/markers, and never delay the clock.
+  function decorate(m, stat) {
+    var field=m.querySelector('.football-field');field.dataset.drill=stat;
+    function image(parent, name, cls) {
+      var img=document.createElement('img');img.className='mg-art-image '+(cls||'');img.alt='';img.setAttribute('aria-hidden','true');img.draggable=false;img.decoding='async';
+      img.onload=function(){parent.classList.add('art-ready');};
+      img.onerror=function(){img.hidden=true;parent.classList.remove('art-ready');};
+      parent.appendChild(img);img.src='images/minigames/'+name+'.png';return img;
+    }
+    var backdrop=document.createElement('div');backdrop.className='mg-art-backdrop';field.prepend(backdrop);
+    image(backdrop,stat==='위치선정'?'tactics_background':stat==='슈팅'||stat==='선방'?'field_goal':'field_topdown');
+    function actor(el,name,cls){if(!el)return;var fallback=document.createElement('span');fallback.className='mg-art-fallback';while(el.firstChild)fallback.appendChild(el.firstChild);el.appendChild(fallback);image(el,name,'mg-sprite '+(cls||''));}
+    m.querySelectorAll('.football-goal').forEach(function(el){actor(el,'goal_net','goal-net-art');});
+    if(stat==='슈팅') {var shooter=document.createElement('div');shooter.className='football-shooter';shooter.setAttribute('aria-hidden','true');field.appendChild(shooter);image(shooter,'player_run','mg-sprite');}
+    if(stat==='선방') {
+      actor(m.querySelector('.keeper-gloves'),'keeper_ready','keeper-art');
+      m.querySelector('.keeper-target').innerHTML=H.ball;
+    }
+    if(stat==='수비') {
+      var opponent=m.querySelector('.defend-player');opponent.textContent='●';actor(opponent,'defender_ready');
+      var ball=document.createElement('i');ball.className='defend-ball';ball.innerHTML=H.ball;opponent.appendChild(ball);
+      var home=document.createElement('div');home.className='defend-home';home.setAttribute('aria-hidden','true');field.appendChild(home);image(home,'player_run','mg-sprite');
+    }
+    if(stat==='드리블') {
+      // The ball stays outside the fallback wrapper so a loaded athlete does not hide it.
+      var runner=m.querySelector('.dribble-runner'),ball=runner.querySelector('.runner-ball');ball.remove();actor(runner,'player_run');runner.appendChild(ball);
+      m.querySelectorAll('.dribble-defender').forEach(function(el){actor(el,'defender_ready');});
+    }
+    if(stat==='패스')actor(m.querySelector('.throw-target'),'player_receive');
+  }
   function session(title, help, field, stat, cb) {
     var m = H.open(title, help, field + '<div class="pf-time"><i></i></div>', 'football-field'), done = false, held = false, raf, timeout;
+    decorate(m,stat);
     m.setAttribute('role', 'dialog'); m.setAttribute('aria-modal', 'true'); m.setAttribute('aria-label', title);
     var start = performance.now();
     return {
@@ -36,7 +68,7 @@
   function praise(s,target,tx,ty) {
     if(document.hidden)return;
     var bubble=document.createElement('div');bubble.className='football-pass-praise';bubble.textContent='나이스 패스!';
-    bubble.style.left='clamp(70px, '+tx*100+'%, calc(100% - 70px))';bubble.style.top='calc('+ty*100+'% - 44px)';
+    bubble.style.left='clamp(70px, '+tx*100+'%, calc(100% - 70px))';bubble.style.top='calc('+ty*100+'% '+(ty<.35?'+ 46px':'- 62px')+')';
     target.parentNode.appendChild(bubble);
     function remove(){bubble.remove();watch.disconnect();window.removeEventListener('resize',remove);document.removeEventListener('visibilitychange',remove);}
     var watch=new MutationObserver(function(){if(!s.m.isConnected)remove();});watch.observe(document.body,{childList:true,subtree:true});
@@ -64,9 +96,10 @@
          [.477,.478],[.515,.441],[.566,.404],[.631,.363],[.696,.327],[.756,.290]];
       function target() {
         if(!success)return {x:.3+(.756-.291)*.4/.376,y:.06+(.290-.294)*.22/.147};
-        var inset = 12; // final 12.6px ball stays inside the post on narrow screens
-        return {x:(goal.offsetLeft + Math.max(inset, goal.offsetWidth * .0645)) / field.clientWidth,
-          y:(goal.offsetTop + Math.max(inset, goal.offsetHeight * .259)) / field.clientHeight};
+        // The natural 2:1 canvas has padding; aim inside its 3.4:1 mouth.
+        // This point also lies inside the original rectangle if artwork fails.
+        return {x:(goal.offsetLeft + goal.clientLeft + goal.clientWidth*.075 + 8) / field.clientWidth,
+          y:(goal.offsetTop + goal.clientTop + goal.clientWidth*.5*.305 + 8) / field.clientHeight};
       }
       var aim = target(), mappedStartX = success?.3+(.813-.277)*.4/.403:.3+(.732-.291)*.4/.376;
       var points = samples.map(function (p, i) {
@@ -145,7 +178,7 @@
   };
   // Goalkeeper tracks the shot landing point with a moving pair of gloves.
   U.miniPitch = function (cb) {
-    var s = session('🧤 골키퍼 선방', '움직이는 <b>파란 장갑</b>이 공과 겹칠 때 눌러 잡으세요.', '<div class="football-goal large"></div><div class="keeper-target">⚽</div><div class="keeper-gloves">🧤</div>', '선방', cb);
+    var s = session('🧤 골키퍼 선방', '골키퍼의 <b>파란 포구 표식</b>이 공과 겹칠 때 눌러 잡으세요.', '<div class="football-goal large"></div><div class="keeper-target">⚽</div><div class="keeper-gloves">🧤</div>', '선방', cb);
     var tx = .25 + Math.random() * .5, ty = .25 + Math.random() * .35, phase = Math.random()*6.28;
     var target = s.m.querySelector('.keeper-target'), gloves = s.m.querySelector('.keeper-gloves'); target.style.left = tx*100+'%'; target.style.top = ty*100+'%';
     function pos(now) { var t=(now-s.start)/1000; return {x:.5+.35*Math.sin(t*2.2+phase),y:.45+.24*Math.sin(t*3+phase)}; }
@@ -227,7 +260,7 @@
   };
   U.extraPracticeGames=function(){var levels='최고 95% · 좋음 70% · 보통 30% · 실패 5%';return {
     bat:{title:'슈팅',icon:'⚽',play:U.miniBat,help:'공이 노란 슈팅 선에 닿는 순간 누르세요.',levels:levels},
-    pitch:{title:'골키퍼',icon:'🧤',play:U.miniPitch,help:'파란 장갑이 공과 겹칠 때 눌러 선방하세요.',levels:levels},
+    pitch:{title:'골키퍼',icon:'🧤',play:U.miniPitch,help:'골키퍼의 파란 포구 표식이 공과 겹칠 때 눌러 선방하세요.',levels:levels},
     timer:{title:'수비',icon:'🛡',play:U.miniTimer,help:'상대가 노란 태클 구역에 들어오면 누르세요. 이른 태클은 파울입니다.',levels:levels},
     steal:{title:'돌파',icon:'⚡',play:U.miniSteal,help:'압박에는 기다리고 공간 열림 신호에 빠르게 누르세요.',levels:levels},
     throw:{title:'패스',icon:'🎯',play:U.miniThrow,help:'동료 위치에 맞춰 가로와 세로 방향을 차례로 멈추세요.',levels:levels},
