@@ -8,12 +8,12 @@ const out=process.argv[2]||fs.mkdtempSync(path.join(os.tmpdir(),'football-mini-'
  const start=async name=>page.evaluate(name=>{window.results=[];Math.random=()=>.5;window.cancelMini=U[name](r=>results.push(r));},name);
  const tap=async()=>page.evaluate(()=>{const e=new PointerEvent('pointerdown',{bubbles:true,button:0,isPrimary:true,pointerType:'touch'});Object.defineProperty(e,'timeStamp',{value:performance.now()});document.querySelector('.mg').dispatchEvent(e);});
  const result=async(p,stat)=>{await page.clock.runFor(1200);const rs=await page.evaluate(()=>results);assert.equal(rs.length,1);assert.equal(rs[0].확률,p);if(stat)assert.equal(rs[0].능력,stat);assert.equal(await page.locator('.mg-wrap').count(),0);};
- for(const [offset,p] of [[0,.95],[100,.7],[220,.3],[400,.05]]){await start('miniBat');await page.clock.runFor(2100+offset);await tap();await tap();await result(p,'슈팅');}
+ for(const [offset,p] of [[0,.95],[100,.7],[220,.3],[400,.05]]){await start('miniBat');await page.clock.runFor(2100+offset);await tap();await tap();await page.clock.runFor(650);await result(p,'슈팅');}
  await start('miniPitch');await page.keyboard.press('Space');await result(.95,'선방');
  for(const [offset,p] of [[0,.95],[180,.7],[350,.3],[650,.05]]){await start('miniTimer');await page.clock.runFor(2030+offset);await page.keyboard.press('Space');await result(p,'수비');}
- await start('miniSteal');await page.clock.runFor(800);assert.match(await page.locator('.steal-signal').innerText(),/압박/);await tap();await result(.05);
- for(const [reaction,p] of [[100,.95],[250,.7],[420,.3],[650,.05]]){await start('miniSteal');await page.clock.runFor(2450+reaction);await tap();await tap();await result(p,'드리블');}
- await start('miniThrow');await tap();await tap();assert.match(await page.locator('.mg-pitch').innerText(),/2 \/ 2/);assert.equal(await page.evaluate(()=>results.length),0);await page.clock.runFor(1000);await tap();await result(.95,'패스');
+ await start('miniSteal');await page.clock.runFor(800);assert.match(await page.locator('.steal-signal').innerText(),/압박/);await tap();await page.clock.runFor(650);await result(.05);
+ for(const [reaction,p] of [[100,.95],[250,.7],[420,.3],[650,.05]]){await start('miniSteal');await page.clock.runFor(2450+reaction);await tap();await tap();await page.clock.runFor(650);await result(p,'드리블');}
+ await start('miniThrow');await tap();await tap();assert.match(await page.locator('.mg-pitch').innerText(),/2 \/ 2/);assert.equal(await page.evaluate(()=>results.length),0);await page.clock.runFor(1000);await tap();await page.clock.runFor(450);await result(.95,'패스');
  for(let correct=0;correct<=3;correct++) {await start('miniSigns');await page.keyboard.press('2');assert.equal(await page.locator('[data-sign]:disabled').count(),3);await page.clock.runFor(2450);for(let n=0;n<3;n++){if(n===0)await page.locator(`[data-sign="${n<correct?1:0}"]`).tap();else await page.keyboard.press(n<correct?'2':'1');await page.clock.runFor(200);}await result([.05,.3,.7,.95][correct],'위치선정');}
  for(const name of ['miniBat','miniPitch','miniTimer','miniSteal','miniThrow','miniSigns']){
   await start(name);await page.clock.runFor(14000);assert.equal(await page.evaluate(()=>results.length),1,'timeout '+name);
