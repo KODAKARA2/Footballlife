@@ -173,6 +173,26 @@
     return check(c.조건);
   }
 
+  E.overseasLeague = function (id) { return GD.해외리그.리그.find(function (l) { return l.아이디 === id; }); };
+  E.leagueForTeam = function (team) {
+    var league = GD.해외리그.리그.find(function (l) { return l.팀.indexOf(team) >= 0; });
+    return league ? league.아이디 : "legacy";
+  };
+  E.leagueName = function (id) { var l = E.overseasLeague(id); return l ? l.이름 : id === "legacy" ? "레거시 해외 경력" : "해외리그"; };
+  E.overseasTeams = function () {
+    var l = E.overseasLeague(S.해외리그아이디);
+    return l ? l.팀 : GD.해외리그.레거시팀;
+  };
+  // v2 축구 저장만 확장. 기존 팀/연봉/나이/기록을 재배정하거나 초기화하지 않습니다.
+  E.migrateLeagues = function (s) {
+    if (s.리그저장버전 === 1) return;
+    var team = s.시기 === "해외리그" ? s.팀 : s.해외팀;
+    if (team) s.해외리그아이디 = E.leagueForTeam(team);
+    (s.기록 || []).forEach(function (line) { if (line.해외 && !line.리그아이디) line.리그아이디 = E.leagueForTeam(line.팀); });
+    if (s.계약 && (s.시기 === "해외리그" || GD.해외리그.팀.concat(GD.해외리그.레거시팀).indexOf(s.계약.팀) >= 0)) s.계약.리그아이디 = E.leagueForTeam(s.계약.팀);
+    s.리그저장버전 = 1;
+  };
+
   // ---------------- 글자 바꾸기 ({이름} 등 + 조사) ----------------
   var JOSA = { 은: ["은", "는"], 는: ["은", "는"], 이: ["이", "가"], 가: ["이", "가"], 을: ["을", "를"], 를: ["을", "를"], 과: ["과", "와"], 와: ["과", "와"], 아: ["아", "야"], 야: ["아", "야"] };
   function batchim(w) { var c = (w || "").charCodeAt(w.length - 1); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 !== 0; }
@@ -183,7 +203,8 @@
       이름: S.이름, 라이벌: S.라이벌이름 || (GD.조연.rival || {}).이름 || "라이벌", 아버지: S.아버지 || "아버지", 히로인: h ? h.이름 : (S.직전히로인 || "그녀"), 상대: h2 ? h2.이름 : "그 사람", 새포지션: S._새포지션 || "",
       팀: S.팀 || S.제안팀 || cfg().국내팀[0], 학교: cfg().학교[schoolKey()], 대학: cfg().학교.대학,
       나이: S.나이 + "", 연도: String(cfg().시작연도 + S.나이 - 10), 포지션: S.포지션, 특기: S.특기,
-      리그: S.시기 === "대학" ? L.대학 : S.시기 === "해외리그" ? L.해외 : L.국내,
+      리그: S.시기 === "대학" ? L.대학 : S.시기 === "해외리그" ? E.leagueName(S.해외리그아이디) : L.국내,
+      해외리그: E.leagueName(S.해외리그아이디),
       해외팀: S.시기 === "해외리그" ? S.팀 : (S.해외팀 || "해외리그 팀"), 국내팀: S.국내팀 || S.팀 || cfg().국내팀[0]
     };
   }
@@ -255,7 +276,7 @@
   function addAward(n, year) { S.수상.push({ 이름: n, 연도: year || (cfg().시작연도 + S.나이 - 10) }); }
   function randomTeam(list, not) { var l = list.filter(function (t) { return t !== not; }); return pick(l.length ? l : list); }
   function changeTeam() {
-    if (S.시기 === "해외리그") S.팀 = randomTeam(GD.해외리그.팀, S.팀);
+    if (S.시기 === "해외리그") { S.팀 = randomTeam(E.overseasTeams(), S.팀); S.해외팀 = S.팀; }
     else { S.팀 = randomTeam(cfg().국내팀, S.팀); }
     S.팀이동++;
     if (E.signContract) E.signContract(3);

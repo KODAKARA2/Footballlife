@@ -17,7 +17,7 @@
     I.buildCards();
     var C = cfg().시작능력치;
     var s = {
-      버전: 2, 게임: "football-life", 이름: name, 포지션: posName, 특기: specName, 능력치: {}, 행복도: C.행복도, 성적: 0, 부상: 0, 슬럼프: 0,
+      버전: 2, 리그저장버전: 1, 게임: "football-life", 이름: name, 포지션: posName, 특기: specName, 능력치: {}, 행복도: C.행복도, 성적: 0, 부상: 0, 슬럼프: 0,
       시기: null, 시기턴: 0, 진입나이: 10, 나이: 10, 은퇴나이: null, 연차: 0, 올해카드: 0, 올해부상카드: 0,
       팀: null, 원래팀: null, 국내팀: null, 제안팀: null, 해외팀: null, 팀이동: 0, 일군: false, 입단심사: null,
       플래그: {}, 본카드: {}, 총턴: 0, 히로인: null, 알아가는인연: [], 지난히로인: [], 만난히로인: [], 자녀: 0,
@@ -50,7 +50,8 @@
   };
 
   // ---------------- 시기 이동 ----------------
-  function enterStage(name) {
+  function enterStage(name, leagueId) {
+    if (name === "해외리그" && !E.overseasLeague(leagueId)) throw new Error("해외 진출에는 리그 선택이 필요합니다");
     var s = S(), prev = s.시기, pd = sdef(prev);
     var sameSeason = I.YEARLY[prev] && I.YEARLY[name], playedCards = s.올해카드, injuredCards = s.올해부상카드;
     if (prev) {
@@ -89,7 +90,8 @@
     if (name === "프로" && E.signContract) E.signContract(prev === "군복무" ? 2 : 3);
     if (name === "해외리그") {
       delete s.플래그.육성선수;
-      s.국내팀 = s.팀; s.팀이동++; s.팀 = I.pick(GD.해외리그.팀); s.해외팀 = s.팀;
+      s.해외리그아이디 = leagueId;
+      s.국내팀 = s.팀; s.팀이동++; s.팀 = I.pick(E.overseasTeams()); s.해외팀 = s.팀;
       s.능력치.적응 = Math.max(s.능력치.적응, GD.해외리그.시작적응 || 10);
       if (E.signContract) E.signContract(3);
     }
@@ -182,6 +184,7 @@
 
   E.next = function () {
     var s = S();
+    if (s.리그선택대기) return;
     if (s.엔딩) { s.단계 = "엔딩"; E.save(); return; }
     var c = I.clone(s.자유시간 ? E.freeTimeCard() : drawCard());
     if (c.레어 && E.noteRare) E.noteRare(c.제목);
@@ -195,10 +198,24 @@
   };
 
   // ---------------- 선택 ----------------
-  E.choose = function (i, mg) {
+  E.choose = function (i, mg, leagueId) {
     if (S().단계 !== "카드" || !S().현재카드 || S().현재옵션[i] == null) return S().결과;
     if (S().현재카드.자유행동) return E.chooseFreeTime(i);
-    var s = S(), card = s.현재카드, o = card.선택지[s.현재옵션[i]];
+    var s = S(), departureAge = s.나이, card = s.현재카드, o = card.선택지[s.현재옵션[i]];
+    if (card.리그선택 && s.리그선택대기) {
+      var pending = s.리그선택대기;
+      if (!o.취소 && !E.overseasLeague(o.리그아이디)) return null;
+      s.현재카드 = pending.카드; s.현재옵션 = pending.옵션; delete s.리그선택대기;
+      if (o.취소) { E.save(); return null; }
+      return E.choose(pending.선택, pending.미니게임, o.리그아이디);
+    }
+    if (o.이동 === "해외리그" && !E.overseasLeague(leagueId)) {
+      s.리그선택대기 = { 카드: card, 옵션: s.현재옵션, 선택: i, 미니게임: mg || null };
+      s.현재카드 = { 시스템: true, 리그선택: true, 제목: "도전할 리그 선택", 그림: "agent",
+        내용: "세 리그는 같은 성장·보상 규칙을 사용합니다. 선택한 리그의 가상 5개 구단 중 한 곳과 계약합니다.\n리그를 누르면 해외 진출이 확정됩니다.",
+        선택지: GD.해외리그.리그.map(function (l) { return { 글: l.이름 + " · " + l.나라 + " · 가상 5팀", 리그아이디: l.아이디 }; }).concat([{ 글: "취소 · 제안으로 돌아가기", 취소: true }]) };
+      s.현재옵션 = [0, 1, 2, 3]; E.save(); return null;
+    }
     var res = { 효과: {}, 결과: o.결과 || "", 그림: o.그림변경 || null, 알림: [] };
     var out = o;
     if (o.비용) { s.돈 = Math.max(0, (s.돈 || 0) - o.비용); res.효과.돈 = -o.비용; }
@@ -219,7 +236,7 @@
     arr(out.플래그해제).forEach(function (f) { delete s.플래그[f]; });
     if (out.일군 != null) { s.일군 = out.일군; if (!out.일군) s._강등턴 = s.총턴; }
     if (out.자녀) s.자녀 += out.자녀;
-    if (out.기록) s.순간.push({ 나이: s.나이, 글: E.tpl(out.기록) });
+    if (out.기록 && out.이동 !== "해외리그") s.순간.push({ 나이: s.나이, 글: E.tpl(out.기록) });
     if (out.수상) I.addAward(out.수상);
     if (out.팀이동) I.changeTeam();
     if (out.인연시작 && card._만남) { I.attachHeroine(card._만남); res.알림.push("🌱 " + E.heroDef().이름 + "와(과) 알아가는 중 · 대화를 쌓으면 고백할 수 있습니다"); }
@@ -262,8 +279,9 @@
       if (!card.시스템 && I.YEARLY[s.시기] && I.YEARLY[out.이동]) {
         s.올해카드++; if (s.올해카드 >= sdef(s.시기).한해카드수) E.endYear();
       }
-      enterStage(out.이동);
-      if (out.계약년수 && E.signContract && I.YEARLY[s.시기]) E.signContract(out.계약년수);
+      enterStage(out.이동, leagueId);
+      if (out.이동 === "해외리그" && out.기록) s.순간.push({ 나이: departureAge, 글: E.tpl(out.기록) + " · " + E.leagueName(s.해외리그아이디) + " · " + s.팀 });
+      if (out.계약년수 && out.이동 !== "해외리그" && E.signContract && I.YEARLY[s.시기]) E.signContract(out.계약년수);
     }
     else if (!card.시스템) {
       var sd = sdef(s.시기);

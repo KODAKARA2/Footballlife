@@ -108,7 +108,7 @@ fs.mkdirSync(out, { recursive: true });
     for (const pos of ["골키퍼", "수비수"]) {
       await page.evaluate(pos => {
         E.newGame("테스트선수", pos, pos === "골키퍼" ? "빌드업" : "대인 수비");
-        E.enterStage("해외리그"); E._internal.attachHeroine("heroine6");
+        E.enterStage("해외리그", "epl"); E._internal.attachHeroine("heroine6");
         const s = E.state(); s.나이 = 29; s.히로인.관계 = "연인"; s.히로인.애정도 = 70;
         s.현재카드 = E._internal.CARDS().find(c => c.제목 === "그녀의 생일"); s.단계 = "카드"; s.결과 = null;
         E.refreshOptions(); U.showGame();

@@ -59,6 +59,7 @@ for (let g = 0; g < count; g++) {
       option = abroad;
     }
     E.choose(option);
+    if (s.리그선택대기) E.choose(g % 3);
     if (abroad >= 0) assert.equal(s.시기, '해외리그');
     observe(); E.next();
   }

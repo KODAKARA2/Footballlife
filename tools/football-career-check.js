@@ -51,7 +51,7 @@ for(const role of ['공격수','미드필더','수비수','골키퍼']) {
  E.enterStage('대학');E.enterStage('대학입단');assert.equal(s.나이,23);assert.equal(s.입단심사,'상위');
  E.enterStage('프로');s.일군=true;E.endYear();const domestic=s.기록.at(-1);assert.ok(domestic.가치>0,`${role} must succeed without goals`);assert.ok(s.계약.연봉>0);
  s.올해부상카드=GD.설정.시기.프로.한해카드수;E.endYear();assert.equal(s.기록.at(-1).출전,0,'full year injury availability');
- const transfersBefore=s.팀이동;E.enterStage('해외리그');assert.equal(s.팀이동,transfersBefore+1);s.플래그.해외주전=true;E.endYear();assert.ok(s.기록.at(-1).해외);assert.ok(GD.해외리그.팀.includes(s.계약.팀));
+ const transfersBefore=s.팀이동;E.enterStage('해외리그', 'epl');assert.equal(s.팀이동,transfersBefore+1);s.플래그.해외주전=true;E.endYear();assert.ok(s.기록.at(-1).해외);assert.ok(GD.해외리그.팀.includes(s.계약.팀));
  const foreign=GD.히로인.find(h=>h.외국인);E._internal.attachHeroine(foreign.아이디);s.히로인.관계='연인';E.enterStage('프로');assert.equal(s.팀이동,transfersBefore+2);assert.ok(s.플래그.외국인작별);assert.ok(GD.설정.국내팀.includes(s.팀));
  E.enterStage('은퇴');let steps=0;while(s.단계!=='엔딩'&&steps++<80){E.next();if(s.단계==='카드')E.choose(0);}assert.equal(s.단계,'엔딩');
  const parent={아버지:s.이름,외모:s.외모,돈:s.돈,세대:1};s=E.newGame('2세완주',role,spec.이름,{이어하기:parent});

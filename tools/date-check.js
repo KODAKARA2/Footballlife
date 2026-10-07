@@ -24,7 +24,7 @@ function setup(title, pos = "수비수") {
   E.newGame("데이트검증", pos, pos === "수비수" ? "대인 수비" : "빌드업");
   const source = added.find(c => c.제목 === title);
   const stage = source.시기 === "해외리그" ? "해외리그" : "프로";
-  E.enterStage(stage);
+  E.enterStage(stage, stage === '해외리그' ? 'epl' : undefined);
   I.attachHeroine(source.히로인 === "누구나" ? "heroine1" : source.히로인);
   const s = E.state();
   s.나이 = 26; s.히로인.애정도 = 40;

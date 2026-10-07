@@ -149,7 +149,7 @@
   U.renderTop = function () {
     var s = E.state(), sd = I.sdef(s.시기), yr = GD.설정.시작연도 + s.나이 - 10;
     $("#top").innerHTML = '<div class="stage">' + (sd.아이콘 || "⚽") + " <b>" + esc(s.시기) + "</b> · " + s.나이 + "세 · " + yr + "년" +
-      (s.팀 && (s.시기 === "프로" || s.시기 === "해외리그" || s.시기 === "군복무") ? '<small>' + esc(s.팀) + (s.시기 === "프로" ? (s.일군 ? " · 1군 선수단" : " · 리저브") : s.플래그.리저브 ? " · 리저브" : "") + "</small>" : "") +
+      (s.팀 && (s.시기 === "프로" || s.시기 === "해외리그" || s.시기 === "군복무") ? '<small>' + esc(s.팀) + (s.시기 === "해외리그" ? " · " + esc(E.leagueName(s.해외리그아이디)) : "") + (s.시기 === "프로" ? (s.일군 ? " · 1군 선수단" : " · 리저브") : s.플래그.리저브 ? " · 리저브" : "") + "</small>" : "") +
       '</div><button class="menu" onclick="U.openMenu()" aria-label="메뉴">☰</button>';
     var guide = (GD.설정.시기안내 || {})[s.시기] || "기록과 마음을 함께 돌보세요.";
     var count = sd.카드수 ? "여정 " + Math.min(s.시기턴 + 1, sd.카드수) + " / " + sd.카드수 : "시즌마다 새로운 선택";
@@ -385,6 +385,7 @@
     if (busy) return; busy = true;
     var before = E.state().히로인 && E.state().히로인.아이디;
     var r = E.choose(i, mg);
+    if (!r && E.state().단계 === "카드") { U.renderAll(); Feedback.later($("#app"), function () { busy = false; }, 350); return; }
     var after = E.state().히로인 && E.state().히로인.아이디;
     var card = $("#card"); card.querySelector(".back").innerHTML = U.resultHTML(r);
     card.classList.remove("deal"); card.classList.add("flipped");

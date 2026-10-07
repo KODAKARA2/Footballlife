@@ -18,7 +18,8 @@ for(const pos of GD.포지션) for(const card of cards) for(let index=0;index<ca
   if(card._만남){s.히로인=null;s.히로인2=null;s.만난히로인=[];}
   s.새인연={아이디:card._끼어들기||'heroine2',기존인연:hero,등장턴:0};s._상대=card._끼어들기;s._새포지션=(pos.변경후보||[])[0];
   s.현재카드=card;s.현재옵션=[index];s.단계='카드';s.결과=null;
-  const result=E.choose(0,outcome===null?null:{확률:outcome?1:0,능력:'위치선정'});
+  let result=E.choose(0,outcome===null?null:{확률:outcome?1:0,능력:'위치선정'});
+  if(s.리그선택대기) result=E.choose(0);
   assert.ok(result);if(outcome!==null){assert.equal(result.성공,outcome);branches++;}
   for(const [k,v] of Object.entries(s.능력치))assert.ok(Number.isFinite(v)&&v>=0&&v<=100,k);
   assert.ok(Number.isFinite(s.돈)&&s.돈>=0);assert.ok(s.나이>=30);

@@ -18,7 +18,7 @@
       '<button onclick="Feedback.settings()">소리·움직임 설정</button>' +
       '<button onclick="U.closeModals();U.openHero()">🧢 내 인생 카드 · 능력치</button>' +
       '<button onclick="U.closeModals();U.openHeroine()">💗 히로인 카드 · 애정도</button>' +
-      '<button onclick="U.closeModals();U.openCareer()">📊 커리어 기록</button>' +
+      '<button onclick="U.closeModals();U.openRecords()">📊 커리어 기록</button>' +
       '<button onclick="U.closeModals();U.openShop()">💰 지갑 · 상점</button>' +
       '<button onclick="U.closeModals();U.openCollection()">📖 엔딩 도감 · 업적</button>' +
       '<button onclick="U.closeModals();U.openPractice()">⚽ 미니게임 연습장</button>' +
@@ -109,7 +109,7 @@
   function seasonsHTML() {
     var r = E.state().기록; if (!r.length) return "";
     return '<details><summary>시즌별 기록 (' + r.length + ')</summary><ul class="seasons">' + r.map(function (L) {
-      return "<li><b>" + L.연도 + "</b> " + esc(L.팀) + "<br><small>" + esc(E.fmtLine(L)) + "</small></li>";
+      return "<li><b>" + L.연도 + "</b> " + esc(L.팀) + (L.해외 ? " · " + esc(E.leagueName(L.리그아이디)) : "") + "<br><small>" + esc(E.fmtLine(L)) + "</small></li>";
     }).join("") + "</ul></details>";
   }
 
@@ -133,9 +133,9 @@
     };
   };
 
-  U.openCareer = function () {
+  U.openRecords = function () {
     var s0 = E.state();
-    modal("<h2>📊 커리어</h2><p class=\"kv\">💰 가진 돈 " + E.money(s0.돈) + " · 통산 수입 " + E.money(s0.총수입) + "</p><h3>통산 기록</h3>" + totalsHTML() + "<h3>수상</h3>" + awardsHTML() + "<h3>결정적 순간들</h3>" + momentsHTML(30) + seasonsHTML());
+    modal("<h2>📊 커리어</h2><p class=\"kv\">💰 가진 돈 " + E.money(s0.돈) + " · 통산 수입 " + E.money(s0.총수입) + "</p>" + (s0.계약 ? "<p>계약: " + esc(s0.계약.팀) + (s0.계약.리그아이디 ? " · " + esc(E.leagueName(s0.계약.리그아이디)) : "") + " · 연봉 " + E.money(s0.계약.연봉) + " · " + s0.계약.만료나이 + "세 만료</p>" : "") + "<h3>통산 기록</h3>" + totalsHTML() + "<h3>수상</h3>" + awardsHTML() + "<h3>결정적 순간들</h3>" + momentsHTML(30) + seasonsHTML());
   };
 
   // ---------------- 은퇴 · 엔딩 ----------------

@@ -21,7 +21,7 @@
     if (!starter || s.플래그.육성선수) return null;
     var available = clamp(1 - s.올해부상카드 / (sdef(s.시기).한해카드수 || 2), 0, 1);
     var games = Math.round(clamp((starter ? 25 : 8) + (q - 50) * 0.25 + rnd() * 4, 0, 38) * available);
-    var L = { 연도: year(), 나이: s.나이, 팀: s.팀, 포지션: s.포지션, 해외: s.시기 === "해외리그", 경기력: Math.round(q), 출전: games,
+    var L = { 연도: year(), 나이: s.나이, 팀: s.팀, 리그아이디: s.시기 === "해외리그" ? s.해외리그아이디 : null, 포지션: s.포지션, 해외: s.시기 === "해외리그", 경기력: Math.round(q), 출전: games,
       출전시간: games * Math.round(starter ? 65 + A.체력 * 0.25 : 20 + A.체력 * 0.35), 득점: 0, 도움: 0, 클린시트: 0, 선방: 0, 태클: 0 };
     var attack = s.포지션 === "공격수" ? 1 : s.포지션 === "미드필더" ? 0.45 : s.포지션 === "수비수" ? 0.12 : 0;
     var creator = s.포지션 === "미드필더" ? 1 : s.포지션 === "공격수" ? 0.65 : s.포지션 === "수비수" ? 0.35 : 0.04;
@@ -66,7 +66,7 @@
     years = clamp(Math.round(years || 3), 1, 5);
     var pay = overseas ? M.해외기본 + Math.max(0, E.avg() - 60) * M.해외경기력당 : M.일군기본 + Math.max(0, E.avg() - 50) * M.경기력당;
     if (!overseas && s.플래그.육성선수) pay = M.이군;
-    s.계약 = { 팀: s.팀, 시작나이: s.나이, 만료나이: s.나이 + years, 년수: years, 연봉: Math.round(pay) };
+    s.계약 = { 팀: s.팀, 리그아이디: overseas ? s.해외리그아이디 : null, 시작나이: s.나이, 만료나이: s.나이 + years, 년수: years, 연봉: Math.round(pay) };
     delete s.플래그.계약만료;
     return s.계약;
   };
@@ -121,22 +121,22 @@
     if (L) {
       s.기록.push(L); s.성적 += E.looksGain(L.가치, "성적행복");
       var got = awards(L);
-      var lines = [s.팀 + " · " + (L.해외 ? "해외리그" : "1군"), fmtLine(L), "💰 연봉 " + E.money(salary(L))];
+      var lines = [s.팀 + " · " + (L.해외 ? E.leagueName(L.리그아이디) : "1군"), fmtLine(L), "💰 연봉 " + E.money(salary(L))];
       if (got.length) lines.push("🏅 " + got.join(", "));
       s.대기열.unshift({ 시스템: true, 제목: L.연도 + " 시즌 결산", 내용: lines.join("\n"), 그림: got.length ? "hero_victory" : null,
         선택지: [{ 글: "다음 시즌으로" }] });
     }
     if (!L) {
       var reservePay = salary(null);
-      if (s.시기 === "프로" || s.시기 === "해외리그") s.대기열.unshift({ 시스템: true, 제목: year() + " 리저브 시즌 결산", 내용: s.팀 + " · 리저브에서 성장한 시즌\n1군 공식 기록은 없습니다.\n💰 계약 연봉 " + E.money(reservePay), 선택지: [{ 글: "다음 시즌 준비" }] });
+      if (s.시기 === "프로" || s.시기 === "해외리그") s.대기열.unshift({ 시스템: true, 제목: year() + " 리저브 시즌 결산", 내용: s.팀 + (s.시기 === "해외리그" ? " · " + E.leagueName(s.해외리그아이디) : "") + " · 리저브에서 성장한 시즌\n1군 공식 기록은 없습니다.\n💰 계약 연봉 " + E.money(reservePay), 선택지: [{ 글: "다음 시즌 준비" }] });
     }
     if (s.시기 === "프로") s.연차++;
     s.나이++;
     if (s.계약 && s.나이 >= s.계약.만료나이) {
       s.플래그.계약만료 = true;
-      if (s.시기 === "해외리그") s.대기열.push({ 시스템: true, 계약갱신: true, 제목: "계약 갱신 협상", 내용: "계약 기간이 끝났습니다. 새 계약을 맺거나 다른 구단과 협상할 수 있습니다.", 선택지: [
+      if (s.시기 === "해외리그") s.대기열.push({ 시스템: true, 계약갱신: true, 제목: "계약 갱신 협상", 내용: E.leagueName(s.해외리그아이디) + " · " + s.팀 + "\n계약 기간이 끝났습니다. 새 계약을 맺거나 다른 구단과 협상할 수 있습니다.", 선택지: [
         { 글: "현 소속팀과 3년 재계약", 계약년수: 3 },
-        { 글: "자유계약으로 새 팀 선택", 팀이동: true, 계약년수: 2 }
+        { 글: "같은 리그의 다른 구단과 계약", 팀이동: true, 계약년수: 2 }
       ] });
     }
     s.올해카드 = 0; s.올해부상카드 = 0;
@@ -186,6 +186,7 @@
         if (s.히로인.만남턴 == null) s.히로인.만남턴 = s.총턴;
         if (s.히로인.교류횟수 == null) s.히로인.교류횟수 = 0;
       }
+      E.migrateLeagues(s);
       I.buildCards(); I.S = s;
       E.initFreeTime();
       // 이전 저장의 고백·커플 카드나 즉시 교제 선택지를 그대로 실행하지 않도록 갱신합니다.

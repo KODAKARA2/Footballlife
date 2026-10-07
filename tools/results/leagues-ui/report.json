@@ -1,0 +1,74 @@
+[
+  {
+    "width": 320,
+    "entry": "football-mlb_cards-001",
+    "league": "epl",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 320,
+    "entry": "football-mlb_cards-002",
+    "league": "laliga",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 320,
+    "entry": "football-pro_events-001",
+    "league": "bundesliga",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 390,
+    "entry": "football-mlb_cards-001",
+    "league": "epl",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 390,
+    "entry": "football-mlb_cards-002",
+    "league": "laliga",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 390,
+    "entry": "football-pro_events-001",
+    "league": "bundesliga",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 1280,
+    "entry": "football-mlb_cards-001",
+    "league": "epl",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 1280,
+    "entry": "football-mlb_cards-002",
+    "league": "laliga",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  },
+  {
+    "width": 1280,
+    "entry": "football-pro_events-001",
+    "league": "bundesliga",
+    "cancel": true,
+    "reload": true,
+    "rapidInput": true
+  }
+]
