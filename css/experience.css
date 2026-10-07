@@ -221,7 +221,9 @@ button.mini { padding: 0; background: transparent; color: inherit; text-align: l
 .football-goal{position:absolute;left:30%;top:6%;width:40%;height:22%;border:4px solid white;background:repeating-linear-gradient(90deg,transparent 0 15px,#ffffff44 16px 17px);text-align:center;color:#fff;font-size:12px}
 .football-goal.large{left:12%;top:14%;width:76%;height:62%}
 .football-contact{position:absolute;left:75%;top:50%;height:40%;border-left:3px dashed #ffdc60;color:#ffed99;font-size:12px;padding-left:5px}
-.football-ball{position:absolute;width:30px;height:30px;transform:translate(-50%,-50%);transition:top .25s}
+.football-ball{position:absolute;width:30px;height:30px;aspect-ratio:1;transform:translate(-50%,-50%);transition:top .25s}
+.football-ball-spin{display:block;width:100%;height:100%;transform-origin:50% 50%}
+.football-ball svg{display:block;width:100%;height:100%;aspect-ratio:1;overflow:visible}
 .football-status{position:absolute;bottom:20px;width:100%;text-align:center;color:#fff;font-size:13px}
 .keeper-target,.keeper-gloves{position:absolute;transform:translate(-50%,-50%);font-size:28px;line-height:1.2}
 .keeper-gloves{background:#137bcf99;border:2px solid #83caff;border-radius:50%;padding:5px}
@@ -249,3 +251,9 @@ html[data-reduced-motion=true] .football-goal-cutin .crowd{rotate:none}
 .football-pass-praise{position:absolute;transform:translateX(-50%);border-radius:12px;background:#fff8dc;color:#143c2c;border:2px solid #16432d;padding:6px 10px;font-weight:900;font-size:15px;white-space:nowrap;pointer-events:none;z-index:3;animation:goal-cutin-in 160ms ease-out both}
 
 .football-miss-cutin strong{font-size:clamp(18px,5.5vw,26px);color:#fff2d8}
+
+.coach-tactics-cutin{position:absolute;inset:26px 12px 30px;display:grid;grid-template-columns:44% 1fr;align-items:center;gap:10px;padding:12px;background:#fff8e9;color:#18382c;border:2px solid #e4cc89;border-radius:16px;pointer-events:none;z-index:3;animation:goal-cutin-in 160ms ease-out both}
+.coach-tactics-cutin img{display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 35%;border-radius:12px;background:#d8e4d3}
+.coach-tactics-cutin strong{font-size:clamp(17px,4.5vw,22px);line-height:1.4;word-break:keep-all}
+.coach-tactics-cutin p{font-size:14px;line-height:1.5;margin:8px 0 0}
+.tactics-resolved .sign-display,.tactics-resolved .sign-progress,.tactics-resolved .sign-answers,.tactics-resolved .sign-slots{visibility:hidden}
