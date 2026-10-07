@@ -1,0 +1,20 @@
+{
+  "name": "football-life",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Football card career game with static GitHub Pages publishing",
+  "scripts": {
+    "test": "node tools/run-tests.js",
+    "test:engine": "node tools/run-tests.js engine",
+    "test:browser": "node tools/run-tests.js browser",
+    "test:sim": "node tools/football-career-check.js 1000",
+    "start": "python3 -m http.server 8173 --bind 127.0.0.1",
+    "build": "node tools/build-pages.js"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

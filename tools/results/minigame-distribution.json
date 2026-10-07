@@ -1,0 +1,40 @@
+{
+  "공격수": {
+    "draws": 200,
+    "counts": {
+      "miniBat": 89,
+      "miniSteal": 60,
+      "miniThrow": 26,
+      "miniSigns": 25
+    },
+    "maxConsecutive": 2
+  },
+  "미드필더": {
+    "draws": 200,
+    "counts": {
+      "miniThrow": 89,
+      "miniSteal": 60,
+      "miniTimer": 26,
+      "miniSigns": 25
+    },
+    "maxConsecutive": 2
+  },
+  "수비수": {
+    "draws": 200,
+    "counts": {
+      "miniTimer": 95,
+      "miniThrow": 70,
+      "miniSigns": 35
+    },
+    "maxConsecutive": 2
+  },
+  "골키퍼": {
+    "draws": 200,
+    "counts": {
+      "miniPitch": 95,
+      "miniThrow": 70,
+      "miniSigns": 35
+    },
+    "maxConsecutive": 2
+  }
+}

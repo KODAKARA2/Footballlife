@@ -1,0 +1,13 @@
+PASS football careers: {"seedBase":20261007,"lives":1000,"positions":{"공격수":{"lives":250,"pro":222,"overseas":194,"return":38,"university":120,"injury":210,"retired":250,"goals":47112,"saves":0,"score":40645},"미드필더":{"lives":250,"pro":216,"overseas":165,"return":21,"university":103,"injury":210,"retired":250,"goals":16232,"saves":0,"score":46773},"수비수":{"lives":250,"pro":210,"overseas":174,"return":30,"university":128,"injury":196,"retired":250,"goals":116,"saves":0,"score":39670},"골키퍼":{"lives":250,"pro":216,"overseas":160,"return":22,"university":117,"injury":207,"retired":250,"goals":0,"saves":310139,"score":44728}},"branches":{"초등학교":1000,"중학교":1000,"고등학교":1000,"입단심사":1000,"프로":864,"해외리그":693,"은퇴":1000,"대학":468,"대학입단":468,"군복무":488},"maxTurns":152}
+80/1000 seeded football lives passed
+160/1000 seeded football lives passed
+240/1000 seeded football lives passed
+320/1000 seeded football lives passed
+400/1000 seeded football lives passed
+480/1000 seeded football lives passed
+560/1000 seeded football lives passed
+640/1000 seeded football lives passed
+720/1000 seeded football lives passed
+800/1000 seeded football lives passed
+880/1000 seeded football lives passed
+960/1000 seeded football lives passed

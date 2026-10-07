@@ -1,0 +1,270 @@
+// 게임 규칙 엔진 (데이터는 data 폴더에서 읽습니다)
+(function () {
+  var E = window.E = {};
+  var S = null;
+  var SAVE_KEY = "football-life-save-v2";
+  var POS_STATS = { 골키퍼: ["선방", "패스", "위치선정", "체력"], 필드: ["슈팅", "패스", "스피드", "수비", "드리블"] };
+  var SPORT_STATS = ["슈팅", "패스", "스피드", "수비", "드리블", "선방", "위치선정", "체력"];
+  var COMMON = ["멘탈", "인기", "컨디션", "적응"];
+  var YEARLY = { 프로: 1, 해외리그: 1 };
+
+  function cfg() { return GD.설정; }
+  function sdef(n) { return (cfg().시기 || {})[n] || {}; }
+  function rnd() { return Math.random(); }
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function arr(x) { return x == null ? [] : Array.isArray(x) ? x : [x]; }
+  function pick(a) { return a[Math.floor(rnd() * a.length)]; }
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+  function weighted(list) {
+    var tot = 0; list.forEach(function (c) { tot += c.가중치 == null ? 1 : c.가중치; });
+    var r = rnd() * tot;
+    for (var i = 0; i < list.length; i++) { r -= list[i].가중치 == null ? 1 : list[i].가중치; if (r <= 0) return list[i]; }
+    return list[list.length - 1];
+  }
+
+  E.pos = function () { return GD.포지션.find(function (p) { return p.이름 === S.포지션; }) || GD.포지션[0]; };
+  E.spec = function () { return GD.특기.find(function (t) { return t.이름 === S.특기; }) || GD.특기[0]; };
+  E.posStats = function () { return Object.keys(E.pos().비중); };
+  E.avg = function () { var weights = E.pos().비중, total = 0, sum = 0; Object.keys(weights).forEach(function (k) { total += weights[k]; sum += S.능력치[k] * weights[k]; }); return sum / total; };
+  E.cap = function () { return sdef(S.시기).능력치상한 || 99; };
+  E.heroDef = function (id) { return GD.히로인.find(function (h) { return h.아이디 === (id || (S.히로인 && S.히로인.아이디)); }); };
+  E.state = function () { return S; };
+  E.acquaintances = function () {
+    return (S.히로인 && S.히로인.관계 === "만남" ? [S.히로인] : []).concat(S.알아가는인연 || []);
+  };
+  E.focusAcquaintance = function (id) {
+    if (S.히로인 && S.히로인.관계 !== "만남") return false;
+    if (S.히로인 && S.히로인.아이디 === id) return true;
+    var list = S.알아가는인연 || [], index = list.findIndex(function (h) { return h.아이디 === id; });
+    if (index < 0) return false;
+    var next = list.splice(index, 1)[0];
+    if (S.히로인) list.push(S.히로인);
+    S.히로인 = next; S.알아가는인연 = list; return true;
+  };
+  E.canConfess = function () {
+    var h = S.히로인, L = cfg().연애;
+    return !!h && h.관계 === "만남" && !S.플래그.외국인작별 && h.애정도 >= L.연인기준 &&
+      (h.교류횟수 || 0) >= L.고백최소교류 && h.만남턴 != null && S.총턴 - h.만남턴 >= L.고백최소간격;
+  };
+
+  // 외모: 1~10. 잘생길수록 히로인·성적·행복도 이득, 못생길수록 능력치가 잘 오름
+  E.looksMult = function (kind) {
+    var L = cfg().외모 || {}, f = S && S.외모 ? (S.외모 - 5.5) / 4.5 : 0;
+    if (kind === "이성") return 1 + (L.이성최대 || 0) * f;
+    if (kind === "성적행복") return 1 + (L.성적행복최대 || 0) * f;
+    if (kind === "능력치") return 1 + (L.능력치최대 || 0) * Math.max(0, -f);
+    return 1;
+  };
+  // 소수는 확률로 반올림 (2.3 → 70%는 2, 30%는 3)
+  E.roundRand = function (x) { var n = Math.floor(x); return n + (Math.random() < x - n ? 1 : 0); };
+  E.looksGain = function (v, kind) {
+    if (!(v > 0)) return v;
+    var x = v * E.looksMult(kind), n = Math.floor(x);
+    return n + (Math.random() < x - n ? 1 : 0);
+  };
+  E.passiveAffectionGain = function () {
+    var looks = cfg().외모, level = S.외모 || 5;
+    var kind = level >= looks.미남 ? "미남" : level <= looks.추남 ? "추남" : "평범";
+    return cfg().연애.매카드외모상승[kind];
+  };
+  E.growHeroineAffection = function () {
+    var gain = E.passiveAffectionGain(), seen = {};
+    if (!gain) return;
+    [S.히로인, S.히로인2].concat(S.알아가는인연 || []).forEach(function (h) {
+      if (!h || seen[h.아이디]) return;
+      seen[h.아이디] = true;
+      h.애정도 = clamp(h.애정도 + gain, 0, 100);
+    });
+  };
+
+  // ---------------- 카드 목록 만들기 ----------------
+  var CARDS = [];
+  function buildCards() {
+    CARDS = []; var seen = {};
+    function add(c) {
+      var id = c.아이디 || c._stableId || ("football-card-" + String(CARDS.length + 1).padStart(4, "0"));
+      if (seen[id]) throw new Error("Duplicate card ID: " + id); seen[id] = 1; c._stableId = id;
+      c._id = id; CARDS.push(c);
+    }
+    GD.카드.forEach(function (c) { if (!c.끼어들기) add(c); });
+    var tmpl = GD.카드.filter(function (c) { return c.끼어들기; });
+    GD.히로인.forEach(function (h) {
+      tmpl.forEach(function (t) {
+        var m = clone(t); if (t.아이디) m.아이디 = t.아이디 + "-" + h.아이디; m._끼어들기 = h.아이디; m.시기 = t.시기 || h.만나는시기;
+        m.조건 = Object.assign({}, t.교제제안 ? {} : h.만남조건 || {}, t.조건 || {}); add(m);
+      });
+      if (h.만남카드) {
+        var m = clone(h.만남카드);
+        m.시기 = m.시기 || h.만나는시기; m._만남 = h.아이디;
+        m.조건 = Object.assign({}, h.만남조건 || {}, m.조건 || {}); add(m);
+      }
+      (h.전용카드 || []).forEach(function (c) { c = clone(c); c.히로인 = h.아이디; add(c); });
+    });
+  }
+
+  // ---------------- 값과 조건 ----------------
+  function val(k) {
+    if (S.능력치[k] != null) return S.능력치[k];
+    switch (k) {
+      case "행복도": return S.행복도; case "성적": return S.성적; case "평균": return E.avg();
+      case "상한도달": var cap = sdef("프로").능력치상한 || 85;
+        return E.posStats().filter(function (s) { return S.능력치[s] >= cap; }).length;
+      case "계약잔여": return S.계약 ? Math.max(0, S.계약.만료나이 - S.나이) : 0;
+      case "연차": return S.연차; case "자녀": return S.자녀; case "나이": return S.나이;
+      case "애정도": return S.히로인 ? S.히로인.애정도 : 0; case "팀이동": return S.팀이동;
+      case "시기카드": return S.시기턴; case "애정도2": return S.히로인2 ? S.히로인2.애정도 : 0;
+      case "은퇴나이": return S.은퇴나이 || S.나이; case "이별수": return S.지난히로인.filter(function (h) { return h.관계 !== "만남"; }).length;
+      case "수상수": return S.수상.length; case "총수입": return S.총수입 || 0; case "외모": return S.외모 || 5;
+      case "세대": return S.세대 || 1; case "상속금": return S.상속금 || 0;
+      case "이군기간": return S._강등턴 != null ? S.총턴 - S._강등턴 : 99; case "돈": return S.돈 || 0;
+    }
+    return 0;
+  }
+  function check(c) {
+    if (!c) return true;
+    if (c.시기 && arr(c.시기).indexOf(S.시기) < 0) return false;
+    if (c.시기아님 && arr(c.시기아님).indexOf(S.시기) >= 0) return false;
+    if (c.포지션 && !arr(c.포지션).some(function (p) { return p === S.포지션 || p === E.pos().분류; })) return false;
+    if (c.특기 && arr(c.특기).indexOf(S.특기) < 0) return false;
+    if (c.최소나이 != null && S.나이 < c.최소나이) return false;
+    if (c.최대나이 != null && S.나이 > c.최대나이) return false;
+    var k;
+    for (k in (c.최소 || {})) if (val(k) < c.최소[k]) return false;
+    for (k in (c.최대 || {})) if (val(k) > c.최대[k]) return false;
+    if (c.상태 === "부상" && !(S.부상 > 0)) return false;
+    if (c.상태 === "슬럼프" && !(S.슬럼프 > 0)) return false;
+    if (c.상태 === "건강" && (S.부상 > 0 || S.슬럼프 > 0)) return false;
+    if (c.플래그 && !arr(c.플래그).every(function (f) { return S.플래그[f]; })) return false;
+    if (c.플래그없음 && arr(c.플래그없음).some(function (f) { return S.플래그[f]; })) return false;
+    if (c.일군 != null && !!S.일군 !== c.일군) return false;
+    if (c.입단심사 && S.입단심사 !== c.입단심사) return false;
+    if (c.히로인 === "있음" && !S.히로인) return false;
+    if (c.히로인 === "없음" && S.히로인) return false;
+    if (c.관계 && (!S.히로인 || arr(c.관계).indexOf(S.히로인.관계) < 0)) return false;
+    if (c.고백가능 != null && E.canConfess() !== c.고백가능) return false;
+    if (c.양다리 != null && !!S.히로인2 !== c.양다리) return false;
+    if (c.한국인연 != null && E.koreanBond() !== c.한국인연) return false;
+    if (c.구매 && !arr(c.구매).some(function (n) { return S.구매 && S.구매[n] != null; })) return false;
+    if (c.포지션변경가능 && !(E.pos().변경후보 || []).length) return false;
+    if (c.수상 && !arr(c.수상).some(function (a) { return S.수상.some(function (x) { return x.이름 === a; }); })) return false;
+    if (c.확률 != null && rnd() > c.확률) return false;
+    return true;
+  }
+  E.check = check;
+  // 한국에서 시작된 인연인지: 해외리그에서 만났거나 외국인 히로인(외국인: true)이면 아님 (해외행 동행·장거리 연애 카드용)
+  E.koreanBond = function () {
+    var d = S.히로인 && E.heroDef();
+    return !!d && !d.외국인 && S.히로인.만난시기 !== "해외리그";
+  };
+
+  function eligible(c) {
+    if (c.시기 && arr(c.시기).indexOf(S.시기) < 0) return false;
+    if (c.히로인 === "누구나" && !S.히로인) return false;
+    if (c.히로인 === "양다리" && !S.히로인2) return false;
+    if (c.히로인 && c.히로인 !== "누구나" && c.히로인 !== "양다리" && (!S.히로인 || S.히로인.아이디 !== c.히로인)) return false;
+    if (c._끼어들기 && (!S.히로인 || S.히로인.관계 !== "연인" || S.히로인2 || S.히로인.아이디 === c._끼어들기 || S.만난히로인.indexOf(c._끼어들기) >= 0)) return false;
+    if (c._끼어들기 && c.교제제안 && (!S.새인연 || S.새인연.아이디 !== c._끼어들기 || S.새인연.기존인연 !== S.히로인.아이디 || S.총턴 - S.새인연.등장턴 < cfg().연애.고백최소간격)) return false;
+    if (c._끼어들기 && !c.교제제안 && S.새인연) return false;
+    // 고백 전에는 알아가기·고백·연락 정리 카드만 허용합니다.
+    if (c.히로인 && S.히로인 && S.히로인.관계 === "만남" && !c.알아가기 && !c.고백카드 && !c.인연정리) return false;
+    if (c._만남 && ((S.히로인 && S.히로인.관계 !== "만남") || S.만난히로인.indexOf(c._만남) >= 0)) return false;
+    var last = S.본카드[c._id];
+    if (last != null && (!c.반복 || S.총턴 - last < (c.간격 || 4))) return false;
+    return check(c.조건);
+  }
+
+  // ---------------- 글자 바꾸기 ({이름} 등 + 조사) ----------------
+  var JOSA = { 은: ["은", "는"], 는: ["은", "는"], 이: ["이", "가"], 가: ["이", "가"], 을: ["을", "를"], 를: ["을", "를"], 과: ["과", "와"], 와: ["과", "와"], 아: ["아", "야"], 야: ["아", "야"] };
+  function batchim(w) { var c = (w || "").charCodeAt(w.length - 1); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 !== 0; }
+  function schoolKey() { return { 입단심사: "고등학교", 대학입단: "대학" }[S.시기] || (cfg().학교[S.시기] ? S.시기 : "고등학교"); }
+  function words() {
+    var L = cfg().리그, h = S.히로인 && E.heroDef(), h2 = (S.히로인2 || S._상대) && E.heroDef(S.히로인2 ? S.히로인2.아이디 : S._상대);
+    return {
+      이름: S.이름, 라이벌: S.라이벌이름 || (GD.조연.rival || {}).이름 || "라이벌", 아버지: S.아버지 || "아버지", 히로인: h ? h.이름 : (S.직전히로인 || "그녀"), 상대: h2 ? h2.이름 : "그 사람", 새포지션: S._새포지션 || "",
+      팀: S.팀 || S.제안팀 || cfg().국내팀[0], 학교: cfg().학교[schoolKey()], 대학: cfg().학교.대학,
+      나이: S.나이 + "", 연도: String(cfg().시작연도 + S.나이 - 10), 포지션: S.포지션, 특기: S.특기,
+      리그: S.시기 === "대학" ? L.대학 : S.시기 === "해외리그" ? L.해외 : L.국내,
+      해외팀: S.시기 === "해외리그" ? S.팀 : (S.해외팀 || "해외리그 팀"), 국내팀: S.국내팀 || S.팀 || cfg().국내팀[0]
+    };
+  }
+  function tpl(t) {
+    if (!t) return ""; var W = words();
+    return String(t).replace(/\{([가-힣]+)\}((?:은|는|이|가|을|를|과|와|아|야)(?![가-힣]))?/g, function (m, k, j) {
+      if (W[k] == null) return m; var w = W[k];
+      return w + (j ? JOSA[j][batchim(w) ? 0 : 1] : "");
+    });
+  }
+  E.tpl = tpl;
+
+  // ---------------- 능력치 변경 ----------------
+  // mult: 카드 선택으로 오르는 포지션 능력치에 곱하는 배율 (settings.js 능력치상승배율). 상점·히로인 효과는 그대로
+  function addStat(k, v, out, mult) {
+    if (S.능력치[k] == null) throw new Error("Unknown stat effect: " + k);
+    var cur = S.능력치[k], nv;
+    if (SPORT_STATS.indexOf(k) >= 0 && v > 0 && mult != null && mult !== 1) v = E.roundRand(v * mult);
+    if (SPORT_STATS.indexOf(k) >= 0 && v > 0) v = E.looksGain(v, "능력치");
+    if (SPORT_STATS.indexOf(k) >= 0) nv = v > 0 ? (cur >= E.cap() ? cur : Math.min(E.cap(), cur + v)) : Math.max(1, cur + v);
+    else nv = clamp(cur + v, 0, 100);
+    S.능력치[k] = nv; if (out && nv !== cur) out[k] = (out[k] || 0) + (nv - cur);
+  }
+  function applyEffects(eff, out, mult) {
+    Object.keys(eff || {}).forEach(function (k) {
+      var v = eff[k];
+      if (Array.isArray(v)) v = v[0] + Math.floor(rnd() * (v[1] - v[0] + 1));   // [최소, 최대] → 랜덤
+      if (k === "모든능력치") E.posStats().forEach(function (s) { addStat(s, v, out, mult); });
+      else if (k === "특기능력치") addStat(E.spec().능력치, v, out, mult);
+      else if (k === "부상") { S.부상 = v <= 0 ? 0 : Math.max(S.부상, v); out.부상 = v; }
+      else if (k === "부상감소") { S.부상 = Math.floor(S.부상 * (100 - v) / 100); out.부상감소 = v; }
+      else if (k === "슬럼프감소") { S.슬럼프 = Math.floor(S.슬럼프 * (100 - v) / 100); out.슬럼프감소 = v; }
+      else if (k === "슬럼프") { S.슬럼프 = v <= 0 ? 0 : Math.max(S.슬럼프, v); out.슬럼프 = v; }
+      else if (k === "애정도2") { v = E.looksGain(v, "이성"); if (S.히로인2) { var o2 = S.히로인2.애정도; S.히로인2.애정도 = clamp(o2 + v, 0, 100); out.애정도2 = S.히로인2.애정도 - o2; } }
+      else if (k === "애정도") { v = E.looksGain(v, "이성"); if (S.히로인) { var o = S.히로인.애정도; S.히로인.애정도 = clamp(o + v, 0, 100); out.애정도 = S.히로인.애정도 - o; } }
+      else if (k === "행복도") { v = E.looksGain(v, "성적행복"); var h = S.행복도; S.행복도 = clamp(h + v, 0, 100); out.행복도 = S.행복도 - h; }
+      else if (k === "성적") { v = E.looksGain(v, "성적행복"); S.성적 = Math.max(0, S.성적 + v); out.성적 = v; }
+      else if (k === "돈") { S.돈 = Math.max(0, (S.돈 || 0) + v); if (v > 0) S.총수입 = (S.총수입 || 0) + v; out.돈 = (out.돈 || 0) + v; }
+      else if (k === "만남확률") { out[k] = v; }
+      else addStat(k, v, out, mult);
+    });
+  }
+  E.applyEffects = applyEffects;
+
+  // ---------------- 히로인 ----------------
+  function attachHeroine(id) {
+    if (E.acquaintances().some(function (h) { return h.아이디 === id; })) { E.focusAcquaintance(id); return; }
+    var next = { 아이디: id, 관계: "만남", 애정도: cfg().연애.시작애정도, 만난시기: S.시기, 만남턴: S.총턴, 교류횟수: 0 };
+    S.알아가는인연 = S.알아가는인연 || [];
+    if (S.히로인 && S.히로인.관계 !== "만남") S.알아가는인연.push(next);
+    else { if (S.히로인) S.알아가는인연.push(S.히로인); S.히로인 = next; }
+    if (S.만난히로인.indexOf(id) < 0) S.만난히로인.push(id);
+    if (S.히로인.관계 !== "만남") return;
+    delete S.플래그.장거리; delete S.플래그.동행결정; delete S.새인연;
+  }
+  function setRelation(r) {
+    if (!S.히로인) return;
+    if (r === "이별") {
+      var h = E.heroDef(), acquaintance = S.히로인.관계 === "만남";
+      S.지난히로인.push({ 아이디: h.아이디, 이름: h.이름, 관계: S.히로인.관계, 결말: acquaintance ? "연락이 뜸해짐" : "이별" });
+      S.직전히로인 = h.이름; S.히로인 = null; delete S.플래그.장거리; delete S.새인연;
+      if (!acquaintance) applyEffects(cfg().연애.이별타격, {});
+      // 양다리 중이었다면 몰래 만나던 사람이 정식 연인이 됨
+      if (S.히로인2) { S.히로인 = { 아이디: S.히로인2.아이디, 관계: "연인", 애정도: S.히로인2.애정도, 만난시기: S.히로인2.만난시기 }; S.히로인2 = null; }
+    } else { S.히로인.관계 = r; if (r === "배우자") delete S.새인연; }
+  }
+
+  // ---------------- 수상과 팀 ----------------
+  function addAward(n, year) { S.수상.push({ 이름: n, 연도: year || (cfg().시작연도 + S.나이 - 10) }); }
+  function randomTeam(list, not) { var l = list.filter(function (t) { return t !== not; }); return pick(l.length ? l : list); }
+  function changeTeam() {
+    if (S.시기 === "해외리그") S.팀 = randomTeam(GD.해외리그.팀, S.팀);
+    else { S.팀 = randomTeam(cfg().국내팀, S.팀); }
+    S.팀이동++;
+    if (E.signContract) E.signContract(3);
+  }
+
+  E._internal = {
+    get S() { return S; }, set S(v) { S = v; }, cfg: cfg, sdef: sdef, rnd: rnd, clamp: clamp, arr: arr, pick: pick, clone: clone,
+    weighted: weighted, eligible: eligible, CARDS: function () { return CARDS; }, buildCards: buildCards,
+    applyEffects: applyEffects, attachHeroine: attachHeroine, setRelation: setRelation, addAward: addAward,
+    randomTeam: randomTeam, changeTeam: changeTeam, SPORT_STATS: SPORT_STATS, POS_STATS: POS_STATS, COMMON: COMMON, YEARLY: YEARLY, SAVE_KEY: SAVE_KEY
+  };
+})();

@@ -1,0 +1,95 @@
+{
+  "startedAt": "2026-10-07T07:55:42.240Z",
+  "mode": "engine",
+  "node": "v24.19.0",
+  "tests": [
+    {
+      "name": "football-data-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 67
+    },
+    {
+      "name": "date-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 336
+    },
+    {
+      "name": "ending-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 150
+    },
+    {
+      "name": "free-time-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 177
+    },
+    {
+      "name": "heroine-roster-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 516
+    },
+    {
+      "name": "passive-affection-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 117
+    },
+    {
+      "name": "romance-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 107
+    },
+    {
+      "name": "football-choice-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 5785
+    },
+    {
+      "name": "sim",
+      "args": [
+        "200"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 3697
+    },
+    {
+      "name": "growth-balance-check",
+      "args": [
+        "1000",
+        "0.8",
+        "20261007"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 18233
+    },
+    {
+      "name": "football-career-check",
+      "args": [
+        "1000"
+      ],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 49058
+    }
+  ],
+  "finishedAt": "2026-10-07T07:57:00.485Z",
+  "passed": 11,
+  "failed": 0
+}
