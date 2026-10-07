@@ -11,10 +11,10 @@
     return {
       m: m, start: start,
       active: function () { return !done && m.isConnected; },
-      run: function (fn) { function frame() { if (done || !m.isConnected) return; fn(performance.now()); if (!done) raf = requestAnimationFrame(frame); } frame(); },
+      run: function (fn) { function frame() { if (done || !m.isConnected) return; fn(performance.now()); if (!done) raf = Feedback.frame(m, frame); } frame(); },
       bar: function (ratio) { m.querySelector('.pf-time i').style.width = Math.max(0, Math.min(1, ratio)) * 100 + '%'; },
-      finish: function (level, text) { if (done || !m.isConnected) return; done = true; cancelAnimationFrame(raf); var p = probability(level); m.querySelector('.mg-result').textContent = text + ' · ' + stat + ' 판정 · 성공 확률 ' + Math.round(p * 100) + '%'; timeout = setTimeout(function () { if (!m.isConnected) return; m.remove(); cb({확률:p, 표시:text, 능력:stat, 등급:level}); }, 1100); },
-      cancel: function () { done = true; cancelAnimationFrame(raf); clearTimeout(timeout); m.remove(); }
+      finish: function (level, text) { if (done || !m.isConnected) return; done = true; cancelAnimationFrame(raf); Feedback.cue(level >= 3 ? 'great' : level >= 2 ? 'good' : 'bad', m.querySelector('.mg'), level >= 3); var p = probability(level); m.querySelector('.mg-result').textContent = text + ' · ' + stat + ' 판정 · 성공 확률 ' + Math.round(p * 100) + '%'; timeout = Feedback.later(m, function () { if (!m.isConnected) return; m.remove(); cb({확률:p, 표시:text, 능력:stat, 등급:level}); }, 1100); },
+      cancel: function () { done = true; cancelAnimationFrame(raf); clearTimeout(timeout); Feedback.clear(m); m.remove(); }
     };
   }
   // Shoot a moving ball when it reaches the contact line; the goal and goalkeeper
@@ -24,7 +24,7 @@
     var launch = s.start + 750, duration = 1000 + Math.random() * 700, ball = s.m.querySelector('.football-ball');
     function put(now) { var u = Math.max(0, (now - launch) / duration); ball.style.left = (15 + 60 * u) + '%'; ball.style.top = '70%'; s.bar(1 - (now - s.start) / (duration + 1300)); if (now >= launch) s.m.querySelector('.football-status').textContent = '공을 보고 슈팅!'; }
     s.run(function (now) { put(now); if (now > launch + duration + 500) s.finish(0, '슈팅 기회를 놓쳤어요'); });
-    H.input(s.m, function (e) { if (!s.active()) return; var now = H.time(e), error = Math.abs(now - launch - duration) / 1000, level = grade(error,.07,.16,.3); put(now); ball.style.top = '18%'; ball.style.left = level >= 2 ? '50%' : '95%'; s.finish(level, ['골문 밖으로!', '골키퍼에게 막힌 슛', '좋은 슈팅!', '완벽한 득점!'][level]); });
+    H.input(s.m, function (e) { if (!s.active()) return; var now = H.time(e), error = Math.abs(now - launch - duration) / 1000, level = grade(error,.07,.16,.3); put(now); Feedback.play('kick'); ball.style.top = '18%'; ball.style.left = level >= 2 ? '50%' : '95%'; s.finish(level, ['골문 밖으로!', '골키퍼에게 막힌 슛', '좋은 슈팅!', '완벽한 득점!'][level]); });
     return s.cancel;
   };
   // Goalkeeper tracks the shot landing point with a moving pair of gloves.
@@ -35,14 +35,14 @@
     function pos(now) { var t=(now-s.start)/1000; return {x:.5+.35*Math.sin(t*2.2+phase),y:.45+.24*Math.sin(t*3+phase)}; }
     function put(now) { var p=pos(now); gloves.style.left=p.x*100+'%';gloves.style.top=p.y*100+'%';return p; }
     s.run(function(now){put(now);s.bar(1-(now-s.start)/6000);if(now-s.start>=6000)s.finish(0,'반응이 늦어 실점했어요');});
-    H.input(s.m,function(e){if(!s.active())return;var p=put(H.time(e)),level=grade(Math.hypot(p.x-tx,p.y-ty),.07,.15,.25);s.finish(level,['공을 놓쳤어요','손끝에 스친 공','좋은 선방!','안정적으로 잡았어요!'][level]);});return s.cancel;
+    H.input(s.m,function(e){if(!s.active())return;var p=put(H.time(e)),level=grade(Math.hypot(p.x-tx,p.y-ty),.07,.15,.25);if(level>0)Feedback.play('catch');s.finish(level,['공을 놓쳤어요','손끝에 스친 공','좋은 선방!','안정적으로 잡았어요!'][level]);});return s.cancel;
   };
   // Defend by tackling when the attacker enters the legal interception window.
   U.miniTimer = function(cb){
     var s=session('🛡 수비 타이밍','상대의 공이 <b>노란 태클 구역</b>에 들어오면 누르세요. 너무 이르면 파울입니다.','<div class="defend-zone">태클 구역</div><div class="defend-player">● ⚽</div><div class="football-status">상대의 움직임을 읽으세요</div>','수비',cb), duration=2200+Math.random()*1400, player=s.m.querySelector('.defend-player');
     function put(now){var u=(now-s.start)/duration;player.style.left=(10+75*u)+'%';s.bar(1-u);return u;}
     s.run(function(now){if(put(now)>1.15)s.finish(0,'상대가 돌파했어요');});
-    H.input(s.m,function(e){if(!s.active())return;var u=put(H.time(e)),level=grade(Math.abs(u-.7),.04,.09,.17);s.finish(level,level===0?(u<.7?'성급한 태클 · 파울':'태클이 늦었어요'):['','간신히 진로 차단','깔끔한 태클!','완벽한 볼 탈취!'][level]);});return s.cancel;
+    H.input(s.m,function(e){if(!s.active())return;var u=put(H.time(e)),level=grade(Math.abs(u-.7),.04,.09,.17);if(level>0)Feedback.play('tackle');s.finish(level,level===0?(u<.7?'성급한 태클 · 파울':'태클이 늦었어요'):['','간신히 진로 차단','깔끔한 태클!','완벽한 볼 탈취!'][level]);});return s.cancel;
   };
   U.miniSteal=function(cb){
     var s=session('⚡ 드리블 돌파','<b>공간 열림!</b>에 누르세요. ‘압박!’에는 기다리세요.','<div class="dribble-lane"><span>●</span><b>● ●</b></div><div class="steal-signal" role="status">수비를 관찰하세요</div>','드리블',cb),go=s.start+1800+Math.random()*1300,signal=s.m.querySelector('.steal-signal');
