@@ -1,0 +1,95 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "name": "field_goal",
+      "source": "/workspace/generated_images/exec-c5879233-8eb5-4e04-9f57-06ba87ff6ca1.png",
+      "prompt": "Create a square 512x512 game background illustration for a polished Korean football career game, detailed fine-pixel art. Empty football stadium seen from pitch level with very gentle elevated view toward distant stands. Top 20 percent contains blue teal stadium seats, subtle floodlight architecture and warm evening sky, NO readable signage. Bottom 80 percent is quiet rich dark emerald grass with subtle mowing texture and depth, low contrast center so independently overlaid small player sprites and ball remain legible. Crisp tasteful pixel detailing concentrated at far stands and edges. Absolutely NO goals, NO goalposts, NO net, NO players, NO people silhouettes on pitch, NO ball, NO white field markings, NO tactical lines, NO motion trails, NO UI, NO text, NO logos. Background only, full bleed square, opaque.",
+      "full_resolution": {
+        "path": "assets/minigame-generated/field_goal.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB",
+        "bytes": 2726633,
+        "sha256": "548e809fc4ce3464dcd5bb791cfdc23306a23cdde477faa602cbdc4fc42c21a7"
+      },
+      "runtime": {
+        "path": "images/minigames/field_goal.png",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "bytes": 495305,
+        "sha256": "44060bbfcd3f7f39fe62c339ca8bee20547f5c8af8ad6a8390966decb51c6118"
+      },
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "qa": "Viewed generated pixels: no actors, goals, ball, text, or timing lines. Opaque background only."
+    },
+    {
+      "name": "field_topdown",
+      "source": "/workspace/generated_images/exec-20bd34aa-1fdf-4dd8-a63c-b55d890ed5d4.png",
+      "prompt": "Square game environment texture, true straight-down overhead camera at 90 degrees onto beautifully maintained football pitch grass only. Polished detailed fine-pixel illustration style for Korean football career minigame. Dark rich emerald green turf, subtle alternating broad mowing stripes vertical, small crisp grass texture with low contrast overall for overlaid small blue and orange athlete sprites. Even overhead ambient illumination, no perspective or horizon, no stadium or sky. Full bleed square. Absolutely NO white field lines, NO circles, NO goalposts, NO people, NO ball, NO letters, NO labels, NO UI, NO trails, NO objects. Quiet playable background, opaque, requested 512x512.",
+      "full_resolution": {
+        "path": "assets/minigame-generated/field_topdown.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB",
+        "bytes": 3742675,
+        "sha256": "0b4127af20492b7aaf04c8f393b6c2f3e8284afc21bc94fcada7628e7798d172"
+      },
+      "runtime": {
+        "path": "images/minigames/field_topdown.png",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "bytes": 516423,
+        "sha256": "288df406f8663a75e50be134b20f19f3930305cd2d131a2d14fad411ed727172"
+      },
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "qa": "Viewed generated pixels: no actors, goals, ball, text, or timing lines. Opaque background only."
+    },
+    {
+      "name": "tactics_background",
+      "source": "/workspace/generated_images/exec-2b142c02-231a-4b3b-a209-f8942ba4d79a.png",
+      "prompt": "Square 512x512 background asset for a football tactics memory minigame, polished fine-pixel game illustration. Straight frontal view of a blank dark teal green coaching chalkboard filling the frame, slender finely detailed warm walnut wood frame around outer 5 percent, tiny clean metal corner fittings. Center 90 percent calm uniformly dark teal with subtle wiped-chalk patina only, subtle light at edges. Very readable blank center designed for independent overlaid tactical buttons and coach sprite. Absolutely NO text, letters, numbers, symbols, arrows, diagrams, field markings, players, balls, magnets, counters, icons, chalk sticks, UI, trails, or objects covering center. High quality understated pixel detail on wood border, quiet dark board center, opaque full bleed.",
+      "full_resolution": {
+        "path": "assets/minigame-generated/tactics_background.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB",
+        "bytes": 2258903,
+        "sha256": "eeca14362c9c09a32645a0784680234c29b2ec6267b452d223fc909670237528"
+      },
+      "runtime": {
+        "path": "images/minigames/tactics_background.png",
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "bytes": 341485,
+        "sha256": "dc209b61cf0077182475755b7a9df11923b5b62e6d043032d792002e2a2e57cf"
+      },
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "qa": "Viewed generated pixels: no actors, goals, ball, text, or timing lines. Opaque background only."
+    }
+  ]
+}

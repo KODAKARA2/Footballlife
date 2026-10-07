@@ -1,0 +1,90 @@
+{
+  "generator": "built-in image_gen independent calls",
+  "style_reference": "images/hero_pro.png",
+  "assets": {
+    "ball": {
+      "source": "/workspace/generated_images/exec-d177c803-48df-4926-b9b5-509681c9a61a.png",
+      "source_sha256": "45100e8302b7bd605bdfdf3c6bc272e11d11958b7de654664a25bbd0da3167ed",
+      "full_resolution_path": "assets/minigame-generated/ball.png",
+      "full_resolution": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_bbox": [
+          43,
+          87,
+          1196,
+          1230
+        ],
+        "sha256": "45100e8302b7bd605bdfdf3c6bc272e11d11958b7de654664a25bbd0da3167ed",
+        "mode": "RGBA"
+      },
+      "prompt": "Create exactly one standalone soccer ball game sprite on a fully transparent alpha background. Fine detailed pixel-edged chibi sports JRPG illustration, elegant restrained navy outlines and layered pixel-like shading, matching a polished hand-drawn chibi football game. The sole object is a geometrically PERFECT CIRCLE sphere viewed dead front in ORTHOGRAPHIC projection. Absolutely equal horizontal and vertical silhouette diameter, no ellipse, no perspective distortion. Classic unmistakable modern white soccer ball with symmetric black pentagonal panels and white hexagonal panels, central black pentagon, symmetric readable panel structure. Must remain immediately recognizable at just 24 pixels. Clean crisp continuous dark outline; diffuse gentle upper-left shading; no external cast shadow, no contact shadow, no floor, no text, no people or props. Center ball exactly on square canvas. Ball silhouette occupies exactly 84 percent of canvas width and height leaving equal 8 percent transparent padding on all four sides. True transparent alpha outside ball, solid opaque inside. Quality priority: exact circular silhouette, width and height within one percent.",
+      "status": "prototype_only_do_not_integrate_native_vector_ball_retained",
+      "solid_alpha_bbox": [
+        88,
+        90,
+        1166,
+        1165
+      ],
+      "silhouette_width_height_ratio": 1.0027906976744185,
+      "normalized_ball_center": [
+        0.5,
+        0.5003987240829346
+      ],
+      "runtime_path": null
+    },
+    "goal_net": {
+      "source": "/workspace/generated_images/exec-f4f974ed-6438-4bfb-ab23-58b8721bdb85.png",
+      "source_sha256": "23da69904b338b99c9f312376c3904ffa4631efa2f4d4bde08d833e5b8eea88a",
+      "full_resolution_path": "assets/minigame-generated/goal_net.png",
+      "full_resolution": {
+        "dimensions": [
+          1881,
+          836
+        ],
+        "alpha_bbox": [
+          57,
+          108,
+          1822,
+          728
+        ],
+        "sha256": "23da69904b338b99c9f312376c3904ffa4631efa2f4d4bde08d833e5b8eea88a",
+        "mode": "RGBA"
+      },
+      "prompt": "Transparent background soccer goal sprite. Front metal frame has inside dimensions exactly 720 pixels wide and 240 pixels high, ratio 3 to 1. That means the vertical post visible length is one third of the horizontal crossbar length. Do not make the goal too short. Straight front view, horizontal crossbar and vertical posts. Draw goal in clean detailed chibi JRPG pixel art, white goal bars navy outlines, pale blue shadow. Small shallow depth behind frame with visible upper rear supports. White net with clean dark outlines on individual strings. Net is SPARSE OPEN GRID with 12 columns and FOUR ROWS of BIG perfectly clear transparent holes, no fabric or backing. Strings all connect in coherent rectangular grid. Extremely clean alpha edges and transparent net openings, not gray or white patches inside holes. Broad 3:1 goal opening but relatively taller than a shallow banner. Center isolated object with transparent margin, fully visible. No other objects, no ball, no person, no floor, no grass, no external shadow, no text.",
+      "status": "prepared_runtime_asset",
+      "runtime_path": "images/minigames/goal_net.png",
+      "runtime": {
+        "dimensions": [
+          512,
+          256
+        ],
+        "alpha_bbox": [
+          15,
+          42,
+          497,
+          212
+        ],
+        "sha256": "53fdb11881ac210d95b3163f1fba6a5bc926dfca27bf6a29d52fdee4527788b0",
+        "mode": "RGBA"
+      },
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "normalized_goal_mouth_bounds": [
+        0.06379585326953748,
+        0.2911931818181818,
+        0.935672514619883,
+        0.8057528409090909
+      ],
+      "goal_mouth_bounds_method": "visual inner front frame / open ground plane estimate",
+      "goal_mouth_width_height_ratio_estimate": 3.3954451345755694,
+      "processing": "uniform Lanczos resize, centered transparent padding only; no stretching or drawn replacements",
+      "qa": "straight two front posts and horizontal crossbar; coherent sparse net with transparent openings; no baked ball; original generation has minor blue outline fringe at net edges",
+      "generation_attempts": 5
+    }
+  }
+}

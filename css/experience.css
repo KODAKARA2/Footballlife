@@ -257,3 +257,32 @@ html[data-reduced-motion=true] .football-goal-cutin .crowd{rotate:none}
 .coach-tactics-cutin strong{font-size:clamp(17px,4.5vw,22px);line-height:1.4;word-break:keep-all}
 .coach-tactics-cutin p{font-size:14px;line-height:1.5;margin:8px 0 0}
 .tactics-resolved .sign-display,.tactics-resolved .sign-progress,.tactics-resolved .sign-answers,.tactics-resolved .sign-slots{visibility:hidden}
+
+/* Artwork is decorative; original rule nodes remain the positioning anchors. */
+.mg-art-backdrop{position:absolute;inset:0;z-index:-2;pointer-events:none}
+.mg-art-backdrop img{display:block;width:100%;height:100%;object-fit:cover;opacity:.88}
+.football-field[data-drill="위치선정"] .mg-art-backdrop img{object-fit:fill;opacity:1}
+.mg-art-image{pointer-events:none;user-select:none}.mg-art-image[hidden]{display:none!important}
+.mg-sprite{position:absolute;left:50%;top:50%;width:44px;height:44px;object-fit:contain;transform:translate(-50%,-50%);max-width:none;z-index:1}
+.art-ready>.mg-art-fallback{visibility:hidden}
+.football-goal.art-ready{border-color:transparent;background:none;color:transparent}
+.football-goal .goal-net-art{left:0;top:0;width:100%;height:auto;aspect-ratio:2;transform:none;object-fit:contain}
+.football-goal{z-index:1}
+.football-shooter{position:absolute;left:75%;top:calc(70% - 20px);width:52px;height:52px;transform:translate(-50%,-50%);pointer-events:none;z-index:1}
+.football-shooter .mg-sprite{width:52px;height:52px;transform:translate(-50%,-50%)}
+.football-ball{z-index:2}
+.keeper-target{width:28px;height:28px;z-index:3}.keeper-target svg{display:block;width:100%;height:100%}
+.keeper-gloves{z-index:2}.keeper-gloves.art-ready{background:none;border-color:transparent}
+.keeper-gloves .keeper-art{width:clamp(58px,18vw,74px);height:auto;aspect-ratio:4/5;transform:translate(-50%,-40%)}
+.keeper-gloves.art-ready::after{content:"";position:absolute;left:50%;top:50%;width:25px;height:25px;transform:translate(-50%,-50%);border:2px solid #86dcff;border-radius:50%;box-shadow:0 0 0 2px #154b79;z-index:2;pointer-events:none}
+.defend-player{width:32px;height:32px;transform:translate(-50%,-50%);z-index:2}
+.defend-player .mg-sprite{width:48px;height:48px}.defend-home{position:absolute;left:62.5%;top:72%;width:40px;height:40px;transform:translate(-50%,-50%);pointer-events:none}
+.defend-ball{position:absolute;left:80%;top:50%;width:18px;height:18px;z-index:2}.defend-ball svg{width:100%;height:100%;display:block}
+.dribble-runner.art-ready,.dribble-defender.art-ready{background:transparent}
+.dribble-runner .mg-sprite{transform:translate(-50%,-50%)}
+.runner-ball{z-index:2}
+.football-field .throw-target.art-ready{background:none;border-color:transparent;box-shadow:none}
+.throw-target .mg-sprite{width:68px;height:68px}
+.football-field .sign-display,.football-field .sign-progress,.football-field .sign-slots{text-shadow:0 2px 3px #000}
+.football-field .football-status{background:#102c22cc;border-radius:6px;width:calc(100% - 24px);left:12px;z-index:3}
+.football-goal-cutin,.football-miss-cutin,.football-pass-praise,.coach-tactics-cutin{z-index:5}

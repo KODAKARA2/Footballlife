@@ -1,0 +1,161 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-07",
+  "contract": "Three overhead actors; 256x256 transparent RGBA; body-center anchor [0.5,0.5]",
+  "assets": [
+    {
+      "name": "player_run",
+      "prompt": "Create ONE detailed bitmap soccer videogame actor sprite. CRITICAL CAMERA: TRUE TOP DOWN overhead camera looking STRAIGHT DOWN vertically onto the top of the player's hair, shoulders, back and running legs, as in a 2D overhead soccer game. NOT a front portrait, NOT a standing three-quarter illustration. Use attached reference only for dark chestnut tousled hair, light peach skin and blue/teal football kit identity. Detailed crisp finely textured pixel-game art, clear outlines and fabric shading. Player runs toward the TOP of the square canvas (north); crown of hair is at upper center, shoulders across middle, arms bent and two distinct legs and cleats extending backward toward bottom. Face mostly hidden by overhead viewpoint, only tiny hints permitted. Camera close to 90 degrees overhead, compact foreshortened human silhouette. Navy-blue jersey and shorts with bright teal trim, blue socks and navy cleats. Exactly two arms and two legs. Body center exactly at canvas center (0.5,0.5). Square 1:1 canvas with full figure safely contained, 15 percent clear transparent margins, no cropped body parts. Transparent background, actor alone. NO ball, NO shadow ellipse, NO field, NO markings, NO motion lines, NO text, NO icons, NO backdrop. Detailed bitmap rendering, not vector or emoji.",
+      "source": "images/hero_pro.png",
+      "generation_path": "/workspace/generated_images/exec-226d140e-1bdc-473d-98be-416724682676.png",
+      "full_resolution": "assets/minigame-generated/player_run.png",
+      "final": "images/minigames/player_run.png",
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "qa": {
+        "visual": "Inspected final at 256 square; crown-forward overhead, two arms and two cleated legs; no ball/text/motion lines; angled front torso visible.",
+        "status": "passed; coordinator inspected and approved overhead sample"
+      },
+      "source_sha256": "30fb244617d31573dcaa1046d28d6481b2e548ddfcd6a2876ad1bc32c93be347",
+      "generated_sha256": "ddd2ff8c2e93886a857d84ce12a1cdc1fa12c31784acc19f009db91386e79422",
+      "final_sha256": "e0b1fdbb066b448ca914fcfbc33b1d917918c7b6d9d3d587a9be435ac47a07fb",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        43,
+        11,
+        196,
+        245
+      ],
+      "visible_bbox_alpha_gt_16": [
+        67,
+        13,
+        194,
+        242
+      ],
+      "generated_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "name": "defender_ready",
+      "prompt": "Create ONE detailed bitmap overhead football game actor, matching the attached overhead blue running sprite's exact rendering style, body scale, camera and framing. Use the attached rival portrait ONLY for chestnut spiky hair identity; replace its clothing with ORANGE jersey with charcoal trim, charcoal shorts with orange trim, orange socks and dark cleats. CRITICAL view from high overhead looking down onto hair crown and shoulders, face mostly hidden, foreshortened body as in first overhead reference. Defender ready in a lowered balanced stance, knees apart, two separated cleated feet toward bottom, two arms slightly out at sides bent and hands ready. Orient head toward TOP of square canvas. Detailed fine pixel textured game artwork, crisp dark outlines, shaded orange fabric; fictional tiny shield crest only. Exactly two arms and two legs. Body center at canvas center(.5,.5). Square canvas; whole body within frame with generous transparent margins. Standalone transparent RGBA actor only. NO ball, no field, no text, no motion lines, no floor, no shadow ellipse, no UI, no backdrop. Match overhead example, NOT the portrait camera.",
+      "sources": [
+        "assets/minigame-generated/player_run.png",
+        "images/rival.png"
+      ],
+      "generation_path": "/workspace/generated_images/exec-4c07a330-842f-4cc2-a48e-1280dee82da2.png",
+      "qa": {
+        "visual": "Inspected generated pixels and final 256-square image: matching approved overhead camera; orange/charcoal kit; lowered balanced stance; two arms/two distinct cleats; hands small but readable; no baked ball, text, motion lines, field, UI or backdrop.",
+        "status": "passed"
+      },
+      "full_resolution": "assets/minigame-generated/defender_ready.png",
+      "final": "images/minigames/defender_ready.png",
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source_sha256": {
+        "assets/minigame-generated/player_run.png": "ddd2ff8c2e93886a857d84ce12a1cdc1fa12c31784acc19f009db91386e79422",
+        "images/rival.png": "8cf771d9bf26cb8a6662823e7ab0cd8673b09203c1cc586b04d907696cec34bb"
+      },
+      "generated_sha256": "52f201f2c31efc66f7b4c06ea2df1b04151832af59aa8d22fe5eebd983ad0169",
+      "final_sha256": "99ba6db45a6d2ef1841213b0a370f8aa47a8edef0d6220e26b8a8f104d5ffed6",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        44,
+        12,
+        221,
+        239
+      ],
+      "visible_bbox_alpha_gt_16": [
+        46,
+        14,
+        219,
+        237
+      ],
+      "generated_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "name": "player_receive",
+      "prompt": "Create ONE detailed bitmap overhead football game actor, matching the attached overhead running sprite's exact fine pixel-textured rendering style, body scale, camera and framing. Same youthful chestnut-haired blue team character identity. Navy-blue jersey with PALE SKY BLUE sleeves (visibly distinguish teammate from first runner), teal trim, navy shorts, blue socks and navy cleats. CRITICAL view from high overhead looking down onto hair crown and shoulders, face mostly hidden, foreshortened body, as reference. Teammate waiting to receive a pass: balanced standing stance, feet separated with knees soft, TWO arms extended slightly outward and forward with visible open ready hands, anatomically clean fingers. Orient head toward TOP of square canvas. Exactly two arms and two legs. Body center at canvas center(.5,.5). Crisp outlines and detailed fabric shading, tiny fictional shield crest only. Square canvas with full figure safely contained and generous transparent margins. Standalone transparent RGBA actor only. NO ball, no field, no text, no motion lines, no floor, no shadow ellipse, no UI, no backdrop. Match overhead example; NOT a frontal portrait. Fine textured pixel-game artwork.",
+      "sources": [
+        "assets/minigame-generated/player_run.png"
+      ],
+      "generation_path": "/workspace/generated_images/exec-a014b29a-68d0-492c-a676-9c2fdb736510.png",
+      "qa": {
+        "visual": "Inspected generated pixels and final 256-square image: matching approved overhead camera; navy/teal kit distinguished by pale sky-blue sleeves; open hands and two separated cleats; no baked ball, text, motion lines, field, UI or backdrop.",
+        "status": "passed"
+      },
+      "full_resolution": "assets/minigame-generated/player_receive.png",
+      "final": "images/minigames/player_receive.png",
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source_sha256": {
+        "assets/minigame-generated/player_run.png": "ddd2ff8c2e93886a857d84ce12a1cdc1fa12c31784acc19f009db91386e79422"
+      },
+      "generated_sha256": "8f3647d016101e78d4d6e8282f4a5d19eb6f75ae619e3a3879ed70b93fcae9a7",
+      "final_sha256": "a6def1210df38a62708ff97400717dc985a3de4193127618acaf88c5ef9d07cd",
+      "dimensions": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        48,
+        11,
+        210,
+        242
+      ],
+      "visible_bbox_alpha_gt_16": [
+        50,
+        13,
+        208,
+        239
+      ],
+      "generated_dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "rejected_prototypes": [
+    {
+      "path": "assets/minigame-generated/player_run-rejected-threequarter.png",
+      "prompt": "Create a single polished detailed bitmap football game sprite using the attached hero reference for EXACT character identity and rendering: youthful male chibi with tousled dark chestnut hair, brown eyes, light peach skin, large expressive head, fine pixel-textured hand-painted game artwork, crisp dark outlines and rich subtle shading. Navy blue football jersey and shorts with turquoise teal edge stripes and fictional small shield crest, navy socks with teal bands, navy cleats. CHANGE POSE completely: dynamic full-body sprint traveling RIGHT, three-quarter side view facing RIGHT, head eyes torso and forward knee pointing right. Two clearly separate arms pumping and exactly two separate legs mid-stride, both cleated feet fully visible. Energetic but anatomically clean. Standalone character ONLY: NO football, NO ball anywhere, no field, no scenery, no floor, no shadow blob, no letters, no text, no real logos. Transparent RGBA background. Vertical 2:3 canvas with generous clean transparent margins all around, hair and both feet fully inside frame. Character occupies about 82% height, feet near y=93%, centered x=50%. Match reference detailing and identity, NOT an emoji, not vector, not flat geometric shapes.",
+      "reason": "Contract changed after generation to overhead square actors; not used in runtime.",
+      "source": "images/hero_pro.png",
+      "generation_path": "/workspace/generated_images/exec-8b12c4c6-8650-410c-b1cb-095aef1cfc31.png",
+      "source_sha256": "30fb244617d31573dcaa1046d28d6481b2e548ddfcd6a2876ad1bc32c93be347",
+      "generated_sha256": "684b2ff0e8c862841dda97c5ac3d09b9cb77ff80efbe5e3974420d641cbc359c"
+    }
+  ],
+  "optimization": "Pillow RGBA LANCZOS thumbnail to fit 256x256, centered transparent padding, PNG optimize; original aspect ratio preserved; no artwork drawn or background synthesized."
+}
