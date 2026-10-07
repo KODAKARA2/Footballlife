@@ -31,7 +31,7 @@ for(const h of newHeroes){
   s=setup(h,'만남');play(chats[0],0);play(chats[1],0);s=E.state();s.총턴+=5;play(chats[0],0);
   assert.equal(E.state().히로인.교류횟수,3);assert.equal(E.canConfess(),true);play(I.CARDS().find(c=>c.고백카드),0);assert.equal(E.state().히로인.관계,'연인');
   s=setup(h,'배우자');s.나이=40;s.시기='은퇴';s.엔딩=E.computeEnding();assert.equal(s.엔딩.히로인엔딩.아이디,h.아이디);assert.equal(s.엔딩.히로인엔딩.이름,h.엔딩.이름);E.recordLife();assert.ok(E.collection().엔딩['히로인:'+h.아이디]);
-  for(const key of new Set(Object.values(h.그림))){const png=fs.readFileSync(path.join(root,'images',key+'.png'));assert.equal(png.readUInt32BE(16),1024);assert.equal(png.readUInt32BE(20),1536);assert.equal(png[25],6,'RGBA PNG');}
+  for(const key of new Set(Object.values(h.그림))){const png=fs.readFileSync(path.join(root,'images',key+'.png'));assert.equal(png.readUInt32BE(16),512);assert.equal(png.readUInt32BE(20),768);assert.equal(png[25],6,'RGBA PNG');}
 }
 // 여러 새 인연을 만나도 이전 인연의 교류/호감은 보존됩니다.
 {

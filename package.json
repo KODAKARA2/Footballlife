@@ -9,7 +9,9 @@
     "test:browser": "node tools/run-tests.js browser",
     "test:sim": "node tools/football-career-check.js 1000",
     "start": "python3 -m http.server 8173 --bind 127.0.0.1",
-    "build": "node tools/build-pages.js"
+    "build": "node tools/build-pages.js",
+    "test:graphics": "node tools/graphics-check.js",
+    "test:feedback": "node tools/feedback-check.js && node tools/feedback-browser-check.js"
   },
   "devDependencies": {
     "playwright": "1.62.1"

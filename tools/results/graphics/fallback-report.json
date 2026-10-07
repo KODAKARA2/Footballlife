@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-07T09:47:55.696Z",
+  "cases": [
+    {
+      "blocked": [
+        "hero_pro_gk_plain"
+      ],
+      "requested": [
+        "hero_pro",
+        "hero_pro_gk_plain",
+        "hero_pro_gk"
+      ],
+      "expected": "hero_pro_gk",
+      "actual": {
+        "src": "images/hero_pro_gk.png",
+        "fallback": "⚽"
+      },
+      "passed": true
+    },
+    {
+      "blocked": [
+        "hero_pro_gk_plain",
+        "hero_pro_gk"
+      ],
+      "requested": [
+        "hero_pro",
+        "hero_pro_gk_plain",
+        "hero_pro_gk",
+        "hero_pro_plain"
+      ],
+      "expected": "hero_pro_plain",
+      "actual": {
+        "src": "images/hero_pro_plain.png",
+        "fallback": "⚽"
+      },
+      "passed": true
+    },
+    {
+      "blocked": [
+        "hero_pro_gk_plain",
+        "hero_pro_gk",
+        "hero_pro_plain",
+        "hero_pro"
+      ],
+      "requested": [
+        "hero_pro",
+        "hero_pro_gk_plain",
+        "hero_pro_gk",
+        "hero_pro_plain",
+        "hero_pro"
+      ],
+      "expected": null,
+      "actual": {
+        "src": null,
+        "fallback": "⚽"
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

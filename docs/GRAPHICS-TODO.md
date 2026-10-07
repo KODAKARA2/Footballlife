@@ -1,10 +1,10 @@
 # 축구판 그래픽 검수 목록
 
-2026-10-07 기존 110장 전체를 새로 생성해 교체하고 골키퍼 전용 18장을 추가했습니다. 총128장입니다. 인물은512×768 투명PNG, 배경은1200×800입니다. 원본 이미지는 Git 이력과 기존 `assets/` 자료에 보존합니다.
+2026-10-07 기존 110장 전체를 새로 생성해 교체하고 골키퍼 전용 18장을 추가했습니다. 같은 감독의 성공·실패 컷인2종까지 총130장입니다. 새 인물이 추가된 것은 아닙니다. 인물은512×768 투명PNG, 배경은1200×800입니다. 원본 이미지는 Git 이력과 기존 `assets/` 자료에 보존합니다.
 
 축구 유니폼·공·골대·키퍼 장갑을 확인하고, 학생의 연령에 맞는 일상과 히로인15명의 직업·인물 정체성을 유지했습니다. 각 변형은 독립 생성이며 단순 색상·도형 치환을 사용하지 않았습니다. 이미지 파일명은 기존 카드·저장 연결의 안정성을 위해 유지합니다. `hero_mlb` 등은 내부 파일명이며 야구 그림이 아닙니다.
 
-모든128장의 픽셀 검수 완료. 모바일·PC 브라우저 및 효과음 통합 검증 결과는 `tools/results/graphics/report.json`과 `docs/art-progress.json`에 기록합니다. 아직 실행하지 않은 검사를 통과로 표시하지 않습니다.
+모든130장의 픽셀 검수 완료. 모바일·PC 브라우저 및 효과음 통합 검증 결과는 `tools/results/graphics/report.json`과 `docs/art-progress.json`에 기록합니다. 아직 실행하지 않은 검사를 통과로 표시하지 않습니다.
 
 ## 원본·생성 내역
 
@@ -13,6 +13,7 @@
 - 주인공: `docs/art-hero-manifest.json`
 - 골키퍼: `docs/art-hero-gk-manifest.json`
 - 히로인: `docs/art-heroines-completion.json` 및 세 묶음 상세manifest
+- 감독 컷인: `docs/art-coach-cutins.json`
 - 조연: `docs/art-support-generation.json`
 - 배경: `docs/art-background-manifest.json`
 - 절차와 출처 설명: `docs/GRAPHICS-WORKFLOW.md`
@@ -151,3 +152,5 @@
 | `images/hero_pro_gk.png` | 완료 |
 | `images/hero_pro_gk_plain.png` | 완료 |
 | `images/hero_pro_gk_ugly.png` | 완료 |
+| `images/coach_tactics_success.png` | 완료 |
+| `images/coach_tactics_failure.png` | 완료 |

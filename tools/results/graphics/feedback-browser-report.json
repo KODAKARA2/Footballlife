@@ -1,0 +1,39 @@
+{
+  "folder": "football",
+  "url": "http://127.0.0.1:43733",
+  "viewports": [
+    {
+      "width": 320,
+      "settings": true,
+      "saveRestored": true,
+      "realAudioStarts": 2
+    },
+    {
+      "width": 390,
+      "settings": true,
+      "saveRestored": true,
+      "realAudioStarts": 2
+    },
+    {
+      "width": 1280,
+      "settings": true,
+      "saveRestored": true,
+      "realAudioStarts": 2
+    }
+  ],
+  "audio": [
+    {
+      "volume": 0.22,
+      "peak": 0.017391057685017586,
+      "rms": 0.0011168337610341166,
+      "tail": 0
+    },
+    {
+      "volume": 1,
+      "peak": 0.07905026525259018,
+      "rms": 0.005076517035381602,
+      "tail": 0
+    }
+  ],
+  "contactsAndCancel": true
+}

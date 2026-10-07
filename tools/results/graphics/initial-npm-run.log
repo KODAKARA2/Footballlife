@@ -1,0 +1,52 @@
+
+> football-life@2.0.0 test
+> node tools/run-tests.js
+
+PASS football-data-check
+PASS date-check
+PASS ending-check
+PASS free-time-check
+FAIL heroine-roster-check
+node:assert:152
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+512 !== 1024
+
+    at Object.<anonymous> (/workspace/football-life-publish/tools/heroine-roster-check.js:34:120)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 512,
+  expected: 1024,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0
+
+PASS passive-affection-check
+PASS romance-check
+PASS football-choice-check
+PASS sim
+PASS growth-balance-check
+PASS football-career-check
+PASS minigame-check
+PASS ui-check
+PASS ending-ui-check
+PASS free-time-ui-check
+PASS heroine-roster-ui-check
+PASS romance-ui-check
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

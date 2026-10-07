@@ -1,0 +1,1357 @@
+{
+  "checkedAt": "2026-10-07T09:59:21.745Z",
+  "files": 130,
+  "images": [
+    {
+      "file": "agent.png",
+      "width": 512,
+      "height": 768,
+      "clear": 231972,
+      "solid": 152423
+    },
+    {
+      "file": "bg_classroom.jpg",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_hall.jpg",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_home.jpg",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_indoor.png",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_office.jpg",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_room.jpg",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_school.jpg",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_stadium.png",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "bg_street.png",
+      "width": 1200,
+      "height": 800,
+      "clear": 0,
+      "solid": 960000
+    },
+    {
+      "file": "buddy.png",
+      "width": 512,
+      "height": 768,
+      "clear": 210207,
+      "solid": 171297
+    },
+    {
+      "file": "child.png",
+      "width": 512,
+      "height": 768,
+      "clear": 230272,
+      "solid": 151784
+    },
+    {
+      "file": "coach_high.png",
+      "width": 512,
+      "height": 768,
+      "clear": 235378,
+      "solid": 148512
+    },
+    {
+      "file": "coach_little.png",
+      "width": 512,
+      "height": 768,
+      "clear": 214480,
+      "solid": 168984
+    },
+    {
+      "file": "coach_tactics_failure.png",
+      "width": 512,
+      "height": 768,
+      "clear": 153205,
+      "solid": 231880
+    },
+    {
+      "file": "coach_tactics_success.png",
+      "width": 512,
+      "height": 768,
+      "clear": 162090,
+      "solid": 222023
+    },
+    {
+      "file": "hero_college.png",
+      "width": 512,
+      "height": 768,
+      "clear": 231519,
+      "solid": 149199
+    },
+    {
+      "file": "hero_college_gk.png",
+      "width": 512,
+      "height": 768,
+      "clear": 257972,
+      "solid": 126619
+    },
+    {
+      "file": "hero_college_gk_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 254945,
+      "solid": 130456
+    },
+    {
+      "file": "hero_college_gk_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 244598,
+      "solid": 138627
+    },
+    {
+      "file": "hero_college_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 245274,
+      "solid": 137027
+    },
+    {
+      "file": "hero_college_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 234632,
+      "solid": 147883
+    },
+    {
+      "file": "hero_elementary.png",
+      "width": 512,
+      "height": 768,
+      "clear": 238403,
+      "solid": 144157
+    },
+    {
+      "file": "hero_elementary_gk.png",
+      "width": 512,
+      "height": 768,
+      "clear": 245135,
+      "solid": 138851
+    },
+    {
+      "file": "hero_elementary_gk_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 254669,
+      "solid": 131289
+    },
+    {
+      "file": "hero_elementary_gk_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 240775,
+      "solid": 143273
+    },
+    {
+      "file": "hero_elementary_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 244033,
+      "solid": 138345
+    },
+    {
+      "file": "hero_elementary_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 210854,
+      "solid": 171017
+    },
+    {
+      "file": "hero_high.png",
+      "width": 512,
+      "height": 768,
+      "clear": 239619,
+      "solid": 141482
+    },
+    {
+      "file": "hero_high_gk.png",
+      "width": 512,
+      "height": 768,
+      "clear": 260045,
+      "solid": 124896
+    },
+    {
+      "file": "hero_high_gk_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 264000,
+      "solid": 120612
+    },
+    {
+      "file": "hero_high_gk_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 243029,
+      "solid": 141482
+    },
+    {
+      "file": "hero_high_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 239899,
+      "solid": 143720
+    },
+    {
+      "file": "hero_high_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 217008,
+      "solid": 164172
+    },
+    {
+      "file": "hero_injured.png",
+      "width": 512,
+      "height": 768,
+      "clear": 238957,
+      "solid": 144329
+    },
+    {
+      "file": "hero_injured_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 245102,
+      "solid": 139415
+    },
+    {
+      "file": "hero_injured_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 232453,
+      "solid": 151630
+    },
+    {
+      "file": "hero_middle.png",
+      "width": 512,
+      "height": 768,
+      "clear": 239967,
+      "solid": 142071
+    },
+    {
+      "file": "hero_middle_gk.png",
+      "width": 512,
+      "height": 768,
+      "clear": 249373,
+      "solid": 134374
+    },
+    {
+      "file": "hero_middle_gk_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 256122,
+      "solid": 127490
+    },
+    {
+      "file": "hero_middle_gk_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 240552,
+      "solid": 143376
+    },
+    {
+      "file": "hero_middle_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 241887,
+      "solid": 139872
+    },
+    {
+      "file": "hero_middle_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 232714,
+      "solid": 149473
+    },
+    {
+      "file": "hero_mlb.png",
+      "width": 512,
+      "height": 768,
+      "clear": 235471,
+      "solid": 146389
+    },
+    {
+      "file": "hero_mlb_gk.png",
+      "width": 512,
+      "height": 768,
+      "clear": 258274,
+      "solid": 126861
+    },
+    {
+      "file": "hero_mlb_gk_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 259055,
+      "solid": 126693
+    },
+    {
+      "file": "hero_mlb_gk_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 239106,
+      "solid": 145728
+    },
+    {
+      "file": "hero_mlb_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 241160,
+      "solid": 141660
+    },
+    {
+      "file": "hero_mlb_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 226393,
+      "solid": 156874
+    },
+    {
+      "file": "hero_pro.png",
+      "width": 512,
+      "height": 768,
+      "clear": 238837,
+      "solid": 141602
+    },
+    {
+      "file": "hero_pro_gk.png",
+      "width": 512,
+      "height": 768,
+      "clear": 258414,
+      "solid": 125647
+    },
+    {
+      "file": "hero_pro_gk_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 263408,
+      "solid": 120115
+    },
+    {
+      "file": "hero_pro_gk_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 247248,
+      "solid": 137718
+    },
+    {
+      "file": "hero_pro_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 232580,
+      "solid": 148378
+    },
+    {
+      "file": "hero_pro_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 220176,
+      "solid": 162469
+    },
+    {
+      "file": "hero_retired.png",
+      "width": 512,
+      "height": 768,
+      "clear": 232950,
+      "solid": 151301
+    },
+    {
+      "file": "hero_retired_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 230818,
+      "solid": 154679
+    },
+    {
+      "file": "hero_retired_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 209712,
+      "solid": 174326
+    },
+    {
+      "file": "hero_slump.png",
+      "width": 512,
+      "height": 768,
+      "clear": 230629,
+      "solid": 153051
+    },
+    {
+      "file": "hero_slump_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 233564,
+      "solid": 152451
+    },
+    {
+      "file": "hero_slump_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 208746,
+      "solid": 177256
+    },
+    {
+      "file": "hero_victory.png",
+      "width": 512,
+      "height": 768,
+      "clear": 245827,
+      "solid": 138587
+    },
+    {
+      "file": "hero_victory_plain.png",
+      "width": 512,
+      "height": 768,
+      "clear": 254800,
+      "solid": 130767
+    },
+    {
+      "file": "hero_victory_ugly.png",
+      "width": 512,
+      "height": 768,
+      "clear": 233161,
+      "solid": 152092
+    },
+    {
+      "file": "heroine10.png",
+      "width": 512,
+      "height": 768,
+      "clear": 231392,
+      "solid": 148546
+    },
+    {
+      "file": "heroine10_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 233403,
+      "solid": 149500
+    },
+    {
+      "file": "heroine10_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 186429,
+      "solid": 193820
+    },
+    {
+      "file": "heroine10_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 239406,
+      "solid": 142112
+    },
+    {
+      "file": "heroine11.png",
+      "width": 512,
+      "height": 768,
+      "clear": 214438,
+      "solid": 164573
+    },
+    {
+      "file": "heroine11_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 232143,
+      "solid": 148478
+    },
+    {
+      "file": "heroine11_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 142679,
+      "solid": 238237
+    },
+    {
+      "file": "heroine11_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 223763,
+      "solid": 157375
+    },
+    {
+      "file": "heroine12.png",
+      "width": 512,
+      "height": 768,
+      "clear": 248459,
+      "solid": 133117
+    },
+    {
+      "file": "heroine12_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 244714,
+      "solid": 138295
+    },
+    {
+      "file": "heroine12_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 161301,
+      "solid": 219875
+    },
+    {
+      "file": "heroine12_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 251682,
+      "solid": 130995
+    },
+    {
+      "file": "heroine13.png",
+      "width": 512,
+      "height": 768,
+      "clear": 253095,
+      "solid": 130740
+    },
+    {
+      "file": "heroine13_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 232315,
+      "solid": 152055
+    },
+    {
+      "file": "heroine13_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 174517,
+      "solid": 208922
+    },
+    {
+      "file": "heroine13_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 247599,
+      "solid": 136776
+    },
+    {
+      "file": "heroine14.png",
+      "width": 512,
+      "height": 768,
+      "clear": 226518,
+      "solid": 150322
+    },
+    {
+      "file": "heroine14_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 230820,
+      "solid": 146094
+    },
+    {
+      "file": "heroine14_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 138709,
+      "solid": 239055
+    },
+    {
+      "file": "heroine14_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 223753,
+      "solid": 153447
+    },
+    {
+      "file": "heroine15.png",
+      "width": 512,
+      "height": 768,
+      "clear": 234472,
+      "solid": 148332
+    },
+    {
+      "file": "heroine15_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 214754,
+      "solid": 167562
+    },
+    {
+      "file": "heroine15_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 160604,
+      "solid": 222103
+    },
+    {
+      "file": "heroine15_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 206440,
+      "solid": 174589
+    },
+    {
+      "file": "heroine1_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 243681,
+      "solid": 136217
+    },
+    {
+      "file": "heroine1_meet.png",
+      "width": 512,
+      "height": 768,
+      "clear": 230923,
+      "solid": 146129
+    },
+    {
+      "file": "heroine1_spouse.png",
+      "width": 512,
+      "height": 768,
+      "clear": 235651,
+      "solid": 144835
+    },
+    {
+      "file": "heroine1_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 178458,
+      "solid": 203254
+    },
+    {
+      "file": "heroine2_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 225559,
+      "solid": 156847
+    },
+    {
+      "file": "heroine2_meet.png",
+      "width": 512,
+      "height": 768,
+      "clear": 245691,
+      "solid": 138218
+    },
+    {
+      "file": "heroine2_spouse.png",
+      "width": 512,
+      "height": 768,
+      "clear": 254040,
+      "solid": 130840
+    },
+    {
+      "file": "heroine2_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 149250,
+      "solid": 233143
+    },
+    {
+      "file": "heroine3_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 239331,
+      "solid": 144231
+    },
+    {
+      "file": "heroine3_meet.png",
+      "width": 512,
+      "height": 768,
+      "clear": 248139,
+      "solid": 133452
+    },
+    {
+      "file": "heroine3_spouse.png",
+      "width": 512,
+      "height": 768,
+      "clear": 247426,
+      "solid": 137247
+    },
+    {
+      "file": "heroine3_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 157234,
+      "solid": 226292
+    },
+    {
+      "file": "heroine4_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 218169,
+      "solid": 162931
+    },
+    {
+      "file": "heroine4_meet.png",
+      "width": 512,
+      "height": 768,
+      "clear": 221153,
+      "solid": 159365
+    },
+    {
+      "file": "heroine4_spouse.png",
+      "width": 512,
+      "height": 768,
+      "clear": 201919,
+      "solid": 179600
+    },
+    {
+      "file": "heroine4_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 137012,
+      "solid": 246693
+    },
+    {
+      "file": "heroine5_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 260117,
+      "solid": 124617
+    },
+    {
+      "file": "heroine5_meet.png",
+      "width": 512,
+      "height": 768,
+      "clear": 250584,
+      "solid": 133512
+    },
+    {
+      "file": "heroine5_spouse.png",
+      "width": 512,
+      "height": 768,
+      "clear": 224782,
+      "solid": 159049
+    },
+    {
+      "file": "heroine5_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 143990,
+      "solid": 240441
+    },
+    {
+      "file": "heroine6_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 196795,
+      "solid": 184120
+    },
+    {
+      "file": "heroine6_meet.png",
+      "width": 512,
+      "height": 768,
+      "clear": 203787,
+      "solid": 179885
+    },
+    {
+      "file": "heroine6_spouse.png",
+      "width": 512,
+      "height": 768,
+      "clear": 211524,
+      "solid": 172869
+    },
+    {
+      "file": "heroine6_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 133997,
+      "solid": 249822
+    },
+    {
+      "file": "heroine7.png",
+      "width": 512,
+      "height": 768,
+      "clear": 227993,
+      "solid": 155393
+    },
+    {
+      "file": "heroine7_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 242803,
+      "solid": 141383
+    },
+    {
+      "file": "heroine7_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 152869,
+      "solid": 231479
+    },
+    {
+      "file": "heroine7_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 233614,
+      "solid": 150395
+    },
+    {
+      "file": "heroine8.png",
+      "width": 512,
+      "height": 768,
+      "clear": 240350,
+      "solid": 141060
+    },
+    {
+      "file": "heroine8_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 240388,
+      "solid": 141309
+    },
+    {
+      "file": "heroine8_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 173414,
+      "solid": 208458
+    },
+    {
+      "file": "heroine8_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 235209,
+      "solid": 147055
+    },
+    {
+      "file": "heroine9.png",
+      "width": 512,
+      "height": 768,
+      "clear": 218238,
+      "solid": 163633
+    },
+    {
+      "file": "heroine9_lover.png",
+      "width": 512,
+      "height": 768,
+      "clear": 209657,
+      "solid": 171705
+    },
+    {
+      "file": "heroine9_wedding.png",
+      "width": 512,
+      "height": 768,
+      "clear": 138964,
+      "solid": 244850
+    },
+    {
+      "file": "heroine9_wife.png",
+      "width": 512,
+      "height": 768,
+      "clear": 215232,
+      "solid": 165255
+    },
+    {
+      "file": "interpreter.png",
+      "width": 512,
+      "height": 768,
+      "clear": 244650,
+      "solid": 136412
+    },
+    {
+      "file": "manager_pro.png",
+      "width": 512,
+      "height": 768,
+      "clear": 244534,
+      "solid": 139983
+    },
+    {
+      "file": "mlb_teammate.png",
+      "width": 512,
+      "height": 768,
+      "clear": 244109,
+      "solid": 138861
+    },
+    {
+      "file": "parents.png",
+      "width": 512,
+      "height": 768,
+      "clear": 130948,
+      "solid": 247072
+    },
+    {
+      "file": "rival.png",
+      "width": 512,
+      "height": 768,
+      "clear": 239398,
+      "solid": 141709
+    },
+    {
+      "file": "teammate.png",
+      "width": 512,
+      "height": 768,
+      "clear": 241059,
+      "solid": 140989
+    }
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "pos": "공격수",
+      "stage": "초등학교",
+      "overflow": false,
+      "src": "images/hero_elementary.png",
+      "images": [
+        {
+          "src": "images/hero_elementary.png",
+          "ok": true
+        },
+        {
+          "src": "images/buddy.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "pos": "공격수",
+      "stage": "프로",
+      "overflow": false,
+      "src": "images/hero_pro.png",
+      "images": [
+        {
+          "src": "images/hero_pro.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "pos": "공격수",
+      "stage": "해외리그",
+      "overflow": false,
+      "src": "images/hero_mlb.png",
+      "images": [
+        {
+          "src": "images/hero_mlb.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "pos": "골키퍼",
+      "stage": "초등학교",
+      "overflow": false,
+      "src": "images/hero_elementary_gk.png",
+      "images": [
+        {
+          "src": "images/hero_elementary_gk.png",
+          "ok": true
+        },
+        {
+          "src": "images/rival.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "pos": "골키퍼",
+      "stage": "프로",
+      "overflow": false,
+      "src": "images/hero_pro_gk.png",
+      "images": [
+        {
+          "src": "images/hero_pro_gk.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "pos": "골키퍼",
+      "stage": "해외리그",
+      "overflow": false,
+      "src": "images/hero_mlb_gk.png",
+      "images": [
+        {
+          "src": "images/hero_mlb_gk.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "pos": "공격수",
+      "stage": "초등학교",
+      "overflow": false,
+      "src": "images/hero_elementary.png",
+      "images": [
+        {
+          "src": "images/hero_elementary.png",
+          "ok": true
+        },
+        {
+          "src": "images/rival.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "pos": "공격수",
+      "stage": "프로",
+      "overflow": false,
+      "src": "images/hero_pro.png",
+      "images": [
+        {
+          "src": "images/hero_pro.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "pos": "공격수",
+      "stage": "해외리그",
+      "overflow": false,
+      "src": "images/hero_mlb.png",
+      "images": [
+        {
+          "src": "images/hero_mlb.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "pos": "골키퍼",
+      "stage": "초등학교",
+      "overflow": false,
+      "src": "images/hero_elementary_gk.png",
+      "images": [
+        {
+          "src": "images/hero_elementary_gk.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "pos": "골키퍼",
+      "stage": "프로",
+      "overflow": false,
+      "src": "images/hero_pro_gk.png",
+      "images": [
+        {
+          "src": "images/hero_pro_gk.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "pos": "골키퍼",
+      "stage": "해외리그",
+      "overflow": false,
+      "src": "images/hero_mlb_gk.png",
+      "images": [
+        {
+          "src": "images/hero_mlb_gk.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "pos": "공격수",
+      "stage": "초등학교",
+      "overflow": false,
+      "src": "images/hero_elementary.png",
+      "images": [
+        {
+          "src": "images/hero_elementary.png",
+          "ok": true
+        },
+        {
+          "src": "images/buddy.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "pos": "공격수",
+      "stage": "프로",
+      "overflow": false,
+      "src": "images/hero_pro.png",
+      "images": [
+        {
+          "src": "images/hero_pro.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "pos": "공격수",
+      "stage": "해외리그",
+      "overflow": false,
+      "src": "images/hero_mlb.png",
+      "images": [
+        {
+          "src": "images/hero_mlb.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "pos": "골키퍼",
+      "stage": "초등학교",
+      "overflow": false,
+      "src": "images/hero_elementary_gk.png",
+      "images": [
+        {
+          "src": "images/hero_elementary_gk.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "pos": "골키퍼",
+      "stage": "프로",
+      "overflow": false,
+      "src": "images/hero_pro_gk.png",
+      "images": [
+        {
+          "src": "images/hero_pro_gk.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "pos": "골키퍼",
+      "stage": "해외리그",
+      "overflow": false,
+      "src": "images/hero_mlb_gk.png",
+      "images": [
+        {
+          "src": "images/hero_mlb_gk.png",
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "goalkeeperMappings": [
+    {
+      "stage": "elementary",
+      "looks": 9,
+      "expected": "hero_elementary_gk",
+      "keys": [
+        "hero_elementary_gk",
+        "hero_elementary"
+      ]
+    },
+    {
+      "stage": "elementary",
+      "looks": 5,
+      "expected": "hero_elementary_gk_plain",
+      "keys": [
+        "hero_elementary_gk_plain",
+        "hero_elementary_gk",
+        "hero_elementary_plain",
+        "hero_elementary"
+      ]
+    },
+    {
+      "stage": "elementary",
+      "looks": 1,
+      "expected": "hero_elementary_gk_ugly",
+      "keys": [
+        "hero_elementary_gk_ugly",
+        "hero_elementary_gk",
+        "hero_elementary_ugly",
+        "hero_elementary"
+      ]
+    },
+    {
+      "stage": "middle",
+      "looks": 9,
+      "expected": "hero_middle_gk",
+      "keys": [
+        "hero_middle_gk",
+        "hero_middle"
+      ]
+    },
+    {
+      "stage": "middle",
+      "looks": 5,
+      "expected": "hero_middle_gk_plain",
+      "keys": [
+        "hero_middle_gk_plain",
+        "hero_middle_gk",
+        "hero_middle_plain",
+        "hero_middle"
+      ]
+    },
+    {
+      "stage": "middle",
+      "looks": 1,
+      "expected": "hero_middle_gk_ugly",
+      "keys": [
+        "hero_middle_gk_ugly",
+        "hero_middle_gk",
+        "hero_middle_ugly",
+        "hero_middle"
+      ]
+    },
+    {
+      "stage": "high",
+      "looks": 9,
+      "expected": "hero_high_gk",
+      "keys": [
+        "hero_high_gk",
+        "hero_high"
+      ]
+    },
+    {
+      "stage": "high",
+      "looks": 5,
+      "expected": "hero_high_gk_plain",
+      "keys": [
+        "hero_high_gk_plain",
+        "hero_high_gk",
+        "hero_high_plain",
+        "hero_high"
+      ]
+    },
+    {
+      "stage": "high",
+      "looks": 1,
+      "expected": "hero_high_gk_ugly",
+      "keys": [
+        "hero_high_gk_ugly",
+        "hero_high_gk",
+        "hero_high_ugly",
+        "hero_high"
+      ]
+    },
+    {
+      "stage": "college",
+      "looks": 9,
+      "expected": "hero_college_gk",
+      "keys": [
+        "hero_college_gk",
+        "hero_college"
+      ]
+    },
+    {
+      "stage": "college",
+      "looks": 5,
+      "expected": "hero_college_gk_plain",
+      "keys": [
+        "hero_college_gk_plain",
+        "hero_college_gk",
+        "hero_college_plain",
+        "hero_college"
+      ]
+    },
+    {
+      "stage": "college",
+      "looks": 1,
+      "expected": "hero_college_gk_ugly",
+      "keys": [
+        "hero_college_gk_ugly",
+        "hero_college_gk",
+        "hero_college_ugly",
+        "hero_college"
+      ]
+    },
+    {
+      "stage": "pro",
+      "looks": 9,
+      "expected": "hero_pro_gk",
+      "keys": [
+        "hero_pro_gk",
+        "hero_pro"
+      ]
+    },
+    {
+      "stage": "pro",
+      "looks": 5,
+      "expected": "hero_pro_gk_plain",
+      "keys": [
+        "hero_pro_gk_plain",
+        "hero_pro_gk",
+        "hero_pro_plain",
+        "hero_pro"
+      ]
+    },
+    {
+      "stage": "pro",
+      "looks": 1,
+      "expected": "hero_pro_gk_ugly",
+      "keys": [
+        "hero_pro_gk_ugly",
+        "hero_pro_gk",
+        "hero_pro_ugly",
+        "hero_pro"
+      ]
+    },
+    {
+      "stage": "mlb",
+      "looks": 9,
+      "expected": "hero_mlb_gk",
+      "keys": [
+        "hero_mlb_gk",
+        "hero_mlb"
+      ]
+    },
+    {
+      "stage": "mlb",
+      "looks": 5,
+      "expected": "hero_mlb_gk_plain",
+      "keys": [
+        "hero_mlb_gk_plain",
+        "hero_mlb_gk",
+        "hero_mlb_plain",
+        "hero_mlb"
+      ]
+    },
+    {
+      "stage": "mlb",
+      "looks": 1,
+      "expected": "hero_mlb_gk_ugly",
+      "keys": [
+        "hero_mlb_gk_ugly",
+        "hero_mlb_gk",
+        "hero_mlb_ugly",
+        "hero_mlb"
+      ]
+    }
+  ],
+  "passed": true
+}

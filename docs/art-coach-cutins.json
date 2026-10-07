@@ -1,0 +1,84 @@
+{
+  "assets": [
+    {
+      "reaction": "success",
+      "prompt": "Create ONE transparent PNG character cut-in for a football life game, portrait canvas 512 x 768 requested. Use the attached coach as the exact identity/style reference: same gray-haired adult Korean male football coach, navy training jacket with bright teal piping and small white-and-teal chevron crest, detailed fine pixel-art chibi style and crisp pixelated edge shading. This is the SUCCESS reaction: warmly pleased, clearly smiling with happy lively open eyes, slightly raised eyebrows, friendly confident expression, a modest approving thumbs-up near his chest. Upper-body bust portrait only, large prominent face, head and upper torso fully visible, generous clear transparent margin above hair and beside arms, centered and facing viewer with slight three-quarter angle. Keep natural anatomy, exactly two arms, bare hands (no gloves), coherent fingers and face. No text, no scenery, no equipment, no effects, no panel or border. Completely transparent alpha background.",
+      "reference": "images/manager_pro.png",
+      "generator": "built-in image_gen.imagegen",
+      "transparent_background_requested": true,
+      "actual_generated_path": "/workspace/generated_images/exec-38440b3d-75ba-4ce5-8264-a44a67368459.png",
+      "full_resolution_copy": "assets/football-generated/coach-tactics-success.png",
+      "web_path": "images/coach_tactics_success.png",
+      "generated_dimensions": [
+        1024,
+        1536
+      ],
+      "web_dimensions": [
+        512,
+        768
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 162090,
+      "sha256_full": "20d23c5185060057a1eeb3b534ab304dd1f9f039edfc2e33b34465176e23909a",
+      "sha256_web": "32d4430f5bb437f345487e0f3f1fe97296a40b3bca9e4e3cd633f6982f95932b",
+      "qa": {
+        "visually_reviewed": true,
+        "face_eyes_mouth_coherent": true,
+        "two_arms_anatomy_intact": true,
+        "bare_hands_no_gloves": true,
+        "expression_distinct": true,
+        "alpha_present": true,
+        "note": "Soft translucent edge halo exists in generated alpha. Face and hair are fully visible; lower torso ends at canvas base."
+      },
+      "safe_rendering": {
+        "object_fit": "contain",
+        "object_position": "50% 50%",
+        "wide_face_crop_object_position": "50% 20%"
+      }
+    },
+    {
+      "reaction": "failure",
+      "prompt": "Create ONE transparent PNG character cut-in for a football life game, portrait canvas 512 x 768 requested. Use the attached coach as the exact identity/style reference: same gray-haired adult Korean male football coach, navy training jacket with bright teal piping and small white-and-teal chevron crest, detailed fine pixel-art chibi style and crisp pixelated edge shading. This is the FAILURE reaction: comically angry and scolding after a tactical mistake, brows sharply lowered, clear visible eyes looking toward viewer, open mouth speaking sternly, mildly flushed cheeks, arms crossed firmly. Nonviolent and humorous sporting coach disappointment. Upper-body bust portrait only, large prominent face, head and upper torso fully visible, generous clear transparent margin above hair and beside arms, centered and facing viewer with slight three-quarter angle. Keep natural anatomy, exactly two arms, bare hands (no gloves), coherent fingers and face. No text, no scenery, no equipment, no effects, no glow, no panel or border. Completely transparent alpha background.",
+      "reference": "images/manager_pro.png",
+      "generator": "built-in image_gen.imagegen",
+      "transparent_background_requested": true,
+      "actual_generated_path": "/workspace/generated_images/exec-5741eb6b-8d44-49d6-9f1d-358759fd6c98.png",
+      "full_resolution_copy": "assets/football-generated/coach-tactics-failure.png",
+      "web_path": "images/coach_tactics_failure.png",
+      "generated_dimensions": [
+        1024,
+        1536
+      ],
+      "web_dimensions": [
+        512,
+        768
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixel_count": 153205,
+      "sha256_full": "abcec873d6e5a1ddf3b12297fb8c37488b8f215b140002017a0ed4a700826cd8",
+      "sha256_web": "31f91a0aadd9476a0d53e1311291584853819f9962ee1088b7f2df81dd4cfae1",
+      "qa": {
+        "visually_reviewed": true,
+        "face_eyes_mouth_coherent": true,
+        "two_arms_anatomy_intact": true,
+        "bare_hands_no_gloves": true,
+        "expression_distinct": true,
+        "alpha_present": true,
+        "note": "Soft translucent edge halo exists in generated alpha. Face and hair are fully visible; lower torso ends at canvas base."
+      },
+      "safe_rendering": {
+        "object_fit": "contain",
+        "object_position": "50% 50%",
+        "wide_face_crop_object_position": "50% 20%"
+      }
+    }
+  ]
+}

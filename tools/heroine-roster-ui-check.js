@@ -42,7 +42,7 @@ fs.mkdirSync(out,{recursive:true});
     await page.setViewportSize({width:1120,height:900});
     await page.goto(await require('./helpers/browser').url()+'assets/fine-pixel/index.html?group='+encodeURIComponent('신규'));
     await page.locator('#gallery img').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));
-    await page.waitForFunction(()=>[...document.querySelectorAll('#gallery img')].every(i=>i.complete&&i.naturalWidth===1024));
+    await page.waitForFunction(()=>[...document.querySelectorAll('#gallery img')].every(i=>i.complete&&i.naturalWidth===512&&i.naturalHeight===768));
     assert.equal(await page.locator('#gallery figure').count(),36);
     await page.screenshot({path:path.join(out,'new-heroines-gallery.png'),fullPage:true});
     await page.setViewportSize({width:320,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));

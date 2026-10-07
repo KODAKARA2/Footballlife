@@ -41,14 +41,14 @@ fs.mkdirSync(out, {recursive:true});
     }
     for(const width of [320,390,1280]){
       await page.setViewportSize({width,height:900});
-      await page.reload();await page.screenshot({path:path.join(out,`setup-${width}.png`),fullPage:true});
+      await page.evaluate(()=>localStorage.removeItem('football-life-save-v2'));await page.reload();await page.screenshot({path:path.join(out,`setup-${width}.png`),fullPage:false,animations:'disabled'});
       for(const pos of ['공격수','골키퍼'])for(const stage of ['초등학교','프로','해외리그']){
-        await page.evaluate(({pos,stage})=>{E.newGame('그림검수',pos,pos==='골키퍼'?'빌드업':'결정력');E.enterStage(stage);E.state().나이=stage==='초등학교'?10:stage==='프로'?24:28;E.state().외모=9;U.showGame();},{pos,stage});
-        await page.waitForTimeout(200);
+        await page.evaluate(({pos,stage})=>{E.newGame('그림검수',pos,pos==='골키퍼'?'빌드업':'결정력');E.enterStage(stage);E.state().나이=stage==='초등학교'?10:stage==='프로'?24:28;E.state().외모=9;E.next();U.showGame();},{pos,stage});
+        await page.waitForTimeout(900);
         const state = await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,src:document.querySelector('.life img')?.getAttribute('src'),images:[...document.images].filter(i=>i.offsetParent!==null).map(i=>({src:i.getAttribute('src'),ok:i.complete&&i.naturalWidth>0}))}));
         assert(!state.overflow,`overflow ${width} ${pos} ${stage}`);assert(state.images.every(i=>i.ok),JSON.stringify(state));
         if(pos==='골키퍼') assert(state.images.some(i=>/_gk/.test(i.src)), 'Missing goalkeeper art '+stage);
-        await page.screenshot({path:path.join(out,`${pos}-${stage}-${width}.png`),fullPage:true});
+        await page.screenshot({path:path.join(out,`${pos}-${stage}-${width}.png`),fullPage:false,animations:'disabled'});
         report.layouts.push({width,pos,stage,...state});
       }
     }

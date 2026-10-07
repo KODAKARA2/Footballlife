@@ -27,6 +27,8 @@ python3 -m http.server 8173 --bind 127.0.0.1
 ```sh
 npm install
 npm test
+npm run test:graphics
+npm run test:feedback
 ```
 
 브라우저 검사는 설치된 Chromium/Chrome 또는 Playwright Chromium을 사용합니다. 필요하면 `npx playwright install chromium`으로 설치하거나 `CHROMIUM_PATH`에 실행 파일 경로를 지정하세요. `npm run test:engine`은 화면 없는 검사, `npm run test:browser`는 실제 브라우저 검사입니다. 상세 결과는 `tools/results/test-report-all.json`과 각 `.log` 파일에 기록됩니다.
@@ -43,4 +45,4 @@ npm test
 
 데이터 작성법은 [안내서](안내서.md), 인수인계와 검증 결과는 [개발노트](개발노트.md)를 참고하세요. 원본 문서는 `docs/upstream/`에 출처 기록으로 보존합니다.
 
-축구판 그림을 새로 제작하는 작업은 [그래픽 제작 기록](docs/GRAPHICS-WORKFLOW.md)과 [진행 목록](docs/art-progress.json)에 기록합니다. [그래픽 검수 목록](docs/GRAPHICS-TODO.md)에서 완료 상태와 연결 위치를 확인할 수 있습니다. 기존 `data/settings.js`의 그림 출처, `assets`의 원본·프롬프트·라이선스, Pretendard OFL 라이선스를 보존합니다.
+기존110장 전체 교체와 골키퍼 전용18장 추가를 포함한 감독 컷인2종까지 총130장 제작 내역은 [그래픽 제작 기록](docs/GRAPHICS-WORKFLOW.md)과 [진행 목록](docs/art-progress.json)에 기록합니다. [그래픽 검수 목록](docs/GRAPHICS-TODO.md)에서 완료 상태와 연결 위치를 확인할 수 있습니다. 기존 `data/settings.js`의 그림 출처, `assets`의 원본·프롬프트·라이선스, Pretendard OFL 라이선스를 보존합니다.
