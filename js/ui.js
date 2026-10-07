@@ -250,7 +250,11 @@
   };
 
   var busy = false;
-  var BALL = '<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="3"/><path d="M50 28L70 43L62 67H38L30 43Z M10 35L25 20L30 43L14 60Z M75 20L90 35L86 60L70 43Z M38 67L30 88L50 96L62 87L62 67Z" fill="#263238"/></svg>';
+  // Regular center pentagon and five identical boundary panels. Keep panel
+  // geometry rotationally symmetric rather than joining elongated black strips.
+  var BALL = '<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fffdf6" stroke="#263238" stroke-width="3"/>' +
+    [0,72,144,216,288].map(function(angle){return '<g transform="rotate('+angle+' 50 50)"><path d="M39 6 Q50 2 61 6 L64 17 L50 26 L36 17Z" fill="#263238"/><path d="M50 26V32 M36 17L23 24 M64 17L77 24" fill="none" stroke="#81908c" stroke-width="1.5" stroke-linecap="round"/></g>';}).join('') +
+    '<polygon points="50,32 67.119,44.438 60.580,64.562 39.420,64.562 32.881,44.438" fill="#263238"/></svg>';
 
   // ---------------- 승부의 순간 미니게임 ----------------
   // 역할 평가에 쓰이는 능력의 게임 중 추첨. 같은 종류는 세 번 연속 나오지 않음.

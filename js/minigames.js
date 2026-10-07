@@ -14,7 +14,7 @@
       hold: function () { held = true; cancelAnimationFrame(raf); },
       run: function (fn) { function frame() { if (done || held || !m.isConnected) return; fn(performance.now()); if (!done && !held) raf = Feedback.frame(m, frame); } frame(); },
       bar: function (ratio) { m.querySelector('.pf-time i').style.width = Math.max(0, Math.min(1, ratio)) * 100 + '%'; },
-      finish: function (level, text) { if (done || !m.isConnected) return; done = true; cancelAnimationFrame(raf); Feedback.cue(level >= 3 ? 'great' : level >= 2 ? 'good' : 'bad', m.querySelector('.mg'), level >= 3); var p = probability(level); m.querySelector('.mg-result').textContent = text + ' · ' + stat + ' 판정 · 성공 확률 ' + Math.round(p * 100) + '%'; timeout = Feedback.later(m, function () { if (!m.isConnected) return; m.remove(); cb({확률:p, 표시:text, 능력:stat, 등급:level}); }, 1100); },
+      finish: function (level, text, feedbackKind) { if (done || !m.isConnected) return; done = true; cancelAnimationFrame(raf); Feedback.cue(feedbackKind || (level >= 3 ? 'great' : level >= 2 ? 'good' : 'bad'), m.querySelector('.mg'), level >= 3); var p = probability(level); m.querySelector('.mg-result').textContent = text + ' · ' + stat + ' 판정 · 성공 확률 ' + Math.round(p * 100) + '%'; timeout = Feedback.later(m, function () { if (!m.isConnected) return; m.remove(); cb({확률:p, 표시:text, 능력:stat, 등급:level}); }, 1100); },
       cancel: function () { done = true; cancelAnimationFrame(raf); clearTimeout(timeout); Feedback.clear(m); m.remove(); }
     };
   }
@@ -45,7 +45,7 @@
   // Shoot a moving ball when it reaches the contact line; the goal and goalkeeper
   // make the striking direction explicit without using the old baseball art.
   U.miniBat = function (cb) {
-    var s = session('⚽ 슈팅', '패스가 <b>노란 슈팅 선</b>에 닿을 때 눌러 골문으로 슛하세요.', '<div class="football-goal">골문</div><div class="football-contact">슈팅 선</div><div class="football-ball">' + H.ball + '</div><div class="football-status">패스를 기다리세요</div>', '슈팅', cb);
+    var s = session('⚽ 슈팅', '패스가 <b>노란 슈팅 선</b>에 닿을 때 눌러 골문으로 슛하세요.', '<div class="football-goal">골문</div><div class="football-contact">슈팅 선</div><div class="football-ball"><span class="football-ball-spin">' + H.ball + '</span></div><div class="football-status">패스를 기다리세요</div>', '슈팅', cb);
     var launch = s.start + 750, duration = 1000 + Math.random() * 700, ball = s.m.querySelector('.football-ball');
     function put(now) { var u = Math.max(0, (now - launch) / duration); ball.style.left = (15 + 60 * u) + '%'; ball.style.top = '70%'; s.bar(1 - (now - s.start) / (duration + 1300)); if (now >= launch) s.m.querySelector('.football-status').textContent = '공을 보고 슈팅!'; }
     s.run(function (now) { put(now); if (now > launch + duration + 500) s.finish(0, '슈팅 기회를 놓쳤어요'); });
@@ -91,7 +91,7 @@
       }
       function position(p, progress) {
         ball.style.left=p.x*100+'%'; ball.style.top=p.y*100+'%';
-        ball.style.transform='translate(-50%,-50%) rotate('+(-540*progress)+'deg) scale('+(1-.58*progress)+')';
+        ball.querySelector('.football-ball-spin').style.transform='rotate('+(-540*progress)+'deg) scale('+(1-.58*progress)+')';
       }
       function cleanup() {
         cancelAnimationFrame(frame); observer.disconnect();
@@ -207,9 +207,23 @@
     var names=['압박','전환','침투'],sequence=[0,0,0].map(function(){return Math.floor(Math.random()*3);});
     var s=session('🧠 전술 기억','감독의 전술 <b>3개를 순서대로</b> 기억하고 같은 순서로 고르세요.','<div class="sign-display" role="status"></div><div class="sign-progress">전술을 기억하세요</div><div class="sign-answers">'+names.map(function(n,i){return '<button disabled data-sign="'+i+'"><small>'+(i+1)+'</small>'+n+'</button>';}).join('')+'</div><div class="sign-slots">○ ○ ○</div>','위치선정',cb),reveal=s.start+2400,answers=[],correct=0,last=-Infinity;
     var m=s.m,buttons=m.querySelectorAll('[data-sign]'),box=m.querySelector('.mg'),display=m.querySelector('.sign-display');box.tabIndex=0;box.setAttribute('aria-label','전술 기억. 숫자 1, 2, 3으로 선택');box.focus();
-    function answer(n){var now=performance.now();if(!s.active()||now<reveal||now-last<180)return;last=now;if(now>reveal+5000)return s.finish(correct,'전술 입력 시간 초과 · '+correct+'개 일치');if(sequence[answers.length]===n)correct++;answers.push(n);m.querySelector('.sign-slots').textContent=answers.map(function(i){return names[i];}).concat(Array(3-answers.length).fill('○')).join(' · ');if(answers.length===3){buttons.forEach(function(b){b.disabled=true;});s.finish(correct,'전술 '+correct+'/3개 일치');}}
+    function resolve(timeout) {
+      if(!s.active())return;
+      buttons.forEach(function(b){b.disabled=true;});
+      if(!document.hidden){
+        var cutin=document.createElement('div'),exact=correct===3;
+        cutin.className='coach-tactics-cutin';cutin.dataset.emotion=exact?'success':'failure';
+        cutin.innerHTML='<img src="images/coach_tactics_'+(exact?'success':'failure')+'.png" alt="'+(exact?'웃는 감독':'화난 감독')+'"><div><strong>'+(exact?'완벽하게 기억했어!':'다시 집중하자!')+'</strong><p>'+correct+'/3 '+(exact?'완전 일치':correct?'부분 일치':'불일치')+(timeout?'<br>시간 초과':'')+'</p></div>';
+        m.querySelector('.football-field').appendChild(cutin);m.classList.add('tactics-resolved');
+        function remove(){cutin.remove();watch.disconnect();window.removeEventListener('resize',remove);document.removeEventListener('visibilitychange',remove);}
+        var watch=new MutationObserver(function(){if(!m.isConnected)remove();});watch.observe(document.body,{childList:true,subtree:true});
+        window.addEventListener('resize',remove);document.addEventListener('visibilitychange',remove);Feedback.later(m,remove,950);
+      }
+      s.finish(correct,timeout?'전술 입력 시간 초과 · '+correct+'개 일치':'전술 '+correct+'/3개 일치',correct===3?'great':'bad');
+    }
+    function answer(n){var now=performance.now();if(!s.active()||now<reveal||now-last<180)return;last=now;if(now>reveal+5000)return resolve(true);if(sequence[answers.length]===n)correct++;answers.push(n);m.querySelector('.sign-slots').textContent=answers.map(function(i){return names[i];}).concat(Array(3-answers.length).fill('○')).join(' · ');if(answers.length===3){buttons.forEach(function(b){b.disabled=true;});resolve(false);}}
     buttons.forEach(function(b){b.onclick=function(){answer(Number(b.dataset.sign));};});box.addEventListener('keydown',function(e){if(/^[123]$/.test(e.key)&&!e.repeat){e.preventDefault();answer(Number(e.key)-1);}});
-    var ready=false;s.run(function(now){if(now<reveal){var i=Math.min(2,Math.floor((now-s.start)/800));display.textContent=(now-s.start)%800<650?(i+1)+'. '+names[sequence[i]]:'· · ·';s.bar(1-(now-s.start)/2400);}else{if(!ready){ready=true;display.textContent='기억한 순서는?';buttons.forEach(function(b){b.disabled=false;});buttons[0].focus();}s.bar(1-(now-reveal)/5000);if(now>=reveal+5000)s.finish(correct,'전술 입력 시간 초과 · '+correct+'개 일치');}});return s.cancel;
+    var ready=false;s.run(function(now){if(now<reveal){var i=Math.min(2,Math.floor((now-s.start)/800));display.textContent=(now-s.start)%800<650?(i+1)+'. '+names[sequence[i]]:'· · ·';s.bar(1-(now-s.start)/2400);}else{if(!ready){ready=true;display.textContent='기억한 순서는?';buttons.forEach(function(b){b.disabled=false;});buttons[0].focus();}s.bar(1-(now-reveal)/5000);if(now>=reveal+5000)resolve(true);}});return s.cancel;
   };
   U.extraPracticeGames=function(){var levels='최고 95% · 좋음 70% · 보통 30% · 실패 5%';return {
     bat:{title:'슈팅',icon:'⚽',play:U.miniBat,help:'공이 노란 슈팅 선에 닿는 순간 누르세요.',levels:levels},
