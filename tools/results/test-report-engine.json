@@ -1,63 +1,70 @@
 {
-  "startedAt": "2026-10-07T07:55:42.240Z",
+  "startedAt": "2026-10-07T11:10:26.935Z",
   "mode": "engine",
   "node": "v24.19.0",
   "tests": [
+    {
+      "name": "career-improvements-check",
+      "args": [],
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 192
+    },
     {
       "name": "football-data-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 67
+      "durationMs": 76
     },
     {
       "name": "date-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 336
+      "durationMs": 397
     },
     {
       "name": "ending-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 150
+      "durationMs": 170
     },
     {
       "name": "free-time-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 177
+      "durationMs": 198
     },
     {
       "name": "heroine-roster-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 516
+      "durationMs": 574
     },
     {
       "name": "passive-affection-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 117
+      "durationMs": 129
     },
     {
       "name": "romance-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 107
+      "durationMs": 127
     },
     {
       "name": "football-choice-check",
       "args": [],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 5785
+      "durationMs": 6770
     },
     {
       "name": "sim",
@@ -66,7 +73,7 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 3697
+      "durationMs": 22449
     },
     {
       "name": "growth-balance-check",
@@ -77,7 +84,7 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 18233
+      "durationMs": 55966
     },
     {
       "name": "football-career-check",
@@ -86,10 +93,12 @@
       ],
       "passed": true,
       "exitCode": 0,
-      "durationMs": 49058
+      "durationMs": 105848
     }
   ],
-  "finishedAt": "2026-10-07T07:57:00.485Z",
-  "passed": 11,
-  "failed": 0
+  "finishedAt": "2026-10-07T11:18:09.446Z",
+  "passed": 12,
+  "failed": 0,
+  "verificationNote": "24 tests passed on the full run; the role-drill timing harness failed once and passed its targeted revalidation. Initial failure retained.",
+  "sourceReport": "test-report-all.json"
 }

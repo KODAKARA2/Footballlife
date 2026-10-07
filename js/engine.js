@@ -221,7 +221,7 @@
       else if (k === "애정도") { v = E.looksGain(v, "이성"); if (S.히로인) { var o = S.히로인.애정도; S.히로인.애정도 = clamp(o + v, 0, 100); out.애정도 = S.히로인.애정도 - o; } }
       else if (k === "행복도") { v = E.looksGain(v, "성적행복"); var h = S.행복도; S.행복도 = clamp(h + v, 0, 100); out.행복도 = S.행복도 - h; }
       else if (k === "성적") { v = E.looksGain(v, "성적행복"); S.성적 = Math.max(0, S.성적 + v); out.성적 = v; }
-      else if (k === "돈") { S.돈 = Math.max(0, (S.돈 || 0) + v); if (v > 0) S.총수입 = (S.총수입 || 0) + v; out.돈 = (out.돈 || 0) + v; }
+      else if (k === "돈") { var priorMoney = S.돈 || 0; S.돈 = Math.max(0, (S.돈 || 0) + v); if (v > 0) S.총수입 = (S.총수입 || 0) + v; out.돈 = (out.돈 || 0) + S.돈 - priorMoney; }
       else if (k === "만남확률") { out[k] = v; }
       else addStat(k, v, out, mult);
     });

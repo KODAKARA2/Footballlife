@@ -1,0 +1,49 @@
+{
+  "uniqueGames": 14,
+  "roleSlots": 20,
+  "pools": {
+    "FW": [
+      "miniBat",
+      "miniSteal",
+      "miniThrow",
+      "miniVolley",
+      "miniRun"
+    ],
+    "MF": [
+      "miniThrow",
+      "miniSigns",
+      "miniSteal",
+      "miniScan",
+      "miniRhythm"
+    ],
+    "DF": [
+      "miniTimer",
+      "miniIntercept",
+      "miniLine",
+      "miniSigns",
+      "miniThrow"
+    ],
+    "GK": [
+      "miniPitch",
+      "miniClaim",
+      "miniAngle",
+      "miniThrow",
+      "miniSigns"
+    ]
+  },
+  "verified": [
+    "all 20 slots successful completion, failure timeout and cancellation",
+    "14-game role selection uses valid role stats and prevents triple repeats",
+    "all eight new drills touch and keyboard",
+    "explicit shot/pass/tactics metadata and contextual repeat avoidance",
+    "resize, hidden tabs, pointer cancellation and unchanged career on cancellation",
+    "new drills playable when all eight image requests are blocked",
+    "320/390/1280 Chromium widths"
+  ],
+  "finishedAt": "2026-10-07T11:15:51.545Z",
+  "evidence": "PASS 14 unique drills / 20 role slots success-failure-cancel / touch-keyboard / 320-390-1280 / contextual repeat prevention / resize\n",
+  "limits": [
+    "Physical iOS Safari not tested",
+    "No human listening verification"
+  ]
+}

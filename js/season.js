@@ -14,14 +14,15 @@
     return q + rnd() * 8 - 4;
   }
 
-  function seasonLine() {
-    var s = S();
+  function seasonLine(snapshot, fraction) {
+    var s = snapshot || S();
     if (s.시기 !== "프로" && s.시기 !== "해외리그") return null;
-    var q = perf(), A = s.능력치, starter = s.시기 === "프로" ? s.일군 : s.플래그.해외주전;
+    var live = I.S; I.S = s; var q = perf(); I.S = live;
+    var A = s.능력치, starter = s.시기 === "프로" ? s.일군 : s.플래그.해외주전;
     if (!starter || s.플래그.육성선수) return null;
-    var available = clamp(1 - s.올해부상카드 / (sdef(s.시기).한해카드수 || 2), 0, 1);
+    var available = snapshot ? (s.부상 > 0 ? 0 : fraction) : clamp(1 - s.올해부상카드 / (sdef(s.시기).한해카드수 || 2), 0, 1);
     var games = Math.round(clamp((starter ? 25 : 8) + (q - 50) * 0.25 + rnd() * 4, 0, 38) * available);
-    var L = { 연도: year(), 나이: s.나이, 팀: s.팀, 포지션: s.포지션, 해외: s.시기 === "해외리그", 경기력: Math.round(q), 출전: games,
+    var L = { 연도: cfg().시작연도 + s.나이 - 10, 나이: s.나이, 팀: s.팀, 포지션: s.포지션, 해외: s.시기 === "해외리그", 경기력: Math.round(q), 출전: games,
       출전시간: games * Math.round(starter ? 65 + A.체력 * 0.25 : 20 + A.체력 * 0.35), 득점: 0, 도움: 0, 클린시트: 0, 선방: 0, 태클: 0 };
     var attack = s.포지션 === "공격수" ? 1 : s.포지션 === "미드필더" ? 0.45 : s.포지션 === "수비수" ? 0.12 : 0;
     var creator = s.포지션 === "미드필더" ? 1 : s.포지션 === "공격수" ? 0.65 : s.포지션 === "수비수" ? 0.35 : 0.04;
@@ -33,6 +34,35 @@
     // Career value measures performance in the player's role, never raw goal totals.
     L.가치 = Math.max(0, Math.round((q - cfg().시즌.기준선) * cfg().시즌.점수배율 * games / 30));
     return L;
+  }
+  // Each ordinary card represents one interval under the contract and roster
+  // present when it began. Later demotion/transfer cannot rewrite that interval.
+  E.captureSeason = function () {
+    var s = S(); if (!I.YEARLY[s.시기]) return null;
+    var out={}; ['시기','나이','팀','포지션','총턴','일군','부상','슬럼프','올해부상카드','능력치','플래그','계약'].forEach(function(k){out[k]=s[k];}); return I.clone(out);
+  };
+  E.accrueSeason = function (snapshot) {
+    if (!snapshot) return;
+    var s = S(), list = s.시즌구간 || (s.시즌구간 = []);
+    if (list.some(function (x) { return x.턴 === snapshot.총턴; })) return;
+    var fraction = 1 / (sdef(snapshot.시기).한해카드수 || 2);
+    snapshot.부상 = Math.max(snapshot.부상, s.부상);
+    list.push({ 턴: snapshot.총턴, 나이: snapshot.나이, 팀: snapshot.팀, 시기: snapshot.시기,
+      주전: snapshot.시기 === "프로" ? snapshot.일군 : !!snapshot.플래그.해외주전,
+      컨디션: snapshot.능력치.컨디션, 부상: snapshot.부상, 비율: fraction,
+      급여: Math.round((snapshot.계약 ? snapshot.계약.연봉 : 0) * fraction * (list.length + 1)) - Math.round((snapshot.계약 ? snapshot.계약.연봉 : 0) * fraction * list.length), 기록: seasonLine(snapshot, fraction) });
+  };
+  function accumulatedLine() {
+    var s = S(), list = s.시즌구간 || [];
+    if (!list.length) return seasonLine(); // Explicit full-season simulation API.
+    var played = list.filter(function (x) { return x.기록; });
+    if (!played.length) return null;
+    var L = I.clone(played[0].기록), numeric = ["출전", "출전시간", "득점", "도움", "클린시트", "선방", "태클", "가치"];
+    numeric.forEach(function (k) { L[k] = played.reduce(function (n,x) { return n + x.기록[k]; }, 0); });
+    L.경기력 = Math.round(played.reduce(function (n,x) { return n + x.기록.경기력 * x.기록.출전; }, 0) / (L.출전 || 1));
+    L.팀 = Array.from(new Set(list.map(function (x) { return x.팀; }))).join(" → ");
+    L.해외 = played.some(function (x) { return x.시기 === "해외리그"; });
+    L.구간 = I.clone(list); return L;
   }
   function awards(L) {
     var s = S(), A = cfg().수상, P = A.점수, got = [];
@@ -76,7 +106,7 @@
     if (s._연봉연도 === s.나이) return s._연봉;
     if (s.시기 === "프로" || s.시기 === "해외리그") {
       if (!s.계약) E.signContract(3);
-      pay = s.계약.연봉;
+      pay = s.시즌구간 && s.시즌구간.length ? s.시즌구간.reduce(function (n,x) { return n + x.급여; }, 0) : s.계약.연봉;
     }
     pay = Math.round(pay); s.돈 = (s.돈 || 0) + pay; s.총수입 = (s.총수입 || 0) + pay;
     s._연봉연도 = s.나이; s._연봉 = pay; return pay;
@@ -117,11 +147,13 @@
     var s = S();
     if (s._결산나이 === s.나이) return;
     s._결산나이 = s.나이;
-    var L = seasonLine();
+    E.evaluateGoal();
+    var L = accumulatedLine();
     if (L) {
+      if (s.시즌목표) L.목표 = I.clone(s.시즌목표);
       s.기록.push(L); s.성적 += E.looksGain(L.가치, "성적행복");
       var got = awards(L);
-      var lines = [s.팀 + " · " + (L.해외 ? "해외리그" : "1군"), fmtLine(L), "💰 연봉 " + E.money(salary(L))];
+      var lines = [L.팀 + " · " + (L.해외 ? "해외리그" : "1군"), fmtLine(L), "💰 연봉 " + E.money(salary(L))];
       if (got.length) lines.push("🏅 " + got.join(", "));
       s.대기열.unshift({ 시스템: true, 제목: L.연도 + " 시즌 결산", 내용: lines.join("\n"), 그림: got.length ? "hero_victory" : null,
         선택지: [{ 글: "다음 시즌으로" }] });
@@ -130,7 +162,7 @@
       var reservePay = salary(null);
       if (s.시기 === "프로" || s.시기 === "해외리그") s.대기열.unshift({ 시스템: true, 제목: year() + " 리저브 시즌 결산", 내용: s.팀 + " · 리저브에서 성장한 시즌\n1군 공식 기록은 없습니다.\n💰 계약 연봉 " + E.money(reservePay), 선택지: [{ 글: "다음 시즌 준비" }] });
     }
-    if (s.시기 === "프로") s.연차++;
+    if (s.시기 === "프로" || (s.시즌구간 || []).some(function(x) { return x.시기 === "프로"; })) s.연차++;
     s.나이++;
     if (s.계약 && s.나이 >= s.계약.만료나이) {
       s.플래그.계약만료 = true;
@@ -139,7 +171,7 @@
         { 글: "자유계약으로 새 팀 선택", 팀이동: true, 계약년수: 2 }
       ] });
     }
-    s.올해카드 = 0; s.올해부상카드 = 0;
+    s.올해카드 = 0; s.올해부상카드 = 0; s.시즌구간 = [];
   };
 
   // ---------------- 통산 기록과 엔딩 ----------------
@@ -163,13 +195,13 @@
     (s.알아가는인연 || []).forEach(function (person) { heroines.push({ 아이디: person.아이디, 이름: E.heroDef(person.아이디).이름, 관계: "만남", 결말: "알아가던 인연" }); });
     if (s.히로인) { var h = E.heroDef(); heroines.push({ 아이디: h.아이디, 이름: h.이름, 관계: s.히로인.관계, 결말: s.히로인.관계 === "배우자" ? "평생의 반려자" : "함께" }); }
     if (s.히로인2) { var h2 = E.heroDef(s.히로인2.아이디); heroines.push({ 아이디: h2.아이디, 이름: h2.이름, 관계: "연인", 결말: "끝까지 비밀이었던 연인" }); }
-    var special = (GD.특별엔딩 || []).find(function (e) { return E.check(e.조건); });
+    var specials = (GD.특별엔딩 || []).filter(function (e) { return E.check(e.조건); });
     var he = null;
     if (s.히로인 && s.히로인.관계 === "배우자") {
       var hd = E.heroDef();
       if (hd.엔딩) he = { 아이디: hd.아이디, 히로인: hd.이름, 이름: hd.엔딩.이름, 아이콘: hd.엔딩.아이콘 || "💍", 내용: hd.엔딩.내용 };
     }
-    return { 특별: special || null, 히로인엔딩: he, 기본: base, 칭호: titles, 직업: job, 히로인들: heroines, 성적: s.성적, 행복도: s.행복도 };
+    return { 특별: specials[0] || null, 함께이룬것들: specials.slice(1), 히로인엔딩: he, 기본: base, 칭호: titles, 직업: job, 히로인들: heroines, 성적: s.성적, 행복도: s.행복도 };
   };
 
   // ---------------- 저장 ----------------
@@ -211,7 +243,7 @@
     c = c || {}; c.엔딩 = c.엔딩 || {}; c.업적 = c.업적 || {}; c.레어 = c.레어 || {}; c.인생수 = c.인생수 || 0;
     return c;
   };
-  function saveCol(c) { try { localStorage.setItem(COL_KEY, JSON.stringify(c)); } catch (e) {} }
+  function saveCol(c) { try { localStorage.setItem(COL_KEY, JSON.stringify(c)); return true; } catch (e) { E.saveStatus.error = "도감 저장 실패: " + e.message; return false; } }
   function addTo(c, group, key, fresh, label) {
     if (!c[group][key]) { c[group][key] = { 처음: Date.now(), 횟수: 0 }; if (fresh) fresh.push(label || key); }
     c[group][key].횟수++;
@@ -226,8 +258,12 @@
   E.recordLife = function () {
     var s = S(); if (s._도감) return s._도감새로 || [];
     var en = s.엔딩 || E.computeEnding(), c = E.collection(), fresh = [];
+    s.인생ID = s.인생ID || ('legacy-' + Date.now().toString(36));
+    c.기록인생 = c.기록인생 || {};
+    if(c.기록인생[s.인생ID]) { s._도감=true; E.save(); return s._도감새로 || []; }
+    c.기록인생[s.인생ID] = true;
     c.인생수++;
-    if (en.특별) addTo(c, "엔딩", "특별:" + en.특별.이름, fresh, en.특별.아이콘 + " " + en.특별.이름);
+    [en.특별].concat(en.함께이룬것들 || []).filter(Boolean).forEach(function (e) { addTo(c, "엔딩", "특별:" + e.이름, fresh, e.아이콘 + " " + e.이름); });
     addTo(c, "엔딩", "기본:" + en.기본.이름, fresh, en.기본.아이콘 + " " + en.기본.이름);
     if (en.직업 && s.진로확정) addTo(c, "엔딩", "직업:" + en.직업.이름, fresh, en.직업.아이콘 + " " + en.직업.이름);
     en.칭호.forEach(function (t) { addTo(c, "엔딩", "칭호:" + t.이름, fresh, t.아이콘 + " " + t.이름); });
@@ -237,7 +273,7 @@
       var ok = E.check(a.조건) && Object.keys(a.도감 || {}).every(function (k) { return (n[k] || 0) >= a.도감[k]; });
       if (ok) addTo(c, "업적", a.이름, fresh, "🏆 " + a.이름);
     });
-    saveCol(c); s._도감 = true; s._도감새로 = fresh; E.save();
+    if (!saveCol(c)) return []; s._도감 = true; s._도감새로 = fresh; E.save();
     return fresh;
   };
 

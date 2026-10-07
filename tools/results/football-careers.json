@@ -4,51 +4,51 @@
   "positions": {
     "공격수": {
       "lives": 250,
-      "pro": 222,
-      "overseas": 194,
-      "return": 38,
-      "university": 120,
-      "injury": 210,
+      "pro": 229,
+      "overseas": 196,
+      "return": 43,
+      "university": 113,
+      "injury": 199,
       "retired": 250,
-      "goals": 47112,
+      "goals": 52123,
       "saves": 0,
-      "score": 40645
+      "score": 43766
     },
     "미드필더": {
       "lives": 250,
       "pro": 216,
-      "overseas": 165,
-      "return": 21,
-      "university": 103,
-      "injury": 210,
+      "overseas": 152,
+      "return": 22,
+      "university": 116,
+      "injury": 218,
       "retired": 250,
-      "goals": 16232,
+      "goals": 16544,
       "saves": 0,
-      "score": 46773
+      "score": 44153
     },
     "수비수": {
       "lives": 250,
-      "pro": 210,
-      "overseas": 174,
-      "return": 30,
+      "pro": 207,
+      "overseas": 152,
+      "return": 24,
       "university": 128,
-      "injury": 196,
+      "injury": 187,
       "retired": 250,
-      "goals": 116,
+      "goals": 33,
       "saves": 0,
-      "score": 39670
+      "score": 36479
     },
     "골키퍼": {
       "lives": 250,
-      "pro": 216,
-      "overseas": 160,
-      "return": 22,
-      "university": 117,
-      "injury": 207,
+      "pro": 217,
+      "overseas": 147,
+      "return": 11,
+      "university": 115,
+      "injury": 201,
       "retired": 250,
       "goals": 0,
-      "saves": 310139,
-      "score": 44728
+      "saves": 313408,
+      "score": 40734
     }
   },
   "branches": {
@@ -56,12 +56,12 @@
     "중학교": 1000,
     "고등학교": 1000,
     "입단심사": 1000,
-    "프로": 864,
-    "해외리그": 693,
+    "프로": 869,
+    "해외리그": 647,
     "은퇴": 1000,
-    "대학": 468,
-    "대학입단": 468,
-    "군복무": 488
+    "대학": 472,
+    "대학입단": 472,
+    "군복무": 477
   },
-  "maxTurns": 152
+  "maxTurns": 200
 }

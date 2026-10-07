@@ -1,0 +1,8 @@
+page.evaluate: TypeError: Cannot read properties of null (reading 'style')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:53)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at success (/workspace/Footballlife-improvements/tools/role-drills-check.js:13:70)
+    at async /workspace/Footballlife-improvements/tools/role-drills-check.js:26:161 {
+  log: []
+}

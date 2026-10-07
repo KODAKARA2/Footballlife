@@ -35,6 +35,11 @@
   }
   E.freeTimeCard = function () {
     var s = E.state(), f = s.자유시간, L = rules();
+    if (f.화면 === "연습") {
+      var stats = E.posStats().filter(function(k) { return s.능력치[k] < E.cap(); });
+      if (!stats.length) stats = ["멘탈"];
+      return card("직접 연습", "훈련할 능력을 고르세요. 한 능력만 +1, 현재 상한을 유지합니다.", stats.map(function(k) { return option(k + " +1", "연습", { 훈련능력:k }); }).concat([back("메뉴")]));
+    }
     if (f.화면 === "데이트") {
       var opts = [];
       if (s.히로인 && s.히로인.관계 !== "만남") opts.push(option(E.heroDef().이름 + " · 데이트", "데이트", { 대상: s.히로인.아이디 }));
@@ -51,7 +56,7 @@
       return card("새로운 인연을 찾아서", text, search.concat([back("데이트")]));
     }
     return card("나를 위한 자유시간", (s.시기 === "군복무" ? "모처럼 받은 휴가. " : "모처럼 비워 둔 일정. ") + "이번에는 무엇을 할까? 자유행동은 1~2년에 한 번 찾아오며, 한 가지 활동을 마치면 일상으로 돌아간다.", [
-      option("⚽ 연습 · 능력치 하나 +1", "연습"),
+      option("⚽ 연습 · 능력치 하나 +1", "이동", { 화면:"연습" }),
       option("💗 데이트 · 현재 인연 / 새로운 만남", "이동", { 화면: "데이트" }),
       option("🎣 취미활동 · 무작위 취미로 행복 충전", "취미"),
       option("🛌 휴식 · 부상·슬럼프 1턴씩 회복", "휴식")
@@ -62,15 +67,18 @@
     if (!s || s.단계 !== "카드" || !s.자유시간 || !Number.isInteger(index)) return s && s.결과;
     var c = s.현재카드, o = c && c.선택지 && c.선택지[s.현재옵션[index]], L = rules();
     if (!o) return s.결과;
+    var before = E.snapshotValues();
     var r = { 결과: "", 효과: {}, 알림: [] }, done = true;
     function apply(fx) { E.applyEffects(fx, r.효과); }
     if (o.자유선택 === "이동") {
       s.자유시간 = { 화면: o.화면 === "만남" ? "찾기" : o.화면 }; done = false;
       r.결과 = "천천히 골라도 괜찮다. 활동을 마칠 때까지 자유시간은 남아 있다.";
     } else if (o.자유선택 === "연습") {
-      var stats = E.posStats().filter(function (k) { return s.능력치[k] < E.cap(); });
-      if (stats.length) { var stat = I.pick(stats); s.능력치[stat]++; r.효과[stat] = 1; r.결과 = "기본 동작을 차분히 반복했다. " + stat + " 감각이 조금 더 좋아졌다."; }
-      else { apply({ 멘탈: 1 }); r.결과 = "현재 실력의 한계에 도달해 이미지 트레이닝으로 마음을 다잡았다."; }
+      var stat = o.훈련능력, stats = E.posStats().filter(function(k) { return s.능력치[k] < E.cap(); });
+      if (stats.indexOf(stat) >= 0 || (stat === '멘탈' && !stats.length)) {
+        var old = s.능력치[stat]; s.능력치[stat] = Math.min(stat === '멘탈' ? 100 : E.cap(), old + 1);
+        r.효과[stat] = s.능력치[stat] - old; r.결과 = stat + ' 기본 동작을 차분히 반복했다.';
+      } else { s.자유시간 = {화면:'연습'}; done = false; r.결과 = '연습할 능력을 골라 주세요.'; }
     } else if (o.자유선택 === "데이트" && !s.플래그.외국인작별 &&
         ((s.히로인 && s.히로인.아이디 === o.대상) || E.acquaintances().some(function (h) { return h.아이디 === o.대상; }))) {
       var person = E.acquaintances().find(function (h) { return h.아이디 === o.대상; });
@@ -112,6 +120,7 @@
       s.총턴++; s.다음자유나이 = nextAge(); delete s.자유시간;
       r.알림.push("다음 자유행동: " + s.다음자유나이 + "세 무렵");
     }
+    E.finishDelta(r, before);
     s.결과 = r; s.단계 = "결과"; E.save(); return r;
   };
 })();

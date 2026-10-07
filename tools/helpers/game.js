@@ -3,7 +3,7 @@ const root = path.resolve(__dirname, '../..');
 function load(seed = 42) {
   const store = {}, math = Object.create(Math);
   math.random = () => ((seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0) / 4294967296);
-  const ctx = {console, Math: math, JSON, Date, localStorage: {
+  const ctx = {console, Math: math, JSON, Date, TextEncoder, localStorage: {
     getItem: k => Object.hasOwn(store, k) ? store[k] : null,
     setItem: (k,v) => store[k] = String(v), removeItem: k => delete store[k]
   }};

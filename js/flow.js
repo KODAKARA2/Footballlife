@@ -12,12 +12,13 @@
     ]
   };
 
+  var lifeSerial=0;
   // ---------------- 새 게임 ----------------
   E.newGame = function (name, posName, specName, opts) {
     I.buildCards();
     var C = cfg().시작능력치;
     var s = {
-      버전: 2, 게임: "football-life", 이름: name, 포지션: posName, 특기: specName, 능력치: {}, 행복도: C.행복도, 성적: 0, 부상: 0, 슬럼프: 0,
+      인생ID: Date.now().toString(36) + "-" + (++lifeSerial), 저장형식: 3, 시즌구간: [], 버전: 2, 게임: "football-life", 이름: name, 포지션: posName, 특기: specName, 능력치: {}, 행복도: C.행복도, 성적: 0, 부상: 0, 슬럼프: 0,
       시기: null, 시기턴: 0, 진입나이: 10, 나이: 10, 은퇴나이: null, 연차: 0, 올해카드: 0, 올해부상카드: 0,
       팀: null, 원래팀: null, 국내팀: null, 제안팀: null, 해외팀: null, 팀이동: 0, 일군: false, 입단심사: null,
       플래그: {}, 본카드: {}, 총턴: 0, 히로인: null, 알아가는인연: [], 지난히로인: [], 만난히로인: [], 자녀: 0,
@@ -111,6 +112,7 @@
       return (prio(b) - prio(a)) || ((b.시기 ? 1 : 0) - (a.시기 ? 1 : 0));
     });
     if (pri.length) return pri[0];
+    var goal = E.goalCard(); if (goal) return goal;
     if (E.freeTimeDue()) { s.자유시간 = { 화면: "메뉴" }; return E.freeTimeCard(); }
     var sd = sdef(s.시기);
     if (sd.카드수) {
@@ -199,9 +201,11 @@
     if (S().단계 !== "카드" || !S().현재카드 || S().현재옵션[i] == null) return S().결과;
     if (S().현재카드.자유행동) return E.chooseFreeTime(i);
     var s = S(), card = s.현재카드, o = card.선택지[s.현재옵션[i]];
+    if (card.목표선택) E.selectGoal(o);
+    var before = E.snapshotValues(), interval = !card.시스템 ? E.captureSeason() : null;
     var res = { 효과: {}, 결과: o.결과 || "", 그림: o.그림변경 || null, 알림: [] };
     var out = o;
-    if (o.비용) { s.돈 = Math.max(0, (s.돈 || 0) - o.비용); res.효과.돈 = -o.비용; }
+    if (o.비용) { var actualCost = Math.min(s.돈 || 0, o.비용); s.돈 -= actualCost; res.효과.돈 = -actualCost; }
     if (o.비용비율) { var pay = Math.floor((s.돈 || 0) * o.비용비율 / 100); s.돈 -= pay; res.효과.돈 = (res.효과.돈 || 0) - pay; }
     if (o.확률결과) {
       var base = o.확률결과.확률 == null ? 0.5 : o.확률결과.확률;
@@ -218,6 +222,7 @@
     arr(out.플래그).forEach(function (f) { s.플래그[f] = true; });
     arr(out.플래그해제).forEach(function (f) { delete s.플래그[f]; });
     if (out.일군 != null) { s.일군 = out.일군; if (!out.일군) s._강등턴 = s.총턴; }
+    if (interval) { interval.일군 = s.일군; interval.플래그 = I.clone(s.플래그); E.accrueSeason(interval); }
     if (out.자녀) s.자녀 += out.자녀;
     if (out.기록) s.순간.push({ 나이: s.나이, 글: E.tpl(out.기록) });
     if (out.수상) I.addAward(out.수상);
@@ -253,13 +258,14 @@
     arr(out.다음카드).forEach(function (t) { var next = I.CARDS().find(function (c) { return c._id === t || c.제목 === t; }); if (!next) throw new Error("Unknown next card: " + t); s.대기열.push(next._id); });
     if (out.계약년수 && !out.이동 && E.signContract) E.signContract(out.계약년수);
 
+    res.직후 = E.snapshotValues();
     if (card._id) s.본카드[card._id] = s.총턴;
     if (!card.시스템) { res.알림 = res.알림.concat(tick(out, card)); res.뉴스 = pickNews(); }
     E.growHeroineAffection();
     s.총턴++;
 
     if (out.이동) {
-      if (!card.시스템 && I.YEARLY[s.시기] && I.YEARLY[out.이동]) {
+      if (!card.시스템 && I.YEARLY[s.시기]) {
         s.올해카드++; if (s.올해카드 >= sdef(s.시기).한해카드수) E.endYear();
       }
       enterStage(out.이동);
@@ -277,6 +283,7 @@
     }
     var al = allowance(); if (al) res.알림.push("💰 용돈 " + E.money(al) + "을 받았다");
     res.결과 = E.tpl(res.결과);
+    E.finishDelta(res, before);
     s.결과 = res; s.단계 = "결과";
     E.save();
     return res;
