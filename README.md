@@ -43,4 +43,4 @@ npm test
 
 데이터 작성법은 [안내서](안내서.md), 인수인계와 검증 결과는 [개발노트](개발노트.md)를 참고하세요. 원본 문서는 `docs/upstream/`에 출처 기록으로 보존합니다.
 
-그림은 이번 범위에서 생성·교체하지 않았습니다. [남은 그래픽 목록](docs/GRAPHICS-TODO.md)에 임시 재사용 파일과 연결 위치를 기록합니다. 기존 `data/settings.js`의 그림 출처, `assets`의 원본·프롬프트·라이선스, Pretendard OFL 라이선스를 보존합니다.
+축구판 그림을 새로 제작하는 작업은 [그래픽 제작 기록](docs/GRAPHICS-WORKFLOW.md)과 [진행 목록](docs/art-progress.json)에 기록합니다. [그래픽 검수 목록](docs/GRAPHICS-TODO.md)에서 완료 상태와 연결 위치를 확인할 수 있습니다. 기존 `data/settings.js`의 그림 출처, `assets`의 원본·프롬프트·라이선스, Pretendard OFL 라이선스를 보존합니다.

@@ -3,3 +3,6 @@ node_modules/
 .DS_Store
 *.local
 dist/
+# Local inspection backups; originals remain in Git history.
+assets/football-generated/*-originals/
+assets/football-generated/**/originals/

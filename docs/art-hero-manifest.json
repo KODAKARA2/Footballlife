@@ -1,0 +1,1426 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "date": "2026-10-07",
+  "backupCommit": "13699caa17f363ae7d020959eef35c98f34d6cfb",
+  "assets": [
+    {
+      "name": "hero_elementary",
+      "stage": "elementary",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite in same chibi fine-pixel illustration style as second reference: dark clean outlines, detailed soft warm shading, large warm brown eyes. First reference is OLD identity/pose reference ONLY, replace all baseball equipment/outfit. Preserve first reference face identity: handsome tousled dark brown hair, warm kind face. Life stage: 10 year old elementary school boy, unmistakably young age appropriate child proportions, cheerful first football practice, white and navy youth football jersey. For playing stages put classic black and white SOCCER ball by foot, natural standing pose; for injury/slump/retired/victory follow described scene. Fictional crest only, no real brand/team. Full body entire head/hair and both boots visible with generous transparent margin, centered. Actual transparent alpha background, no backdrop or halo. No baseball cap, bat, mitt, baseball ball. No extra limbs.",
+      "generatedPath": "/workspace/generated_images/exec-5c096aaa-36f2-45d8-a44f-bbc9225cd4ee.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_elementary.png",
+      "sourceSha256": "5342bb78d6b408a4f1dbc584ee4ac191fad0d4f4119a9747c326b236105be976",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "db7269ecd423f93e0e5335550dc3c5e29bbf287220ba89e619f9932cccba4aa7",
+      "target": "images/hero_elementary.png",
+      "sha256": "a1a75c32606a5ef041aecd6aed742f1c99254a51eff3b970f489202db709166e",
+      "bytes": 352004,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 238403,
+      "opaqueishPixels": 144157,
+      "alphaBounds": [
+        95,
+        13,
+        446,
+        754
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_middle",
+      "stage": "middle",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite in same chibi fine-pixel illustration style as second reference: dark clean outlines, detailed soft warm shading, large warm brown eyes. First reference is OLD identity/pose reference ONLY, replace all baseball equipment/outfit. Preserve first reference face identity: handsome tousled dark brown hair, warm kind face. Life stage: 13 year old middle school boy, age appropriate early teenager, eager football academy pupil, royal blue and white football kit. For playing stages put classic black and white SOCCER ball by foot, natural standing pose; for injury/slump/retired/victory follow described scene. Fictional crest only, no real brand/team. Full body entire head/hair and both boots visible with generous transparent margin, centered. Actual transparent alpha background, no backdrop or halo. No baseball cap, bat, mitt, baseball ball. No extra limbs.",
+      "generatedPath": "/workspace/generated_images/exec-593cc803-6b7d-4016-a8c8-f60f36afda04.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_middle.png",
+      "sourceSha256": "b50ae6a8105e0f692115886dc29ad01021e54809c8fd447ae376b6f75ef6d763",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "aca48cf5ffd1735e39fd580f57e6bd9a4e4a6e3c9ca17544bd670397fd3c82d7",
+      "target": "images/hero_middle.png",
+      "sha256": "f7385223a511d6331c46f2288b3995554ef238f2babaa6992b0b845b3a6a4404",
+      "bytes": 339707,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 239967,
+      "opaqueishPixels": 142071,
+      "alphaBounds": [
+        85,
+        12,
+        465,
+        764
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_elementary_plain",
+      "stage": "elementary",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite in same chibi fine-pixel illustration style as second reference: dark clean outlines, detailed soft warm shading, large warm brown eyes. First reference is OLD identity/pose reference ONLY, replace all baseball equipment/outfit. Preserve first reference face identity: short neat cropped black hair, straight dark brows, modest relaxed smile, slim face. Life stage: 10 year old elementary school boy, unmistakably young age appropriate child proportions, cheerful first football practice, white and navy youth football jersey. For playing stages put classic black and white SOCCER ball by foot, natural standing pose; for injury/slump/retired/victory follow described scene. Fictional crest only, no real brand/team. Full body entire head/hair and both boots visible with generous transparent margin, centered. Actual transparent alpha background, no backdrop or halo. No baseball cap, bat, mitt, baseball ball. No extra limbs.",
+      "generatedPath": "/workspace/generated_images/exec-79ad31ec-432a-4e56-bb6c-1d9a8b9542d8.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_elementary_plain.png",
+      "sourceSha256": "5be094a05073aa79acfe84abfc0dff092a6da3b05b51e4297e8399f591fb7806",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "25e4d252c97f645a4b6d14df4a7bca8039f8d64f8f34aaf208a1eb82641464c4",
+      "target": "images/hero_elementary_plain.png",
+      "sha256": "214c41c53b6ca978b5eee45e05f8f3196b69b42c1f2cb7fa1599ece6c5a9a1b6",
+      "bytes": 320651,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 244033,
+      "opaqueishPixels": 138345,
+      "alphaBounds": [
+        101,
+        24,
+        470,
+        760
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_elementary_ugly",
+      "stage": "elementary",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite in same chibi fine-pixel illustration style as second reference: dark clean outlines, detailed soft warm shading, large warm brown eyes. First reference is OLD identity/pose reference ONLY, replace all baseball equipment/outfit. Preserve first reference face identity: round cheerful freckled rosy cheek face, slightly stockier body, short messy dark hair, lively toothy smile. Life stage: 10 year old elementary school boy, unmistakably young age appropriate child proportions, cheerful first football practice, white and navy youth football jersey. For playing stages put classic black and white SOCCER ball by foot, natural standing pose; for injury/slump/retired/victory follow described scene. Fictional crest only, no real brand/team. Full body entire head/hair and both boots visible with generous transparent margin, centered. Actual transparent alpha background, no backdrop or halo. No baseball cap, bat, mitt, baseball ball. No extra limbs.",
+      "generatedPath": "/workspace/generated_images/exec-80f00b66-25ea-4b5d-a1a6-ee1f3b808cf7.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_elementary_ugly.png",
+      "sourceSha256": "00cd8adafc3747d73f574fe75d7f4bd6a137c24187adb5e81e10f0db695d6f86",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "cd3d5fbd9b866bd983b9bfaa7116136c3a9b764323c7df480e3b92d38a35d511",
+      "target": "images/hero_elementary_ugly.png",
+      "sha256": "f7ffa571853770310f8986d3b227ae1618c6a7b0f33f0bce17bdb4a4ebd680c7",
+      "bytes": 377501,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 210854,
+      "opaqueishPixels": 171017,
+      "alphaBounds": [
+        63,
+        5,
+        460,
+        763
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_middle_ugly",
+      "stage": "middle",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite in same chibi fine-pixel illustration style as second reference: dark clean outlines, detailed soft warm shading, large warm brown eyes. First reference is OLD identity/pose reference ONLY, replace all baseball equipment/outfit. Preserve first reference face identity: round cheerful freckled rosy cheek face, slightly stockier body, short messy dark hair, lively toothy smile. Life stage: 13 year old middle school boy, age appropriate early teenager, eager football academy pupil, royal blue and white football kit. For playing stages put classic black and white SOCCER ball by foot, natural standing pose; for injury/slump/retired/victory follow described scene. Fictional crest only, no real brand/team. Full body entire head/hair and both boots visible with generous transparent margin, centered. Actual transparent alpha background, no backdrop or halo. No baseball cap, bat, mitt, baseball ball. No extra limbs.",
+      "generatedPath": "/workspace/generated_images/exec-5c4a6842-57d2-4d59-a2d6-837c429f4ab7.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_middle_ugly.png",
+      "sourceSha256": "dd14ea785a4311ecf37aa444a6a9dd1406ae2d8793273121a1a1904aa82642bd",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "48918824b5452a5123d76a66fe86314dd67d2adce54646705ebbc9f3927250da",
+      "target": "images/hero_middle_ugly.png",
+      "sha256": "3f47b838979c04e78d2db75c6e371b7d1b60b1e6fbc29c1b05a67b1f787d6aa6",
+      "bytes": 340370,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 232714,
+      "opaqueishPixels": 149473,
+      "alphaBounds": [
+        33,
+        23,
+        433,
+        755
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_middle_plain",
+      "stage": "middle",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite in same chibi fine-pixel illustration style as second reference: dark clean outlines, detailed soft warm shading, large warm brown eyes. First reference is OLD identity/pose reference ONLY, replace all baseball equipment/outfit. Preserve first reference face identity: short neat cropped black hair, straight dark brows, modest relaxed smile, slim face. Life stage: 13 year old middle school boy, age appropriate early teenager, eager football academy pupil, royal blue and white football kit. For playing stages put classic black and white SOCCER ball by foot, natural standing pose; for injury/slump/retired/victory follow described scene. Fictional crest only, no real brand/team. Full body entire head/hair and both boots visible with generous transparent margin, centered. Actual transparent alpha background, no backdrop or halo. No baseball cap, bat, mitt, baseball ball. No extra limbs.",
+      "generatedPath": "/workspace/generated_images/exec-88eb933a-3017-47b8-b189-252a5045f3f0.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_middle_plain.png",
+      "sourceSha256": "bf466cf82e32a6cf4e488f6770c67dfa8f5bfabb3fc85ec08179ec388c381038",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "ec69d2f428975abea1bfb0085df2948000e288e3f0c1e2d491a98c8c7d2d7c8b",
+      "target": "images/hero_middle_plain.png",
+      "sha256": "14cb01473a3ed758b48ae9ba00ac36becb9a1ef90e5487cc021edf4240312d49",
+      "bytes": 320348,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 241887,
+      "opaqueishPixels": 139872,
+      "alphaBounds": [
+        25,
+        12,
+        431,
+        762
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_high",
+      "stage": "high",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: handsome tousled dark brown hair, warm brown eyes and friendly confident face. Life stage: 16 year old high school boy, age appropriate teenager, determined school football team player, white and forest green football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_high.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-3b2f7f77-05b1-4583-bd73-25c6f5b7130b.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_high.png",
+      "sourceSha256": "b1d575c1f8ab65f00eec1c806b84603362b50aa1dbe0f4f2deb0b26252635e10",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "82d99dc16643a4855b929888a9f0af5f2577fe241792c313c943ee7b1bc4912c",
+      "target": "images/hero_high.png",
+      "sha256": "acce023c74804177c9228812dd5a100e013b918fb0d65502f77aea0eaa5e7e6e",
+      "bytes": 344351,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 239619,
+      "opaqueishPixels": 141482,
+      "alphaBounds": [
+        94,
+        5,
+        436,
+        762
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_college",
+      "stage": "college",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: handsome tousled dark brown hair, warm brown eyes and friendly confident face. Life stage: 20 year old college adult, confident university footballer, white and burgundy football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_college.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-3a6ced50-c18a-4517-8f9a-96732015d734.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_college.png",
+      "sourceSha256": "16f65e20672b68788133f715bd96a3df03293154de7bfaf6859bc1f3e7bb437b",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "29423de11c63a1b373cd36d79ec93da28230d6cc54fc3d5159dc337a588ec476",
+      "target": "images/hero_college.png",
+      "sha256": "18b3dc07325df5912cbfa5360d67b7131fb46351a0d0df074a1ff0d2b6ab31ab",
+      "bytes": 361842,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 231519,
+      "opaqueishPixels": 149199,
+      "alphaBounds": [
+        25,
+        0,
+        433,
+        763
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_high_ugly",
+      "stage": "high",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 16 year old high school boy, age appropriate teenager, determined school football team player, white and forest green football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_high_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-48e4c2b3-b3c5-4f9d-a66e-fa3f9c53e91c.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_high_ugly.png",
+      "sourceSha256": "3035f9cdea1d0a351db42b011fc6b1c29e0ce6645cb3505e5db32692a20e6916",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "ab33ea533da030d08d21383a2c69c5468a4caceb0161382f20e9b398941011e8",
+      "target": "images/hero_high_ugly.png",
+      "sha256": "a335e07c2d9cebebdbca31a602a0fd41091e50cabc6c2fdae92337eca4ec2b6d",
+      "bytes": 367339,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 217008,
+      "opaqueishPixels": 164172,
+      "alphaBounds": [
+        25,
+        0,
+        465,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_high_plain",
+      "stage": "high",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 16 year old high school boy, age appropriate teenager, determined school football team player, white and forest green football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_high_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-374c3e09-9b7f-489c-9442-a34ff422b052.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_high_plain.png",
+      "sourceSha256": "841fdddf616f9b56a193565a0a780c24dfe37694f76e3f31fb18ab1a472ae744",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "f3652244ede26c99cb18bf7908c601876b3d531c3aa41544fd3f3aea4e9411c5",
+      "target": "images/hero_high_plain.png",
+      "sha256": "43b62d91c5206675521634af9ff24e50555570360ecbc746b48a66fcb26271c2",
+      "bytes": 327825,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 239899,
+      "opaqueishPixels": 143720,
+      "alphaBounds": [
+        25,
+        6,
+        444,
+        763
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_college_ugly",
+      "stage": "college",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 20 year old college adult, confident university footballer, white and burgundy football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_college_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-a6720f95-579d-4563-a88d-a224d6f8f4fe.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_college_ugly.png",
+      "sourceSha256": "8a55ec7aaefc6215211e531cc664a0236b686c1bea1f9f1e4152035c6fc841c2",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "82c8525146deab48e7588c6a32850410557350ceb4408752fc456d9d015d0435",
+      "target": "images/hero_college_ugly.png",
+      "sha256": "670e3e2fe2bae0d3c99b6a8b3e619a164c596a773941b75f2e96bd9c2edfd503",
+      "bytes": 335635,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 234632,
+      "opaqueishPixels": 147883,
+      "alphaBounds": [
+        25,
+        16,
+        439,
+        758
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_college_plain",
+      "stage": "college",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 20 year old college adult, confident university footballer, white and burgundy football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_college_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-954f9d28-676f-4df4-9ff7-cb69c080503a.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_college_plain.png",
+      "sourceSha256": "51b9bca9d83c4f91f7f3686a059e7c33e426884f0f38d16c418b22b2d7327c54",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "170bca5ee080e63168fc5631e160de8b244a08e1dd1d002eb907b11c52a11319",
+      "target": "images/hero_college_plain.png",
+      "sha256": "dfc86ae4cc31d0b93ff01ff20d5825dac0c7ab7e35d4efbfb0702e21203a250f",
+      "bytes": 314903,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 245274,
+      "opaqueishPixels": 137027,
+      "alphaBounds": [
+        33,
+        12,
+        441,
+        761
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_pro_plain",
+      "stage": "pro",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 25 year old adult professional footballer, confident, navy and cyan football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_pro_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-017d56f4-4d8e-4c55-8221-384ebf6c7464.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_pro_plain.png",
+      "sourceSha256": "bcc674623e15e9dffe86ec11acc3d5b4db3e0fff8cf7607001c8e8fbdc171e54",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "cb921a19fa49272bdc79752dc0e938ccb416128f849682c3b89c03f980eb9391",
+      "target": "images/hero_pro_plain.png",
+      "sha256": "7ff05143148fd55538b30a74c233c3a3bab43a68264233225f4ecbbda55e2cd0",
+      "bytes": 324678,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 232580,
+      "opaqueishPixels": 148378,
+      "alphaBounds": [
+        85,
+        8,
+        439,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_pro_ugly",
+      "stage": "pro",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 25 year old adult professional footballer, confident, navy and cyan football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_pro_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-fd77fbbd-bd86-46b9-8fa9-802537ccc80f.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_pro_ugly.png",
+      "sourceSha256": "b96d2e151a174d36d2baea4ac58a098d34a2a0eeab9c993109c7723eec3864f3",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "ffbd1d7c1f68acd93f9082f4cdd0ef1c4b9e943288394ad95a0b09a62f466231",
+      "target": "images/hero_pro_ugly.png",
+      "sha256": "3a6baee5cde3d97cb99aef5cef08bed0a8f90274cd75e5e054eb8223ceb07e79",
+      "bytes": 354033,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 220176,
+      "opaqueishPixels": 162469,
+      "alphaBounds": [
+        72,
+        6,
+        506,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_mlb",
+      "stage": "mlb",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: handsome tousled dark brown hair, warm brown eyes and friendly confident face. Life stage: 28 year old adult professional footballer in fictional European club, red and cream football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_mlb.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-fe636879-39da-4383-8125-5913a7d5673f.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_mlb.png",
+      "sourceSha256": "0a3b34cddee4935dac949b352f659c6d9a2a6b22a76418b19ec2248830a951e7",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "4539f400e496670299769e5fa45fdf8231dd45e6785058d7bc00d56af50b80d0",
+      "target": "images/hero_mlb.png",
+      "sha256": "7fb0c80bd4f6af9bab2c35df71c4864da11c2bb553ed0fba9aa3125cfabf5aa3",
+      "bytes": 356675,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 235471,
+      "opaqueishPixels": 146389,
+      "alphaBounds": [
+        93,
+        4,
+        433,
+        763
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_mlb_plain",
+      "stage": "mlb",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 28 year old adult professional footballer in fictional European club, red and cream football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_mlb_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-58f7df2b-107d-4a97-aacf-a2cebb07c139.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_mlb_plain.png",
+      "sourceSha256": "7c30b5bfa5993a94348784a416dca7119c0d517a210282ca14cacdcaaa3dbfb8",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "722350459e46754666e38b4becc4ec47b9f447520d14b8d7fec3ff964568a03f",
+      "target": "images/hero_mlb_plain.png",
+      "sha256": "c3a11c2ca48fe90141ef8770fb2e53a8e4b8707df261ea1a108eb37d57b32966",
+      "bytes": 317946,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 241160,
+      "opaqueishPixels": 141660,
+      "alphaBounds": [
+        98,
+        12,
+        433,
+        757
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_mlb_ugly",
+      "stage": "mlb",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 28 year old adult professional footballer in fictional European club, red and cream football kit. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_mlb_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-1d2fe770-ba0f-4992-84ea-01279d9b68b7.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_mlb_ugly.png",
+      "sourceSha256": "411e2d58652dd6ead4fea447ec44e8841c15e53728665357ce50a804a508331d",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "8495c08b307ee15d5e59dd9758ea34a24dc0f523ac67fc325db8f584cedec0b9",
+      "target": "images/hero_mlb_ugly.png",
+      "sha256": "2a3a5a2d295dcb56ed8e886191d9dee1ed8c618309d1502f7877f1a2b56b4fcf",
+      "bytes": 347326,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 226393,
+      "opaqueishPixels": 156874,
+      "alphaBounds": [
+        87,
+        15,
+        478,
+        760
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_injured_plain",
+      "stage": "injured",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 25 year old adult footballer, recovering from injury, navy football training outfit with one arm in a medical sling, reassuring hopeful face, no ball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_injured_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-d63e6651-3d6f-417a-9504-031b0c4c84c4.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_injured_plain.png",
+      "sourceSha256": "fac4739067bf5875acb73fb9f24a882617affecc3f9f30f4b2970411a68c7588",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "2f6d942a46dc0c1c1f38faa599f8e90df22db1df1e7badcd84029b34dca2c8d7",
+      "target": "images/hero_injured_plain.png",
+      "sha256": "e80deabd005466bb4911cf0c091563293498c993fee943f76a1963bffba7fb1c",
+      "bytes": 308361,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 245102,
+      "opaqueishPixels": 139415,
+      "alphaBounds": [
+        84,
+        7,
+        434,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_injured",
+      "stage": "injured",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: handsome tousled dark brown hair, warm brown eyes and friendly confident face. Life stage: 25 year old adult footballer, recovering from injury, navy football training outfit with one arm in a medical sling, reassuring hopeful face, no ball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_injured.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-4e36feb8-359a-4077-b248-149988df17bc.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_injured.png",
+      "sourceSha256": "0675088e53a76beda4a5852440ef81a7a0b9720985e4970096d328e6857312df",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "46347d21ae0a096801d4d1507524c38b186f8bc020f03dcdfb2b569f8ca48fbd",
+      "target": "images/hero_injured.png",
+      "sha256": "346dcb458b2bf8df6b4aaa49a0874898eb819434e34b8608c1618d8e931796d8",
+      "bytes": 342665,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 238957,
+      "opaqueishPixels": 144329,
+      "alphaBounds": [
+        95,
+        4,
+        433,
+        763
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_retired",
+      "stage": "retired",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: handsome tousled dark brown hair, warm brown eyes and friendly confident face. Life stage: 45 year old retired football legend, distinguished slightly mature face but preserve identity, navy formal suit and tie, holding a coach tactics clipboard with simple football pitch markings, no baseball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_retired.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-0f96d941-fcc9-4c97-8807-82ec1d6309d3.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_retired.png",
+      "sourceSha256": "7aef49ba1060fddcbadae12d7488f7f4ab51968b81359cbcb2aec7f04c93379c",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "cc32db9803cddd1eefcbe87ddab43ae7ca5d4f9fd30f14d4c5e68f17d250cc34",
+      "target": "images/hero_retired.png",
+      "sha256": "c627d8170e743e88ce184efa008ccdeef9a2d90d68e55c86144629381668a54e",
+      "bytes": 354525,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 232950,
+      "opaqueishPixels": 151301,
+      "alphaBounds": [
+        85,
+        0,
+        503,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_injured_ugly",
+      "stage": "injured",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 25 year old adult footballer, recovering from injury, navy football training outfit with one arm in a medical sling, reassuring hopeful face, no ball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_injured_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-fcfc0022-2c60-455c-aa5b-d0c9fc934d69.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_injured_ugly.png",
+      "sourceSha256": "87fa3c0577b1c0f9961d2f35b8df29b70766c96184ae08fd19f02b70fbd7981e",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "7b91ae02fcf02942e568e579c4eecb9b735dfe53395249e74cdbe9e8c3e45995",
+      "target": "images/hero_injured_ugly.png",
+      "sha256": "3966f0b4cb85260f0a81a2d10cc288b2f584cf8ff65b57a94d37901a66cdd27b",
+      "bytes": 342147,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 232453,
+      "opaqueishPixels": 151630,
+      "alphaBounds": [
+        91,
+        7,
+        471,
+        761
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_retired_plain",
+      "stage": "retired",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 45 year old retired football legend, distinguished slightly mature face but preserve identity, navy formal suit and tie, holding a coach tactics clipboard with simple football pitch markings, no baseball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_retired_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-62544bae-3f4e-458e-b3af-a4b5137a230d.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_retired_plain.png",
+      "sourceSha256": "3c46b208746d7e6e4369eb6f1dea9a1e7bd79a2acb211c75cfd2abd0657c2c62",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "4b425eb748681de4827ace5ed9c655b854fa79682685cd6b04493b6a52e98687",
+      "target": "images/hero_retired_plain.png",
+      "sha256": "db12770eecbc86e51391671f0eed03e68a8f8765213c11bc7512cccec4f0ee9b",
+      "bytes": 331789,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 230818,
+      "opaqueishPixels": 154679,
+      "alphaBounds": [
+        103,
+        5,
+        456,
+        763
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_retired_ugly",
+      "stage": "retired",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 45 year old retired football legend, distinguished slightly mature face but preserve identity, navy formal suit and tie, holding a coach tactics clipboard with simple football pitch markings, no baseball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_retired_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-0fa57bc9-39d5-409a-86e4-26f7e7229d75.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_retired_ugly.png",
+      "sourceSha256": "11d404ac293b7f23fa16247cceb091e61307af00b1d9c9db06bab6b8ed574a61",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "28fbc6404c384b2d819be41c31b832bc49dd5357aecb2748d07a2d9bb22f1660",
+      "target": "images/hero_retired_ugly.png",
+      "sha256": "c8d6b948b2e5ce4fbc0f8fe2d1a0ff7aa1ad0aaf6a6c274187ee4a77f6b512f8",
+      "bytes": 380365,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 209712,
+      "opaqueishPixels": 174326,
+      "alphaBounds": [
+        0,
+        8,
+        483,
+        756
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_slump_plain",
+      "stage": "slump",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 25 year old adult footballer, discouraged tired face, white towel over head and shoulders, navy football shorts jersey socks and football boots, hands hanging naturally, no bat or ball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_slump_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-bc6f19bb-5137-4277-8a84-46873053d0c6.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_slump_plain.png",
+      "sourceSha256": "e2fab6c74f1b9fcbaca2b2c255329244fcf0378737af0aff42c47edb0caf6eda",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "6fa2ae843d73dd30ff817106ac29d1d759d48e4324579ed32e1125752faac4da",
+      "target": "images/hero_slump_plain.png",
+      "sha256": "039c583be40b4bd73fa7efca2c2035b19f85c5c47ece13a3bf1bd706e79a2c3d",
+      "bytes": 327364,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 233564,
+      "opaqueishPixels": 152451,
+      "alphaBounds": [
+        93,
+        9,
+        423,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_slump",
+      "stage": "slump",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: handsome tousled dark brown hair, warm brown eyes and friendly confident face. Life stage: 25 year old adult footballer, discouraged tired face, white towel over head and shoulders, navy football shorts jersey socks and football boots, hands hanging naturally, no bat or ball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_slump.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-13eef3c6-5a98-46f7-9055-9d8861b681f8.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_slump.png",
+      "sourceSha256": "fe2515fd66b631282f4d395a687905618984cfe3406f4b4434ece33fff4d6db4",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "653458bfe069ab768a1ca68cb5221997227e2ecbf04a22847c75f6963dd1efde",
+      "target": "images/hero_slump.png",
+      "sha256": "4aec909a8079316c6954ccbbfb69928a9d0e26be9c74ca0f1fbef0d3f925021e",
+      "bytes": 357848,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 230629,
+      "opaqueishPixels": 153051,
+      "alphaBounds": [
+        99,
+        12,
+        471,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_slump_ugly",
+      "stage": "slump",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 25 year old adult footballer, discouraged tired face, white towel over head and shoulders, navy football shorts jersey socks and football boots, hands hanging naturally, no bat or ball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_slump_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-d2910932-1a20-4148-ad45-8d1b81450a44.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_slump_ugly.png",
+      "sourceSha256": "635d6d00f2e5dda569356a5c88909b1e04773fff2380bd11ee74180880c1ed39",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "e4e7596de019d2218e1b603710b7050e214cf96f67f031b0618935d1804e9a76",
+      "target": "images/hero_slump_ugly.png",
+      "sha256": "61de5126ad1e2e85654ae122ce49876dd9c0356297dcce724fa2f55adc754dc2",
+      "bytes": 381182,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 208746,
+      "opaqueishPixels": 177256,
+      "alphaBounds": [
+        33,
+        7,
+        447,
+        768
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_victory_plain",
+      "stage": "victory",
+      "look": "_plain",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: short neatly cropped black hair, straight brows, calm modest smile and slim face. Life stage: 25 year old adult football champion, joyful triumphant smile, navy football kit, both hands holding a gold football trophy at chest height, no baseball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_victory_plain.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-73a45381-0eb4-4d23-8989-e62436a06b5c.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_victory_plain.png",
+      "sourceSha256": "0af8440f5c11d1a3c9510f7804f274a18e304ee555d8e1735ec58d9915a09d66",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "d82fced6872e5dd625fa433876e04f8272705f1b906ea24363629d7e19dbc48e",
+      "target": "images/hero_victory_plain.png",
+      "sha256": "9861f853e81976331cde94660d91a604ec82e15effb46cb66319a66774e0df54",
+      "bytes": 310420,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 254800,
+      "opaqueishPixels": 130767,
+      "alphaBounds": [
+        25,
+        15,
+        482,
+        760
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_victory",
+      "stage": "victory",
+      "look": "",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: handsome tousled dark brown hair, warm brown eyes and friendly confident face. Life stage: 25 year old adult football champion, joyful triumphant smile, navy football kit, both hands holding a gold football trophy at chest height, no baseball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_victory.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-2794ec91-3aee-4151-9c32-3da0c9fe1539.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_victory.png",
+      "sourceSha256": "70feed8e9c83d0f92565cb13d56a9c2926e638c8396737741da61922e4fa99f0",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "db6f8be9214f1ac87c75f24892ae77adbdeec5dbe6c73ebe5a87c3000301331e",
+      "target": "images/hero_victory.png",
+      "sha256": "8cee86536ffad6379cca1c181c2a324bc076a9a0c7e2aea55d7de25c1ae2422b",
+      "bytes": 335289,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 245827,
+      "opaqueishPixels": 138587,
+      "alphaBounds": [
+        25,
+        13,
+        480,
+        762
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_victory_ugly",
+      "stage": "victory",
+      "look": "_ugly",
+      "gk": false,
+      "prompt": "One standalone full body character sprite same chibi fine-pixel illustration style as second reference, clean dark outlines soft warm detailed shading. First reference is identity/pose source only, REMOVE all baseball items. Preserve face identity: round rosy cheek face, short messy black hair, stockier body, warm toothy smile. Life stage: 25 year old adult football champion, joyful triumphant smile, navy football kit, both hands holding a gold football trophy at chest height, no baseball. Playing stages: black-and-white SOCCER ball by boot, natural standing pose. Injury/slump/retired/victory follow the described scene instead. Fictional geometric crest only no real club brand. Entire body head/hair and both boots visible with generous transparent margins. Actual transparent alpha background no backdrop/halo/text. No baseball cap bat mitt or baseball ball. Anatomically sensible hands/limbs.",
+      "referencedPaths": [
+        "/workspace/football-life/images/hero_victory_ugly.png",
+        "/workspace/football-life/assets/football-generated/hero_pro-sample.png"
+      ],
+      "generatedPath": "/workspace/generated_images/exec-dd4a2bc1-9a90-4835-ba78-d2a7dde729ff.png",
+      "status": "generated-optimized-visually-reviewed",
+      "sourceCopy": "assets/football-generated/hero_victory_ugly.png",
+      "sourceSha256": "092175ed0339c96a4e5ffc96a1a499705c3ad9393bf0b1890390aaf8c54996fe",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "47fcefda485682d346770ac5ee2ed63a2c2a775a6f62755be1f67bf680e93ced",
+      "target": "images/hero_victory_ugly.png",
+      "sha256": "cf53e4aecad1c386a5bea7f65aec66aff4ffc0849d16cefc4bd7d53173255e86",
+      "bytes": 355691,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 233161,
+      "opaqueishPixels": 152092,
+      "alphaBounds": [
+        88,
+        4,
+        455,
+        763
+      ],
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_pro",
+      "generatedPath": "/workspace/generated_images/exec-1d75ba2f-7e78-4969-a0b9-17eec05710e2.png",
+      "prompt": "Root representative: preserve original protagonist warm brown eyes/tousled dark brown hair/confident friendly smile detailed finepixel chibi, fictional navy short sleeve soccer jersey teal trim geometric crest/navy shorts/long socks/cleats, both hands visible ball by boot, full body margins alpha no baseball/real brands.",
+      "sourceCopy": "assets/football-generated/hero_pro-sample.png",
+      "sourceSha256": "01a87adc1604e7dcba58e6803831a9c8841f8a92c468ce543bf41658afb6f499",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": "6aaab282be577c520cf342f8b408e0af5cb9ea34589934b128dee2a37efac956",
+      "target": "images/hero_pro.png",
+      "sha256": "30fb244617d31573dcaa1046d28d6481b2e548ddfcd6a2876ad1bc32c93be347",
+      "bytes": 317729,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 238837,
+      "opaqueishPixels": 141602,
+      "alphaBounds": [
+        100,
+        15,
+        474,
+        761
+      ],
+      "status": "generated-optimized-visually-reviewed",
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    },
+    {
+      "name": "hero_pro_gk",
+      "generatedPath": "/workspace/generated_images/exec-76e8a5c3-1430-4ddb-9991-dbccc36b9145.png",
+      "prompt": "Same exact adult protagonist as hero_pro sample, emerald green long sleeve goalkeeper kit, padded gloves holding soccer ball, full body transparent alpha, no baseball/brands.",
+      "sourceCopy": "assets/football-generated/hero_gk-sample.png",
+      "sourceSha256": "52affa59ba6764cc23a95e3921fa38cc8bc85cd509d649cedf4691a1e3b498dc",
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "oldSha256": null,
+      "target": "images/hero_pro_gk.png",
+      "sha256": "e71b619f43c01153741531ddcd215ea0d1b1d1b6cc12a57de0bc08d01dae4d9f",
+      "bytes": 306050,
+      "size": [
+        512,
+        768
+      ],
+      "transparentPixels": 258414,
+      "opaqueishPixels": 125647,
+      "alphaBounds": [
+        33,
+        10,
+        478,
+        762
+      ],
+      "status": "generated-optimized-visually-reviewed",
+      "qa": {
+        "baseballRemnants": false,
+        "fullBodyVisible": true,
+        "identityVariantPreserved": true,
+        "ageAppropriate": true,
+        "transparentBackground": true,
+        "anatomy": "accepted stylized chibi hands/limbs",
+        "reviewEvidence": [
+          "docs/art-hero-contact-1.jpg",
+          "docs/art-hero-contact-2.jpg"
+        ]
+      }
+    }
+  ]
+}

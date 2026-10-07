@@ -1,0 +1,173 @@
+[
+  {
+    "name": "stadium",
+    "source": "/workspace/generated_images/exec-ddaafcef-b84a-4057-93d4-f57d1236346d.png",
+    "prompt": "Create a NEW opaque wide landscape 3:2 background asset for Football Life, a cozy Korean soccer player life card game. Detailed fine pixel-art, polished 16-bit JRPG world, crisp tiny pixel clusters, rich teal and emerald palette, warm floodlights, soft atmospheric night sky. Fictional professional SOCCER stadium, elevated midfield stand camera looking diagonally across the ENTIRE rectangular grass pitch. Correct soccer field geometry: four touchline corners, straight halfway line across width, round center circle, rectangular penalty areas at both short ends, two rectangular white goal frames with nets placed centered on each endline. Tiered crowd stands and lights around pitch. Keep center composition legible behind a character portrait in UI. No people in foreground. No words, letters, logos, real clubs, baseball dirt diamond, mound, bats, baseball gloves, or oval track. Beautiful consistent chibi-game environment, but background only. This replaces a baseball ground with a brand new soccer ground; do not preserve any baseball geometry.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_stadium.png",
+    "archive": "assets/football-generated/background-stadium.png",
+    "original": "assets/football-generated/background-originals/bg_stadium.png",
+    "original_sha256": "b47789a8d346439e8cd5c79fed92aaab05de34e6e21e700f7710f5212ee07210",
+    "generated_sha256": "7d71da7999a3298a1ac907abaed6d1416a102cabbca2a23b73672e4c817e1331",
+    "output_sha256": "e0e1585f203dc1a62286e0ec19c41e1abaf6dfd6de168d5fe8f2a4486bf1c278",
+    "output_bytes": 1517499,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "classroom",
+    "source": "/workspace/generated_images/exec-916a7cd6-98a9-4e0e-adbf-bc70b4aa583f.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. An inviting Korean school classroom in afternoon, rows of neat wooden desks, large green chalkboard blank, bright windows along left wall, small potted plants and school supplies. Wholesome school life.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_classroom.jpg",
+    "archive": "assets/football-generated/background-classroom.png",
+    "original": "assets/football-generated/background-originals/bg_classroom.jpg",
+    "original_sha256": "a0cfe276ff747f0fb4a04c093fe61f659ef38d079f38e2f525f7f767973b19ae",
+    "generated_sha256": "86dd05aa195a2747a922923d05965de4fcd69dc473b9aa9572195f6516db719b",
+    "output_sha256": "5c3cbf694c80e025d0e79b0c298963023f062fdbcce7f7e5a8a0c37b4724be79",
+    "output_bytes": 250601,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "hall",
+    "source": "/workspace/generated_images/exec-4e4273c7-6204-4f5d-ba2a-329071d5fcca.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. A beautiful multipurpose formal celebration and wedding venue, small raised stage framed by white flowers and green plants, warm ceiling lighting, cream and teal walls, empty polished wood floor foreground, elegant but cozy, no sports decoration.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_hall.jpg",
+    "archive": "assets/football-generated/background-hall.png",
+    "original": "assets/football-generated/background-originals/bg_hall.jpg",
+    "original_sha256": "45df284f287da878bb5c083f5dfe188b1c12885335a83aea15f74bef21e61b9b",
+    "generated_sha256": "978ed72fdd80ceb000886838982e5108fa007a52a7e77ce5d452c63085281be3",
+    "output_sha256": "b53fa07f7905d7051bddecfceb7f00c0433bb490ada2108ff91a4e70ae634067",
+    "output_bytes": 265671,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "home",
+    "source": "/workspace/generated_images/exec-115618be-c7b0-4228-9998-258f1d68b2c2.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. A cozy lived-in Korean family apartment living room in warm afternoon sun, lavender sofa with coral cushions on right, wooden coffee table with two mugs and cookies, window left, potted plant, peaceful family life. No sports decorations.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_home.jpg",
+    "archive": "assets/football-generated/background-home.png",
+    "original": "assets/football-generated/background-originals/bg_home.jpg",
+    "original_sha256": "3c3f850357a4d2a35585143e6efae21efad807ba389580dd93ea2bafc147574b",
+    "generated_sha256": "05e4d4e5b0da1c80f14e678dc247c5c1b2bab52394466171c03fc961e71b9d14",
+    "output_sha256": "2697da8b10789396564c95d635db0126e793931c705f2194ff28d1cb297bfe6d",
+    "output_bytes": 269074,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "room",
+    "source": "/workspace/generated_images/exec-f7117dfa-0051-4f81-9d98-8a0f2b71b538.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. A tidy young soccer enthusiast's private bedroom, single wooden bed with pale lavender bedding left, bookshelf and bright window center, desk and monitor right, small classic black and white soccer ball by shelf, wholesome ordinary everyday room.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_room.jpg",
+    "archive": "assets/football-generated/background-room.png",
+    "original": "assets/football-generated/background-originals/bg_room.jpg",
+    "original_sha256": "c3648d8675ed951c67ebdc8d3713375bff00c193dd070fddafe9f65d65206189",
+    "generated_sha256": "38ff58c9c0043a2c95840c86d102aa483ecb311cba822ac2f756e63396a45fb2",
+    "output_sha256": "c2d1fd57e001f15fac313ee98c71fdab33cf47c3e31f066c2720a80b5eeed02b",
+    "output_bytes": 257974,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "office",
+    "source": "/workspace/generated_images/exec-af727bd1-604b-4ab4-8e9e-fc78b23c1a1d.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. An inviting modern sports agent office, broad wooden desk left with dark monitor and task lamp, comfortable office chair, filing bookshelves, wide sunlit window overlooking Korean city, small abstract gold football trophy on shelf, tidy professional place for contracts. No writing anywhere.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_office.jpg",
+    "archive": "assets/football-generated/background-office.png",
+    "original": "assets/football-generated/background-originals/bg_office.jpg",
+    "original_sha256": "8e0bd6672f217cd821bbe0ef71957a01e31e4cb8566334f0e46b1967604e739c",
+    "generated_sha256": "c70b93c3c6b1281a8deea6750f1ca0e7e364fa10a4c1f2313f01b2e53812da92",
+    "output_sha256": "8fe41f1592147e81ae550d51765c7d4c9ca8d396e6f38339c6f4e6c9d82db299",
+    "output_bytes": 295934,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "school",
+    "source": "/workspace/generated_images/exec-5d18e56a-6fab-405f-b1bd-7c2be084d7d1.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. Exterior of a cheerful fictional Korean school, red brick and pale cream facade with rows of blue windows, central clock tower, foreground courtyard with trees and low flowerbeds, glimpse of a small green soccer practice field with rectangular goal at side. Sunny blue sky, school life.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_school.jpg",
+    "archive": "assets/football-generated/background-school.png",
+    "original": "assets/football-generated/background-originals/bg_school.jpg",
+    "original_sha256": "35cd48402f7a06248715e0bb81f7330201bfb6951b6f0aa4cc9a4f8a2d316e92",
+    "generated_sha256": "2788908c9fe40549915732acf11c2ac881c38ac4f982c3d1c60f2d919b90e0d0",
+    "output_sha256": "51cfbf1b22a1e5d81cbc26dd50226fe541791023ba3f7b1b9d7c2a9048fcef44",
+    "output_bytes": 350762,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "street",
+    "source": "/workspace/generated_images/exec-c4e5610d-1c1f-4580-b073-1264788ec555.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. Cozy Korean neighborhood shopping street at sunset, small cafes, bakery, convenience store, apartment blocks, warm streetlamps, leafy trees and potted plants, peach sky, pedestrian sidewalk and quiet road foreground. All shop signs are blank colored panels or simple pictograms, NO text.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_street.png",
+    "archive": "assets/football-generated/background-street.png",
+    "original": "assets/football-generated/background-originals/bg_street.png",
+    "original_sha256": "4086074908e06fd4823c94c6d41c7b7074675080164bb145ba7feb0c3ffbac81",
+    "generated_sha256": "558f9e28a49b5d0480bbedfad32028c18904d35fa098d96f9d211fe1e57c620e",
+    "output_sha256": "5e84434a491ca68cc9b8414c9c126e843fda81e50e05000f98b3cb94eaf5c80b",
+    "output_bytes": 1746978,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  },
+  {
+    "name": "indoor",
+    "source": "/workspace/generated_images/exec-cb93cfbf-30a8-46f5-be73-30b41db7d4a5.png",
+    "prompt": "New opaque 3:2 wide landscape background for cozy Korean Football Life card game, polished detailed fine pixel art with crisp tiny pixel clusters, 16-bit JRPG environmental illustration, rich teal shadows, warm sunlight and nuanced wood tones, consistent beautiful chibi-game world. No people, no text or logos, no baseball equipment. Leave central midground legible behind portrait UI. Comfortable small community lounge interior, blue sofa left, small wooden coffee table with mug center, large sunny window right framed by coral curtains, simple floor lamp and plants. Framed painting of a classic black and white SOCCER ball on left wall. Calm welcoming social meeting room.",
+    "status": "generated-and-visually-reviewed",
+    "qa": "Opaque wide pixel-art; coherent original setting; no baseball equipment or visible real-club marks; empty foreground avoids anatomy defects.",
+    "target": "images/bg_indoor.png",
+    "archive": "assets/football-generated/background-indoor.png",
+    "original": "assets/football-generated/background-originals/bg_indoor.png",
+    "original_sha256": "3b2f63a99252b9be3c87465601f52ae1b602bf39f16e31e572ea4fe92acaf2b2",
+    "generated_sha256": "8c148d75bc397bc83206da6919aaa1bd624a10f824f1f687c64ad7ded2550d89",
+    "output_sha256": "264946b6ce0068d503941d1db88b23eae7dd3b6667828b8db91c891e03384c22",
+    "output_bytes": 1400944,
+    "dimensions": [
+      1200,
+      800
+    ],
+    "optimization": "Pillow RGB resize 1200x800 Lanczos; JPEG quality88 progressive optimize or lossless PNG optimize"
+  }
+]

@@ -1,0 +1,503 @@
+[
+  {
+    "file": "images/heroine1_meet.png",
+    "generatedPath": "/workspace/generated_images/exec-678d9ec6-8939-42f0-b75e-3cb8c3cc4ef0.png",
+    "prompt": "Recreate one NEW isolated full-body portrait for Football Life. Preserve identity of reference but fresh natural pose. Yoon Hana Korean schoolgirl childhood friend, age16. Brown high ponytail red tie, brown eyes, cheerful. Modest navy blazer white blouse red bow, knee-length grey plaid skirt opaque navy tights brown loafers. School satchel soccer-ball charm; holding strawberry milk and waving. Wholesome everyday school portrait. Consistent detailed chibi fine-pixel game illustration, crisp dark outlines warm colors. Entire body including shoes fully visible with8%empty margins, two hands/two feet anatomically coherent. Actual transparent alpha background, NO vignette, NO scenery, NO text, NO brands. No baseball items.",
+    "originalSha256": "92590962f2098b390132284055c686be2df353fcbf2b59c226513d1dfe06186a",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine1_meet.png",
+    "sourceSha256": "1418285e8bdeba208e7e7026afbe0d1d5671be21ccdecaad92854bfa82ccae96",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "5d06ba2e07e449d589106440270e40de95694b57bd090332a7e765f534864a1d",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 370008,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine1_meet.png",
+    "referencePaths": [
+      "images/heroine1_meet.png"
+    ]
+  },
+  {
+    "file": "images/heroine2_meet.png",
+    "generatedPath": "/workspace/generated_images/exec-a07e4416-6797-4cc4-bafa-e97c9f7875bc.png",
+    "prompt": "Create one replacement full-body game portrait of Seo Jian, an adult Korean woman football journalist. First reference defines her identity: short softly waved dark brown bob, big brown eyes, confident cheerful smart face, navy pantsuit with white blouse, practical black shoes, shoulder satchel, blue press lanyard, handheld voice recorder and notebook. Preserve that recognizable identity and career, NOT a football player. Second reference defines the Football Life game art style: charming detailed chibi fine-pixel illustration with dark clean outlines, warm skin, restrained navy/cyan palette. New pose: naturally standing with two feet apart, notebook held close to torso in left hand, recorder up in right, calm inquisitive smile. Add small soccer-ball symbol on press pass, no text or real brand. Anatomically coherent two hands/two feet, clear silhouettes, entire body including shoes with generous 8 percent margins. Single isolated character only, no scenery, no background, NO dark vignette or glow: actual transparent alpha everywhere outside character and props. No baseball bats/gloves/caps. Portrait 2:3.",
+    "originalSha256": "7fac2ad51239e17e17d5cc7b947cf648ad6eef7d3881ff747d8529baaeb406a0",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine2_meet.png",
+    "sourceSha256": "3b376bb3c88eae1245acbe49a63a49083ffd4777ecebd1f627ba4b096b679a68",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "2525963cea4c35fa7a3f0fc9e3d39d82998602f86b241099471a61ac1b30af5d",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 314534,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine2_meet.png",
+    "referencePaths": [
+      "images/heroine2_meet.png",
+      "assets/football-generated/hero_pro-sample.png"
+    ]
+  },
+  {
+    "file": "images/heroine3_meet.png",
+    "generatedPath": "/workspace/generated_images/exec-6790c779-7f70-457c-bb6c-14811800963f.png",
+    "prompt": "Recreate one NEW isolated full-body portrait for Football Life. Preserve identity of reference but fresh natural pose. Han Chaeyoon adult Korean physical therapist for football players. Brown hair low side ponytail, warm brown eyes. Navy/cyan polo clinic badge, charcoal trousers white trainers. Hold athletic tape and ice pack; gentle competent smile. Consistent detailed chibi fine-pixel game illustration, crisp dark outlines warm colors. Entire body including shoes fully visible with8%empty margins, two hands/two feet anatomically coherent. Actual transparent alpha background, NO vignette, NO scenery, NO text, NO brands. No baseball items.",
+    "originalSha256": "ec5b256266f5ad2d3ab1aa57a033e156e3eb194fd596549978d9e202abe4942b",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine3_meet.png",
+    "sourceSha256": "e79c4f52b3f798210139a78dd1d61604ce7a7721ffb2acfc577927c07ca6af4b",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "b93a67fe7728f0d53fd181151c6bf08adf3ae530968fd0e66aa074a2274ae75d",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 312518,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine3_meet.png",
+    "referencePaths": [
+      "images/heroine3_meet.png"
+    ]
+  },
+  {
+    "file": "images/heroine4_meet.png",
+    "generatedPath": "/workspace/generated_images/exec-79e9ed83-cb27-435d-9161-bab4aaf5627d.png",
+    "prompt": "Recreate one NEW isolated full-body portrait for Football Life. Preserve identity of reference but fresh natural pose. Yoo Harin Korean schoolgirl age16. Long wavy light brown hair brown eyes, reserved slightly skeptical expression. Cream sweater white collar burgundy bow, knee-length grey plaid skirt opaque navy tights brown loafers, shoulder schoolbag. Arms gently folded. Wholesome everyday school portrait; not sports uniform. Consistent detailed chibi fine-pixel game illustration, crisp dark outlines warm colors. Entire body including shoes fully visible with8%empty margins, two hands/two feet anatomically coherent. Actual transparent alpha background, NO vignette, NO scenery, NO text, NO brands. No baseball items.",
+    "originalSha256": "d3c5bdb530fcbafeaef997117df4eed656b98e3f6ff316111e5f82ddfc44298f",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine4_meet.png",
+    "sourceSha256": "d51a8b952c8f14ebe428934d543a9bb58b115232f602862b9266e7b94e92c8ff",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "9b7c8d086b47bd2f5981fb3ba2a5cfed5f4e5ff6bf30aaa6162a93da8a4862e1",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 380682,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine4_meet.png",
+    "referencePaths": [
+      "images/heroine4_meet.png"
+    ]
+  },
+  {
+    "file": "images/heroine5_meet.png",
+    "generatedPath": "/workspace/generated_images/exec-43b6b393-2b89-4622-a09a-2b167516618b.png",
+    "prompt": "Recreate one NEW isolated full-body portrait for Football Life. Preserve identity of reference but fresh natural pose. Choi Daon Korean schoolgirl class representative age16. Chin length dark brown straight bob with fringe and round glasses brown eyes. Navy blazer red bow white blouse knee-length grey plaid skirt opaque navy tights brown loafers. Holds homework clipboard, points gently with raised index finger, earnest stern expression. Wholesome school portrait. Consistent detailed chibi fine-pixel game illustration, crisp dark outlines warm colors. Entire body including shoes fully visible with8%empty margins, two hands/two feet anatomically coherent. Actual transparent alpha background, NO vignette, NO scenery, NO text, NO brands. No baseball items.",
+    "originalSha256": "81c6b668961ddc148f8a90342ea4ad85224d26ecd884f2a034ceb98e26f9aa71",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine5_meet.png",
+    "sourceSha256": "0ec96827c18819d357d3782712d7a127a339bae79707134b6c66b23b33ddceb4",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "d201295eec2ee652bff6f5859f173dd321e4a71901d514b3d685d4aa4babcdae",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 308481,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine5_meet.png",
+    "referencePaths": [
+      "images/heroine5_meet.png"
+    ]
+  },
+  {
+    "file": "images/heroine1_lover.png",
+    "generatedPath": "/workspace/generated_images/exec-a7a6728a-a8f0-4429-bd23-97a2d82eeffe.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Yoon Hana: brown high ponytail red tie brown eyes, cheerful childhood friend. wholesome youthful everyday outing. Denim jacket white shirt yellow knee-length skirt opaque tights white sneakers, shy smile hands behind back. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "6be1ac10f3eab79133050c2bd259e37eed712b992ab45aef00df132a45b062f3",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine1_lover.png",
+    "sourceSha256": "1f4956db840fab19f361fdd77c023a0106b8ff14c9646cdb47a79a7b9b4b1ef5",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "131e1728ededba209835ba0b1f84f266fd1fb6a3d69bbaee53a7d4b7aa0f33c9",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 341987,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine1_lover.png",
+    "referencePaths": [
+      "images/heroine1_lover.png"
+    ]
+  },
+  {
+    "file": "images/heroine2_lover.png",
+    "generatedPath": "/workspace/generated_images/exec-ec1a697e-4232-41e2-a1db-1b19c8bf98fd.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Seo Jian: short dark brown bob brown eyes confident journalist. adult woman late20s off-duty journalist. Beige trenchcoat cream sweater black trousers flats, two takeaway coffees. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "285372ba379c0cdae32289422c32158f4691569a223591f221afe4296bdc88c9",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine2_lover.png",
+    "sourceSha256": "2e1536c5414c0dc2f90ff08020700a4ae7161afd00cbc099c33069bbc0a784ef",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "1c10f721d1dc5a367f4978d02a93c714fc44c85a8e6c3fff7787c364039cb7e5",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 357313,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine2_lover.png",
+    "referencePaths": [
+      "images/heroine2_lover.png"
+    ]
+  },
+  {
+    "file": "images/heroine3_lover.png",
+    "generatedPath": "/workspace/generated_images/exec-427c4b5e-eaad-440c-bc3b-b640c438a413.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Han Chaeyoon: brown long side ponytail brown eyes gentle physical therapist. adult woman20s casual day off. Cream cardigan light blue knee-length floral dress white flats, holding small pink wrapped gift. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "3f6c1e6ef5de0f19a7a1eddcea1d9b70660bb6a52c3e78ee056afc034baa980c",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine3_lover.png",
+    "sourceSha256": "3c5f9b48e5bb53b840d6a9f75cd9b9ebefef70f170008344d28f8f05213e4f7f",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "2f621715674bdbcf09ed64472bb2cb2454a833d22e84db8d40ea4213cd10ae3a",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 351713,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine3_lover.png",
+    "referencePaths": [
+      "images/heroine3_lover.png"
+    ]
+  },
+  {
+    "file": "images/heroine4_lover.png",
+    "generatedPath": "/workspace/generated_images/exec-d7fe21df-cf4f-4915-aa94-fbfe2ebfc5da.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Yoo Harin: long wavy light brown hair brown eyes proud but warm. wholesome teenage everyday outing, pink cardigan white blouse navy knee-length skirt opaque tights flats, smiling with small homemade heart-and-soccer-ball cheer card no words. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "3fa49aa6785ce5bc668196eb7c79b7ac355b4a8632e87ad32f9fdd5031d424ad",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine4_lover.png",
+    "sourceSha256": "d0f1a128e921e2481d229bc06da5dcbfef09b61ec818af8ba465579558484118",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "5a3f12638490929fe686b24421a1b2edc1dbef04b8cd996151d153542258573a",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 397764,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine4_lover.png",
+    "referencePaths": [
+      "images/heroine4_lover.png"
+    ]
+  },
+  {
+    "file": "images/heroine5_lover.png",
+    "generatedPath": "/workspace/generated_images/exec-6f6c8d77-4157-4a60-9db1-31f6b0319e72.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Choi Daon: dark short bob straight fringe round glasses brown eyes earnest. wholesome teenage everyday outing, grey cardigan white blouse navy knee-length skirt opaque tights flats, shy smile one hand adjusts round glasses. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "38a7f640b332bb0b2858dbf5926b370979f0d06a73945dc598cf01ad6b7840ad",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine5_lover.png",
+    "sourceSha256": "f12ca5d25eb2e899cc16440352d08f73d2c930dca2b3510605ebcb59b42f54be",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "1e14c7b87a298775e03e9cb555980944b7136c23d85f5c7483e1d46d8ced1c47",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 283002,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine5_lover.png",
+    "referencePaths": [
+      "images/heroine5_lover.png"
+    ]
+  },
+  {
+    "file": "images/heroine1_spouse.png",
+    "generatedPath": "/workspace/generated_images/exec-19b5405b-fd44-45f4-824c-bd80973049ce.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Yoon Hana: brown high ponytail red tie brown eyes, cheerful childhood friend. adult woman late20s. Beige cardigan striped shirt jeans white sneakers, holding pink towel and tote, cheerful after family football practice. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "26ccade9f461532966b5926987037931e46bc00cc847435af002d102a2391dc8",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine1_spouse.png",
+    "sourceSha256": "93f3860c2c8202fd86d3e4bd5557b0e7f1213c1c2306aae97a2a3c1afcfc68f0",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "589bbb779adc56dc9fd8c2ec48552ac764d87a647b61f1be9d6569f99b937b18",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 387887,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine1_spouse.png",
+    "referencePaths": [
+      "images/heroine1_spouse.png"
+    ]
+  },
+  {
+    "file": "images/heroine2_spouse.png",
+    "generatedPath": "/workspace/generated_images/exec-a234472c-510e-4722-9329-81f500e1bc18.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Seo Jian: short dark brown bob brown eyes confident journalist. adult woman30s married journalist. Cream business pantsuit white blouse lanyard tablet and coffee, warm smile. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "a412db9d6517e45505f1f80863aeeb998b70b7ce57a6a1ae32bc853a7647dbb8",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine2_spouse.png",
+    "sourceSha256": "534f9a0e9e47924baaaed013ba7ba8c86b41afb01f8a5686e9dd9be92086cf26",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "59439946c59aed029f4a94be71896a0743fd006742025ddd5da82c843f1ad7cd",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 312512,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine2_spouse.png",
+    "referencePaths": [
+      "images/heroine2_spouse.png"
+    ]
+  },
+  {
+    "file": "images/heroine3_spouse.png",
+    "generatedPath": "/workspace/generated_images/exec-ee1da53a-c2ad-4378-a2a7-b0e25d1d1ba6.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Han Chaeyoon: brown long side ponytail brown eyes gentle physical therapist. adult woman30s home portrait. Beige cable sweater long brown skirt flats side braid, holding warm mug with both hands. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "8a0c40f4c59c3760e3db50a3fde9126a659e391af06fa78b669a6ccffb3292bd",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine3_spouse.png",
+    "sourceSha256": "f67762d8e8fcc3a3bab0f904813a53f1ad0f622225b426edb4226b76f95a33ee",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "dd0bd635a49b1fdbfa8416a352e05e4363742dd0c4989a2d2e7c72dcf429b9e8",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 301699,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine3_spouse.png",
+    "referencePaths": [
+      "images/heroine3_spouse.png"
+    ]
+  },
+  {
+    "file": "images/heroine4_spouse.png",
+    "generatedPath": "/workspace/generated_images/exec-1391d4fa-ff70-4a4d-9223-1dccd16d2ee4.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Yoo Harin: long wavy light brown hair brown eyes proud but warm. adult woman late20s. Tan trenchcoat cream knee-length dress brown flats, affectionate smile holding small heart-and-football supporter card. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "f2196095ded53c44c268d0c3c050fb5251c8facccd41c3eea1f4aaf3cccd4145",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine4_spouse.png",
+    "sourceSha256": "068b789174cb1e9d52d281fed5bc708fa8c0b56145f73fccb8054ba33fa9f1ba",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "8019056b50a87c015781c4a195c78c40c6e7eca2a417158d152b4355458cbd87",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 430188,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine4_spouse.png",
+    "referencePaths": [
+      "images/heroine4_spouse.png"
+    ]
+  },
+  {
+    "file": "images/heroine5_spouse.png",
+    "generatedPath": "/workspace/generated_images/exec-70d18201-f8d2-4a13-a86c-c3e9c4198414.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Choi Daon: dark short bob straight fringe round glasses brown eyes earnest. adult woman30s. Beige knit sweater white collar navy long skirt brown flats, holding open book and pen, warm thoughtful smile. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "311f80a08d7aee1660598abd59d70d94adab2f997bcd05b85fa108d42f9caef6",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine5_spouse.png",
+    "sourceSha256": "554c19a7ea40acccf9c155839553487e5cf71a7f51f9fafb9e2bf7a5215c82eb",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "b403948c9f63ffdf4a243722f46775d9544e5c4400fc5a736afc0e6b0f91b64f",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 340541,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine5_spouse.png",
+    "referencePaths": [
+      "images/heroine5_spouse.png"
+    ]
+  },
+  {
+    "file": "images/heroine1_wedding.png",
+    "generatedPath": "/workspace/generated_images/exec-2fca9eba-0618-468d-9e91-c484e3015d89.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Yoon Hana: brown high ponytail red tie brown eyes, cheerful childhood friend. adult bride late20s. Elegant white full-length wedding gown modest neckline veil floral updo yellow daisy bouquet. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/gown/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "703d45e93dcb7fb8f44bd4a9e10fc1decffc109c8c3f61fed8d29fc65e94a529",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine1_wedding.png",
+    "sourceSha256": "b5b8d36d0fdb9ba96eb7bce10298b9dcc18105839f53a169612570491e62fed3",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "d847e529c7fd57de5b65405682ecdb90c7aeeeaa93b2c76ff7e1eaf2c9a62fee",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 460456,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine1_wedding.png",
+    "referencePaths": [
+      "images/heroine1_wedding.png"
+    ]
+  },
+  {
+    "file": "images/heroine2_wedding.png",
+    "generatedPath": "/workspace/generated_images/exec-4ffd09f2-7b73-4d80-8d1d-bdafe0ecad2d.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Seo Jian: short dark brown bob brown eyes confident journalist. adult bride late20s. Elegant full-length white gown modest neckline pearl necklace lace veil white rose bouquet. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/gown/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "b78f2cfd6e65c401fc002b92530edfa43d0645ec0f47de9c6636e1549ee7bd8e",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine2_wedding.png",
+    "sourceSha256": "9e1a33dee0593b3fc41440de5d29d1c77ec6d8c1a9b1126fec532ae95528c73b",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "901306956de05e1b0524363a87d87b0c7f121d5364e4cb3e2319cc0286155229",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 525327,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine2_wedding.png",
+    "referencePaths": [
+      "images/heroine2_wedding.png"
+    ]
+  },
+  {
+    "file": "images/heroine3_wedding.png",
+    "generatedPath": "/workspace/generated_images/exec-984c7f2f-f49a-41a9-9f33-7f124bddf9ec.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Han Chaeyoon: brown long side ponytail brown eyes gentle physical therapist. adult bride late20s. Full-length modest white lace gown veil white/pink rose bouquet long brown side ponytail. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/gown/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "076cda89ba8d19754192889095f5c3ffd622d6250a8ece18eb30cb8bcc6798b4",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine3_wedding.png",
+    "sourceSha256": "bb6a6f5a9afd7298a2f6edf6c8a368fa3e56f721204cc7cefa95b1afce0f02d3",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "6398699c7b46ac0095bc74edf8f2d5f9fdde5a47037fb74eab49b7cc6fd6e0c0",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 518141,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine3_wedding.png",
+    "referencePaths": [
+      "images/heroine3_wedding.png"
+    ]
+  },
+  {
+    "file": "images/heroine4_wedding.png",
+    "generatedPath": "/workspace/generated_images/exec-a77bcf23-6c01-4f1a-8627-9de2cdacc5df.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Yoo Harin: long wavy light brown hair brown eyes proud but warm. adult bride late20s. Full-length elegant white lace gown modest neckline white veil floral hairpin pastel rose bouquet. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/gown/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "eec2b497f1226465d73eaceeb478fa258385140e316842c016c1d94ef3e15f41",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine4_wedding.png",
+    "sourceSha256": "6210bb653c1257627f4b2b45e33d7938498b82e4bf188619214af80481b6a759",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "afc7153c4ec1ca80b1cfc2e639d36d0a9cb19859a004815b7483fd41695ba90e",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 589206,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine4_wedding.png",
+    "referencePaths": [
+      "images/heroine4_wedding.png"
+    ]
+  },
+  {
+    "file": "images/heroine5_wedding.png",
+    "generatedPath": "/workspace/generated_images/exec-d1a9ad51-3ae3-45c6-b6b4-2123c8126890.png",
+    "prompt": "Create NEW full-body single portrait for Football Life, preserving referenced original identity Choi Daon: dark short bob straight fringe round glasses brown eyes earnest. adult bride late20s. White full-length lace gown modest neckline veil pearl hairclip glasses, bouquet and small vow book. Detailed chibi fine-pixel illustration crisp dark outlines warm colors same cohesive game style. Fresh natural pose two normal hands/two feet, all body/gown/shoes visible8%margin. Actual alpha transparent background outside character, NO vignette/scenery/text/brands/baseball items.",
+    "originalSha256": "553499ca1384d5ec7071196b26b7903e87417af9e5b0bf46102c018070fa44e2",
+    "fullResolutionPath": "assets/football-generated/heroines1-5/heroine5_wedding.png",
+    "sourceSha256": "d9a49478a22ebe55378e4590b2a4559103c7da962daae38475f574d49517d956",
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "status": "accepted",
+    "tool": "image_gen.imagegen",
+    "newSha256": "fcb31cb48d542ff048829a8627528d79953a15708607f49f3ab9cd57a21fb3e2",
+    "webSize": [
+      512,
+      768
+    ],
+    "bytes": 561450,
+    "qa": "Actual source and generated pixels inspected: recognizable identity, age-appropriate clothing, job/life context retained, body/props coherent, full silhouette and no baseball equipment. Alpha corners verified0. Optimized PNG reopens.",
+    "originalBackup": "git:13699caa17f363ae7d020959eef35c98f34d6cfb:images/heroine5_wedding.png",
+    "referencePaths": [
+      "images/heroine5_wedding.png"
+    ]
+  }
+]

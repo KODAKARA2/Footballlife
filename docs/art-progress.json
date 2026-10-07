@@ -1,0 +1,965 @@
+{
+  "originalCommit": "13699caa17f363ae7d020959eef35c98f34d6cfb",
+  "remoteBaseline": "6235f4756c23dc74b4f0fa6a81255ab618396976",
+  "branch": "graphics-football-20261007",
+  "originalCount": 110,
+  "assets": [
+    {
+      "file": "images/agent.png",
+      "originalSha256": "0a6ed044a08973cde62724aa89b492a398e62a7fb0a0ac886b2384fa9c0d287c",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "daebef14256023d4adcaf79d4811794369f76b381f4c04e1295d2ddf9ef915d3",
+      "bytes": 323318
+    },
+    {
+      "file": "images/bg_classroom.jpg",
+      "originalSha256": "a0cfe276ff747f0fb4a04c093fe61f659ef38d079f38e2f525f7f767973b19ae",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "5c3cbf694c80e025d0e79b0c298963023f062fdbcce7f7e5a8a0c37b4724be79",
+      "bytes": 250601
+    },
+    {
+      "file": "images/bg_hall.jpg",
+      "originalSha256": "45df284f287da878bb5c083f5dfe188b1c12885335a83aea15f74bef21e61b9b",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "b53fa07f7905d7051bddecfceb7f00c0433bb490ada2108ff91a4e70ae634067",
+      "bytes": 265671
+    },
+    {
+      "file": "images/bg_home.jpg",
+      "originalSha256": "3c3f850357a4d2a35585143e6efae21efad807ba389580dd93ea2bafc147574b",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "2697da8b10789396564c95d635db0126e793931c705f2194ff28d1cb297bfe6d",
+      "bytes": 269074
+    },
+    {
+      "file": "images/bg_indoor.png",
+      "originalSha256": "3b2f63a99252b9be3c87465601f52ae1b602bf39f16e31e572ea4fe92acaf2b2",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "264946b6ce0068d503941d1db88b23eae7dd3b6667828b8db91c891e03384c22",
+      "bytes": 1400944
+    },
+    {
+      "file": "images/bg_office.jpg",
+      "originalSha256": "8e0bd6672f217cd821bbe0ef71957a01e31e4cb8566334f0e46b1967604e739c",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "8fe41f1592147e81ae550d51765c7d4c9ca8d396e6f38339c6f4e6c9d82db299",
+      "bytes": 295934
+    },
+    {
+      "file": "images/bg_room.jpg",
+      "originalSha256": "c3648d8675ed951c67ebdc8d3713375bff00c193dd070fddafe9f65d65206189",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "c2d1fd57e001f15fac313ee98c71fdab33cf47c3e31f066c2720a80b5eeed02b",
+      "bytes": 257974
+    },
+    {
+      "file": "images/bg_school.jpg",
+      "originalSha256": "35cd48402f7a06248715e0bb81f7330201bfb6951b6f0aa4cc9a4f8a2d316e92",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "51cfbf1b22a1e5d81cbc26dd50226fe541791023ba3f7b1b9d7c2a9048fcef44",
+      "bytes": 350762
+    },
+    {
+      "file": "images/bg_stadium.png",
+      "originalSha256": "b47789a8d346439e8cd5c79fed92aaab05de34e6e21e700f7710f5212ee07210",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "e0e1585f203dc1a62286e0ec19c41e1abaf6dfd6de168d5fe8f2a4486bf1c278",
+      "bytes": 1517499
+    },
+    {
+      "file": "images/bg_street.png",
+      "originalSha256": "4086074908e06fd4823c94c6d41c7b7074675080164bb145ba7feb0c3ffbac81",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "5e84434a491ca68cc9b8414c9c126e843fda81e50e05000f98b3cb94eaf5c80b",
+      "bytes": 1746978
+    },
+    {
+      "file": "images/buddy.png",
+      "originalSha256": "01e18c0d0583074639d5d22fae130dd365d9039655073b661c4bd153d6f0f925",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "1ad2eaa9f8c68c35a4a39361b32119ca682b722d88dab35b8bfabfdc3828fa6c",
+      "bytes": 357799
+    },
+    {
+      "file": "images/child.png",
+      "originalSha256": "0032095a3d38252776414f506108fb324b44af8884db53c87ce3f82b448b7454",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "5848f8dbb015d0c1e83a40a646a5928254b4892992a85024c5a2ee2aebf316f3",
+      "bytes": 343809
+    },
+    {
+      "file": "images/coach_high.png",
+      "originalSha256": "01076f42110038fa047bb913d0293191c0e3140d9a8c8d934bbb916e2a57b802",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "f886db535e80276d72c0708c91db4802ccecbf9219090fc1fc5d0f7d644123f8",
+      "bytes": 295728
+    },
+    {
+      "file": "images/coach_little.png",
+      "originalSha256": "02ca38ca26bb37a80e7888fc43c4dd12568c8f388bcc621181d683fb6d23282b",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "b8143ddbc0032c5eb9910b4f9cfb72c548a247fe5f51338a61d765afacc214f2",
+      "bytes": 363194
+    },
+    {
+      "file": "images/hero_college.png",
+      "originalSha256": "29423de11c63a1b373cd36d79ec93da28230d6cc54fc3d5159dc337a588ec476",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "18b3dc07325df5912cbfa5360d67b7131fb46351a0d0df074a1ff0d2b6ab31ab",
+      "bytes": 361842
+    },
+    {
+      "file": "images/hero_college_plain.png",
+      "originalSha256": "170bca5ee080e63168fc5631e160de8b244a08e1dd1d002eb907b11c52a11319",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "dfc86ae4cc31d0b93ff01ff20d5825dac0c7ab7e35d4efbfb0702e21203a250f",
+      "bytes": 314903
+    },
+    {
+      "file": "images/hero_college_ugly.png",
+      "originalSha256": "82c8525146deab48e7588c6a32850410557350ceb4408752fc456d9d015d0435",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "670e3e2fe2bae0d3c99b6a8b3e619a164c596a773941b75f2e96bd9c2edfd503",
+      "bytes": 335635
+    },
+    {
+      "file": "images/hero_elementary.png",
+      "originalSha256": "db7269ecd423f93e0e5335550dc3c5e29bbf287220ba89e619f9932cccba4aa7",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "a1a75c32606a5ef041aecd6aed742f1c99254a51eff3b970f489202db709166e",
+      "bytes": 352004
+    },
+    {
+      "file": "images/hero_elementary_plain.png",
+      "originalSha256": "25e4d252c97f645a4b6d14df4a7bca8039f8d64f8f34aaf208a1eb82641464c4",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "214c41c53b6ca978b5eee45e05f8f3196b69b42c1f2cb7fa1599ece6c5a9a1b6",
+      "bytes": 320651
+    },
+    {
+      "file": "images/hero_elementary_ugly.png",
+      "originalSha256": "cd3d5fbd9b866bd983b9bfaa7116136c3a9b764323c7df480e3b92d38a35d511",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "f7ffa571853770310f8986d3b227ae1618c6a7b0f33f0bce17bdb4a4ebd680c7",
+      "bytes": 377501
+    },
+    {
+      "file": "images/hero_high.png",
+      "originalSha256": "82d99dc16643a4855b929888a9f0af5f2577fe241792c313c943ee7b1bc4912c",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "acce023c74804177c9228812dd5a100e013b918fb0d65502f77aea0eaa5e7e6e",
+      "bytes": 344351
+    },
+    {
+      "file": "images/hero_high_plain.png",
+      "originalSha256": "f3652244ede26c99cb18bf7908c601876b3d531c3aa41544fd3f3aea4e9411c5",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "43b62d91c5206675521634af9ff24e50555570360ecbc746b48a66fcb26271c2",
+      "bytes": 327825
+    },
+    {
+      "file": "images/hero_high_ugly.png",
+      "originalSha256": "ab33ea533da030d08d21383a2c69c5468a4caceb0161382f20e9b398941011e8",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "a335e07c2d9cebebdbca31a602a0fd41091e50cabc6c2fdae92337eca4ec2b6d",
+      "bytes": 367339
+    },
+    {
+      "file": "images/hero_injured.png",
+      "originalSha256": "46347d21ae0a096801d4d1507524c38b186f8bc020f03dcdfb2b569f8ca48fbd",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "346dcb458b2bf8df6b4aaa49a0874898eb819434e34b8608c1618d8e931796d8",
+      "bytes": 342665
+    },
+    {
+      "file": "images/hero_injured_plain.png",
+      "originalSha256": "2f6d942a46dc0c1c1f38faa599f8e90df22db1df1e7badcd84029b34dca2c8d7",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "e80deabd005466bb4911cf0c091563293498c993fee943f76a1963bffba7fb1c",
+      "bytes": 308361
+    },
+    {
+      "file": "images/hero_injured_ugly.png",
+      "originalSha256": "7b91ae02fcf02942e568e579c4eecb9b735dfe53395249e74cdbe9e8c3e45995",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "3966f0b4cb85260f0a81a2d10cc288b2f584cf8ff65b57a94d37901a66cdd27b",
+      "bytes": 342147
+    },
+    {
+      "file": "images/hero_middle.png",
+      "originalSha256": "aca48cf5ffd1735e39fd580f57e6bd9a4e4a6e3c9ca17544bd670397fd3c82d7",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "f7385223a511d6331c46f2288b3995554ef238f2babaa6992b0b845b3a6a4404",
+      "bytes": 339707
+    },
+    {
+      "file": "images/hero_middle_plain.png",
+      "originalSha256": "ec69d2f428975abea1bfb0085df2948000e288e3f0c1e2d491a98c8c7d2d7c8b",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "14cb01473a3ed758b48ae9ba00ac36becb9a1ef90e5487cc021edf4240312d49",
+      "bytes": 320348
+    },
+    {
+      "file": "images/hero_middle_ugly.png",
+      "originalSha256": "48918824b5452a5123d76a66fe86314dd67d2adce54646705ebbc9f3927250da",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "3f47b838979c04e78d2db75c6e371b7d1b60b1e6fbc29c1b05a67b1f787d6aa6",
+      "bytes": 340370
+    },
+    {
+      "file": "images/hero_mlb.png",
+      "originalSha256": "4539f400e496670299769e5fa45fdf8231dd45e6785058d7bc00d56af50b80d0",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "7fb0c80bd4f6af9bab2c35df71c4864da11c2bb553ed0fba9aa3125cfabf5aa3",
+      "bytes": 356675
+    },
+    {
+      "file": "images/hero_mlb_plain.png",
+      "originalSha256": "722350459e46754666e38b4becc4ec47b9f447520d14b8d7fec3ff964568a03f",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "c3a11c2ca48fe90141ef8770fb2e53a8e4b8707df261ea1a108eb37d57b32966",
+      "bytes": 317946
+    },
+    {
+      "file": "images/hero_mlb_ugly.png",
+      "originalSha256": "8495c08b307ee15d5e59dd9758ea34a24dc0f523ac67fc325db8f584cedec0b9",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "2a3a5a2d295dcb56ed8e886191d9dee1ed8c618309d1502f7877f1a2b56b4fcf",
+      "bytes": 347326
+    },
+    {
+      "file": "images/hero_pro.png",
+      "originalSha256": "6aaab282be577c520cf342f8b408e0af5cb9ea34589934b128dee2a37efac956",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "30fb244617d31573dcaa1046d28d6481b2e548ddfcd6a2876ad1bc32c93be347",
+      "bytes": 317729
+    },
+    {
+      "file": "images/hero_pro_plain.png",
+      "originalSha256": "cb921a19fa49272bdc79752dc0e938ccb416128f849682c3b89c03f980eb9391",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "7ff05143148fd55538b30a74c233c3a3bab43a68264233225f4ecbbda55e2cd0",
+      "bytes": 324678
+    },
+    {
+      "file": "images/hero_pro_ugly.png",
+      "originalSha256": "ffbd1d7c1f68acd93f9082f4cdd0ef1c4b9e943288394ad95a0b09a62f466231",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "3a6baee5cde3d97cb99aef5cef08bed0a8f90274cd75e5e054eb8223ceb07e79",
+      "bytes": 354033
+    },
+    {
+      "file": "images/hero_retired.png",
+      "originalSha256": "cc32db9803cddd1eefcbe87ddab43ae7ca5d4f9fd30f14d4c5e68f17d250cc34",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "c627d8170e743e88ce184efa008ccdeef9a2d90d68e55c86144629381668a54e",
+      "bytes": 354525
+    },
+    {
+      "file": "images/hero_retired_plain.png",
+      "originalSha256": "4b425eb748681de4827ace5ed9c655b854fa79682685cd6b04493b6a52e98687",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "db12770eecbc86e51391671f0eed03e68a8f8765213c11bc7512cccec4f0ee9b",
+      "bytes": 331789
+    },
+    {
+      "file": "images/hero_retired_ugly.png",
+      "originalSha256": "28fbc6404c384b2d819be41c31b832bc49dd5357aecb2748d07a2d9bb22f1660",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "c8d6b948b2e5ce4fbc0f8fe2d1a0ff7aa1ad0aaf6a6c274187ee4a77f6b512f8",
+      "bytes": 380365
+    },
+    {
+      "file": "images/hero_slump.png",
+      "originalSha256": "653458bfe069ab768a1ca68cb5221997227e2ecbf04a22847c75f6963dd1efde",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "4aec909a8079316c6954ccbbfb69928a9d0e26be9c74ca0f1fbef0d3f925021e",
+      "bytes": 357848
+    },
+    {
+      "file": "images/hero_slump_plain.png",
+      "originalSha256": "6fa2ae843d73dd30ff817106ac29d1d759d48e4324579ed32e1125752faac4da",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "039c583be40b4bd73fa7efca2c2035b19f85c5c47ece13a3bf1bd706e79a2c3d",
+      "bytes": 327364
+    },
+    {
+      "file": "images/hero_slump_ugly.png",
+      "originalSha256": "e4e7596de019d2218e1b603710b7050e214cf96f67f031b0618935d1804e9a76",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "61de5126ad1e2e85654ae122ce49876dd9c0356297dcce724fa2f55adc754dc2",
+      "bytes": 381182
+    },
+    {
+      "file": "images/hero_victory.png",
+      "originalSha256": "db6f8be9214f1ac87c75f24892ae77adbdeec5dbe6c73ebe5a87c3000301331e",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "8cee86536ffad6379cca1c181c2a324bc076a9a0c7e2aea55d7de25c1ae2422b",
+      "bytes": 335289
+    },
+    {
+      "file": "images/hero_victory_plain.png",
+      "originalSha256": "d82fced6872e5dd625fa433876e04f8272705f1b906ea24363629d7e19dbc48e",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "9861f853e81976331cde94660d91a604ec82e15effb46cb66319a66774e0df54",
+      "bytes": 310420
+    },
+    {
+      "file": "images/hero_victory_ugly.png",
+      "originalSha256": "47fcefda485682d346770ac5ee2ed63a2c2a775a6f62755be1f67bf680e93ced",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "cf53e4aecad1c386a5bea7f65aec66aff4ffc0849d16cefc4bd7d53173255e86",
+      "bytes": 355691
+    },
+    {
+      "file": "images/heroine10.png",
+      "originalSha256": "65812c3f696ff6bf511d0b35ac585525b39cd59a2d069ef8eee793db642401c3",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "93d8411dac72f6e6cd2b97b99317ccd4e73fdcc9fa604ec2ecc9d6de0ff1874c",
+      "bytes": 362607
+    },
+    {
+      "file": "images/heroine10_lover.png",
+      "originalSha256": "bcc5bdc9ff413080148cd8627aad3a67925078faeb886066803e592ffd8bb681",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "a68f25c4f29bc0effa2e6a8b9d06df65c23d09f0fbbfd1c047005bcd0b1e0459",
+      "bytes": 388107
+    },
+    {
+      "file": "images/heroine10_wedding.png",
+      "originalSha256": "c69a583185f413e4081f12f0e43de647f250777ba40edb900775662ac636cedd",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "847d0e3bf29575918b1e2e9ac19d0b15ecdc2d886b76f65f60f01e182040967b",
+      "bytes": 447502
+    },
+    {
+      "file": "images/heroine10_wife.png",
+      "originalSha256": "adda1b15b0aa514a8957a6113ceef65762ab62546cee7acbf09273a5746bcf11",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "57cd27363a933630c349b3611f1735fea85f3840df7b6f519b300bdf7731ef2a",
+      "bytes": 350432
+    },
+    {
+      "file": "images/heroine11.png",
+      "originalSha256": "f2294c7b07e10aeb42534e77250a2c2a7941e112b6bb33a50748c2c16d72ecfe",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "9b82e5f8335742666a70e6e7bb2fb645cb2b8014a652da387c7c1634cfb8df87",
+      "bytes": 378376
+    },
+    {
+      "file": "images/heroine11_lover.png",
+      "originalSha256": "7f033dbe94c158b9dac032ab6918ce8298114796ef381bba31ad624570e80273",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "61d8ba5b8e131ed18bdf79c472e79a9228dd2b5a1d40531ef39ff469d18f021d",
+      "bytes": 369056
+    },
+    {
+      "file": "images/heroine11_wedding.png",
+      "originalSha256": "e4d89075fcd5bf743bf203f8bd9f9749e20d83b1871aa81ab4d2e4a7dd90f235",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "75ad3afa7bcc13561b65e673e442a4c8057edb6d7762570595b40771f103e535",
+      "bytes": 532538
+    },
+    {
+      "file": "images/heroine11_wife.png",
+      "originalSha256": "9e39dc0529a0ec50910eba9c8cab0f3e5cdd6b4516824c5891680d19e4216ed1",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "45f4eaa994419305fc4766181464f1bfdd8ee80200a431147a535ceee0b7c7a4",
+      "bytes": 365099
+    },
+    {
+      "file": "images/heroine12.png",
+      "originalSha256": "5c9cac13fb7f2420d70c6cc3dc8eade807cb074e1964aeda57698d42b598a7d3",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "b75a31dc87c7e5f4ca55c1560dd5efc65ce9c77925fe84170dce6dc06e18c672",
+      "bytes": 326270
+    },
+    {
+      "file": "images/heroine12_lover.png",
+      "originalSha256": "d69afc7a56282429f56edc957f03be653ad65e4e60424459ea1cb5f5eee90306",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "3e1a0ce7de9a8e3aaf5ed7bbef72aba4ea0ef99bc8fe67d9d00c1f2e88c7a60b",
+      "bytes": 342842
+    },
+    {
+      "file": "images/heroine12_wedding.png",
+      "originalSha256": "e0c674fe103ae675eee613b36b9a4c70ca5e271a9d0c1b4ddbc165cd5476538e",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "1a03da156347ecac31f330485b4926ca5508c43bdf3b6b41396e6748e0a44693",
+      "bytes": 536868
+    },
+    {
+      "file": "images/heroine12_wife.png",
+      "originalSha256": "f07a0a24bd781ee226c3e7f8f2536acf6d90f48d37f435882b2a4b85087dfccb",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "6dccea4511b5db46cadc7aff238c40f0c29759277821122320b4260488f02502",
+      "bytes": 309275
+    },
+    {
+      "file": "images/heroine13.png",
+      "originalSha256": "e8868c6efef653e22f2af03fff3414783f3a86225a28c44e370cd86e961b5bb0",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "99beb29dfb949ebcb684c2e2333945d13c469aad2e7791fba2a4fa15fb55f01d",
+      "bytes": 279045
+    },
+    {
+      "file": "images/heroine13_lover.png",
+      "originalSha256": "62802b2f8d9d438858a403ee05525d1573801b6060caa76af640187850bbf8dd",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "0d8f561d50804b84cafe81e5eceaa23c980c4b084a8c585400a859c333f08f40",
+      "bytes": 318640
+    },
+    {
+      "file": "images/heroine13_wedding.png",
+      "originalSha256": "ac3aa062a41c380416782ea54791e9dcc3d22910ffb24a763cc334c4612af3fa",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "711436973edd9b545bfc46c42de2e67a0a7b62af5715c02b2196d50975aefc78",
+      "bytes": 442029
+    },
+    {
+      "file": "images/heroine13_wife.png",
+      "originalSha256": "298ba02dc082a737dc99a5baa26533138e5071088a6a9b0d8013b13169826cd8",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "aa6c7a798380d30028650434410859a6618958b0966a4972dbc2e297c811671e",
+      "bytes": 298013
+    },
+    {
+      "file": "images/heroine14.png",
+      "originalSha256": "84ae4e4314dcb7c528e3408aaec20c31e1e064c85d18a5611b33b33ada776db3",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "250546ac0dc438f654fa5ccb6b1fa3b8c6e9fa38d6f90cddca9c79b930a52359",
+      "bytes": 385055
+    },
+    {
+      "file": "images/heroine14_lover.png",
+      "originalSha256": "c4bd2386188a879f7d4b25d620f476e9cbe79f31af99871881ecd6f028b9d093",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "f217edd749b43de932a9e0bce4cde1f6fbddc11e1fdd978894024a8a23561e9f",
+      "bytes": 381358
+    },
+    {
+      "file": "images/heroine14_wedding.png",
+      "originalSha256": "e383137bf8f2ce87e8cda5ef88e0ebfb3c60074c3b030fbc93f806319bbd86e7",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "c37725ee7c8c2f4ea1ef1b26776e19670cc808ee66b8a2470eaa9bd5d218781c",
+      "bytes": 591238
+    },
+    {
+      "file": "images/heroine14_wife.png",
+      "originalSha256": "c91c0e312114d7081b54043ec06f83ccf58e5ff8737bec8ca9dbe3e85f4ab3e1",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "e6942329ef15c18fb918a771de7944468cc1fcfe4a5c4f888f985fc65b938082",
+      "bytes": 396986
+    },
+    {
+      "file": "images/heroine15.png",
+      "originalSha256": "f655ff3a43e4418e9d5679f22dd29c0c2a387a3ec939bab78ef97372886df7bd",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "8abef4df8cbdbbffabac280434fd23f9fc192cd0961b40728549204626e40f91",
+      "bytes": 362037
+    },
+    {
+      "file": "images/heroine15_lover.png",
+      "originalSha256": "daace65f1b57bb035f4b172f2501f5e78240c8a36bc9d2391a854ce93b823f95",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "cac2e4c1d3b799ce0a239a72b7314a9de085e93a6f68b7c462c045145d01adf5",
+      "bytes": 395666
+    },
+    {
+      "file": "images/heroine15_wedding.png",
+      "originalSha256": "f70d3cf5ca6130915eb8b291874882d4fb341b0a3eac21fd349d4599ea07d596",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "eb4835428adc159b6f0716f96f90eb84d9265baa08ad3f0d4750d0c01ee7aa3f",
+      "bytes": 500281
+    },
+    {
+      "file": "images/heroine15_wife.png",
+      "originalSha256": "2aad86a1df49014eb3ce746e1be4f119c72f676acaade2f395f3a8e800eb0892",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "421458d9b5f134ea299a624e7e1f98767f37459fd60463998d70fb1f6b93ebf1",
+      "bytes": 399910
+    },
+    {
+      "file": "images/heroine1_lover.png",
+      "originalSha256": "6be1ac10f3eab79133050c2bd259e37eed712b992ab45aef00df132a45b062f3",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "131e1728ededba209835ba0b1f84f266fd1fb6a3d69bbaee53a7d4b7aa0f33c9",
+      "bytes": 341987
+    },
+    {
+      "file": "images/heroine1_meet.png",
+      "originalSha256": "92590962f2098b390132284055c686be2df353fcbf2b59c226513d1dfe06186a",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "5d06ba2e07e449d589106440270e40de95694b57bd090332a7e765f534864a1d",
+      "bytes": 370008
+    },
+    {
+      "file": "images/heroine1_spouse.png",
+      "originalSha256": "26ccade9f461532966b5926987037931e46bc00cc847435af002d102a2391dc8",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "589bbb779adc56dc9fd8c2ec48552ac764d87a647b61f1be9d6569f99b937b18",
+      "bytes": 387887
+    },
+    {
+      "file": "images/heroine1_wedding.png",
+      "originalSha256": "703d45e93dcb7fb8f44bd4a9e10fc1decffc109c8c3f61fed8d29fc65e94a529",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "d847e529c7fd57de5b65405682ecdb90c7aeeeaa93b2c76ff7e1eaf2c9a62fee",
+      "bytes": 460456
+    },
+    {
+      "file": "images/heroine2_lover.png",
+      "originalSha256": "285372ba379c0cdae32289422c32158f4691569a223591f221afe4296bdc88c9",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "1c10f721d1dc5a367f4978d02a93c714fc44c85a8e6c3fff7787c364039cb7e5",
+      "bytes": 357313
+    },
+    {
+      "file": "images/heroine2_meet.png",
+      "originalSha256": "7fac2ad51239e17e17d5cc7b947cf648ad6eef7d3881ff747d8529baaeb406a0",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "2525963cea4c35fa7a3f0fc9e3d39d82998602f86b241099471a61ac1b30af5d",
+      "bytes": 314534
+    },
+    {
+      "file": "images/heroine2_spouse.png",
+      "originalSha256": "a412db9d6517e45505f1f80863aeeb998b70b7ce57a6a1ae32bc853a7647dbb8",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "59439946c59aed029f4a94be71896a0743fd006742025ddd5da82c843f1ad7cd",
+      "bytes": 312512
+    },
+    {
+      "file": "images/heroine2_wedding.png",
+      "originalSha256": "b78f2cfd6e65c401fc002b92530edfa43d0645ec0f47de9c6636e1549ee7bd8e",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "901306956de05e1b0524363a87d87b0c7f121d5364e4cb3e2319cc0286155229",
+      "bytes": 525327
+    },
+    {
+      "file": "images/heroine3_lover.png",
+      "originalSha256": "3f6c1e6ef5de0f19a7a1eddcea1d9b70660bb6a52c3e78ee056afc034baa980c",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "2f621715674bdbcf09ed64472bb2cb2454a833d22e84db8d40ea4213cd10ae3a",
+      "bytes": 351713
+    },
+    {
+      "file": "images/heroine3_meet.png",
+      "originalSha256": "ec5b256266f5ad2d3ab1aa57a033e156e3eb194fd596549978d9e202abe4942b",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "b93a67fe7728f0d53fd181151c6bf08adf3ae530968fd0e66aa074a2274ae75d",
+      "bytes": 312518
+    },
+    {
+      "file": "images/heroine3_spouse.png",
+      "originalSha256": "8a0c40f4c59c3760e3db50a3fde9126a659e391af06fa78b669a6ccffb3292bd",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "dd0bd635a49b1fdbfa8416a352e05e4363742dd0c4989a2d2e7c72dcf429b9e8",
+      "bytes": 301699
+    },
+    {
+      "file": "images/heroine3_wedding.png",
+      "originalSha256": "076cda89ba8d19754192889095f5c3ffd622d6250a8ece18eb30cb8bcc6798b4",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "6398699c7b46ac0095bc74edf8f2d5f9fdde5a47037fb74eab49b7cc6fd6e0c0",
+      "bytes": 518141
+    },
+    {
+      "file": "images/heroine4_lover.png",
+      "originalSha256": "3fa49aa6785ce5bc668196eb7c79b7ac355b4a8632e87ad32f9fdd5031d424ad",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "5a3f12638490929fe686b24421a1b2edc1dbef04b8cd996151d153542258573a",
+      "bytes": 397764
+    },
+    {
+      "file": "images/heroine4_meet.png",
+      "originalSha256": "d3c5bdb530fcbafeaef997117df4eed656b98e3f6ff316111e5f82ddfc44298f",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "9b7c8d086b47bd2f5981fb3ba2a5cfed5f4e5ff6bf30aaa6162a93da8a4862e1",
+      "bytes": 380682
+    },
+    {
+      "file": "images/heroine4_spouse.png",
+      "originalSha256": "f2196095ded53c44c268d0c3c050fb5251c8facccd41c3eea1f4aaf3cccd4145",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "8019056b50a87c015781c4a195c78c40c6e7eca2a417158d152b4355458cbd87",
+      "bytes": 430188
+    },
+    {
+      "file": "images/heroine4_wedding.png",
+      "originalSha256": "eec2b497f1226465d73eaceeb478fa258385140e316842c016c1d94ef3e15f41",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "afc7153c4ec1ca80b1cfc2e639d36d0a9cb19859a004815b7483fd41695ba90e",
+      "bytes": 589206
+    },
+    {
+      "file": "images/heroine5_lover.png",
+      "originalSha256": "38a7f640b332bb0b2858dbf5926b370979f0d06a73945dc598cf01ad6b7840ad",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "1e14c7b87a298775e03e9cb555980944b7136c23d85f5c7483e1d46d8ced1c47",
+      "bytes": 283002
+    },
+    {
+      "file": "images/heroine5_meet.png",
+      "originalSha256": "81c6b668961ddc148f8a90342ea4ad85224d26ecd884f2a034ceb98e26f9aa71",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "d201295eec2ee652bff6f5859f173dd321e4a71901d514b3d685d4aa4babcdae",
+      "bytes": 308481
+    },
+    {
+      "file": "images/heroine5_spouse.png",
+      "originalSha256": "311f80a08d7aee1660598abd59d70d94adab2f997bcd05b85fa108d42f9caef6",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "b403948c9f63ffdf4a243722f46775d9544e5c4400fc5a736afc0e6b0f91b64f",
+      "bytes": 340541
+    },
+    {
+      "file": "images/heroine5_wedding.png",
+      "originalSha256": "553499ca1384d5ec7071196b26b7903e87417af9e5b0bf46102c018070fa44e2",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "fcb31cb48d542ff048829a8627528d79953a15708607f49f3ab9cd57a21fb3e2",
+      "bytes": 561450
+    },
+    {
+      "file": "images/heroine6_lover.png",
+      "originalSha256": "68b62bbfe318b86652ba7f60c9a01ef38455d35b5c38ac60513cbbd18ba07e06",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "22225491b5d12984441fbeaa45346298746a7ab674d0fcd0b5ca85a8c6ed3b76",
+      "bytes": 440487
+    },
+    {
+      "file": "images/heroine6_meet.png",
+      "originalSha256": "80e7162d2dec53623aef322a9bf61f375d03b38d0eebef6807855b1d2f14eec6",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "525107a4e883811c8aaa225870b7b2c68dec345957bf774e5bb327c6edeaad3e",
+      "bytes": 400488
+    },
+    {
+      "file": "images/heroine6_spouse.png",
+      "originalSha256": "04945aef5749320bd412e52633fc6cc8e9f2c45cbbaf88a6f7258b1c73dc3a7b",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "07a238f09f725bf64d8c6a5961acba883bf991f2226117a49f8fe0b5644cba87",
+      "bytes": 421896
+    },
+    {
+      "file": "images/heroine6_wedding.png",
+      "originalSha256": "4fcef96dcbf8318d887f9362042fd49f1430746aafab9c8788e8300ea1f59740",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "92d2be11e652fb42da31b95fce97ab2cbd7f018d3aa7534de3a4ad340d790c4a",
+      "bytes": 558600
+    },
+    {
+      "file": "images/heroine7.png",
+      "originalSha256": "379aad04f924ef368d4ee61e68b3019a5ed482e0ec19597151678d10426cd2fe",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "cc89e5ffc5b1da1a8a0b0082527b7e2a61d2b33622acce91775a0f25cfe8204b",
+      "bytes": 323499
+    },
+    {
+      "file": "images/heroine7_lover.png",
+      "originalSha256": "daa8f1d43d2ab493fa84617cfa3f843bd8b8ecfbab825b903ae3acdcb76ec940",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "900c33226123cd03448b16c36d6e718b875d614979850351121220a8ff68dae8",
+      "bytes": 298965
+    },
+    {
+      "file": "images/heroine7_wedding.png",
+      "originalSha256": "e549051da27c4d8e20e28c89fd3c43b18d675b6ff19d6abfc285c041867630c1",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "804e6d191ebf5e9e0daed108be16f90440a1467d71bd8e0ce47016343a4ecfba",
+      "bytes": 515872
+    },
+    {
+      "file": "images/heroine7_wife.png",
+      "originalSha256": "ad2821870758ac55df4cc08a20cc293e9d182c43614c648d453bca710d3d98c1",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "d2e28c8f4779479efa773c9f9a90beebe8103f2a1b43f4a4b12cc47239542346",
+      "bytes": 316217
+    },
+    {
+      "file": "images/heroine8.png",
+      "originalSha256": "8d4739a4cd7f12c0f1d457664973a92c1a08e54d7d6cb494247f8d7cdef67e77",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "e27751cfe6b5188fb6413c4be6514b521b2a401b028b73d4c37f7138edf4f86d",
+      "bytes": 337963
+    },
+    {
+      "file": "images/heroine8_lover.png",
+      "originalSha256": "ecf917524db9b671cb9029bd3b7313babcc824e3cefd5eaadf3e08975338d635",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "c1975cdb2453350f300c2869a37ba50bfca1769fadc2d55bb4655d5471441f84",
+      "bytes": 340554
+    },
+    {
+      "file": "images/heroine8_wedding.png",
+      "originalSha256": "350936fc8128ce2e810f14ad72485d90e14cbbce2bccf081b42676f775c88f05",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "f04a8b93d67cfe5b34864bc424194454b84a0928ae92e831e5b462dfe5b8d84a",
+      "bytes": 417218
+    },
+    {
+      "file": "images/heroine8_wife.png",
+      "originalSha256": "19c502ed7ce8e95f40c61b05c42558ff192b23d488e0ebbb26c0b907e2340cf9",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "a2d35a150dc5777ae20292c0a69e9b6ee2a42a2faefcb25ed0612d85d7486880",
+      "bytes": 343959
+    },
+    {
+      "file": "images/heroine9.png",
+      "originalSha256": "ff270aa9aeeea6d5df9d3903f8a884cb1400398044838769fb7ed1241c7811bf",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "277b1d8f1b06413b8ba9fef94cb813598f580f2e70c9916532f130d24abb88e8",
+      "bytes": 404367
+    },
+    {
+      "file": "images/heroine9_lover.png",
+      "originalSha256": "ff6b4c32fa42f54a2b9957ca47f79bf30c1fe0e194683a653734a80adc8902a6",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "9d1540da252b1279660e0296aa22cbd7911a3f116e0dc8a9d4bc5485a62d3517",
+      "bytes": 414371
+    },
+    {
+      "file": "images/heroine9_wedding.png",
+      "originalSha256": "d1d4dcc1de4efacacacf9c9b6a8f1e4843e154538551555e1752382aadd57b6e",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "a98c9a82414f5cc6f1a66b9b54b56295e10d12b35cf79fc3fa41b314cb9e7e91",
+      "bytes": 573853
+    },
+    {
+      "file": "images/heroine9_wife.png",
+      "originalSha256": "8f554198767ffacc32de84187051ac526c76e40af7c70a1c1d06ac143a1c12a5",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "900807fc7b5b2a938020c49034bfe555289c6235c2ec5e42bdc548177bb29c59",
+      "bytes": 423114
+    },
+    {
+      "file": "images/interpreter.png",
+      "originalSha256": "128a9103dcad1233c3f24182c0d458ccd833f84becdf47a9d4a0e401c8215118",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "6e3f1d13b5b05830f782e1ca44968101f187679e5f38592785e2d9265e444719",
+      "bytes": 305286
+    },
+    {
+      "file": "images/manager_pro.png",
+      "originalSha256": "8c1226f8b1de8ca80912116d07b31fb0af17cf452a80e64854cad148f9730478",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "18fc872d06d907fdd645bf41a309b25e88d0e6ac4f7ff572cb711413da10d928",
+      "bytes": 285301
+    },
+    {
+      "file": "images/mlb_teammate.png",
+      "originalSha256": "877e7874f3fbab63e0cd308a5383308c753e836738455000832f7e903e7078a3",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "5aea1f8d5636a76d765785f87141f37fd5ff075a1c276beeb502272e1c98d132",
+      "bytes": 287784
+    },
+    {
+      "file": "images/parents.png",
+      "originalSha256": "4e23c55c391e3289e86dd2425c5e3483da6c64f36b9ee347b43c8a6c754bfee8",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "38a23b0bbc8299c95639197c140152de115ae320c09cb2868c35a96620cebe1a",
+      "bytes": 526002
+    },
+    {
+      "file": "images/rival.png",
+      "originalSha256": "e6300a0f5d4c18dabecba675aa2bbd71df3b072f6091ddaa9414261d2bf170f2",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "8cf771d9bf26cb8a6662823e7ab0cd8673b09203c1cc586b04d907696cec34bb",
+      "bytes": 323580
+    },
+    {
+      "file": "images/teammate.png",
+      "originalSha256": "94eab86388a3f40ba809033517e407aa65c344b0cae42bf1f7a2e16e6b661637",
+      "status": "pixel-reviewed-pending-browser-validation",
+      "sha256": "91b6c6c209b82606920dcb6aa5fc95dab66e81a0c800170fd38392729243a2b3",
+      "bytes": 316460
+    }
+  ],
+  "updatedAt": "2026-10-07T09:44:03.254256+00:00",
+  "replaced": 110,
+  "goalkeeperAdded": 18,
+  "goalkeeperFiles": [
+    {
+      "file": "images/hero_college_gk.png",
+      "sha256": "d8b083b3d7754895cd19ed521110fbb4f3168426b58f481adc772ec7f6f30052",
+      "bytes": 329847,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_college_gk_plain.png",
+      "sha256": "11ad1c855972d99d129af21cbb5e91312d805958a3dd1700429dcf9511aa99de",
+      "bytes": 315714,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_college_gk_ugly.png",
+      "sha256": "485db4953dcd7874936d9cd9ae6fba4a29924881746628d00308d90e671f44dc",
+      "bytes": 343978,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_elementary_gk.png",
+      "sha256": "6cdfc83b4f9cd7eaf0095b2f0ea7de6482af430607d8e9186e9f8870c8f82f88",
+      "bytes": 355311,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_elementary_gk_plain.png",
+      "sha256": "867d61f9424e52106c25fdc3d022edb3110836adcec3b32fefa6bc89cf1ec6c1",
+      "bytes": 309547,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_elementary_gk_ugly.png",
+      "sha256": "f7fe6c197a40e479f83a707dc0d5923e1bae76cdb545900c46b43b72d77fd442",
+      "bytes": 341027,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_high_gk.png",
+      "sha256": "86552ca9e29c27e04452bf185278c81a61e10a6339c6927667454e95c6c93e87",
+      "bytes": 322598,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_high_gk_plain.png",
+      "sha256": "b00d2433dab93150c1517c0f668f2ce82ebb7f6199800841f778c57e64fef9b4",
+      "bytes": 291825,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_high_gk_ugly.png",
+      "sha256": "9907b0e9aa526cdd04263a50e7d6d876f7484bb1eb417222b23c47d732469907",
+      "bytes": 344459,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_middle_gk.png",
+      "sha256": "f2fa15a447e27a8d98adf76f9b262837a501b178c65b721d8b38305bdc0f40a0",
+      "bytes": 336590,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_middle_gk_plain.png",
+      "sha256": "77ab2cc645be2525e069c4d29d46ab8185900e9711a1eacae96a345d5193d7e7",
+      "bytes": 305171,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_middle_gk_ugly.png",
+      "sha256": "9bb106c8fa6643f8fb6a7a066adf6be4b184be01ae7f6d3bf8476e8e68e82d6f",
+      "bytes": 347817,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_mlb_gk.png",
+      "sha256": "4205179afc3bdfdf1b34ce44dde55078b21ef735bcd052d5c843c4b6ac525597",
+      "bytes": 337768,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_mlb_gk_plain.png",
+      "sha256": "b4ccd13670c64f97b1f9bbc445d08de9e7d0a964471c10a2575060fcb0d2a22d",
+      "bytes": 304716,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_mlb_gk_ugly.png",
+      "sha256": "9df89da0189e8544a0b633801007360d109698b7da2951105efc79508bef0786",
+      "bytes": 357355,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_pro_gk.png",
+      "sha256": "e71b619f43c01153741531ddcd215ea0d1b1d1b6cc12a57de0bc08d01dae4d9f",
+      "bytes": 306050,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_pro_gk_plain.png",
+      "sha256": "e2f23e1347acfa4437e83bee51c8749b6dc346535c447e2139815239c29395c0",
+      "bytes": 293474,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    },
+    {
+      "file": "images/hero_pro_gk_ugly.png",
+      "sha256": "596f1dcae934f882fa6374567b8c6a19f7204cb95e87fe2cf87eaa7c384cdf96",
+      "bytes": 334027,
+      "dimensions": [
+        512,
+        768
+      ],
+      "status": "pixel-reviewed-pending-browser-validation"
+    }
+  ],
+  "totalImages": 128,
+  "totalBytes": 50045543
+}

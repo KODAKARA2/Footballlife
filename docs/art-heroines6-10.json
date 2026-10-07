@@ -1,0 +1,498 @@
+[
+  {
+    "id": "heroine6_meet",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT reproduce reference short compact chibi proportions, oversized round head and tiny body 2.5 heads tall, NOT long-legged fashion illustration. Adult European film star Lily Harper, long wavy golden blonde hair, bright blue eyes, red elegant floor-length gown, tasteful gold necklace, confident smile, holding a small white-and-black association football at waist height for ceremonial kickoff.",
+    "source": "/workspace/generated_images/exec-9a6d35df-422e-4a24-a954-ef052ce00cf5.png",
+    "reference": "images/heroine6_meet.png",
+    "status": "replaced-and-verified",
+    "rejected": {
+      "source": "/workspace/generated_images/exec-0c3dfb98-d47f-4d29-995c-0505fd4876a0.png",
+      "reason": "Style drift: long fashion proportions. Replaced by source-reference chibi retry."
+    },
+    "oldSha256": "80e7162d2dec53623aef322a9bf61f375d03b38d0eebef6807855b1d2f14eec6",
+    "newSha256": "525107a4e883811c8aaa225870b7b2c68dec345957bf774e5bb327c6edeaad3e",
+    "generatedSha256": "c5e753932940d44703fe6775fa6d0e2e96b6a99807a42904af4cb3bf12e31429",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine6_meet.png",
+    "output": "/workspace/football-life/images/heroine6_meet.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 400488,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine6_lover",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT reproduce reference short compact chibi proportions, oversized round head and tiny body 2.5 heads tall, NOT long-legged fashion illustration. Adult European film star Lily Harper, long wavy golden blonde hair, bright blue eyes, white blouse with sleeves rolled and modest white shorts, flat tan sandals, sunglasses on head, holding pink drink cup, friendly wink.",
+    "source": "/workspace/generated_images/exec-e29ea3b9-504d-46fa-9c74-c69d3df2345d.png",
+    "reference": "images/heroine6_lover.png",
+    "status": "replaced-and-verified",
+    "rejected": {
+      "source": "/workspace/generated_images/exec-fb655e03-4098-4ff4-acea-db7dd10328ad.png",
+      "reason": "Style drift: long fashion proportions. Replaced by source-reference chibi retry."
+    },
+    "oldSha256": "68b62bbfe318b86652ba7f60c9a01ef38455d35b5c38ac60513cbbd18ba07e06",
+    "newSha256": "22225491b5d12984441fbeaa45346298746a7ab674d0fcd0b5ca85a8c6ed3b76",
+    "generatedSha256": "9cd227c88464e7d9e60a4298dae63e38ab0f0abfc802822fa97e0b8ad9ba0657",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine6_lover.png",
+    "output": "/workspace/football-life/images/heroine6_lover.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 440487,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine6_spouse",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT reproduce reference short compact chibi proportions, oversized round head and tiny body 2.5 heads tall, NOT long-legged fashion illustration. Adult European film star Lily Harper, long wavy golden blonde hair, bright blue eyes, navy soft winter knit beanie (NOT baseball cap), long cream cable knit sweater dress, brown boots, holding a tiny plain white coffee cup, warm smile.",
+    "source": "/workspace/generated_images/exec-334e91e1-bcc6-4c7f-8be6-cb6a9030d266.png",
+    "reference": "images/heroine6_spouse.png",
+    "status": "replaced-and-verified",
+    "rejected": {
+      "source": "/workspace/generated_images/exec-6e3c4369-64a3-420c-b064-31f8de31b8c8.png",
+      "reason": "Style drift: long fashion proportions. Replaced by source-reference chibi retry."
+    },
+    "oldSha256": "04945aef5749320bd412e52633fc6cc8e9f2c45cbbaf88a6f7258b1c73dc3a7b",
+    "newSha256": "07a238f09f725bf64d8c6a5961acba883bf991f2226117a49f8fe0b5644cba87",
+    "generatedSha256": "1d4118d6e4a47a85269831e6a16cee24a29a70f7a789ee5ad9366d8c63ae5037",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine6_spouse.png",
+    "output": "/workspace/football-life/images/heroine6_spouse.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 421896,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine6_wedding",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT reproduce reference short compact chibi proportions, oversized round head and tiny body 2.5 heads tall, NOT long-legged fashion illustration. Adult European film star Lily Harper, long wavy golden blonde hair, bright blue eyes, refined white floor-length lace wedding gown and veil, bouquet red and cream roses, warm smile.",
+    "source": "/workspace/generated_images/exec-4c0741b9-753b-493d-9af8-7966645404fa.png",
+    "reference": "images/heroine6_wedding.png",
+    "status": "replaced-and-verified",
+    "rejected": {
+      "source": "/workspace/generated_images/exec-f51570c6-ca98-4a60-9daa-498b0d7c2845.png",
+      "reason": "Style drift: long fashion proportions. Replaced by source-reference chibi retry."
+    },
+    "oldSha256": "4fcef96dcbf8318d887f9362042fd49f1430746aafab9c8788e8300ea1f59740",
+    "newSha256": "92d2be11e652fb42da31b95fce97ab2cbd7f018d3aa7534de3a4ad340d790c4a",
+    "generatedSha256": "f943948d918cd741613697eb6a1031c348f5ed4b8912578f7087733710101f74",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine6_wedding.png",
+    "output": "/workspace/football-life/images/heroine6_wedding.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 558600,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine7",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT Super-deformed short compact chibi body like source, oversized round head, 2.5 heads total, not fashion illustration. Han Jiwoo, Korean teenage school soccer club manager, straight dark brown chin-length bob with blunt bangs, dark brown eyes, reserved attentive expression, navy zip-up tracksuit with white side stripes and loose trousers, white sneakers, holding notebook clipboard and pen.",
+    "source": "/workspace/generated_images/exec-8a4a5ac8-9c59-49e2-80e7-0f16d8c3b93f.png",
+    "reference": "images/heroine7.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "379aad04f924ef368d4ee61e68b3019a5ed482e0ec19597151678d10426cd2fe",
+    "newSha256": "cc89e5ffc5b1da1a8a0b0082527b7e2a61d2b33622acce91775a0f25cfe8204b",
+    "generatedSha256": "2ac3112d279a41e2b864b2cfa7f52462c63a41bf122e7f2658c2423d2cefb35f",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine7.png",
+    "output": "/workspace/football-life/images/heroine7.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 323499,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine7_lover",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT Super-deformed short compact chibi body like source, oversized round head, 2.5 heads total, not fashion illustration. Han Jiwoo, Korean teenage student, straight dark brown chin-length bob with blunt bangs, dark brown eyes, gentle shy smile, modest navy school blazer and white shirt, knee-length pleated skirt, white socks, loafers, holding small pink wrapped gift in both hands. Age appropriate innocent everyday pose.",
+    "source": "/workspace/generated_images/exec-9c56bbfc-c7f8-4d62-a6cb-31c2261c31d0.png",
+    "reference": "images/heroine7_lover.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "daa8f1d43d2ab493fa84617cfa3f843bd8b8ecfbab825b903ae3acdcb76ec940",
+    "newSha256": "900c33226123cd03448b16c36d6e718b875d614979850351121220a8ff68dae8",
+    "generatedSha256": "b13f1e2abb10491aa87b6beefe4134885a9349cfe1630b041f1c9b05ce2ec96c",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine7_lover.png",
+    "output": "/workspace/football-life/images/heroine7_lover.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 298965,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine7_wedding",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT Super-deformed short compact chibi body like source, oversized round head, 2.5 heads total, not fashion illustration. Han Jiwoo as a clearly adult bride age 28, straight dark brown chin-length bob with blunt bangs, dark brown eyes, warm quiet smile, white modest wedding dress with full floor-length skirt, white floral circlet and veil, blue-white small bouquet.",
+    "source": "/workspace/generated_images/exec-308031fb-bef2-403b-a39f-becb280d0204.png",
+    "reference": "images/heroine7_wedding.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "e549051da27c4d8e20e28c89fd3c43b18d675b6ff19d6abfc285c041867630c1",
+    "newSha256": "804e6d191ebf5e9e0daed108be16f90440a1467d71bd8e0ce47016343a4ecfba",
+    "generatedSha256": "843bcdb0e06c742d49f795d073fa4273d82fe07fa654e41d537941f28eb1dbd9",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine7_wedding.png",
+    "output": "/workspace/football-life/images/heroine7_wedding.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 515872,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine7_wife",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT Super-deformed short compact chibi body like source, oversized round head, 2.5 heads total, not fashion illustration. Han Jiwoo as a clearly adult woman age 30, straight dark brown chin-length bob with blunt bangs, dark brown eyes, calm confident smile, light blue long-sleeve blouse with dark blue loose trousers and white shoes, carrying notebook and coffee cup.",
+    "source": "/workspace/generated_images/exec-b9d93e46-8aff-495a-b828-47929d0625e6.png",
+    "reference": "images/heroine7_wife.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "ad2821870758ac55df4cc08a20cc293e9d182c43614c648d453bca710d3d98c1",
+    "newSha256": "d2e28c8f4779479efa773c9f9a90beebe8103f2a1b43f4a4b12cc47239542346",
+    "generatedSha256": "565f584b4916e68ee89283ce2afb87287d5e1ca2507fd23d823f44832a673d65",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine7_wife.png",
+    "output": "/workspace/football-life/images/heroine7_wife.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 316217,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine8",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Seo Mirae Korean teenage rival school soccer club manager, auburn red hair in messy top bun, brown eyes, competitive amused smile, maroon sports zip jacket white sleeves (no letters), loose charcoal striped training pants, red sneakers, holding plain tactical notebook showing simple soccer pitch diagram.",
+    "source": "/workspace/generated_images/exec-4ee672c9-0573-4160-85a5-10d1459b1fdd.png",
+    "reference": "images/heroine8.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "8d4739a4cd7f12c0f1d457664973a92c1a08e54d7d6cb494247f8d7cdef67e77",
+    "newSha256": "e27751cfe6b5188fb6413c4be6514b521b2a401b028b73d4c37f7138edf4f86d",
+    "generatedSha256": "18fbb71a7067ead2424aae976ccf2ee4090c3a008f29c95cdb679ba20cbb5533",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine8.png",
+    "output": "/workspace/football-life/images/heroine8.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 337963,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine8_lover",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Seo Mirae Korean teenage student, auburn red hair in messy top bun, brown eyes, confident gentle smile, modest maroon cardigan over cream top and loose charcoal jeans, red sneakers, holding two plain event tickets. Innocent age appropriate everyday pose.",
+    "source": "/workspace/generated_images/exec-08c6d47f-9e78-4d1f-a203-b654eea29323.png",
+    "reference": "images/heroine8_lover.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "ecf917524db9b671cb9029bd3b7313babcc824e3cefd5eaadf3e08975338d635",
+    "newSha256": "c1975cdb2453350f300c2869a37ba50bfca1769fadc2d55bb4655d5471441f84",
+    "generatedSha256": "57c1cd44c7676bd400c14bf2d5ce26edd9a73e288ef1c5827fa15ed1d2dd9662",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine8_lover.png",
+    "output": "/workspace/football-life/images/heroine8_lover.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 340554,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine8_wedding",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Seo Mirae clearly adult woman age28 bride, auburn red hair in top bun with cream flowers, brown eyes, playful confident smile, white modest floor-length wedding gown and short veil, small red white bouquet.",
+    "source": "/workspace/generated_images/exec-9d187810-40a1-4701-bfe3-8f968a8d83bc.png",
+    "reference": "images/heroine8_wedding.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "350936fc8128ce2e810f14ad72485d90e14cbbce2bccf081b42676f775c88f05",
+    "newSha256": "f04a8b93d67cfe5b34864bc424194454b84a0928ae92e831e5b462dfe5b8d84a",
+    "generatedSha256": "57a07402c82aa8379552f775b75365db00921378554de53b1308930b601aff27",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine8_wedding.png",
+    "output": "/workspace/football-life/images/heroine8_wedding.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 417218,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine8_wife",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Seo Mirae clearly adult woman age30, auburn red hair in top bun, brown eyes, confident warm smile, maroon casual jacket over cream shirt with loose cream trousers and red sneakers, holding notebook and plain mug.",
+    "source": "/workspace/generated_images/exec-7a7eb449-bcc9-4274-a940-86300e95a707.png",
+    "reference": "images/heroine8_wife.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "19c502ed7ce8e95f40c61b05c42558ff192b23d488e0ebbb26c0b907e2340cf9",
+    "newSha256": "a2d35a150dc5777ae20292c0a69e9b6ee2a42a2faefcb25ed0612d85d7486880",
+    "generatedSha256": "658cdf02b3e9c4a6025f678d1e0dfe5f0725d7e69b9eab3028ae073d7a15421b",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine8_wife.png",
+    "output": "/workspace/football-life/images/heroine8_wife.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 343959,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine9",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Yoon Chaea Korean teenage quiet schoolgirl, long straight deep indigo blue hair with bangs, round dark glasses, blue eyes, shy smile, modest cream cable knit cardigan and white shirt, loose blue jeans, brown loafers, tan shoulder bag, holding closed dark notebook.",
+    "source": "/workspace/generated_images/exec-587391ce-ebdd-4b91-ad95-980ff4085169.png",
+    "reference": "images/heroine9.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "ff270aa9aeeea6d5df9d3903f8a884cb1400398044838769fb7ed1241c7811bf",
+    "newSha256": "277b1d8f1b06413b8ba9fef94cb813598f580f2e70c9916532f130d24abb88e8",
+    "generatedSha256": "034432fc0df4382af609030f483c661b5c847d978ce24feb4a4b21e7c84c506b",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine9.png",
+    "output": "/workspace/football-life/images/heroine9.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 404367,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine9_lover",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Yoon Chaea Korean teenage quiet schoolgirl, long straight deep indigo blue hair with bangs, round dark glasses, blue eyes, shy smile, modest lavender school cardigan white shirt navy ribbon necktie and knee-length navy pleated skirt, white socks brown loafers, holding notebook with both hands.",
+    "source": "/workspace/generated_images/exec-1dc93253-2b0b-4c59-a559-1cd62ae6805d.png",
+    "reference": "images/heroine9_lover.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "ff6b4c32fa42f54a2b9957ca47f79bf30c1fe0e194683a653734a80adc8902a6",
+    "newSha256": "9d1540da252b1279660e0296aa22cbd7911a3f116e0dc8a9d4bc5485a62d3517",
+    "generatedSha256": "9420751da207a8f72bbc9f645a1cc36ed64c9f3c33f4f8251bbcb20f6c4fdfa2",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine9_lover.png",
+    "output": "/workspace/football-life/images/heroine9_lover.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 414371,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine9_wedding",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Yoon Chaea clearly adult woman age28 bride, long straight deep indigo blue hair with bangs, round dark glasses, blue eyes, gentle smile, white modest floor-length lacy wedding gown and veil, lavender white flower circlet and bouquet.",
+    "source": "/workspace/generated_images/exec-52237f40-cc80-4505-ba9a-0184c17b1eda.png",
+    "reference": "images/heroine9_wedding.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "d1d4dcc1de4efacacacf9c9b6a8f1e4843e154538551555e1752382aadd57b6e",
+    "newSha256": "a98c9a82414f5cc6f1a66b9b54b56295e10d12b35cf79fc3fa41b314cb9e7e91",
+    "generatedSha256": "0f582f1aa9e18cf113e16bcf457bee8cb4fd29279d12a97a9382769ddd273a1c",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine9_wedding.png",
+    "output": "/workspace/football-life/images/heroine9_wedding.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 573853,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine9_wife",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Yoon Chaea clearly adult woman age30, long straight deep indigo blue hair with bangs, round dark glasses, blue eyes, thoughtful smile, cream knit sweater with loose blue jeans, brown loafers, holding open dark book and a pencil.",
+    "source": "/workspace/generated_images/exec-5a484115-96d7-44c0-a9ca-38c14cf61d96.png",
+    "reference": "images/heroine9_wife.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "8f554198767ffacc32de84187051ac526c76e40af7c70a1c1d06ac143a1c12a5",
+    "newSha256": "900807fc7b5b2a938020c49034bfe555289c6235c2ec5e42bdc548177bb29c59",
+    "generatedSha256": "69ee5f231c46cf2be48ef3452d1f5e38f05470e027c6226f109d070d4e29ec9a",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine9_wife.png",
+    "output": "/workspace/football-life/images/heroine9_wife.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 423114,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine10",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Kang Minseo Korean teenage convenience store clerk, chestnut brown hair in low side ponytail and wispy bangs, warm brown eyes and friendly smile, modest cream long sleeve sweatshirt, forest green shop apron, loose blue jeans white sneakers, holding water bottle and barcode scanner. Age appropriate everyday work outfit.",
+    "source": "/workspace/generated_images/exec-78f67a2f-6538-4ef4-8387-a21a6e767ace.png",
+    "reference": "images/heroine10.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "65812c3f696ff6bf511d0b35ac585525b39cd59a2d069ef8eee793db642401c3",
+    "newSha256": "93d8411dac72f6e6cd2b97b99317ccd4e73fdcc9fa604ec2ecc9d6de0ff1874c",
+    "generatedSha256": "0b355a357aff79a7a12a33dbab776f6091363063e89b34fc9c49e5f90b328837",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine10.png",
+    "output": "/workspace/football-life/images/heroine10.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 362607,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine10_lover",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Kang Minseo Korean teenage student, chestnut brown hair in low side ponytail and wispy bangs, warm brown eyes and friendly smile, modest pale sage cardigan over cream shirt, loose blue jeans white sneakers, small tan crossbody bag, holding wrapped snack and pink flower. Age appropriate innocent everyday pose.",
+    "source": "/workspace/generated_images/exec-33ee0c3f-af67-40cd-a268-538d76de9a56.png",
+    "reference": "images/heroine10_lover.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "bcc5bdc9ff413080148cd8627aad3a67925078faeb886066803e592ffd8bb681",
+    "newSha256": "a68f25c4f29bc0effa2e6a8b9d06df65c23d09f0fbbfd1c047005bcd0b1e0459",
+    "generatedSha256": "cffb21fd0212aef02b65a7817ff0a225f4105576ada5d0bf5083ea52fd92deb1",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine10_lover.png",
+    "output": "/workspace/football-life/images/heroine10_lover.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 388107,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine10_wedding",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Kang Minseo clearly adult woman age28 bride, chestnut brown hair in low side ponytail and wispy bangs with small white flowers, warm brown eyes, happy smile, white modest floor-length wedding gown, short puff sleeves, small yellow white daisy bouquet.",
+    "source": "/workspace/generated_images/exec-ad6505ad-ce93-4418-8e43-3bdad31cd7ba.png",
+    "reference": "images/heroine10_wedding.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "c69a583185f413e4081f12f0e43de647f250777ba40edb900775662ac636cedd",
+    "newSha256": "847d0e3bf29575918b1e2e9ac19d0b15ecdc2d886b76f65f60f01e182040967b",
+    "generatedSha256": "d816fb040e0bf1625ddd4f7fbf50b261feccc475dee3b93d34bcf8bea7a16632",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine10_wedding.png",
+    "output": "/workspace/football-life/images/heroine10_wedding.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 447502,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  },
+  {
+    "id": "heroine10_wife",
+    "prompt": "Create one new character game asset. Detailed chibi fine pixel-art style, rich controlled shading, crisp dark outlines, expressive large eyes, 2.8 heads tall. Full body front three-quarter view, head and feet fully visible, 8% margin all sides. Single character only. TRUE alpha transparent background, all empty canvas alpha zero; absolutely NO vignette, background, glow or shadow ground. No text, logos, baseball, baseball mitts or bats. IMPORTANT super-deformed compact chibi body like reference, oversized round head, 2.5 heads tall, not fashion illustration. Kang Minseo clearly adult woman age30, chestnut brown hair in low side ponytail and wispy bangs, warm brown eyes gentle smile, cream long sleeve sweater and forest green apron, loose blue jeans white sneakers, holding white mug with both hands.",
+    "source": "/workspace/generated_images/exec-79a5682f-652e-418d-89a9-402d21d71d92.png",
+    "reference": "images/heroine10_wife.png",
+    "status": "replaced-and-verified",
+    "oldSha256": "adda1b15b0aa514a8957a6113ceef65762ab62546cee7acbf09273a5746bcf11",
+    "newSha256": "57cd27363a933630c349b3611f1735fea85f3840df7b6f519b300bdf7731ef2a",
+    "generatedSha256": "b7e9f15b95ea74a76c644685306b3e68ed9a311fbd44704017c7ea08a4ec1a42",
+    "generatedCopy": "/workspace/football-life/assets/football-generated/heroines6-10/heroine10_wife.png",
+    "output": "/workspace/football-life/images/heroine10_wife.png",
+    "dimensions": [
+      512,
+      768
+    ],
+    "bytes": 350432,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": "Viewed original contact sheet and each generated image; identity, job context, full body, hands, age appropriate student attire, adult bridal variants checked; no baseball objects. Lanczos512 RGBA optimization only."
+  }
+]

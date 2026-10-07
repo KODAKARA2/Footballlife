@@ -1,0 +1,478 @@
+[
+  {
+    "name": "hero_elementary_gk",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A ten year old Korean schoolboy, small child proportions and youthful round face. Handsome identity with tousled dark brown hair and warm brown eyes, natural friendly smile.",
+    "references": [
+      "/workspace/football-life/images/hero_elementary.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-c0465a3e-ba31-421e-a075-7e043a1e3651.png",
+    "target": "images/hero_elementary_gk.png",
+    "archive": "assets/football-generated/hero_elementary_gk.png",
+    "generated_sha256": "6724e3d62d085c962da719ebf5e43ebba76ad75298707c0f76c63234aa7bfdc2",
+    "output_sha256": "6cdfc83b4f9cd7eaf0095b2f0ea7de6482af430607d8e9186e9f8870c8f82f88",
+    "output_bytes": 355311,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 245135,
+    "foreground_pixels": 138851,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_elementary_gk_plain",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A ten year old Korean schoolboy, small child proportions and youthful round face. Ordinary identity with short neat cropped black hair, slim face, warm brown eyes and simple gentle smile.",
+    "references": [
+      "/workspace/football-life/images/hero_elementary_plain.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-e079107d-887c-42fd-837c-23d8b4d49607.png",
+    "target": "images/hero_elementary_gk_plain.png",
+    "archive": "assets/football-generated/hero_elementary_gk_plain.png",
+    "generated_sha256": "129e7e2cdf53f72b4ae795e6ccd685594cac685cc80aa32d8143ee51934476d2",
+    "output_sha256": "867d61f9424e52106c25fdc3d022edb3110836adcec3b32fefa6bc89cf1ec6c1",
+    "output_bytes": 309547,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 254669,
+    "foreground_pixels": 131289,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_elementary_gk_ugly",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A ten year old Korean schoolboy, small child proportions and youthful round face. Distinct friendly stockier identity with round rosy cheeks, messy dark brown hair, broad nose and toothy joyful grin. Preserve dignity and charming personality.",
+    "references": [
+      "/workspace/football-life/images/hero_elementary_ugly.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-a9538897-cf82-4a19-b15d-b632c8fdd124.png",
+    "target": "images/hero_elementary_gk_ugly.png",
+    "archive": "assets/football-generated/hero_elementary_gk_ugly.png",
+    "generated_sha256": "409d05966b95ac04959575b4141d9126ddd95998b1b51b5ccaf5c4925b52a0d4",
+    "output_sha256": "f7fe6c197a40e479f83a707dc0d5923e1bae76cdb545900c46b43b72d77fd442",
+    "output_bytes": 341027,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 240775,
+    "foreground_pixels": 143273,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_middle_gk",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A thirteen year old Korean middle-school boy, early teen proportions and youthful face. Handsome identity with tousled dark brown hair and warm brown eyes, natural friendly smile.",
+    "references": [
+      "/workspace/football-life/images/hero_middle.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-8f694d43-9ed9-4103-8da2-ddc4978221ca.png",
+    "target": "images/hero_middle_gk.png",
+    "archive": "assets/football-generated/hero_middle_gk.png",
+    "generated_sha256": "76c19ed4f63bfa3f4e8228b6d37b37007911a135c2d2fda6425168ebf0b6dd1e",
+    "output_sha256": "f2fa15a447e27a8d98adf76f9b262837a501b178c65b721d8b38305bdc0f40a0",
+    "output_bytes": 336590,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 249373,
+    "foreground_pixels": 134374,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_middle_gk_plain",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A thirteen year old Korean middle-school boy, early teen proportions and youthful face. Ordinary identity with short neat cropped black hair, slim face, warm brown eyes and simple gentle smile.",
+    "references": [
+      "/workspace/football-life/images/hero_middle_plain.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-bde0c673-568e-4202-931b-c0ca222548fc.png",
+    "target": "images/hero_middle_gk_plain.png",
+    "archive": "assets/football-generated/hero_middle_gk_plain.png",
+    "generated_sha256": "2a1ac24722fed721c5c3b838d2f0ab5010f4ebe1a7116c3df444a476be5686e9",
+    "output_sha256": "77ab2cc645be2525e069c4d29d46ab8185900e9711a1eacae96a345d5193d7e7",
+    "output_bytes": 305171,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 256122,
+    "foreground_pixels": 127490,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_middle_gk_ugly",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A thirteen year old Korean middle-school boy, early teen proportions and youthful face. Distinct friendly stockier identity with round rosy cheeks, messy dark brown hair, broad nose and toothy joyful grin. Preserve dignity and charming personality.",
+    "references": [
+      "/workspace/football-life/images/hero_middle_ugly.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-27477d19-aaf6-4786-9dc3-8f9eb82cdbde.png",
+    "target": "images/hero_middle_gk_ugly.png",
+    "archive": "assets/football-generated/hero_middle_gk_ugly.png",
+    "generated_sha256": "7de42b48a5cc56327652c6e835fbf5cfabf2f5063f177ef9311d884bf2d7d231",
+    "output_sha256": "9bb106c8fa6643f8fb6a7a066adf6be4b184be01ae7f6d3bf8476e8e68e82d6f",
+    "output_bytes": 347817,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 240552,
+    "foreground_pixels": 143376,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_high_gk",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A sixteen year old Korean high-school boy, athletic teenage proportions, youthful adolescent face, focused friendly expression. Handsome identity with tousled dark brown hair and warm brown eyes, natural friendly smile.",
+    "references": [
+      "/workspace/football-life/images/hero_high.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-1ac301bf-5b57-4c7b-8f4d-641df6632fc2.png",
+    "target": "images/hero_high_gk.png",
+    "archive": "assets/football-generated/hero_high_gk.png",
+    "generated_sha256": "fa7374437f1e42443ba507f2a8d9d18ffc222a6466b095f849f8cf921f301e8d",
+    "output_sha256": "86552ca9e29c27e04452bf185278c81a61e10a6339c6927667454e95c6c93e87",
+    "output_bytes": 322598,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 260045,
+    "foreground_pixels": 124896,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_high_gk_plain",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A sixteen year old Korean high-school boy, athletic teenage proportions, youthful adolescent face, focused friendly expression. Ordinary identity with short neat cropped black hair, slim face, warm brown eyes and simple gentle smile.",
+    "references": [
+      "/workspace/football-life/images/hero_high_plain.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-b85844c8-7df2-4e10-983d-ad20e04934b1.png",
+    "target": "images/hero_high_gk_plain.png",
+    "archive": "assets/football-generated/hero_high_gk_plain.png",
+    "generated_sha256": "ca4159a7c7f2d874be66136aba41ef6b5a6a20125125b6d49a8544fcb21e29c0",
+    "output_sha256": "b00d2433dab93150c1517c0f668f2ce82ebb7f6199800841f778c57e64fef9b4",
+    "output_bytes": 291825,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 264000,
+    "foreground_pixels": 120612,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_high_gk_ugly",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A sixteen year old Korean high-school boy, athletic teenage proportions, youthful adolescent face, focused friendly expression. Distinct friendly stockier identity with round rosy cheeks, messy dark brown hair, broad nose and toothy joyful grin. Preserve dignity and charming personality.",
+    "references": [
+      "/workspace/football-life/images/hero_high_ugly.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-4e65de8d-cb70-4d6c-b2d7-1b97f690c70a.png",
+    "target": "images/hero_high_gk_ugly.png",
+    "archive": "assets/football-generated/hero_high_gk_ugly.png",
+    "generated_sha256": "047404baf4102b572f92d503874a41a3386edad07f67237f2fec052724b1e86d",
+    "output_sha256": "9907b0e9aa526cdd04263a50e7d6d876f7484bb1eb417222b23c47d732469907",
+    "output_bytes": 344459,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 243029,
+    "foreground_pixels": 141482,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_college_gk",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty year old Korean male university goalkeeper, young adult proportions, athletic shoulders, confident relaxed friendly expression. Handsome identity with tousled dark brown hair and warm brown eyes, natural friendly smile.",
+    "references": [
+      "/workspace/football-life/images/hero_college.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-3928e8e4-9eb0-4871-9322-d4f26ada6572.png",
+    "target": "images/hero_college_gk.png",
+    "archive": "assets/football-generated/hero_college_gk.png",
+    "generated_sha256": "0970dd87733584bc367dbd9310417641108579823dd67f35fa0e18a294fa660a",
+    "output_sha256": "d8b083b3d7754895cd19ed521110fbb4f3168426b58f481adc772ec7f6f30052",
+    "output_bytes": 329847,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 257972,
+    "foreground_pixels": 126619,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_college_gk_plain",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty year old Korean male university goalkeeper, young adult proportions, athletic shoulders, confident relaxed friendly expression. Ordinary identity with short neat cropped black hair, slim face, warm brown eyes and simple gentle smile.",
+    "references": [
+      "/workspace/football-life/images/hero_college_plain.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-babecaeb-4a95-429d-b319-8bb9a099e8cf.png",
+    "target": "images/hero_college_gk_plain.png",
+    "archive": "assets/football-generated/hero_college_gk_plain.png",
+    "generated_sha256": "c3b6340649ec891a7bc32090fcdedd04ea3fa3a365b219526e923f70cd00aa8a",
+    "output_sha256": "11ad1c855972d99d129af21cbb5e91312d805958a3dd1700429dcf9511aa99de",
+    "output_bytes": 315714,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 254945,
+    "foreground_pixels": 130456,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_college_gk_ugly",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty year old Korean male university goalkeeper, young adult proportions, athletic shoulders, confident relaxed friendly expression. Distinct friendly stockier identity with round rosy cheeks, messy dark brown hair, broad nose and toothy joyful grin. Preserve dignity and charming personality.",
+    "references": [
+      "/workspace/football-life/images/hero_college_ugly.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-2b1c317f-a6ba-4822-9629-2fd3603c0986.png",
+    "target": "images/hero_college_gk_ugly.png",
+    "archive": "assets/football-generated/hero_college_gk_ugly.png",
+    "generated_sha256": "6cd3fb7b17eb3bf0cd6e427fef89347f683b06492dc86de0fa2df804f7dc8119",
+    "output_sha256": "485db4953dcd7874936d9cd9ae6fba4a29924881746628d00308d90e671f44dc",
+    "output_bytes": 343978,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 244598,
+    "foreground_pixels": 138627,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_pro_gk_plain",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty-five year old Korean adult male professional goalkeeper, mature athletic proportions, confident relaxed expression. Ordinary identity with short neat cropped black hair, slim face, warm brown eyes and simple gentle smile.",
+    "references": [
+      "/workspace/football-life/images/hero_pro_plain.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-a6c924cc-8148-4e0c-993a-437da8b25490.png",
+    "target": "images/hero_pro_gk_plain.png",
+    "archive": "assets/football-generated/hero_pro_gk_plain.png",
+    "generated_sha256": "75ae080f9db3f960ff76e19fb1ea70f326f0bbe45737f7472804dcea4f7224c5",
+    "output_sha256": "e2f23e1347acfa4437e83bee51c8749b6dc346535c447e2139815239c29395c0",
+    "output_bytes": 293474,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 263408,
+    "foreground_pixels": 120115,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_pro_gk_ugly",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty-five year old Korean adult male professional goalkeeper, mature athletic proportions, confident relaxed expression. Distinct friendly stockier identity with round rosy cheeks, messy dark brown hair, broad nose and toothy joyful grin. Preserve dignity and charming personality.",
+    "references": [
+      "/workspace/football-life/images/hero_pro_ugly.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-e6bac847-2716-4944-9192-35137e6e869e.png",
+    "target": "images/hero_pro_gk_ugly.png",
+    "archive": "assets/football-generated/hero_pro_gk_ugly.png",
+    "generated_sha256": "2f754efa9cd2716977862512b1b5ad14c2b9a85f2fe41072dd2e86a015cc44e1",
+    "output_sha256": "596f1dcae934f882fa6374567b8c6a19f7204cb95e87fe2cf87eaa7c384cdf96",
+    "output_bytes": 334027,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 247248,
+    "foreground_pixels": 137718,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_mlb_gk",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty-eight year old Korean adult male goalkeeper playing in a fictional European soccer club, mature athletic proportions, confident friendly expression. Emerald green kit with small warm gold trim detail to distinguish overseas career stage, no real team logos. Handsome identity with tousled dark brown hair and warm brown eyes, natural friendly smile.",
+    "references": [
+      "/workspace/football-life/images/hero_mlb.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-3dcbfb4c-d1e2-492f-ae7f-ce713bd13ef2.png",
+    "target": "images/hero_mlb_gk.png",
+    "archive": "assets/football-generated/hero_mlb_gk.png",
+    "generated_sha256": "77fb9f1e9f1a592994cf608cbdc2d196bd3947ebd321d5d52488b11ba410c62f",
+    "output_sha256": "4205179afc3bdfdf1b34ce44dde55078b21ef735bcd052d5c843c4b6ac525597",
+    "output_bytes": 337768,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 258274,
+    "foreground_pixels": 126861,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_mlb_gk_plain",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty-eight year old Korean adult male goalkeeper playing in a fictional European soccer club, mature athletic proportions, confident friendly expression. Emerald green kit with small warm gold trim detail to distinguish overseas career stage, no real team logos. Ordinary identity with short neat cropped black hair, slim face, warm brown eyes and simple gentle smile.",
+    "references": [
+      "/workspace/football-life/images/hero_mlb_plain.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-e2c4b4df-4bd0-4125-b9d2-684d12cdaf64.png",
+    "target": "images/hero_mlb_gk_plain.png",
+    "archive": "assets/football-generated/hero_mlb_gk_plain.png",
+    "generated_sha256": "dada09272a1665466b28ad907e562da4073f544b66798a65467271404e7c1ab4",
+    "output_sha256": "b4ccd13670c64f97b1f9bbc445d08de9e7d0a964471c10a2575060fcb0d2a22d",
+    "output_bytes": 304716,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 259055,
+    "foreground_pixels": 126693,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  },
+  {
+    "name": "hero_mlb_gk_ugly",
+    "prompt": "Create a NEW full-body portrait sprite for Football Life using first reference for face identity and second for emerald goalkeeper kit/style. Cozy chibi fine pixel illustration, crisp detailed small pixel clusters, clean outlines, warm shading. Keep head-to-boots fully in frame with generous clear margin. Emerald green long-sleeve goalkeeper jersey, matching shorts and long socks, black soccer boots, TWO padded goalkeeper gloves with distinct natural fingers holding ONE classic black-white SOCCER ball at waist, relaxed standing pose, exactly two arms and two legs. Small generic shield only, no real club/sponsor, no text, no baseball cap/bat/mitt. Genuine transparent background with alpha, no backdrop, no shadow rectangle, no haze. Wholesome age-appropriate athlete. A twenty-eight year old Korean adult male goalkeeper playing in a fictional European soccer club, mature athletic proportions, confident friendly expression. Emerald green kit with small warm gold trim detail to distinguish overseas career stage, no real team logos. Distinct friendly stockier identity with round rosy cheeks, messy dark brown hair, broad nose and toothy joyful grin. Preserve dignity and charming personality.",
+    "references": [
+      "/workspace/football-life/images/hero_mlb_ugly.png",
+      "/workspace/football-life/assets/football-generated/hero_gk-sample.png"
+    ],
+    "source": "/workspace/generated_images/exec-d9713bd9-f96a-41e5-aed2-ef879f885761.png",
+    "target": "images/hero_mlb_gk_ugly.png",
+    "archive": "assets/football-generated/hero_mlb_gk_ugly.png",
+    "generated_sha256": "bc4a27a1eaf631bd12f76b10478e0d83f0dc79b9a8a1ba2ae3a05d39a2057856",
+    "output_sha256": "9df89da0189e8544a0b633801007360d109698b7da2951105efc79508bef0786",
+    "output_bytes": 357355,
+    "dimensions": [
+      512,
+      768
+    ],
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 239106,
+    "foreground_pixels": 145728,
+    "optimization": "Pillow RGBA Lanczos resize 512x768, PNG optimize; generated alpha preserved",
+    "qa": "Generated output visually inspected: two arms, two gloves holding one soccer ball, two legs and full boots; fictional emerald uniform, three face identities retained, age-appropriate. No baseball equipment.",
+    "status": "complete",
+    "final_pixel_review": "Passed view_image inspection of saved optimized512x768 image: clear facial identity, emerald gloves/ball kit, complete boots, transparent surround."
+  }
+]

@@ -1,0 +1,315 @@
+{
+  "tool": "image_gen.imagegen",
+  "date": "2026-10-07",
+  "originalCommit": "13699caa17f363ae7d020959eef35c98f34d6cfb",
+  "records": [
+    {
+      "name": "buddy",
+      "source": "/workspace/generated_images/exec-179f83b3-eef4-4542-88fb-08793901c2b4.png",
+      "prompt": "Fresh cheerful Korean childhood buddy, brown tousled hair, brown eyes, gray hoodie dark backpack trousers sneakers thumbs-up with navy teal football supporter scarf; reference original buddy and hero_pro sample; finepixel chibi, full body, actualtransparent alpha.",
+      "originalSha256": "01e18c0d0583074639d5d22fae130dd365d9039655073b661c4bd153d6f0f925",
+      "generatedSha256": "a7d4eec7184366744c11b6e54bc8ba62ea84f64e6564d842e1ed7813ff7379c1",
+      "preservedSource": "assets/football-generated/support-buddy.png",
+      "backup": "assets/football-generated/support-originals/buddy.png",
+      "output": "images/buddy.png",
+      "outputSha256": "1ad2eaa9f8c68c35a4a39361b32119ca682b722d88dab35b8bfabfdc3828fa6c",
+      "outputBytes": 357799,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "agent",
+      "source": "/workspace/generated_images/exec-6018fb33-169b-42d9-b133-fb0bdb140b67.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Adult Korean male football contract agent, swept back dark brown hair brown eyes light stubble confident smile. Charcoal business suit open white shirt, phone at ear and contract folder. Remains a business professional.",
+      "originalSha256": "0a6ed044a08973cde62724aa89b492a398e62a7fb0a0ac886b2384fa9c0d287c",
+      "generatedSha256": "dc933e6f4454836a86f22c896626e30955f567747bbfb693c56abbd02062ac03",
+      "preservedSource": "assets/football-generated/support-agent.png",
+      "backup": "assets/football-generated/support-originals/agent.png",
+      "output": "images/agent.png",
+      "outputSha256": "daebef14256023d4adcaf79d4811794369f76b381f4c04e1295d2ddf9ef915d3",
+      "outputBytes": 323318,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "child",
+      "source": "/workspace/generated_images/exec-3e90bf70-3e5a-43bb-b756-6f1815389dc3.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Young elementary-age Korean child, short brown hair brown eyes joyful round face. Fully clothed age appropriate navy-teal football jersey and shorts long socks sneakers, cheerful raised fist, other arm holding soccer ball at hip. Remove baseball cap glove uniform completely.",
+      "originalSha256": "0032095a3d38252776414f506108fb324b44af8884db53c87ce3f82b448b7454",
+      "generatedSha256": "693337ca480bcce7d9ebe71a888af1a6c05d8122dd426ba65a359d6021f16fda",
+      "preservedSource": "assets/football-generated/support-child.png",
+      "backup": "assets/football-generated/support-originals/child.png",
+      "output": "images/child.png",
+      "outputSha256": "5848f8dbb015d0c1e83a40a646a5928254b4892992a85024c5a2ee2aebf316f3",
+      "outputBytes": 343809,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "coach_high",
+      "source": "/workspace/generated_images/exec-83cf99bd-e71c-4a2f-8054-7fc5714dcd59.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Stern middle-aged Korean school football coach, dark hair graying temples thick eyebrows creased cheeks arms folded. Navy-teal zip tracksuit full dark trousers trainers whistle on lanyard. No cap, no white baseball trousers.",
+      "originalSha256": "01076f42110038fa047bb913d0293191c0e3140d9a8c8d934bbb916e2a57b802",
+      "generatedSha256": "7fc5e5d2ab54debba15dd54998182b841b4cf484197f92491d7ba173f37db9e5",
+      "preservedSource": "assets/football-generated/support-coach_high.png",
+      "backup": "assets/football-generated/support-originals/coach_high.png",
+      "output": "images/coach_high.png",
+      "outputSha256": "f886db535e80276d72c0708c91db4802ccecbf9219090fc1fc5d0f7d644123f8",
+      "outputBytes": 295728,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "coach_little",
+      "source": "/workspace/generated_images/exec-8cbbc926-ba64-40f4-bcbf-fe48cb9198d1.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Friendly older Korean youth football coach gray hair brown eyes broad encouraging smile. Navy-teal tracksuit, trainers, whistle lanyard, thumbs up, other hand holds flat tactics clipboard with simple soccer pitch lines. Remove baseball bat and cap.",
+      "originalSha256": "02ca38ca26bb37a80e7888fc43c4dd12568c8f388bcc621181d683fb6d23282b",
+      "generatedSha256": "6ae2d05d6e2c9c4c68ee421b931508d5b2f09b15893f1dfaebd05075a1de8397",
+      "preservedSource": "assets/football-generated/support-coach_little.png",
+      "backup": "assets/football-generated/support-originals/coach_little.png",
+      "output": "images/coach_little.png",
+      "outputSha256": "b8143ddbc0032c5eb9910b4f9cfb72c548a247fe5f51338a61d765afacc214f2",
+      "outputBytes": 363194,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "interpreter",
+      "source": "/workspace/generated_images/exec-f088d2de-1673-46ba-8ba7-90d5616a6f20.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Adult Korean female football club interpreter, brown hair low bun side fringe brown eyes friendly smile. Navy polo with teal trim beige full trousers white sneakers blank staff lanyard ID, tablet in one hand other hand waving. Remains interpreter not player.",
+      "originalSha256": "128a9103dcad1233c3f24182c0d458ccd833f84becdf47a9d4a0e401c8215118",
+      "generatedSha256": "fc2e52c391334b15ecd08da292b653733b4c4926a5ac244d638b1a314c55340a",
+      "preservedSource": "assets/football-generated/support-interpreter.png",
+      "backup": "assets/football-generated/support-originals/interpreter.png",
+      "output": "images/interpreter.png",
+      "outputSha256": "6e3f1d13b5b05830f782e1ca44968101f187679e5f38592785e2d9265e444719",
+      "outputBytes": 305286,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "manager_pro",
+      "source": "/workspace/generated_images/exec-7a80eac6-c411-47b6-bb55-e3cb4aadfab3.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Older Korean pro football manager gray side parted hair lined face gray eyebrows calm firm smile arms folded. Navy-teal training jacket full dark trousers trainers. Remove baseball cap and striped white kit completely.",
+      "originalSha256": "8c1226f8b1de8ca80912116d07b31fb0af17cf452a80e64854cad148f9730478",
+      "generatedSha256": "aba21d2741e8a5381989d88304b86d814ecb16e5b5c1e6393eecf1d39005e3a5",
+      "preservedSource": "assets/football-generated/support-manager_pro.png",
+      "backup": "assets/football-generated/support-originals/manager_pro.png",
+      "output": "images/manager_pro.png",
+      "outputSha256": "18fc872d06d907fdd645bf41a309b25e88d0e6ac4f7ff572cb711413da10d928",
+      "outputBytes": 285301,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "mlb_teammate",
+      "source": "/workspace/generated_images/exec-53a31da9-2caf-4ee2-abcf-4480ee79abb2.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Adult Black male European football club teammate deep brown skin close cropped black hair black trimmed beard brown eyes broad welcoming smile friendly fist bump. Navy-teal soccer jersey shorts long socks cleats. Remove cap baseball glove and baseball uniform completely.",
+      "originalSha256": "877e7874f3fbab63e0cd308a5383308c753e836738455000832f7e903e7078a3",
+      "generatedSha256": "79e2fad933d70e8ec0248152cb4b4648ddb81f0c1a52ed04023fae3b169cf490",
+      "preservedSource": "assets/football-generated/support-mlb_teammate.png",
+      "backup": "assets/football-generated/support-originals/mlb_teammate.png",
+      "output": "images/mlb_teammate.png",
+      "outputSha256": "5aea1f8d5636a76d765785f87141f37fd5ff075a1c276beeb502272e1c98d132",
+      "outputBytes": 287784,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "parents",
+      "source": "/workspace/generated_images/exec-2ad2a548-d61c-4296-8a14-d5984743efe4.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Two loving middle-aged Korean parents standing side by side, father tousled dark brown hair light stubble navy work jacket trousers brown shoes, mother brown bob hair cream cardigan floral blouse mauve knee length skirt brown shoes holds pink lunchbox. Cheerful encouragement each raising fist, subtle navy teal supporter scarf on father. Everyday parents not athletes. Both entire bodies visible.",
+      "originalSha256": "4e23c55c391e3289e86dd2425c5e3483da6c64f36b9ee347b43c8a6c754bfee8",
+      "generatedSha256": "ed55d7c3c335930e0697dc21ede15085f867ce3a63006ff883d8651a86da97a5",
+      "preservedSource": "assets/football-generated/support-parents.png",
+      "backup": "assets/football-generated/support-originals/parents.png",
+      "output": "images/parents.png",
+      "outputSha256": "38a23b0bbc8299c95639197c140152de115ae320c09cb2868c35a96620cebe1a",
+      "outputBytes": 526002,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "rival",
+      "source": "/workspace/generated_images/exec-86cd45b6-ba93-478e-b0d4-1dd7956a93b3.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Young adult Korean football rival, spiky chestnut hair brown eyes angled eyebrows confident mischievous grin. Charcoal and crimson fictional rival soccer jersey shorts long socks cleats, one foot resting on full sized soccer ball, hands on hips. Remove cap baseball and white baseball trousers.",
+      "originalSha256": "e6300a0f5d4c18dabecba675aa2bbd71df3b072f6091ddaa9414261d2bf170f2",
+      "generatedSha256": "0a7308b7a2e22e83690ff8c1204cadf8962b4b561abbe9da7027daac9c8178bb",
+      "preservedSource": "assets/football-generated/support-rival.png",
+      "backup": "assets/football-generated/support-originals/rival.png",
+      "output": "images/rival.png",
+      "outputSha256": "8cf771d9bf26cb8a6662823e7ab0cd8673b09203c1cc586b04d907696cec34bb",
+      "outputBytes": 323580,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    },
+    {
+      "name": "teammate",
+      "source": "/workspace/generated_images/exec-c4903057-58ff-475e-9de1-6ee9ed3b4fd1.png",
+      "prompt": "Create one completely fresh supporting character sprite for Football Life matching reference2 detailed chibi finepixel game illustration dark outlines warm faces. Preserve reference1 recognizable identity but replace baseball context as specified. Full body all hair hands and shoes visible with generous margins, centered vertical portrait; actual transparent alpha background no scenery or painted background/glow. Natural anatomy two arms two legs and sensible hands. Fictional kit no real logos or words. Young adult Korean cheerful football teammate cropped brown hair brown eyes winking open happy grin both hands peace sign. Navy teal soccer jersey shorts long socks cleats, no cap no striped baseball outfit.",
+      "originalSha256": "94eab86388a3f40ba809033517e407aa65c344b0cae42bf1f7a2e16e6b661637",
+      "generatedSha256": "958ca4aca40ac15ca52cd0a19e24eee39d9c377521d835a09c72513c1b827c56",
+      "preservedSource": "assets/football-generated/support-teammate.png",
+      "backup": "assets/football-generated/support-originals/teammate.png",
+      "output": "images/teammate.png",
+      "outputSha256": "91b6c6c209b82606920dcb6aa5fc95dab66e81a0c800170fd38392729243a2b3",
+      "outputBytes": 316460,
+      "dimensions": [
+        512,
+        768
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": {
+        "viewedOriginal": true,
+        "viewedGenerated": true,
+        "baseballEquipmentAbsent": true,
+        "fullBodyVisible": true,
+        "identityRolePreserved": true,
+        "status": "accepted"
+      }
+    }
+  ]
+}

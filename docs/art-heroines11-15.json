@@ -1,0 +1,430 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "sourceCommit": "13699caa17f363ae7d020959eef35c98f34d6cfb",
+  "scope": "heroine11 through heroine15; four stages each",
+  "optimization": "512px width Lanczos RGBA PNG optimize; alpha preserved",
+  "attempts": 22,
+  "rejected": 2,
+  "records": [
+    {
+      "file": "images/heroine11.png",
+      "originalSha256": "f2294c7b07e10aeb42534e77250a2c2a7941e112b6bb33a50748c2c16d72ecfe",
+      "generatedSha256": "470d193375cdd2e65d6ffe45865c8c57a40b8c2a2fd6474b6d2445f36f20a747",
+      "newSha256": "9b82e5f8335742666a70e6e7bb2fb645cb2b8014a652da387c7c1634cfb8df87",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine11.png",
+      "toolOutputPath": "/workspace/generated_images/exec-e35572f8-53db-4c2c-8997-91ec3aa048f4.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Baek Soyul, Korean, tousled chin-length burgundy bob, amber eyes, orange hair clip. Teenage school age fan at meeting, fully modest orange hoodie blue jeans sneakers backpack; exchange baseball cap prop for folded navy-teal soccer supporter scarf.  Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 378376,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine11_lover.png",
+      "originalSha256": "7f033dbe94c158b9dac032ab6918ce8298114796ef381bba31ad624570e80273",
+      "generatedSha256": "df594aa5fa11fae191de83e4de38660578d417b672657d9e685a39dc6ac53b86",
+      "newSha256": "61d8ba5b8e131ed18bdf79c472e79a9228dd2b5a1d40531ef39ff469d18f021d",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine11_lover.png",
+      "toolOutputPath": "/workspace/generated_images/exec-ab578407-868c-4e20-a6de-3c7086423522.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Baek Soyul, Korean, tousled chin-length burgundy bob, amber eyes, orange hair clip. Teenage school age fan at meeting, fully modest orange hoodie blue jeans sneakers backpack; exchange baseball cap prop for folded navy-teal soccer supporter scarf. For THIS image replace the meeting clothes and props: Age-appropriate teenage casual date, orange cardigan white blouse knee length denim skirt sneakers backpack, hands near chest, shy expression. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 369056,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine11_wedding.png",
+      "originalSha256": "e4d89075fcd5bf743bf203f8bd9f9749e20d83b1871aa81ab4d2e4a7dd90f235",
+      "generatedSha256": "a79e9a41bb61a03299994ae465079f232075be0b52cfb4a3f5ce18d33782f871",
+      "newSha256": "75ad3afa7bcc13561b65e673e442a4c8057edb6d7762570595b40771f103e535",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine11_wedding.png",
+      "toolOutputPath": "/workspace/generated_images/exec-b2944786-c692-4a2c-beae-57fa3653d7a4.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Baek Soyul, Korean, tousled chin-length burgundy bob, amber eyes, orange hair clip. Teenage school age fan at meeting, fully modest orange hoodie blue jeans sneakers backpack; exchange baseball cap prop for folded navy-teal soccer supporter scarf. For THIS image replace the meeting clothes and props: Adult at least 23 bride, ivory wedding gown veil orange blossom bouquet. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 532538,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine11_wife.png",
+      "originalSha256": "9e39dc0529a0ec50910eba9c8cab0f3e5cdd6b4516824c5891680d19e4216ed1",
+      "generatedSha256": "1b9c9d7f57b20ac8f830d44e5dda669d2de61f18e9c7d45b54d7d7db0a632b62",
+      "newSha256": "45f4eaa994419305fc4766181464f1bfdd8ee80200a431147a535ceee0b7c7a4",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine11_wife.png",
+      "toolOutputPath": "/workspace/generated_images/exec-d4096588-c0de-422a-a5c5-d903450ca9a8.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Baek Soyul, Korean, tousled chin-length burgundy bob, amber eyes, orange hair clip. Teenage school age fan at meeting, fully modest orange hoodie blue jeans sneakers backpack; exchange baseball cap prop for folded navy-teal soccer supporter scarf. For THIS image replace the meeting clothes and props: Adult23+ wife, peach sweatshirt navy trousers sneakers, folded soccer supporter scarf. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 365099,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine12.png",
+      "originalSha256": "5c9cac13fb7f2420d70c6cc3dc8eade807cb074e1964aeda57698d42b598a7d3",
+      "generatedSha256": "f62ef2710f35ee42272c60f17cb5d0e4762dbd703b6f1f5a9bb89707ae99b0ee",
+      "newSha256": "b75a31dc87c7e5f4ca55c1560dd5efc65ce9c77925fe84170dce6dc06e18c672",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine12.png",
+      "toolOutputPath": "/workspace/generated_images/exec-af6f680d-ed89-462e-936e-8b47c4b3ffbc.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Oh Harin, adult Korean20s cheer captain, short honey brown bob haircream bow amber eyes. White zip tracksuit yellow piping navy trousers trainers, microphone and water bottle.  Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 326270,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine12_lover.png",
+      "originalSha256": "d69afc7a56282429f56edc957f03be653ad65e4e60424459ea1cb5f5eee90306",
+      "generatedSha256": "c839eb125b17d48b9013173e0beb0f354b7d01214c998cfda0d3b29def0ee9b1",
+      "newSha256": "3e1a0ce7de9a8e3aaf5ed7bbef72aba4ea0ef99bc8fe67d9d00c1f2e88c7a60b",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine12_lover.png",
+      "toolOutputPath": "/workspace/generated_images/exec-fe52efe6-d2d6-4d29-a8ec-14b45901805a.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Oh Harin, adult Korean20s cheer captain, short honey brown bob haircream bow amber eyes. White zip tracksuit yellow piping navy trousers trainers, microphone and water bottle. For THIS image replace the meeting clothes and props: Adult, yellow knee length floral dress white cardigan yellow flats shoulder bag cheerful wave. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 342842,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine12_wedding.png",
+      "originalSha256": "e0c674fe103ae675eee613b36b9a4c70ca5e271a9d0c1b4ddbc165cd5476538e",
+      "generatedSha256": "989e28844fc0ab1ddf4771b67e89f1aa93110df54fd2596c8f71f1ccc251d45a",
+      "newSha256": "1a03da156347ecac31f330485b4926ca5508c43bdf3b6b41396e6748e0a44693",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine12_wedding.png",
+      "toolOutputPath": "/workspace/generated_images/exec-b75cf1cc-43aa-4641-9ed5-ba2e622b5d43.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult bride ivory tiered lace gown cream flower bouquet veil yellow bow. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 536868,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine12_wife.png",
+      "originalSha256": "f07a0a24bd781ee226c3e7f8f2536acf6d90f48d37f435882b2a4b85087dfccb",
+      "generatedSha256": "2768f38581d5f3ba63f11fa44136a99a049f160fe674833f852b9a103d2da697",
+      "newSha256": "6dccea4511b5db46cadc7aff238c40f0c29759277821122320b4260488f02502",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine12_wife.png",
+      "toolOutputPath": "/workspace/generated_images/exec-3e66a8c7-221e-4816-8a52-9dc579c389fd.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Oh Harin, adult Korean20s cheer captain, short honey brown bob haircream bow amber eyes. White zip tracksuit yellow piping navy trousers trainers, microphone and water bottle. For THIS image replace the meeting clothes and props: Adult cheer captain at home, white blouse navy trousers trainers microphone friendly gesture. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 309275,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine13.png",
+      "originalSha256": "e8868c6efef653e22f2af03fff3414783f3a86225a28c44e370cd86e961b5bb0",
+      "generatedSha256": "746c1abac57343836ab4cae0a9d17bc941e5146894b4ecf575e196f1d2bcbf62",
+      "newSha256": "99beb29dfb949ebcb684c2e2333945d13c469aad2e7791fba2a4fa15fb55f01d",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine13.png",
+      "toolOutputPath": "/workspace/generated_images/exec-99839a31-611d-4524-b41e-339c4d47ae0b.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Jeong Yerin, adult Korean20s agency manager, sleek chinlength dark ash brown bob side part violet brown eyes. Navy blazer lavender blouse charcoal trousers loafers holding phone and planner.  Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 279045,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine13_lover.png",
+      "originalSha256": "62802b2f8d9d438858a403ee05525d1573801b6060caa76af640187850bbf8dd",
+      "generatedSha256": "4d9512a00d9117a58c0d83ea58f790e9ad0474c6f48458524da4f9d96d627831",
+      "newSha256": "0d8f561d50804b84cafe81e5eceaa23c980c4b084a8c585400a859c333f08f40",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine13_lover.png",
+      "toolOutputPath": "/workspace/generated_images/exec-7e05488f-1701-46e3-bbf0-ff37446717ce.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult casual date lavender cardigan white top dark grey midi skirt flats tan shoulder bag holding two takeaway coffee cups. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 318640,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine13_wedding.png",
+      "originalSha256": "ac3aa062a41c380416782ea54791e9dcc3d22910ffb24a763cc334c4612af3fa",
+      "generatedSha256": "868fc59e09486a9611737e6e173121e99b1071fccf9da804b8334b2678e9f56f",
+      "newSha256": "711436973edd9b545bfc46c42de2e67a0a7b62af5715c02b2196d50975aefc78",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine13_wedding.png",
+      "toolOutputPath": "/workspace/generated_images/exec-bc3e7b3a-6d41-4d26-b90c-e0da0ceb02d9.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult bride white elegant long gown lilac bouquet pearl hairclip veil. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 442029,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine13_wife.png",
+      "originalSha256": "298ba02dc082a737dc99a5baa26533138e5071088a6a9b0d8013b13169826cd8",
+      "generatedSha256": "f2163506dc8a2d0db5b310973108205e639459b0574c119cc4fcd2a9248dcff9",
+      "newSha256": "aa6c7a798380d30028650434410859a6618958b0966a4972dbc2e297c811671e",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine13_wife.png",
+      "toolOutputPath": "/workspace/generated_images/exec-48c78ef8-5729-40ad-9938-dd1aa2e76c4f.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult wife lavender ribbed sweater charcoal trousers loafers holding tiny white mug and black planner. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 298013,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine14.png",
+      "originalSha256": "84ae4e4314dcb7c528e3408aaec20c31e1e064c85d18a5611b33b33ada776db3",
+      "generatedSha256": "c9bab5639c72c793374c98906738124da86ba68839f41807c175c6729bc9a562",
+      "newSha256": "250546ac0dc438f654fa5ccb6b1fa3b8c6e9fa38d6f90cddca9c79b930a52359",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine14.png",
+      "toolOutputPath": "/workspace/generated_images/exec-8a78c114-34a5-4a30-9630-f94702f08dc2.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Emily Walker, adult European20s, vivid copper orange high ponytail green eyes fairskin. Navy-and-cream casual varsity jacket white top jeans sneakers, NO cap, holding ROUND BLACK AND WHITE SOCCER BALL, spherical ball with pentagon panels. NOT an oval American football. No rugby ball.  Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 385055,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine14_lover.png",
+      "originalSha256": "c4bd2386188a879f7d4b25d620f476e9cbe79f31af99871881ecd6f028b9d093",
+      "generatedSha256": "adbcfc3a3378d6f4ece9db266aa21274bf1f73f2c334db602727a3754c5f7a5c",
+      "newSha256": "f217edd749b43de932a9e0bce4cde1f6fbddc11e1fdd978894024a8a23561e9f",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine14_lover.png",
+      "toolOutputPath": "/workspace/generated_images/exec-839fbfab-f93b-44e7-82cc-95c8e8f6d900.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult date green bomber jacket white top jeans sneakers, no cap, one takeaway drink and smiling. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 381358,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine14_wedding.png",
+      "originalSha256": "e383137bf8f2ce87e8cda5ef88e0ebfb3c60074c3b030fbc93f806319bbd86e7",
+      "generatedSha256": "1c4f30282200541111936c157a9448b5747be091eb8d9a73b59d1d5ec5f2f524",
+      "newSha256": "c37725ee7c8c2f4ea1ef1b26776e19670cc808ee66b8a2470eaa9bd5d218781c",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine14_wedding.png",
+      "toolOutputPath": "/workspace/generated_images/exec-3d41b936-cceb-432a-ad5b-1503b728fd5e.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult bride ivory ruffled long gown blush flower bouquet tiara veil, copper ponytail. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 591238,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine14_wife.png",
+      "originalSha256": "c91c0e312114d7081b54043ec06f83ccf58e5ff8737bec8ca9dbe3e85f4ab3e1",
+      "generatedSha256": "d26469a614befbfae89fe1d0313b5d15cd382624dcc1b9144df8435ff95d3f0c",
+      "newSha256": "e6942329ef15c18fb918a771de7944468cc1fcfe4a5c4f888f985fc65b938082",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine14_wife.png",
+      "toolOutputPath": "/workspace/generated_images/exec-1220cb34-13a5-446a-b052-08bf12f6a59c.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult wife navy cardigan white top jeans trainers, one soccer ball under arm and friendly wave. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 396986,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine15.png",
+      "originalSha256": "f655ff3a43e4418e9d5679f22dd29c0c2a387a3ec939bab78ef97372886df7bd",
+      "generatedSha256": "c4d42e776dbae1d37bb6d2de0b8a3536ae26f7b3f554a6ba65424470f0a01559",
+      "newSha256": "8abef4df8cbdbbffabac280434fd23f9fc192cd0961b40728549204626e40f91",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine15.png",
+      "toolOutputPath": "/workspace/generated_images/exec-4e6d189c-c307-4dd5-bcb2-135d57980092.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity. Jayden Park, adult Korean-European20s woman, short curly dark brown bob copper front streak round glasses happy eyes. Green bomber jacket cream tee blue jeans sneakers cream tote with small soccer ball patch, holding phone map.  Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 362037,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine15_lover.png",
+      "originalSha256": "daace65f1b57bb035f4b172f2501f5e78240c8a36bc9d2391a854ce93b823f95",
+      "generatedSha256": "28e15cface9d85d88cce2f0e8e6a9e11b8a205894017c1dbf47a7a7cfcbc136b",
+      "newSha256": "cac2e4c1d3b799ce0a239a72b7314a9de085e93a6f68b7c462c045145d01adf5",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine15_lover.png",
+      "toolOutputPath": "/workspace/generated_images/exec-89fdd6e1-d60c-449a-a638-313bb379f97e.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult date green jacket ivory shirt jeans trainers plain cream tote holding paperbag baguette. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 395666,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine15_wedding.png",
+      "originalSha256": "f70d3cf5ca6130915eb8b291874882d4fb341b0a3eac21fd349d4599ea07d596",
+      "generatedSha256": "e13773d6f0b5c6bcbd668314fbf9055036ede59e779b421c8b33d36973b0b1ef",
+      "newSha256": "eb4835428adc159b6f0716f96f90eb84d9265baa08ad3f0d4750d0c01ee7aa3f",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine15_wedding.png",
+      "toolOutputPath": "/workspace/generated_images/exec-187800d7-954d-4564-b355-b8dd6950eaa4.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult bride ivory long lace gown veil small white flower bouquet round glasses curly brown bob copper front streak. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 500281,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    },
+    {
+      "file": "images/heroine15_wife.png",
+      "originalSha256": "2aad86a1df49014eb3ce746e1be4f119c72f676acaade2f395f3a8e800eb0892",
+      "generatedSha256": "6cd03d111e3749f2960a8d7d2703c8053799053bd81d1a9b027877885cae72e0",
+      "newSha256": "421458d9b5f134ea299a624e7e1f98767f37459fd60463998d70fb1f6b93ebf1",
+      "generatedPath": "/workspace/football-life/assets/football-generated/heroines11-15/heroine15_wife.png",
+      "toolOutputPath": "/workspace/generated_images/exec-7b0fb940-0f69-4553-9a7c-030994a2436d.png",
+      "prompt": "Create a NEW replacement game character sprite from reference. Preserve this exact woman's recognizable face, hair and identity from reference. Outfit and props for THIS image ONLY: Adult wife green cardigan cream tee jeans sneakers, tote of vegetables phone. Consistent polished detailed chibi fine-pixel RPG illustration, thin dark pixel outlines, softly shaded clothing, 3-head-tall appealing proportions. Full body including feet with 8% empty margin all sides. One character only. Neutral standing threequarter pose. TRUE TRANSPARENT ALPHA background entirely empty; no vignette, no glow, no shadow, no floor, no text, no logo, no baseball gear. Fictional football life character; ordinary job and life identity, not a football player.",
+      "size": [
+        512,
+        768
+      ],
+      "bytes": 399910,
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "qa": "Viewed source and generated pixels: identity and lifecycle outfit retained, no baseball gear, complete figure, valid hands/props."
+    }
+  ]
+}

@@ -1,122 +1,153 @@
-# 그래픽 후속 작업 목록
+# 축구판 그래픽 검수 목록
 
-이번 전환은 이미지 생성·교체를 하지 않습니다. `images/`의 110개 파일과 `assets/` 원본·후보 이미지·라이선스는 원본 그대로 보존합니다. 아래 목록은 실행 소스의 정적 참조와 동적 키 사용을 정리했습니다. 모든 이미지가 육안 검수를 마쳤다는 뜻은 아닙니다.
+2026-10-07 기존 110장 전체를 새로 생성해 교체하고 골키퍼 전용 18장을 추가했습니다. 총128장입니다. 인물은512×768 투명PNG, 배경은1200×800입니다. 원본 이미지는 Git 이력과 기존 `assets/` 자료에 보존합니다.
 
-직접 확인한 `hero_pro.png`에는 야구 유니폼·모자·글러브가, `bg_stadium.png`에는 다이아몬드·마운드와 **HANBIT BASEBALL** 문구가 남습니다. `heroine2_meet.png`는 기자 소품을 사용합니다. 선수·감독·동료의 외모별 그림은 후속 그래픽 작업에서 축구 복장과 장비로 검토해야 합니다. 생활·연애·결혼·자녀 그림은 임시 재사용합니다.
+축구 유니폼·공·골대·키퍼 장갑을 확인하고, 학생의 연령에 맞는 일상과 히로인15명의 직업·인물 정체성을 유지했습니다. 각 변형은 독립 생성이며 단순 색상·도형 치환을 사용하지 않았습니다. 이미지 파일명은 기존 카드·저장 연결의 안정성을 위해 유지합니다. `hero_mlb` 등은 내부 파일명이며 야구 그림이 아닙니다.
 
-`js/ui.js`가 시기별 주인공 그림에 `_plain`/`_ugly`를 붙이고, 관계에 따라 히로인 그림을 고릅니다. `js/panels.js` 도감에도 표시됩니다. `hero_mlb`와 `mlb_teammate` 파일명은 자산 정체성을 보존하기 위해 유지하며 게임 UI의 리그 명칭과는 별개입니다. `assets/semirealistic/`와 `assets/fine-pixel/`의 과거 시안·프롬프트·정적 카탈로그도 수정하지 않았습니다.
+모든128장의 픽셀 검수 완료. 모바일·PC 브라우저 및 효과음 통합 검증 결과는 `tools/results/graphics/report.json`과 `docs/art-progress.json`에 기록합니다. 아직 실행하지 않은 검사를 통과로 표시하지 않습니다.
 
-원본 이미지 해시와 참조 목록: `docs/graphics-inventory.json`. 출처는 게임 메뉴의 그림 출처 및 `data/settings.js`에 유지됩니다. 저작자와 CC 라이선스 링크, `assets/fonts/pretendard/LICENSE`도 보존합니다.
+## 원본·생성 내역
 
-| 파일 | 상태 / 남은 작업 | 코드 연결 |
-|---|---|---|
-| `images/agent.png` | 생활·인물 그림 임시 재사용 | `data/mlb/mlb_cards.js`, `data/cards/pro_events.js`, `data/cards/sacrifice.js`, `data/cards/pro_more.js`, `data/cards/retire.js`, `data/cards/looks.js` |
-| `images/bg_classroom.jpg` | 생활·인물 그림 임시 재사용 | `data/settings.js` |
-| `images/bg_hall.jpg` | 생활·인물 그림 임시 재사용 | `data/settings.js` |
-| `images/bg_home.jpg` | 생활·인물 그림 임시 재사용 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/bg_indoor.png` | 생활·인물 그림 임시 재사용 | `js/ui.js` |
-| `images/bg_office.jpg` | 생활·인물 그림 임시 재사용 | `data/settings.js` |
-| `images/bg_room.jpg` | 생활·인물 그림 임시 재사용 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/bg_school.jpg` | 생활·인물 그림 임시 재사용 | `data/settings.js` |
-| `images/bg_stadium.png` | 교체 필요 확인: 다이아몬드·마운드·HANBIT BASEBALL | `js/ui.js` |
-| `images/bg_street.png` | 생활·인물 그림 임시 재사용 | `js/ui.js` |
-| `images/buddy.png` | 우선 교체 검토: 선수 복장·장비 | `data/cards/emergency.js`, `data/cards/pro_season.js`, `data/cards/pro_more.js`, `data/cards/high.js`, `data/cards/college.js`, `data/cards/retire.js`, `data/cards/looks.js`, `data/cards/elementary.js`, `data/cards/middle.js` |
-| `images/child.png` | 생활·인물 그림 임시 재사용 | `data/heroines/romance_common.js`, `data/cards/emergency.js` |
-| `images/coach_high.png` | 우선 교체 검토: 선수 복장·장비 | `data/cards/draft.js`, `data/cards/pro_more.js`, `data/cards/high.js`, `data/cards/middle.js` |
-| `images/coach_little.png` | 우선 교체 검토: 선수 복장·장비 | `data/cards/elementary.js` |
-| `images/hero_college.png` | 우선 교체 검토: 선수 복장·장비 | `data/settings.js` |
-| `images/hero_college_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_college_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_elementary.png` | 우선 교체 검토: 선수 복장·장비 | `data/settings.js` |
-| `images/hero_elementary_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_elementary_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_high.png` | 우선 교체 검토: 선수 복장·장비 | `data/settings.js` |
-| `images/hero_high_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_high_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_injured.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js`, `data/cards/pro_events.js` |
-| `images/hero_injured_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_injured_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_middle.png` | 우선 교체 검토: 선수 복장·장비 | `data/settings.js` |
-| `images/hero_middle_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_middle_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_mlb.png` | 우선 교체 검토: 선수 복장·장비 | `data/mlb/mlb_settings.js` |
-| `images/hero_mlb_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_mlb_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_pro.png` | 교체 필요 확인: 야구 유니폼·모자·글러브 | `js/ui.js`, `data/settings.js` |
-| `images/hero_pro_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_pro_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_retired.png` | 우선 교체 검토: 선수 복장·장비 | `js/panels.js`, `js/ui.js`, `data/settings.js` |
-| `images/hero_retired_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_retired_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_slump.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js` |
-| `images/hero_slump_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_slump_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_victory.png` | 우선 교체 검토: 선수 복장·장비 | `js/season.js`, `data/heroines/heroine3.js`, `data/mlb/mlb_cards.js`, `data/cards/pro_events.js`, `data/cards/pro_more.js`, `data/cards/retire.js`, `data/cards/pro.js` |
-| `images/hero_victory_plain.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/hero_victory_ugly.png` | 우선 교체 검토: 선수 복장·장비 | `js/ui.js / js/panels.js 동적 외모·관계·배경 키 또는 보존용` |
-| `images/heroine10.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine10.js` |
-| `images/heroine10_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine10.js` |
-| `images/heroine10_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine10.js` |
-| `images/heroine10_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine10.js` |
-| `images/heroine11.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine11.js` |
-| `images/heroine11_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine11.js` |
-| `images/heroine11_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine11.js` |
-| `images/heroine11_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine11.js` |
-| `images/heroine12.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine12.js` |
-| `images/heroine12_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine12.js` |
-| `images/heroine12_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine12.js` |
-| `images/heroine12_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine12.js` |
-| `images/heroine13.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine13.js` |
-| `images/heroine13_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine13.js` |
-| `images/heroine13_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine13.js` |
-| `images/heroine13_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine13.js` |
-| `images/heroine14.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine14.js` |
-| `images/heroine14_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine14.js` |
-| `images/heroine14_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine14.js` |
-| `images/heroine14_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine14.js` |
-| `images/heroine15.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine15.js` |
-| `images/heroine15_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine15.js` |
-| `images/heroine15_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine15.js` |
-| `images/heroine15_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine15.js` |
-| `images/heroine1_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine1.js` |
-| `images/heroine1_meet.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine1.js` |
-| `images/heroine1_spouse.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine1.js` |
-| `images/heroine1_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine1.js` |
-| `images/heroine2_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine2.js` |
-| `images/heroine2_meet.png` | 직접 확인: 기자 소품, 임시 재사용 가능 | `data/heroines/heroine2.js` |
-| `images/heroine2_spouse.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine2.js` |
-| `images/heroine2_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine2.js` |
-| `images/heroine3_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine3.js` |
-| `images/heroine3_meet.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine3.js` |
-| `images/heroine3_spouse.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine3.js` |
-| `images/heroine3_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine3.js` |
-| `images/heroine4_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine4.js` |
-| `images/heroine4_meet.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine4.js` |
-| `images/heroine4_spouse.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine4.js` |
-| `images/heroine4_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine4.js` |
-| `images/heroine5_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine5.js` |
-| `images/heroine5_meet.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine5.js` |
-| `images/heroine5_spouse.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine5.js` |
-| `images/heroine5_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine5.js` |
-| `images/heroine6_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine6.js` |
-| `images/heroine6_meet.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine6.js` |
-| `images/heroine6_spouse.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine6.js` |
-| `images/heroine6_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine6.js` |
-| `images/heroine7.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine7.js` |
-| `images/heroine7_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine7.js` |
-| `images/heroine7_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine7.js` |
-| `images/heroine7_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine7.js` |
-| `images/heroine8.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine8.js` |
-| `images/heroine8_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine8.js` |
-| `images/heroine8_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine8.js` |
-| `images/heroine8_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine8.js` |
-| `images/heroine9.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine9.js` |
-| `images/heroine9_lover.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine9.js` |
-| `images/heroine9_wedding.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine9.js` |
-| `images/heroine9_wife.png` | 생활·인물 그림 임시 재사용 | `data/heroines/heroine9.js` |
-| `images/interpreter.png` | 생활·인물 그림 임시 재사용 | `data/mlb/mlb_cards.js` |
-| `images/manager_pro.png` | 우선 교체 검토: 선수 복장·장비 | `data/heroines/date_surprises.js`, `data/cards/pro_events.js`, `data/cards/pro_season.js`, `data/cards/pro_extra.js`, `data/cards/pro.js` |
-| `images/mlb_teammate.png` | 우선 교체 검토: 선수 복장·장비 | `data/mlb/mlb_cards.js`, `data/cards/humor.js` |
-| `images/parents.png` | 생활·인물 그림 임시 재사용 | `data/mlb/mlb_cards.js`, `data/cards/draft.js`, `data/cards/emergency.js`, `data/cards/pro_more.js`, `data/cards/college.js`, `data/cards/retire.js`, `data/cards/elementary.js`, `data/cards/middle.js`, `data/cards/military.js` |
-| `images/rival.png` | 우선 교체 검토: 선수 복장·장비 | `data/characters.js`, `data/heroines/date_surprises.js`, `data/mlb/mlb_cards.js`, `data/cards/rival.js` |
-| `images/teammate.png` | 우선 교체 검토: 선수 복장·장비 | `data/cards/humor.js` |
+- 기준 원본 해시: `docs/graphics-inventory.json`
+- 최종 해시·검증 상태: `docs/art-progress.json`
+- 주인공: `docs/art-hero-manifest.json`
+- 골키퍼: `docs/art-hero-gk-manifest.json`
+- 히로인: `docs/art-heroines-completion.json` 및 세 묶음 상세manifest
+- 조연: `docs/art-support-generation.json`
+- 배경: `docs/art-background-manifest.json`
+- 절차와 출처 설명: `docs/GRAPHICS-WORKFLOW.md`
+
+과거 원본 출처(CC5건) 및 글꼴 라이선스는 그대로 보존합니다. 생성 원본은 `assets/football-generated/`에 보존합니다. 검수용 원본 복사본 폴더는 로컬 보관하며, 공개 저장소에서는 변경 전 커밋6235f47에서 원본을 복구할 수 있습니다.
+
+## 파일별 상태
+
+| 파일 | 픽셀 검수 |
+|---|---|
+| `images/agent.png` | 완료 |
+| `images/bg_classroom.jpg` | 완료 |
+| `images/bg_hall.jpg` | 완료 |
+| `images/bg_home.jpg` | 완료 |
+| `images/bg_indoor.png` | 완료 |
+| `images/bg_office.jpg` | 완료 |
+| `images/bg_room.jpg` | 완료 |
+| `images/bg_school.jpg` | 완료 |
+| `images/bg_stadium.png` | 완료 |
+| `images/bg_street.png` | 완료 |
+| `images/buddy.png` | 완료 |
+| `images/child.png` | 완료 |
+| `images/coach_high.png` | 완료 |
+| `images/coach_little.png` | 완료 |
+| `images/hero_college.png` | 완료 |
+| `images/hero_college_plain.png` | 완료 |
+| `images/hero_college_ugly.png` | 완료 |
+| `images/hero_elementary.png` | 완료 |
+| `images/hero_elementary_plain.png` | 완료 |
+| `images/hero_elementary_ugly.png` | 완료 |
+| `images/hero_high.png` | 완료 |
+| `images/hero_high_plain.png` | 완료 |
+| `images/hero_high_ugly.png` | 완료 |
+| `images/hero_injured.png` | 완료 |
+| `images/hero_injured_plain.png` | 완료 |
+| `images/hero_injured_ugly.png` | 완료 |
+| `images/hero_middle.png` | 완료 |
+| `images/hero_middle_plain.png` | 완료 |
+| `images/hero_middle_ugly.png` | 완료 |
+| `images/hero_mlb.png` | 완료 |
+| `images/hero_mlb_plain.png` | 완료 |
+| `images/hero_mlb_ugly.png` | 완료 |
+| `images/hero_pro.png` | 완료 |
+| `images/hero_pro_plain.png` | 완료 |
+| `images/hero_pro_ugly.png` | 완료 |
+| `images/hero_retired.png` | 완료 |
+| `images/hero_retired_plain.png` | 완료 |
+| `images/hero_retired_ugly.png` | 완료 |
+| `images/hero_slump.png` | 완료 |
+| `images/hero_slump_plain.png` | 완료 |
+| `images/hero_slump_ugly.png` | 완료 |
+| `images/hero_victory.png` | 완료 |
+| `images/hero_victory_plain.png` | 완료 |
+| `images/hero_victory_ugly.png` | 완료 |
+| `images/heroine10.png` | 완료 |
+| `images/heroine10_lover.png` | 완료 |
+| `images/heroine10_wedding.png` | 완료 |
+| `images/heroine10_wife.png` | 완료 |
+| `images/heroine11.png` | 완료 |
+| `images/heroine11_lover.png` | 완료 |
+| `images/heroine11_wedding.png` | 완료 |
+| `images/heroine11_wife.png` | 완료 |
+| `images/heroine12.png` | 완료 |
+| `images/heroine12_lover.png` | 완료 |
+| `images/heroine12_wedding.png` | 완료 |
+| `images/heroine12_wife.png` | 완료 |
+| `images/heroine13.png` | 완료 |
+| `images/heroine13_lover.png` | 완료 |
+| `images/heroine13_wedding.png` | 완료 |
+| `images/heroine13_wife.png` | 완료 |
+| `images/heroine14.png` | 완료 |
+| `images/heroine14_lover.png` | 완료 |
+| `images/heroine14_wedding.png` | 완료 |
+| `images/heroine14_wife.png` | 완료 |
+| `images/heroine15.png` | 완료 |
+| `images/heroine15_lover.png` | 완료 |
+| `images/heroine15_wedding.png` | 완료 |
+| `images/heroine15_wife.png` | 완료 |
+| `images/heroine1_lover.png` | 완료 |
+| `images/heroine1_meet.png` | 완료 |
+| `images/heroine1_spouse.png` | 완료 |
+| `images/heroine1_wedding.png` | 완료 |
+| `images/heroine2_lover.png` | 완료 |
+| `images/heroine2_meet.png` | 완료 |
+| `images/heroine2_spouse.png` | 완료 |
+| `images/heroine2_wedding.png` | 완료 |
+| `images/heroine3_lover.png` | 완료 |
+| `images/heroine3_meet.png` | 완료 |
+| `images/heroine3_spouse.png` | 완료 |
+| `images/heroine3_wedding.png` | 완료 |
+| `images/heroine4_lover.png` | 완료 |
+| `images/heroine4_meet.png` | 완료 |
+| `images/heroine4_spouse.png` | 완료 |
+| `images/heroine4_wedding.png` | 완료 |
+| `images/heroine5_lover.png` | 완료 |
+| `images/heroine5_meet.png` | 완료 |
+| `images/heroine5_spouse.png` | 완료 |
+| `images/heroine5_wedding.png` | 완료 |
+| `images/heroine6_lover.png` | 완료 |
+| `images/heroine6_meet.png` | 완료 |
+| `images/heroine6_spouse.png` | 완료 |
+| `images/heroine6_wedding.png` | 완료 |
+| `images/heroine7.png` | 완료 |
+| `images/heroine7_lover.png` | 완료 |
+| `images/heroine7_wedding.png` | 완료 |
+| `images/heroine7_wife.png` | 완료 |
+| `images/heroine8.png` | 완료 |
+| `images/heroine8_lover.png` | 완료 |
+| `images/heroine8_wedding.png` | 완료 |
+| `images/heroine8_wife.png` | 완료 |
+| `images/heroine9.png` | 완료 |
+| `images/heroine9_lover.png` | 완료 |
+| `images/heroine9_wedding.png` | 완료 |
+| `images/heroine9_wife.png` | 완료 |
+| `images/interpreter.png` | 완료 |
+| `images/manager_pro.png` | 완료 |
+| `images/mlb_teammate.png` | 완료 |
+| `images/parents.png` | 완료 |
+| `images/rival.png` | 완료 |
+| `images/teammate.png` | 완료 |
+| `images/hero_college_gk.png` | 완료 |
+| `images/hero_college_gk_plain.png` | 완료 |
+| `images/hero_college_gk_ugly.png` | 완료 |
+| `images/hero_elementary_gk.png` | 완료 |
+| `images/hero_elementary_gk_plain.png` | 완료 |
+| `images/hero_elementary_gk_ugly.png` | 완료 |
+| `images/hero_high_gk.png` | 완료 |
+| `images/hero_high_gk_plain.png` | 완료 |
+| `images/hero_high_gk_ugly.png` | 완료 |
+| `images/hero_middle_gk.png` | 완료 |
+| `images/hero_middle_gk_plain.png` | 완료 |
+| `images/hero_middle_gk_ugly.png` | 완료 |
+| `images/hero_mlb_gk.png` | 완료 |
+| `images/hero_mlb_gk_plain.png` | 완료 |
+| `images/hero_mlb_gk_ugly.png` | 완료 |
+| `images/hero_pro_gk.png` | 완료 |
+| `images/hero_pro_gk_plain.png` | 완료 |
+| `images/hero_pro_gk_ugly.png` | 완료 |

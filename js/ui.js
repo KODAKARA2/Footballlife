@@ -20,7 +20,15 @@
   };
   U.heroArt = function (keys) {
     var sx = U.looksSuffix(), out = [];
-    I.arr(keys).forEach(function (k) { if (sx && /^hero_/.test(k)) out.push(k + sx); out.push(k); });
+    I.arr(keys).forEach(function (k) {
+      // 골키퍼는 나이·외모에 맞는 전용 장갑/유니폼 그림을 사용합니다.
+      if ((E.state() || {}).포지션 === "골키퍼" && /^hero_(elementary|middle|high|college|pro|mlb)$/.test(k)) {
+        if (sx) out.push(k + "_gk" + sx);
+        out.push(k + "_gk");
+      }
+      if (sx && /^hero_/.test(k)) out.push(k + sx);
+      out.push(k);
+    });
     return out;
   };
   U.art = function (keys, fallbackIcon, overlay, cls, bg) {

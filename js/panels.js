@@ -197,7 +197,7 @@
     modal("<h2>🎨 그림 출처</h2>" + (GD.설정.그림출처 || []).map(function (c) {
       return '<div class="col-item"><div><b>' + esc(c.제목) + "</b><small>" + esc(c.작가) + " · " + (LIC[c.라이선스] ? '<a href="' + LIC[c.라이선스] + '" target="_blank" rel="noopener">' + esc(c.라이선스) + "</a>" : esc(c.라이선스)) +
         ' · <a href="' + esc(c.주소) + '" target="_blank" rel="noopener">원본</a><br>사용: ' + esc(c.그림) + "</small></div></div>";
-    }).join("") + '<p class="hint">게임에 맞게 잘라내고 크기를 바꿔 사용했습니다. 그 밖의 그림은 이 게임을 위해 그린 것입니다.</p>');
+    }).join("") + '<p class="hint">현재 축구판 그림은 OpenAI 이미지 생성 도구로 새로 제작하고 웹용으로 최적화했습니다. 위 목록은 원본 게임에서 사용한 그림의 출처이며 원본 및 라이선스 기록을 보존합니다. 생성·검수 내역은 저장소 docs/art-progress.json 및 docs/GRAPHICS-TODO.md에 있습니다.</p>');
   };
 
   // ---------------- 엔딩 도감 · 업적 ----------------
