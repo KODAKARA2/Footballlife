@@ -26,8 +26,8 @@ const out=process.argv[2]||fs.mkdtempSync(path.join(os.tmpdir(),'football-mini-'
   await page.clock.runFor(10000);assert.equal(await page.evaluate(()=>results.length),1,'real touchscreen '+name);
  }
  const dispatch=await page.evaluate(()=>{
-  const abilities={miniBat:'슈팅',miniPitch:'선방',miniTimer:'수비',miniSteal:'드리블',miniThrow:'패스',miniSigns:'위치선정'};
-  const pools={공격수:['miniBat','miniSteal','miniThrow','miniSigns'],미드필더:['miniThrow','miniSteal','miniTimer','miniSigns'],수비수:['miniTimer','miniThrow','miniSigns'],골키퍼:['miniPitch','miniThrow','miniSigns']};
+  const abilities=U.drillAbilities;
+  const pools=U.roleDrills;
   const original={},originalRandom=Math.random,report={};let pending,selected;
   for(const key of Object.keys(abilities)){original[key]=U[key];U[key]=cb=>{selected=key;const m=document.createElement('div');m.className='mg-wrap';document.body.appendChild(m);pending=()=>{m.remove();cb({확률:.95,능력:abilities[key]});};return ()=>m.remove();};}
   try{for(const [role,pool] of Object.entries(pools)){

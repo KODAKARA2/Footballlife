@@ -15,7 +15,9 @@ function show(screen = '메뉴', target) {
   const s = E.state(); s.자유시간 = { 화면: screen, 대상: target }; s.현재카드 = E.freeTimeCard(); s.단계 = '카드'; E.refreshOptions();
 }
 function choose(action, target) {
-  const s = E.state(), ix = s.현재옵션.findIndex(i => s.현재카드.선택지[i].자유선택 === action && (!target || s.현재카드.선택지[i].대상 === target));
+  if (action === '연습' && E.state().자유시간.화면 !== '연습') { const s=E.state(); const ix=s.현재옵션.findIndex(i=>s.현재카드.선택지[i].화면==='연습'); E.choose(ix); E.next(); }
+
+  const s = E.state(), ix = s.현재옵션.findIndex(i => s.현재카드.선택지[i].자유선택 === action && (action !== '이동' || s.현재카드.선택지[i].화면 === '데이트') && (!target || s.현재카드.선택지[i].대상 === target));
   assert.ok(ix >= 0, action + ':' + target); return E.choose(ix);
 }
 function calendar(s) { return JSON.stringify([s.나이,s.시기턴,s.올해카드,s.올해부상카드,s.기록,s.돈,s.성적]); }

@@ -15,6 +15,7 @@
 
   U.openMenu = function () {
     modal('<h2>메뉴</h2><div class="menu-list">' +
+      '<button onclick="U.closeModals();U.openSave()">💾 저장 이동·복구</button>' +
       '<button onclick="Feedback.settings()">소리·움직임 설정</button>' +
       '<button onclick="U.closeModals();U.openHero()">🧢 내 인생 카드 · 능력치</button>' +
       '<button onclick="U.closeModals();U.openHeroine()">💗 히로인 카드 · 애정도</button>' +
@@ -150,6 +151,7 @@
         "<b>" + esc(s.이름) + "</b><small>" + esc(p.이름) + " · " + (s.은퇴나이 || s.나이) + '세 은퇴</small><div class="ovstats">성적 ' + en.성적 + " · 행복도 " + en.행복도 + "</div>", "card-art") + "</div>" +
       (fresh.length ? '<div class="fresh"><b>📖 도감에 새로 기록!</b>' + fresh.map(function (f) { return "<span>" + esc(f) + "</span>"; }).join("") + "</div>" : "") +
       '<div class="ending-story"><span class="eyebrow">나의 축구 인생</span><div class="end-title">' + en.기본.아이콘 + " " + esc(en.기본.이름) + "</div><p>" + br(E.tpl(en.기본.내용)) + "</p></div>" +
+      ((en.함께이룬것들 || []).length ? '<section class="ending-also"><h3>함께 이룬 것들</h3>' + en.함께이룬것들.map(function(e) { return '<p>'+esc(e.아이콘+' '+e.이름)+'</p>'; }).join('') + '</section>' : '') +
       (en.특별 ? '<details class="ending-highlight"><summary>커리어 하이라이트 · ' + en.특별.아이콘 + " " + esc(en.특별.이름) + "</summary><p>" + br(E.tpl(en.특별.내용)) + "</p></details>" : "") +
       (he ? '<div class="he-end">' + U.art(U.heroineKeys(he.아이디, "배우자"), "💍", null, "card-art") + '<div><div class="he-title">' + he.아이콘 + " " + esc(he.이름) +
         "</div><small>" + esc(he.히로인) + " 전용 엔딩</small><p>" + br(E.tpl(he.내용)) + "</p></div></div>" : "") +

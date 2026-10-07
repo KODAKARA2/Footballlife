@@ -37,7 +37,7 @@
   }
   function session(title, help, field, stat, cb) {
     var m = H.open(title, help, field + '<div class="pf-time"><i></i></div>', 'football-field'), done = false, held = false, raf, timeout;
-    decorate(m,stat);
+    if (!m.querySelector('.drill-pitch')) decorate(m,stat);
     m.setAttribute('role', 'dialog'); m.setAttribute('aria-modal', 'true'); m.setAttribute('aria-label', title);
     var start = performance.now();
     return {
@@ -266,4 +266,5 @@
     throw:{title:'패스',icon:'🎯',play:U.miniThrow,help:'동료 위치에 맞춰 가로와 세로 방향을 차례로 멈추세요.',levels:levels},
     signs:{title:'전술 기억',icon:'🧠',play:U.miniSigns,help:'압박·전환·침투의 순서를 기억한 뒤 입력하세요.',levels:levels,keys:'터치·클릭 또는 숫자 1·2·3'}
   };};
+  U._drillCore={session:session,grade:grade,probability:probability};
 })();
