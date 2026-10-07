@@ -80,13 +80,14 @@
 
   // ---------------- 시작 화면 ----------------
   U.showSetup = function () {
+    Feedback.clearAll(); busy = false;
     var sel = { pos: null, spec: null };
     $("#app").className = "is-setup";
     $("#app").innerHTML =
       '<section class="setup"><div class="setup-intro"><span class="eyebrow">FOOTBALL LIFE · 나만의 축구 이야기</span><h1>축구는 기록으로,<br>인생은 <em>선택으로.</em></h1>' +
       '<p class="sub">첫 축구화부터 마지막 은퇴 경기까지.<br>어떤 선수가 되고, 누구와 함께할까요?</p>' +
       '<div class="journey-art" aria-hidden="true"><div><img src="images/hero_elementary.png" alt=""><span>첫 킥</span></div><div><img src="images/hero_high.png" alt=""><span>커지는 꿈</span></div><div><img src="images/hero_pro.png" alt=""><span>나만의 전성기</span></div></div>' +
-      '<div class="setup-links"><button onclick="U.openPractice()">⚽ 미니게임 연습장 <span>먼저 체험하기 →</span></button><button onclick="U.openCollection()">📖 엔딩 도감 <span>모아 온 이야기 →</span></button></div>' +
+      '<div class="setup-links"><button onclick="Feedback.settings()">소리·움직임 설정</button><button onclick="U.openPractice()">⚽ 미니게임 연습장 <span>먼저 체험하기 →</span></button><button onclick="U.openCollection()">📖 엔딩 도감 <span>모아 온 이야기 →</span></button></div>' +
       '<p class="intro-note">잘하는 축구와 행복한 인생 사이, 정답은 하나가 아닙니다.</p></div>' +
       '<div class="setup-form"><span class="eyebrow">NEW PLAYER</span><h2>나의 선수 만들기</h2><p class="form-note">이름, 포지션, 특기를 고르면 이야기가 시작됩니다.</p>' +
       '<label>주인공 이름<input id="nm" maxlength="8" placeholder="예: 강민준" autocomplete="off"></label>' +
@@ -124,6 +125,7 @@
 
   // ---------------- 게임 화면 ----------------
   U.showGame = function () {
+    Feedback.clearAll(); busy = false;
     $("#app").className = "is-game";
     $("#app").innerHTML = '<header class="top" id="top"></header><section class="life" id="life"></section>' +
       '<aside class="chapter" id="chapter"></aside><div class="story-column"><section class="table" id="table"></section><nav class="actions" id="actions" aria-label="이야기의 선택지"></nav></div>';
@@ -358,7 +360,8 @@
   };
 
   U.choose = function (i) {
-    if (busy) return;
+    if (busy || E.state().단계 !== "카드" || E.state().현재옵션[i] == null) return;
+    Feedback.cue("select", document.querySelectorAll("#actions .opt")[i]);
     var s = E.state(), o = s.현재카드.선택지[s.현재옵션[i]];
     if (s.현재카드.자유행동 && o.자유선택 === "이동") {
       E.choose(i); E.next(); U.renderAll(); return;
@@ -373,14 +376,16 @@
     var after = E.state().히로인 && E.state().히로인.아이디;
     var card = $("#card"); card.querySelector(".back").innerHTML = U.resultHTML(r);
     card.classList.remove("deal"); card.classList.add("flipped");
+    if (typeof r.성공 === "boolean") Feedback.later(card, function () { Feedback.cue(r.성공 ? "result" : "fail", document.querySelector("#table")); }, 330);
     card.querySelector(".front").inert = true; card.querySelector(".back").inert = false;
     if (before && !after) { var m = document.querySelector(".heroine-mini"); if (m) m.classList.add("detach"); }
-    setTimeout(function () { U.renderTop(); if (!(before && !after)) U.renderLife(!before && after); U.renderActions(); busy = false; }, before && !after ? 700 : 350);
-    if (before && !after) setTimeout(function () { U.renderLife(); }, 750);
+    Feedback.later($("#app"), function () { U.renderTop(); if (!(before && !after)) U.renderLife(!before && after); U.renderActions(); busy = false; }, before && !after ? 700 : 350);
+    if (before && !after) Feedback.later($("#app"), function () { U.renderLife(); }, 750);
   }
   U.next = function () {
     if (busy) return; busy = true;
+    Feedback.clearAll();
     $("#card").classList.add("discard");
-    setTimeout(function () { E.next(); busy = false; U.renderAll(true); window.scrollTo(0, 0); }, 320);
+    Feedback.later($("#app"), function () { E.next(); busy = false; U.renderAll(true); window.scrollTo(0, 0); }, 320);
   };
 })();
