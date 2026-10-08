@@ -39,14 +39,14 @@
     var m = H.open(title, help, field + '<div class="pf-time"><i></i></div>', 'football-field'), done = false, held = false, raf, timeout;
     if (!m.querySelector('.drill-pitch')) decorate(m,stat);
     m.setAttribute('role', 'dialog'); m.setAttribute('aria-modal', 'true'); m.setAttribute('aria-label', title);
-    var start = performance.now();
+    var start = performance.now(), resultArt = window.DrillResultArt ? DrillResultArt.prepare(m,title) : function(){};
     return {
       m: m, start: start,
       active: function () { return !done && !held && m.isConnected; },
       hold: function () { held = true; cancelAnimationFrame(raf); },
       run: function (fn) { function frame() { if (done || held || !m.isConnected) return; fn(performance.now()); if (!done && !held) raf = Feedback.frame(m, frame); } frame(); },
       bar: function (ratio) { m.querySelector('.pf-time i').style.width = Math.max(0, Math.min(1, ratio)) * 100 + '%'; },
-      finish: function (level, text, feedbackKind) { if (done || !m.isConnected) return; done = true; cancelAnimationFrame(raf); Feedback.cue(feedbackKind || (level >= 3 ? 'great' : level >= 2 ? 'good' : 'bad'), m.querySelector('.mg'), level >= 3); var p = probability(level); m.querySelector('.mg-result').textContent = text + ' · ' + stat + ' 판정 · 성공 확률 ' + Math.round(p * 100) + '%'; timeout = Feedback.later(m, function () { if (!m.isConnected) return; m.remove(); cb({확률:p, 표시:text, 능력:stat, 등급:level}); }, 1100); },
+      finish: function (level, text, feedbackKind) { if (done || !m.isConnected) return; done = true; cancelAnimationFrame(raf); resultArt(level,text); Feedback.cue(feedbackKind || (level >= 3 ? 'great' : level >= 2 ? 'good' : 'bad'), m.querySelector('.mg'), level >= 3); var p = probability(level); m.querySelector('.mg-result').textContent = text + ' · ' + stat + ' 판정 · 성공 확률 ' + Math.round(p * 100) + '%'; timeout = Feedback.later(m, function () { if (!m.isConnected) return; m.remove(); cb({확률:p, 표시:text, 능력:stat, 등급:level}); }, 1100); },
       cancel: function () { done = true; cancelAnimationFrame(raf); clearTimeout(timeout); Feedback.clear(m); m.remove(); }
     };
   }

@@ -1,0 +1,173 @@
+{
+  "base": "3ce02642db70f7aaae16063d526e9cd967c5b916",
+  "style": "original pixel art, blue outfield kit and white shorts, green goalkeeper, red opponents, no brands or text",
+  "planned": [
+    "dribble",
+    "pass",
+    "goal",
+    "miss",
+    "steal",
+    "run",
+    "scan",
+    "sprint",
+    "line",
+    "catch",
+    "punch"
+  ],
+  "completed": [
+    {
+      "name": "dribble",
+      "source": "/workspace/generated_images/exec-80188ba4-6ba7-455d-b4aa-14540670e84d.png",
+      "file": "images/minigames/result-dribble.png",
+      "bytes": 2327728,
+      "sha256": "f01a43fe1074e87ba0ff456307d8e1e448c0c9ae30dc91af838e565c4c35e8d2",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A blue striker has just dribbled BETWEEN two red defenders, pushing the ball ahead with his foot into open space, defenders clearly behind/to either side, low dynamic camera. Successful clean dribble, not a tackle.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "pass",
+      "source": "/workspace/generated_images/exec-5811e110-17d6-4087-90b8-2e809e44bc58.png",
+      "file": "images/minigames/result-pass.png",
+      "bytes": 2405773,
+      "sha256": "837fe5bd522c7693bdf2f0d0697e3012ec7c857cfa4ec2d5b8d2574656736492",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A blue receiver cushions an arriving football with the inside of his boot, another blue teammate who passed is visible further behind. Clearly successful reception, controlled ball touching foot, forward-looking eyes.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "goal",
+      "source": "/workspace/generated_images/exec-1b09bed0-4579-43c1-9045-a755fa1e596b.png",
+      "file": "images/minigames/result-goal.png",
+      "bytes": 2576139,
+      "sha256": "57eb1f34cd11ee83769cc9b3afd8d7610b5af458b53501d1285cbdda97507185",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "Successful football shot: black-white ball visibly INSIDE the net beyond the goal line, net bulging, blue striker in foreground finishing his shooting follow-through. Goalkeeper too far away to reach ball. Ball and entire player's face/feet safely framed.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "miss",
+      "source": "/workspace/generated_images/exec-bb937d0a-b6d8-4cfe-b97d-dd35078ea74f.png",
+      "file": "images/minigames/result-miss.png",
+      "bytes": 2655441,
+      "sha256": "76504ef3811b2d934e405b67b15139af90bcf7eb1aef4e7c20c9d0530c3f7282",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A football shot has MISSED: ball visibly flying OUTSIDE the right goalpost, untouched goal net, blue striker following through with disappointed face. Clearly wide of goal, no celebration, no ball inside net.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "steal",
+      "source": "/workspace/generated_images/exec-239783d7-329d-4ef2-812f-05a3051c0634.png",
+      "file": "images/minigames/result-steal.png",
+      "bytes": 2478856,
+      "sha256": "00a805bf7bfece5f9e024a7d9a4394ca77a9e90411b02a4054567697eaaf97df",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "Successful clean football ball win: blue defender steps in front of a red attacker and takes control of the ball with his boot, ball clearly at blue foot, red player a step behind. Controlled interception/tackle, no dangerous injury.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "run",
+      "source": "/workspace/generated_images/exec-845278bc-e643-4279-b0f7-4c9d0401eabd.png",
+      "file": "images/minigames/result-run.png",
+      "bytes": 2418568,
+      "sha256": "828285833854a02f16e5aa9fcc045168d4c9ffe2ab09701c9a47166aaa430de9",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A blue forward accelerates into open space BEHIND a line of two red defenders, looking toward a teammate's through pass, ball just ahead in open grass. Clear successful off-ball run past defensive line.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "scan",
+      "source": "/workspace/generated_images/exec-1b219498-fde7-4241-a5b3-f305e4150e15.png",
+      "file": "images/minigames/result-scan.png",
+      "bytes": 2624498,
+      "sha256": "8209654fa082c518fb2e171185823fa29ca5401247ae1b01cf984f38ebabf4ac",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A blue midfield playmaker scanning over his shoulder discovers an unmarked blue teammate in open grass at the far side, red opponents clustered away from that teammate, ball at playmaker's feet. Clear sight line, no arrows or text.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "sprint",
+      "source": "/workspace/generated_images/exec-ededfc56-4557-4736-9f90-de06f7c98562.png",
+      "file": "images/minigames/result-sprint.png",
+      "bytes": 2418855,
+      "sha256": "f7cc1b69edee314fc655f57a5a44d764d21091446a684723f6d8b24cc3cffc3c",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A blue football player sprinting at full speed along the pitch, powerful running stride, focused determined face and swinging arms, subtle speed streaks, white training cones marking the lane. No football needed.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "line",
+      "source": "/workspace/generated_images/exec-6c3b7a56-60c0-4b46-a994-9d0c773e3182.png",
+      "file": "images/minigames/result-line.png",
+      "bytes": 2588368,
+      "sha256": "07c9e1baf983e0a8b88a377151a62cfc545f16f6f5d1a2a6f146fb3b07a95b58",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "Three blue football defenders in a disciplined aligned defensive formation across the pitch, coordinated sideways step, facing a distant red attacker, organized spacing, clear team shape. No text or arrows.",
+      "pixelQA": "inspected; primary action/face/ball within frame",
+      "revisionDirection": "Wide long shot, all three aligned defenders and six boots fully inside central frame; broad grass margins."
+    },
+    {
+      "name": "catch",
+      "source": "/workspace/generated_images/exec-67803c43-cfc8-4703-ac93-b0a775d5ae28.png",
+      "file": "images/minigames/result-catch.png",
+      "bytes": 2661989,
+      "sha256": "e8e56f447cd37bb39d592601f1017d39b9de502055a0477ac765e7cfc22592c2",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A green-shirted goalkeeper successfully catches a black-white football securely in BOTH gloved hands in front of his upper chest, knees slightly bent, face visible above the ball, goal behind. Both hands and whole ball visible, confident controlled save.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    },
+    {
+      "name": "punch",
+      "source": "/workspace/generated_images/exec-6a0f1b5e-3c97-479c-9d66-6d5cdb5883cb.png",
+      "file": "images/minigames/result-punch.png",
+      "bytes": 2509697,
+      "sha256": "06c25ecd0860e330b748577ab8728f52cfaa31a11cb632efb736066e978d817b",
+      "dimensions": [
+        1355,
+        1161
+      ],
+      "prompt": "A green-shirted goalkeeper jumps to PUNCH a high cross away with one closed gloved fist contacting the ball above his head, ball moving away from goal, second arm balancing naturally, entire gloves/ball/face/feet safe within frame. Dynamic successful aerial punch.",
+      "pixelQA": "inspected; primary action/face/ball within frame"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "line",
+      "source": "/workspace/generated_images/exec-5a24f938-aca3-414b-b806-155d64c44c6e.png",
+      "file": "images/minigames/result-line.png",
+      "reason": "edge defender boot cropped"
+    }
+  ],
+  "generator": "built-in imagegen",
+  "status": "11 final images integrated; result-art, all 16 browser suites, data, feedback and build checks passed"
+}

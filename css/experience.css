@@ -321,3 +321,7 @@ html[data-reduced-motion=true] .football-goal-cutin .crowd{rotate:none}
 .drill-angle-guide{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.drill-angle-guide path:first-child{fill:#ffe09518;stroke:#ffe09580;stroke-width:.5}.drill-angle-guide path+path{fill:none;stroke:#fff5c8;stroke-width:.6;stroke-dasharray:2 2}
 .motion-angle .drill-goal{background:#fff1}.motion-claim{background-image:url('../images/minigames/field_goal.png')}
 html[data-reduced-motion="true"] .drill-actor{transition:none!important;rotate:0deg!important;translate:none!important}
+/* Only during an already resolved result; input and callback timing stay intact. */
+.action-result-art{position:absolute;left:50%;top:50%;width:min(86%,240px);aspect-ratio:1354/1161;max-height:82%;transform:translate(-50%,-50%);z-index:9;border:2px solid #fff0c5;border-radius:12px;background:#163c39;overflow:hidden;pointer-events:none}
+.action-result-art img{width:100%;height:100%;object-fit:contain;display:block}.action-result-art strong{position:absolute;left:6%;top:7%;max-width:88%;font-size:clamp(18px,4vw,26px);line-height:1.15;color:#fff5b3;text-shadow:1px 2px #123d52,0 0 4px #123d52}
+html[data-reduced-motion="true"] .action-result-art{display:none}
