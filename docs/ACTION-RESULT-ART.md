@@ -1,0 +1,9 @@
+# Result action artwork
+
+Eleven new original images created with built-in imagegen on 2026-10-08. Approved blue/white outfield team, green goalkeeper and red opponents in the existing volley pixel-art style. No stock source, attached-image download, paid API or new service was used. Original generation files remain in `/workspace/generated_images`; final paths, sizes, SHA256, scene directions and one rejected framing attempt are recorded in `assets/action-result-art/progress.json`.
+
+Mapping: dribble→dribble; pass→pass; shooting good→goal, actual wide-shot failure→miss; tackle/intercept→steal; run→run; scan→scan; rhythm→sprint; line→line; keeper save/low cross/angle block→catch; high cross→punch. Existing volley and coach art remain unchanged. Grade 0/1 never receives a success image. No-shot timeout retains existing failure text rather than showing a kicked-ball image.
+
+`DrillResultArt.prepare` loads only the current drill's one or two assets. The shared session's one-shot logical finish calls its presentation closure after the grade is fixed. The image displays for 320 ms within the existing 1100 ms result interval; callbacks, probabilities, rewards and saves are unchanged. The art module makes no sound/RNG/storage calls. All text is separate UI. The primary action/face/ball stays in the image and `contain` avoids crop. Minor distant/background figures are not the focal action. The line scene was regenerated after finding an edge-cropped boot.
+
+Image failure or unfinished loading skips the panel and never delays the result. Reduced motion skips it. Scoped timer and observer/listeners clean up on panel expiry, cancel/DOM removal, hidden tab or resize. Fast repeated calls cannot create a second panel or reward. New tests verify every title/grade mapping, real PNGs, timing, failure/slow-load fallback, reduced motion and lifecycle at 320/390/1280 alongside the existing actual-input 14-drill suite.
