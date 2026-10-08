@@ -169,5 +169,5 @@
     }
   ],
   "generator": "built-in imagegen",
-  "status": "11 final images generated, inspected and integrated; regression in progress"
+  "status": "11 final images integrated; result-art, all 16 browser suites, data, feedback and build checks passed"
 }
