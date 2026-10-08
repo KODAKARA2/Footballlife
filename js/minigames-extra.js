@@ -2,8 +2,8 @@
 (function() {
   if (!window.U) return;
   var H=U._mini, C=U._drillCore;
-  // User original is pending supported Library transfer; never substitute art.
-  var VOLLEY_IMPACT_ORIGINAL=null;
+  // Newly generated artwork explicitly approved after the original transfer failed.
+  var VOLLEY_IMPACT_IMAGE='images/minigames/volley-impact-generated.png';
   function field(extra) { return '<div class="drill-pitch">'+extra+'</div>'; }
   function actor(cls,file,x,y) { return '<span class="drill-actor '+cls+'" style="left:'+x+'%;top:'+y+'%"><span class="drill-fallback" aria-hidden="true">●</span><img src="images/minigames/'+file+'.png" alt="" onload="this.parentElement.classList.add(\'art-ready\')" onerror="this.hidden=true;this.parentElement.classList.remove(\'art-ready\')"></span>'; }
   function buttons(labels) { return '<div class="drill-controls">'+labels.map(function(x,i){return '<button data-input="'+i+'">'+(i+1)+' · '+x+'</button>';}).join('')+'</div>'; }
@@ -75,9 +75,8 @@
     var s=start('⚽ 발리 파워','공중볼에 맞춰 <b>누르고 있다가 놓으세요</b>. 0.7초 충전이 정확한 발리입니다. 키보드: 스페이스 누름·뗌.',html,'슈팅',cb),held=null,input=null,box=s.m.querySelector('.mg'),pitch=s.m.querySelector('.drill-pitch');
     pitch.classList.add('volley-pitch');
     var orb=pitch.querySelector('.drill-ball'),spin=orb.querySelector('svg'),player=pitch.querySelector('.volley-player'),impact=pitch.querySelector('.volley-impact'),outcome=pitch.querySelector('.volley-outcome'),flightStart,level,resolved=false,frame;
-    // Required original is intentionally not substituted. The asset must be
-    // materialized and visually verified before enabling the image panel.
-    var art=impact.querySelector('img');if(VOLLEY_IMPACT_ORIGINAL)art.src=VOLLEY_IMPACT_ORIGINAL;
+    // Keep an unloaded or failed image out of the panel; scoring never waits for art.
+    var art=impact.querySelector('img');art.src=VOLLEY_IMPACT_IMAGE;art.draggable=false;
     function reduced(){return document.documentElement.dataset.reducedMotion==='true';}
     function place(x,y,turn,scale){orb.style.left=x+'%';orb.style.top=y+'%';spin.style.transform='rotate('+turn+'deg) scale('+scale+')';}
     function finish(){if(resolved||!s.m.isConnected)return;resolved=true;impact.hidden=true;outcome.hidden=false;outcome.textContent=level>=2?'GOAL!':'파워 조절 실패';s.text('발리 판정 · 카드의 최종 결과는 별도');s.finish(level,level>=2?'발리 슛 GOAL!':'파워 조절 실패',level>=2?'great':'bad');}
