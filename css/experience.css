@@ -296,5 +296,28 @@ html[data-reduced-motion=true] .football-goal-cutin .crowd{rotate:none}
 .drill-charge{position:absolute;left:15%;right:15%;top:45%;height:15px;background:#10282d}.drill-charge i{display:block;height:100%;width:0;background:#ffe095}.drill-charge:after{content:'';position:absolute;left:50%;top:-5px;height:25px;border-left:3px solid #fff}
 .drill-line{position:absolute;top:22%;bottom:24%;width:4px;background:#ffe095}.drill-goal{position:absolute;top:77%;left:30%;right:30%;text-align:center;border:3px solid white}
 #save-error{position:fixed;bottom:0;left:0;right:0;padding:12px;background:#7d2436;color:#fff;z-index:10000}.save-preview{overflow-wrap:anywhere}.save-preview button,.export-save,.recover-save{min-height:44px;margin:6px}.actual-delta{margin-top:12px;padding:12px;background:#10282d0d;font-size:12px}.actual-delta p{font-size:12px}.ending-also{padding:12px}
-.drill-actor{z-index:2}.drill-ball{z-index:3}.drill-controls,.drill-status{z-index:4}.drill-line{z-index:1}.drill-pitch .runner{top:66%!important}
+.drill-actor{z-index:2}.drill-ball{z-index:3}.drill-controls,.drill-status{z-index:4}.drill-line{z-index:1}.drill-pitch:not(.motion-run) .runner{top:66%!important}
 .drill-actor img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.drill-actor img[hidden]{display:none}.drill-fallback{display:block;border:2px solid #fff;background:#0e7192;border-radius:50%;width:30px;height:30px;margin:25px auto;font-size:20px;line-height:26px;color:white}.drill-actor.art-ready>.drill-fallback{visibility:hidden}
+/* Volley presentation keeps the translated ball anchor separate from its spin. */
+.volley-pitch{background-image:url('../images/minigames/field_goal.png')}
+.volley-pitch .drill-charge{top:auto;bottom:24px;z-index:5;border:1px solid #f9edd6;border-radius:5px}
+.volley-band{position:absolute;left:42.857%;width:14.286%;height:100%;background:#9aff9955;border-inline:1px solid #afffa4;z-index:1;pointer-events:none}
+.volley-pitch .drill-charge b{position:absolute;left:50%;top:-23px;transform:translateX(-50%);font-size:12px;white-space:nowrap;text-shadow:0 1px 3px #000}
+.volley-net{position:absolute;width:44%;height:auto;left:28%;top:12%;pointer-events:none}
+.volley-player{transform-origin:center 70%}.volley-pitch .drill-ball svg{transform-origin:center}
+.volley-impact{position:absolute;inset:12% 5% 15%;z-index:6;background:#112b30;border:2px solid #fff0c5;border-radius:12px;overflow:hidden}
+.volley-impact img{width:100%;height:100%;object-fit:contain}.volley-impact strong{position:absolute;left:8%;top:8%;font-size:clamp(28px,7vw,44px);color:#fff4a8;text-shadow:2px 2px #172331}
+.volley-outcome{position:absolute;inset:35% 4% auto;z-index:7;text-align:center;font-size:clamp(23px,7vw,38px);font-weight:900;color:#fff5b3;text-shadow:2px 3px #10282d}
+.volley-impact[hidden],.volley-outcome[hidden]{display:none}
+/* Role drill motion: cosmetic anchors never participate in scoring. */
+.drill-outcome{position:absolute;left:4%;right:4%;top:36%;padding:12px 6px;z-index:7;background:#10282de8;border:1px solid #ffe095;border-radius:12px;color:#fff5c7;font-size:clamp(18px,5vw,26px);text-align:center;font-weight:850;pointer-events:none}
+.drill-outcome[hidden]{display:none}.drill-outcome[data-grade="0"],.drill-outcome[data-grade="1"]{color:#ffd8c8;border-color:#deb1a0}
+.drill-resolving .drill-controls{opacity:.45;pointer-events:none}.drill-resolving .drill-status{opacity:.8}
+.motion-run .runner{transition:left 120ms ease,top 120ms ease}
+.motion-run .drill-lanes{top:24%;height:39%}.motion-run .drill-lanes>div{background:#10282d22;border-bottom:3px dashed #ffe095}.motion-run .lane-defender{top:45%!important}.motion-run .drill-lanes>div>span:not(.drill-actor){position:absolute;left:0;right:0;bottom:4px;font-size:12px}
+.motion-rhythm .runner{transition:left 130ms ease}.drill-running-track{position:absolute;inset:40% 15% 24%;border:3px solid #ffe09588;border-radius:50%;pointer-events:none}
+.motion-intercept .interceptor,.motion-angle .angle-keeper{transition:left 90ms ease}
+.drill-formation-link{position:absolute;top:32%;height:42%;width:2px;border-left:2px dashed #ffe095aa;z-index:1}
+.drill-angle-guide{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.drill-angle-guide path:first-child{fill:#ffe09518;stroke:#ffe09580;stroke-width:.5}.drill-angle-guide path+path{fill:none;stroke:#fff5c8;stroke-width:.6;stroke-dasharray:2 2}
+.motion-angle .drill-goal{background:#fff1}.motion-claim{background-image:url('../images/minigames/field_goal.png')}
+html[data-reduced-motion="true"] .drill-actor{transition:none!important;rotate:0deg!important;translate:none!important}

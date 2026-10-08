@@ -5,7 +5,7 @@ const start=async name=>page.evaluate(name=>{window.results=[];Math.random=()=>.
 const key=async n=>page.keyboard.press(String(n));
 async function success(name,touch=false){
  const input=async n=>touch?page.locator('[data-input="'+(n-1)+'"]').tap({force:true}):key(n);
- if(name==='miniVolley'){await page.keyboard.down('Space');await page.clock.runFor(700);await page.keyboard.up('Space');}
+ if(name==='miniVolley'){await page.keyboard.down('Space');await page.clock.runFor(700);await page.keyboard.up('Space');await page.clock.runFor(950);}
  else if(name==='miniRun'){for(let i=0;i<3;i++){await input(2);await page.clock.runFor(220);}}
  else if(name==='miniScan'){await page.clock.runFor(1450);await input(2);}
  else if(name==='miniRhythm'){for(let i=0;i<6;i++){await input(i%2+1);await page.clock.runFor(500);}}
@@ -19,11 +19,11 @@ async function success(name,touch=false){
  else if(name==='miniSteal'){await page.clock.runFor(2550);await key('Space');await page.clock.runFor(650);}
  else if(name==='miniThrow'){await key('Space');await page.clock.runFor(1000);await key('Space');await page.clock.runFor(450);}
  else if(name==='miniSigns'){await page.clock.runFor(2450);for(let i=0;i<3;i++){await key(2);await page.clock.runFor(200);}}
- await page.clock.runFor(1300);const result=await page.evaluate(()=>results);assert.equal(result.length,1,name);assert.ok(result[0].확률>=.7,name+': '+JSON.stringify(result));
+ await page.clock.runFor(2000);const result=await page.evaluate(()=>results);assert.equal(result.length,1,name);assert.ok(result[0].확률>=.7,name+': '+JSON.stringify(result));
 }
 const pools=await page.evaluate(()=>U.roleDrills),names=[...new Set(Object.values(pools).flat())];assert.equal(names.length,14);assert.equal(Object.values(pools).flat().length,20);
 for(const [role,drills]of Object.entries(pools)){assert.equal(drills.length,5);for(const name of drills){await start(name);await success(name);await start(name);await page.clock.runFor(15000);const r=await page.evaluate(()=>results);assert.equal(r.length,1,'timeout '+role+name);assert.ok(r[0].확률<.5,'failure '+role+name);await start(name);await page.evaluate(()=>cancelDrill());await page.clock.runFor(15000);assert.equal(await page.evaluate(()=>results.length),0,'cancel '+name);}}
-for(const name of ['miniVolley','miniRun','miniScan','miniRhythm','miniIntercept','miniLine','miniClaim','miniAngle']){await start(name);if(name!=='miniVolley')await success(name,true);else{const box=page.locator('.mg');const b=await box.boundingBox();await page.mouse.move(b.x+b.width/2,b.y+80);await page.mouse.down();await page.clock.runFor(700);await page.mouse.up();await page.clock.runFor(1300);assert.equal(await page.evaluate(()=>results[0].확률),.95);}}
+for(const name of ['miniVolley','miniRun','miniScan','miniRhythm','miniIntercept','miniLine','miniClaim','miniAngle']){await start(name);if(name!=='miniVolley')await success(name,true);else{const box=page.locator('.mg');const b=await box.boundingBox();await page.mouse.move(b.x+b.width/2,b.y+80);await page.mouse.down();await page.clock.runFor(700);await page.mouse.up();await page.clock.runFor(2250);assert.equal(await page.evaluate(()=>results[0].확률),.95);}}
 for(const width of [320,390,1280]){await page.setViewportSize({width,height:844});await page.clock.runFor(100);for(const name of names){await start(name);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.evaluate(()=>cancelDrill());}}
 // Context is separate from the role fallback, and shares the repeat guard.
 const contexts=await page.evaluate(()=>{E.newGame('맥락','공격수','결정력');return E._internal.CARDS().find(c=>c._id==='football-pro_events-006').선택지.map(o=>o.경기맥락);});assert.deepEqual(contexts.map(x=>x.평가능력),['슈팅','패스','위치선정']);
